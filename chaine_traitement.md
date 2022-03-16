@@ -1,15 +1,14 @@
 # Chaîne de traitement
 
-## Extraire les textes de simages
+## Extraire les textes des images
 La stratégie consiste à combiner deux solutions :
 - Ré-océriser les textes les plus fautifs et les post-corriger
-- corriger les textes déjà océrisés les moins fautifs 
+- Corriger les textes déjà océrisés les moins fautifs 
 L'idée est de pouvoir avancer sur l'annotation en TEI même si tout le corpus n'est pas corrigé.
 ### Créer une IA capable de diviser le corpus en textes peu fautifs / textes très fautifs
 - Produire une vérité de terrain pour permettre de mieux évaluer le taux d'erreur
 - Méthode d'évaluation du taux d'erreur et annotation pour produire les données d'entraînement
 - Créer une IA (SVM ?)
-- 
 ### Réocériser les textes les plus fautifs
 - Améliorer les images (éliminer la courbure de la page). Une idée intéressante consiste à réaliser un traitement OCR séquentiel de chaque tronçon de baseline, chacun redressé indépendamment puis reconnu. La ligne de texte étant ensuite « recomposée » (facile, puisque tout appartient à la même baseline à la base). C’est librement inspiré de ce qui est décrit ici : [https://arxiv.org/pdf/2102.08742.pdf](https://arxiv.org/pdf/2102.08742.pdf)
 - Créer un modèle avec eScriptorium
@@ -44,4 +43,4 @@ On pourrait annoter chaque débat avec un thème large et ajouter une thématiqu
 
 On peut envisager d'aller plus loin en annotant les mots appartenant à un topic en utilisant le mécanisme des id (<w xml-id="345">Tonkin</w>) en utilisant un <span>. On pourrait ainsi avoir plusieurs topics sur un paragraphe. Une liste d'étiquette serait affichée et tu mets en évidence les mots après avoir cliqué sur l'étiquette.
 
-Il faut peut-être travailler avec les embeddings et récupérer les embeddings qui sont des embeddings du topic.
+Il faut peut-être travailler avec les embeddings et récupérer les embeddings qui sont des embeddings du topic (à éclaircir..)
