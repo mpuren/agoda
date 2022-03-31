@@ -5,13 +5,39 @@ La stratégie consiste à combiner deux solutions :
 - Ré-océriser les textes les plus fautifs et les post-corriger
 - Corriger les textes déjà océrisés les moins fautifs 
 L'idée est de pouvoir avancer sur l'annotation en TEI même si tout le corpus n'est pas corrigé.
+
 ### Créer une IA capable de diviser le corpus en textes peu fautifs / textes très fautifs
-- Produire une vérité de terrain pour permettre de mieux évaluer le taux d'erreur
-- Méthode d'évaluation du taux d'erreur et annotation pour produire les données d'entraînement
-- Créer une IA (SVM ?)
-### Réocériser les textes les plus fautifs
-- Améliorer les images (éliminer la courbure de la page). Une idée intéressante consiste à réaliser un traitement OCR séquentiel de chaque tronçon de baseline, chacun redressé indépendamment puis reconnu. La ligne de texte étant ensuite « recomposée » (facile, puisque tout appartient à la même baseline à la base). C’est librement inspiré de ce qui est décrit ici : [https://arxiv.org/pdf/2102.08742.pdf](https://arxiv.org/pdf/2102.08742.pdf)
-- Créer un modèle avec eScriptorium
+
+Evaluer le taux d'erreur entre Gallica, OCR Tesseract, Abby et eScriptorium
+- Produire ground truth (en cours)
+- Entraîner modèle avec eScriptorium (en cours)
+- Océriser avec Abby le numéro concerné (à récupérer)
+
+Stratégie de réocérisation :
+- Tout réocériser avec Tesseract ou eScriptorium
+- Mesurer le taux d'erreur par page et non par numéro
+- Décider d'un niveau où la réocérisation est nécessaire (certaines pages en ont besoin plus que d'autres)
+- Créer SVM
+- Réocériser avec Abby Reader
+
+**Etapes**
+
+*Evaluer le taux d'erreur entre Gallica, OCR Tesseract, Abby et eScriptorium*
+1. Produire ground truth (en cours)
+2. Entraîner modèle avec eScriptorium (en cours)
+3. Océriser avec Abby le numéro concerné (à récupérer)
+4. Mesurer le taux d'erreur par page et non par numéro (car le résultat différe pas mal en fonction entre les pages)
+
+*Stratégie de réocérisation*
+4. Décider d'un niveau où la réocérisation est nécessaire (quel est le pourcentage d'erreur trop élevé ?)
+5. Faut-il tout réocériser avec Tesseract ou eScriptorium ? A décider en fonction des résultats de l'évaluation de l'accuracy de l'OCR de Gallica.
+6. Créer IA (SVM )
+7. Prétraitement de l'image (cf. ci-dessous "Améliorer les images d'origine")
+7. Réocériser avec Abby Reader
+
+### Améliorer les images d'origine
+- Eliminer la courbure de la page. Une idée intéressante consiste à réaliser un traitement OCR séquentiel de chaque tronçon de baseline, chacun redressé indépendamment puis reconnu. La ligne de texte étant ensuite « recomposée » (facile, puisque tout appartient à la même baseline à la base). C’est librement inspiré de ce qui est décrit ici : [https://arxiv.org/pdf/2102.08742.pdf](https://arxiv.org/pdf/2102.08742.pdf)
+
 ### Post-corriger les textes
 Plusieurs approches :
 - Utiliser un dictionnaire : pyspellchecker (créer un dictionnaire adapaté) ou solution d'Edwin)
