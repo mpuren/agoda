@@ -26,14 +26,14 @@ Stratégie de réocérisation :
 1. Produire ground truth (en cours)
 2. Entraîner modèle avec eScriptorium (en cours)
 3. Océriser avec Abby le numéro concerné (à récupérer)
-4. Mesurer le taux d'erreur par page et non par numéro (car le résultat différe pas mal en fonction entre les pages)
+4. Mesurer le taux d'erreur par page et non par numéro (car le résultat différe beaucoup entre les pages au sein d'un m�me num�ro)
 
 *Stratégie de réocérisation*
-4. Décider d'un niveau où la réocérisation est nécessaire (quel est le pourcentage d'erreur trop élevé ?)
-5. Faut-il tout réocériser avec Tesseract ou eScriptorium ? A décider en fonction des résultats de l'évaluation de l'accuracy de l'OCR de Gallica.
-6. Créer IA (SVM )
-7. Prétraitement de l'image (cf. ci-dessous "Améliorer les images d'origine")
-7. Réocériser avec Abby Reader
+1. Décider d'un niveau où la réocérisation est nécessaire (quel est le pourcentage d'erreur trop élevé ?)
+2. Faut-il tout réocériser avec Tesseract ou eScriptorium ? A décider en fonction des résultats de l'évaluation de l'accuracy de l'OCR de Gallica.
+3. Créer IA (SVM )
+4. Prétraitement de l'image (cf. ci-dessous "Améliorer les images d'origine")
+5. Réocériser avec Abby Reader
 
 ### Améliorer les images d'origine
 - Eliminer la courbure de la page. Une idée intéressante consiste à réaliser un traitement OCR séquentiel de chaque tronçon de baseline, chacun redressé indépendamment puis reconnu. La ligne de texte étant ensuite « recomposée » (facile, puisque tout appartient à la même baseline à la base). C’est librement inspiré de ce qui est décrit ici : [https://arxiv.org/pdf/2102.08742.pdf](https://arxiv.org/pdf/2102.08742.pdf)
