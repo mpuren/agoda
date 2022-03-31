@@ -26,7 +26,7 @@ Stratégie de réocérisation :
 1. Produire ground truth (en cours)
 2. Entraîner modèle avec eScriptorium (en cours)
 3. Océriser avec Abby le numéro concerné (à récupérer)
-4. Mesurer le taux d'erreur par page et non par numéro (car le résultat différe beaucoup entre les pages au sein d'un m�me num�ro)
+4. Mesurer le taux d'erreur par page et non par numéro (car le résultat différe beaucoup entre les pages au sein d'un même numéro)
 
 *Stratégie de réocérisation*
 1. Décider d'un niveau où la réocérisation est nécessaire (quel est le pourcentage d'erreur trop élevé ?)
