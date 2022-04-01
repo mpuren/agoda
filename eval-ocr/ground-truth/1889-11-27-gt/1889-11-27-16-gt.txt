@@ -356,11 +356,4 @@ avance.
 
  
 
-ce gallica.bnf.fr
-
- 
-
- 
-
-blée nationale
-
+Source gallica.bnf.fr / Bibliothèque et Archives de l'Assemblée nationale
