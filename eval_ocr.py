@@ -90,6 +90,42 @@ lines = [re.sub("[^a-zA-Z0-9éèçàùôîâ]{5,}$","",line) for line in lines]
 
 
 #%%
+from PIL import Image
+import pytesseract
+#xml = pytesseract.image_to_alto_xml('/home/atom/Bureau/Aurelien/epitech/agoda/img/img_1889_11_14_1.jpg')
+#text = pytesseract.image_to_string('/home/atom/Bureau/Aurelien/epitech/agoda/img/img_1889_11_14_1.jpg')
+
+#%%
+text = pytesseract.image_to_string(Image.open('/home/atom/Bureau/Aurelien/epitech/agoda/img/img_1889_11_14_1.jpg'))
 
 
-l = [re.findall("^(.*)[\s]{5,}",c) for c in test]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
