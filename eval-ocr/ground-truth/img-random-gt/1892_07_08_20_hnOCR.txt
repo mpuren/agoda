@@ -1,4 +1,4 @@
-CHAMBRE DES DÉPUTÉS — SÉANCE DU 8 JUILLET 1892
+1146     CHAMBRE DES DÉPUTÉS — SÉANCE DU 8 JUILLET 1892
 
 Jacquemin. Jonnart. Jules Jaluzot. Jumel.
 
@@ -9,7 +9,7 @@ La Bassetière (Louis de). Labat. La Batut
 (de). La Bourdonnaye (vicomte de). Labus-
 sière. Laffitte de Lajoannenque (de). Lafont
 (Ernest). Lagorsse (de). Lamarzelle (de). Lan-
-juinais pos de). La Nouë (vicomte de). La-
+juinais (comte de). La Nouë (vicomte de). La-
 reinty (Jules de). Largentaye (Rioust de). La
 Rochefoucauld, duc de Doudeauville. La Ro-
 chejaquelein (marquis de). Laroche-Joubert.
@@ -17,51 +17,46 @@ Lascombes. Laurençon.  Lavertujon (Henri).
 Lebaudy (Paul). Lebon. Le Cerf. Lechevallier.
 Ledieu. Léglise. Legrand (Arthur) (Manche).
 Legras. Lemercier (comte). Le Myre de Vilers.
-Léon (prince de). e Provost de Launay. Le
+Léon (prince de). Le Provost de Launay. Le
 Roux (Paul). Leroy (Arthur) (Côte-d'Or). Le-
 tellier. Levêque. Levet (Georges). Leygues
 (Georges) (Lot-et-Garonne). Lorgeril (de). Lo-
 riot. Lorois (Emile). Loustalot. Lur-Saluces
-
 (marquis de).
 
 Mahy (de). Maillé (comte de). Malartre.
 Malausséna. Marmottan. Marty. Maruéjouls.
 Méline. Michou (Aube). Milochau. Mir. Mon-
-téty (de)}) Montgolfier (de). Montsaulnin (de).
+téty (de). Montgolfier (de). Montsaulnin (de).
 Morillot (Léon). Mougin. Moustier (marquis
 de).
+
 Noël-Parfait.
 
- 
+Obissier-Saint-Martin. Olry. Ornano (Cu-
+neo d'). Orsat (Léon).
 
-Obissier-Saint-Martin. Olry. Ornano (Gu-
-neo d') Orsat (Léon). :
-
-Papelier. Passy (Louis) Paulmier. Périer
+Papelier. Passy (Louis). Paulmier. Périer
 de Larsan (du) (Gironde). Peyrusse. Piérard
 (baron).  Pontbriand (du Breil, comte de).
 Porteu (Armand).  Possesse (de). Prax-Paris.
 
 Ramel (de). Rauline. Raynal. Réal. Rei-
-
-Riotteau. Roques. Roy de
-
-nach (Joseph).
+nach (Joseph). Riotteau. Roques. Roy de
 Loulay (Louis). Royer (Louis-Auguste) (Aube).
 Rozet (Albin).
 
-Saint-Martin (de) (Indre). a (Léon). Schnei-
+Saint-Martin (de) (Indre). Say (Léon). Schnei-
 der (Henri). Siegfried. Soland (de). Sou-
 beyran (baron de). Surchamp.
 
 Thierry-Delanoue. Thomas. Thonion. Tho-
 rel. Touchimbert (comte de). Trélat. Tricoche
-(général). Turrel (Adolphe). È
+(général). Turrel (Adolphe).
 
 Vallon (amiral). Viger. Viox (Camille).
 
-“Witt (Conrad de).
+Witt (Conrad de).
 
 Yves Guyot.
 
@@ -77,17 +72,17 @@ Cambe. Cavaignac (Godefroy).
 David (Indre). Deniau. Deproge. Descamps
 Albert).  Develle (Jules). Dubois (Emile)
 Nord). Dumay.
-Floquet (Charles). Fouquier (Henry).
+Floquet (Charles). Fouquier (Henry). Four-
 tou (de).
 
-Gauthier (de Clagny).
+Gauthier (de Clagny). Gourvil.
+
 Isoard.
 
 Jamais (Emile). Jaouen. Jullien.
 Laguerre. Lalou. Lasserre (Maurice). Le Cour.
 
-Four-
-Gourvil.
+
 
 Legludic. Le Roy (Edouard) (la Réunion). Lé-
 vis-Mirepoix (comte de).
@@ -98,13 +93,11 @@ rius). Moroux.
 Poulié.
 
 Razimbaud. Reille (baron). Rémusat (de).
-
 Ribot. Ricard (Louis) (Seine-Inférieure). Robert-
-
-Mitchell. Roche (Jules) (Savoie),  Rouvier.
+Mitchell. Roche (Jules) (Savoie).  Rouvier.
 Royer (Meuse).
-Saussay (du). Serph (Gusman). Sibille. Si-
 
+Saussay (du). Serph (Gusman). Sibille. Si-
 mon (Fidèle). Solages (marquis de).
 Tassin. Taudière. Terrail-Mermeix. Thom-
 son. Tiphaine. Trannin. Trouillot (Georges).
@@ -133,31 +126,24 @@ Juigné (comte de). Kerjégu (J. de). La Cham-
 bre. La Martinière (de). Le Hérissé. Linard.
 Maurice-Faure (Drôme). Mézières. Mun (comte
 Albert de). Neyrand. Perrier (Antoine) (Sa-
-al Pierre Legrand (Nord). Piou (Jacques).
-Ponievoy (Frogier de). Quintaa. Richard
-(Sr) Rouvre (Bourlon de). Theulier. Vil-
+voie). Pierre Legrand (Nord). Piou (Jacques).
+Ponlevoy (Frogier de). Quintaa. Richard
+(Pierre). Rouvre (Bourlon de). Theulier. Vil-
 emonte.
 
 Les nombres annoncés en séance avaient
 été de :
 
-Nombro des votants...
-Majorité absolue.
+Nombre des votants.......... 506
+Majorité absolue............ 254
 
-Pour l'adoption... 261
-Contre... .… 245
+Pour l'adoption..... 261
+Contre.............. 245
 
 Mais, après vérification, ces nombres ont été
-Jupe conformément à la liste de scrutin ci-
-lessus,
+rectifiés conformément à la liste de scrutin ci-
+dessus.
 
-506
-254
-
-   
-    
-
- 
 
 M. Varlet, absent de la salle des séances au
 moment du scrutin sur l'amendement de M.
@@ -167,101 +153,68 @@ s’il avait été présent, il aurait voté « pour ».
 
 M. Martineau fait la même déclaration.
 
-$
-M. Terrail-Mermeix, absent de la Shicjare
-séances au moment du même sorutin, « CON*
-ques s'ilavait été présent, il aurait VO
-re »,
 
- 
+M. Terrail-Mermeix, absent de la salle des
+séances au moment du même scrutin, déclare
+que s'il avait été présent, il aurait voté « con-
+tre ».
 
-. M. Maurice-Faure, retenu chez lui pe pu
-indisposition, déclare n'avoir pu pren ont où
-au vote dans aucun des scrutins qui
 
+M. Maurice-Faure, retenu chez lui par une
+indisposition, déclare n'avoir pu prendre part
+au vote dans aucun des scrutins qui ont eu
 lieu dans la séance du 6 juillet.
 
- 
 
-sétant
-M. le baron des Rotours, porté comme se Te
-abstenu » dans le scrutin du 7 juillet SU;5ns
+M. le baron des Rotours, porté comme « s'étant
+abstenu » dans le scrutin du 7 juillet sur l'a-
+mendement de M. Cornudet aux contributions
+directes, déclare avoir eu l'intention de voter
+« pour ».
 
-mendement de M. Cornudet aux contri Noter
-directes, déclare avoir eu l'intention
-« pour ». À
-
-enu"
-
-s , ji
-M. Legludic, porté comme « s'étant abSt® ont
-dans le scrutin du 7 juillet sur l'amende res
-de M. Emile Cornudet (Contributions sent
-et taxes y assimilées), déclare qu'il était Ta
-au moment du scrutin, et que s'il avä
+M. Legludic, porté comme « s'étant abstenu »
+dans le scrutin du 7 juillet sur l'amendement
+de M. Emile Cornudet (Contributions directes
+et taxes y assimilées), déclare qu'il était absent
+au moment du scrutin, et que s'il avait été
 présent il aurait voté « pour ».
 
-M. Tiphaine fait la même déclaration
+M. Tiphaine fait la même déclaration.
 
-x.
-M. Conrad de Witt fait la même déclaratio
+M. Conrad de Witt fait la même déclaration.
 
- 
-
-eut F0
-M. Robert-Mitehell, porté comme aan fair
-« contre » dans les scrutins du 7 juil j'aner
-le renvoi à la commission du budget de nent
-dement de M. Emile Rey; 2 sur l'amen taxes
-de M. Cornudet (Contributions directes Son de
-y assimilées), déclare avoir eu l'intenenge
-voter « pour » dans le scrutin sur Jl'aMvoté
-ment de M. Cornudet, et avoir égalemenf Rey
-« que » le renvoi de l'amendement de À
+M. Robert-Mitehell, porté comme ayant voté
+« contre » dans les scrutins du 7 juillet : 1° sur
+le renvoi à la commission du budget de l'amen-
+dement de M. Emile Rey; 2° sur l'amendement
+de M. Cornudet (Contributions directes et taxes
+y assimilées), déclare avoir eu l'intention de
+voter « pour » dans le scrutin sur l'amende-
+ment de M. Cornudet, et avoir également voté
+« pour » le renvoi de l'amendement de M. Rey
 à la commission du budget.
 
-gté
-
-M. Albert Chiché, porté comme ayant \
-« pour » dans le scrutin du 7 juillet fons
-mendement de M. Cornudet (Contribu! Loir el
-rectes et taxes y assimilées), déclare 8*
+M. Albert Chiché, porté comme ayant voté
+« pour » dans le scrutin du 7 juillet sur l'a-
+mendement de M. Cornudet (Contribution di-
+rectes et taxes y assimilées), déclare avoir eu
 l'intention de voter « contre ».
 
- 
-
-so!
-M. Razimbaud, porté comme ayant : le
-
-« contre » dans le scrutin du 6 juillet % 18
-
-proposition, de M. Salis, tendant à JO rh
-iscussion des boissons à celle des CO), de
-
-tions, déclare qu'il était absent de la Si avait
-
-séances au moment du scrutin, et que $?
-
+M. Razimbaud, porté comme ayant voté
+« contre » dans le scrutin du 6 juillet sur la
+proposition, de M. Salis, tendant à joindre la
+discussion des boissons à celle des contribu-
+tions, déclare qu'il était absent de la salle des
+séances au moment du scrutin, et que s'il avait
 été présent il aurait voté « pour ».
 
-ü-
-Les
-
- 
-
-me
-M.le baron de Ladoucette, porté COi-
-ayant voté « contre » dans le scrutin u au
-let sur l'amendement de M. Emile duel Se
-au projet de loi portant fixation du bu rec
-rinten”
-
- 
-
-néral de l'exercice 1893 (Contributions
-et taxes y assimilées), déclare avoir eu
-
-. tion de voter « pour » cet amendement
+ M.le baron de Ladoucette, porté comme
+ayant voté « contre » dans le scrutin du 7 juil-
+let sur l'amendement de M. Emile Cornudet
+au projet de loi portant fixation du budget gé-
+néral de l'exercice 1893 (Contributions dirctes
+et taxes y assimilées), déclare avoir eu l'inten-
+tion de voter « pour » cet amendement
 
 Paris. — Imprimerie des Journaux officiels, 81 quai Voltaire.
 
