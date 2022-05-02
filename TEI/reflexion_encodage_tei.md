@@ -208,3 +208,117 @@ Interrogation toutefois sur la part que prend le typographe du journal dans la p
   
 - Difficulté pour déterminer les @toWhom *--> ne pas en faire.*
 
+## 3- Exemples d'encodage
+**En-tête :**
+```
+<front>
+      <div type="preface">
+         <head>COMPTE RENDU IN EXTENSO. — <num>10</num>e SÉANCE</head>
+         <head>Séance du <date>mardi 26 novembre</date>.</head>
+      </div>              
+</front>
+```
+
+**Sommaire :**
+```
+<div type="sommaire">
+  <head>SOMMAIRE</head>
+  <list>
+       <item xml:id="pv">
+           Procès verbal : MM. <persName>Paul Dérouiède</persName>, <persName>Georges Laguerre</persName>, <persName>Briens</persName>.
+       </item>
+               
+       <item xml:id="congé">
+           Excuses et demandes de congé.
+       </item>
+  </list>
+</div>
+```
+
+**Section et prises de parole :**
+```
+<div corresp="#pv">
+  <head>Présidence de M. <persName>Charles Floquet</persName></head>
+  <note type="ouverture"><seg>La séance est ouverte à deux heures.</seg></note>
+  <note type="aDefinir"><seg>M. <persName>Henri Lavertujon</persName>, l'un des secrétaires, donne lecture du procès-verbal de la séance d'hier.</seg></note>
+  <u who="#aDefinir" ana="speaker">
+     <seg>M. <persName>Paul Déroulède</persName>. Je demande la parole.</seg>
+  </u>
+  <u who="#aDefinir" ana="speaker">
+     <seg>M. <persName>le président</persName>. Vous avez la parole.</seg>
+  </u>
+  <u who="#aDefinir" ana="speaker">
+     <seg>M. <persName>Paul Déroulède</persName>. Messieurs, j'ai demandé la parole pour faire une rectification au procès-verbal et pour m'expliquer au sujet du rappel à l'ordre qui m'a été infligé.</seg>
+     <seg>La plus importante des rectifications concerne le procès-verbal. En effet, au moment où la Chambre s'est prononcée en majorité en faveur de la validation d’un de nos collègues de l'<placeName>Ardèche</placeName>, ni mes amis ni moi n'avons applaudi au succès de telle ou telle candidature représentant telle ou telle  opinion ; ni mes amis ni moi n’avons même applaudi à la défaite de ce que j'appellerai le groupe des invalideurs. <incident><desc>(Bruit à gauche.)</desc></incident></seg>
+  </u>
+</div>
+```
+
+**Annexes : votes de la séance**
+```
+<back>
+ <head>Annexes au procès-verbal de la séance du <date>mardi 26 novembre 1889</date>.</head>
+   <listEvent xml:id="vot18891126">
+   
+   <!-- 1ER ÉVENEMENT -->
+     <event xml:id="vot1" type="voting" corresp="#aDefinir"> <!-- corresp référence au sujet des div -->
+     
+       <!-- SCRUTIN -->
+       <head>
+         <label>SCRUTIN</label>
+         <note>Sur les conclusions du 7e bureau tendant à l'annulation des opérations électorales de la <placeName>1re circonscription de l'arrondissement de Lorient (Morbihan)</placeName>.</note>
+       </head>
+       <desc>
+            <measure type="nbvotants" quantity="506">Nombre des votants <num>506</num></measure>
+            <measure type="maj" quantity="254">Majorité absolue <num>254</num></measure>
+            <measure type="ayes" quantity="330">Pour l'adoption <num>330</num></measure>
+            <measure type="noes" quantity="176">Contre <num>176</num></measure>
+       </desc>
+       <note type="result">La Chambre des députés a adopté.</note>
+       
+       <!-- LISTE VOTANTS -->
+       <note type="listevotants">
+          <listRelation>
+             <relation name="votepour" active="#vot1">
+                <desc> 
+                     Ont voté pour :
+                     MM.<persName>Abeille</persName>. <persName>Arène (Emmanuel)</persName>. <persName>Armez</persName>.
+                     <persName>Arribat</persName>. <persName>Audifred</persName>. <persName>Aynard (Edouard)</persName>.
+                </desc>
+             </relation>
+             <relation/>
+          </listRelation>
+      </note>
+      
+      <!-- NB INITIAL VOTANTS -->
+      <note type="nbvotantsinitial">
+         Les nombres annoncés en séance avaient été de:
+         <desc>
+            <measure type="nbvotants" quantity="514">Nombre de votants <num>514</num></measure>
+            <measure type="maj" quantity="258">Majorité absolue <num>258</num></measure>
+            <measure type="ayes">Pour l'adoption <num>333</num></measure>
+            <measure type="noes">Contre <num>181</num></measure>
+         </desc>
+         Mais, après vérification, ces nombres ont été rectifiés conformément à la liste de scrutin ci-dessus.
+      </note>
+    </event>
+   [...]
+</back>                         
+```
+
+**Annexes : rectifications votes de la séance précédente**
+```
+<back>
+  <listEvent>
+    [...]
+
+    <!-- RECTIFICATIONS DE SÉANCE PRÉCÉDENTE -->
+    <event ref="#vot18891125" type="rectifications">
+       <head>Rectifications aux scrutins de la séance du <date>25 novembre 1889</date>.</head>
+       <desc/>
+       <note>M. <persName>Michau</persName> <placeName>(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>, déclare avoir voté <quote>« pour »</quote>.</note>
+    </event>
+  </listEvent> 
+</back>
+```
+
