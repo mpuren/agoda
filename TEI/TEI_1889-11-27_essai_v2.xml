@@ -240,6 +240,8 @@
          </div>
       </body>
       
+      
+      <!-- SOLUTION 1 mais pas de < seg > possible  -->
       <back>
          <head>Annexes au procès-verbal de la séance du <date>mardi 26 novembre 1889</date>.</head>
          
@@ -267,7 +269,7 @@
                            MM.<persName>Abeille</persName>. <persName>Arène (Emmanuel)</persName>. <persName>Armez</persName>.
                            <persName>Arribat</persName>. <persName>Audifred</persName>. <persName>Aynard (Edouard)</persName>.
                            
-                           <persName>Baile (Martial)</persName>. <persName>Bargy. Barodet</persName>. <persName>Barthou</persName>.
+                           <persName>Baile (Martial)</persName>. <persName>Bargy</persName>. <persName>Barodet</persName>. <persName>Barthou</persName>.
                            <persName>Bartissol</persName>. <persName>Bastid (Adrien)</persName>. <persName>Baulard</persName>. <persName>Beauquier</persName>. 
                            <persName>Bérard</persName>. <persName>Berger (Georges)</persName> <placeName>(Seine)</placeName>. <persName>Bertrand</persName>. 
                            <persName>Bézine</persName>. <persName>Bizarelli</persName>. <persName>Bizot</persName>. <persName>Bizouard-Bert</persName>. 
@@ -595,10 +597,12 @@
                
                <note type="listevotants">
                   <listRelation>
+                     
+                     
                      <relation name="votepour" active="#vot2">
+                        
                         <desc>
                            ONT VOTÉ POUR :
-                           
                            MM. <persName>Abeille</persName>. <persName>Arène (Emmanuel)</persName>. <persName>Armez</persName>.
                            <persName>Audifred</persName>.
                            
@@ -920,7 +924,7 @@
                <!-- Obligation de garder la balise < desc > sinon le doc n'est plus valide -->
                <desc/>
                
-               <note type="rectification">M. <persName>Michau</persName> <placeName>(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>, déclare avoir voté <quote>« pour »</quote>.</note>
+               <note type="rectification"><seg>M. <persName>Michau</persName> <placeName>(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>, déclare avoir voté <quote>« pour »</quote>.</seg></note>
                
                <note type="rectification">M. <persName>Léon Bourgeois</persName> <placeName>(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté <quote>« pour »</quote> dans le scrutin sur la demande d'invalidation de l'élection de M. <persName>de La Martinière</persName> dans la <placeName>2e circonscription de Coutances (Manche)</placeName>, et qu'en réalité il <quote>« s'était abstenu »</quote>.</note>
                
@@ -932,6 +936,63 @@
             </event>
          </listEvent>
       </back>
+      
+      <!-- SOLUTION 2 ANNEXES : fonctionne avec < seg > mais pas forcément la meilleure solution -->
+      <!--<back>
+         <head>Annexes au procès-verbal de la séance du <date>mardi 26 novembre 1889</date>.</head>
+         <listEvent xml:id="vot18891126">
+            <event xml:id="vot1" type="voting" corresp="#aDefinir"> <!-\- corresp référence au sujet des div -\->
+               <head>
+                  <label>SCRUTIN</label>
+                  <note>Sur les conclusions du 7e bureau tendant à l'annulation des opérations électorales de la <placeName>1re circonscription de l'arrondissement de Lorient (Morbihan)</placeName>.</note>
+               </head>
+               
+               <desc>
+                  <measure type="nbvotants" quantity="506">Nombre des votants <num>506</num></measure>
+                  <measure type="maj" quantity="254">Majorité absolue <num>254</num></measure>
+                  <measure type="ayes" quantity="330">Pour l'adoption <num>330</num></measure>
+                  <measure type="noes" quantity="176">Contre <num>176</num></measure>
+               </desc>
+               
+               <note type="result">La Chambre des députés a adopté.</note>
+               
+               <note type="listevotants">
+                  <listRelation>
+                     <relation name="votepour" active="#vot1"/>
+                  </listRelation>
+                  <desc>Ont voté pour</desc>
+                  <seg>
+                     MM.<persName>Abeille</persName>. <persName>Arène (Emmanuel)</persName>. <persName>Armez</persName>.
+                     <persName>Arribat</persName>. <persName>Audifred</persName>. <persName>Aynard (Edouard)</persName>.</seg>
+                  <seg>   
+                     <persName>Baile (Martial)</persName>. <persName>Bargy</persName>. <persName>Barodet</persName>. <persName>Barthou</persName>.
+                     <persName>Bartissol</persName>. <persName>Bastid (Adrien)</persName>. <persName>Baulard</persName>. <persName>Beauquier</persName>. 
+                     <persName>Bérard</persName>. <persName>Berger (Georges)</persName> <placeName>(Seine)</placeName>. <persName>Bertrand</persName>. 
+                     <persName>Bézine</persName>. <persName>Bizarelli</persName>. <persName>Bizot</persName>. <persName>Bizouard-Bert</persName>. 
+                     <persName>Blanc (Pierre)</persName>. <persName>Boissy-d’Anglas</persName>. <persName>Bonnefoy-Sibour</persName>. <persName>Bony-Cisternes</persName>. 
+                     <persName>Borriglione</persName>.<persName>Boucher</persName> <placeName>(Vosges)</placeName>. <persName>Boudenoot</persName>. <persName>Boudeville</persName>. 
+                     <persName>Bouge</persName>. <persName>Boulanger-Bernet</persName>. <persName>Boullay</persName>. <persName>Bourgeois</persName> <placeName>(Jura)</placeName>. 
+                     <persName>Bourgeois (Léon)</persName> <placeName>(Marne)</placeName>. <persName>Bouthier de Rochefort</persName>. <persName>Bovier-Lapierre</persName>. 
+                     <persName>Boysset</persName>. <persName>Braud</persName>. <persName>Breton</persName>. <persName>Briens</persName>. <persName>Brisson(Henri)</persName>. 
+                     <persName>Brousse (Emile)</persName>. <persName>Brugnot</persName>. <persName>Brunier</persName>. <persName>Bully</persName>. <persName>Burdeau</persName>.<persName>Buvignier</persName>.
+                  </seg>
+                  
+                  <listRelation>
+                     <relation name="votecontre" active="#vot1"/>
+                  </listRelation>
+                  <desc>Ont voté contre : </desc>
+                  <seg> MM. <persName>Abrial (Léon)</persName>. <persName>Adam (Achille)</persName>. <persName>Aigle (comte de 1’)</persName>. <persName>Ailliéres (d’)</persName>. <persName>Aimel (Henri)</persName>.
+                     <persName>Amagat</persName>. <persName>Arenberg (prince d’)</persName>. <persName>Argeliès</persName>. <persName>Arnault</persName>. <persName>Arnous</persName>.</seg>
+               </note>
+            </event>
+            
+            <event xml:id="vot2" type="voting" corresp="#aDefinir">
+               <head></head>
+               <desc></desc>
+               <note></note>
+            </event>
+         </listEvent>
+      </back>-->
    </text>
 </TEI>
 
