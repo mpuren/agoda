@@ -1,0 +1,656 @@
+id_depute|nom|prenom|lien|naissance_j|naissance_m|naissance_a|deces_j|deces_m|deces_a
+15|Abeille|Valentin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/15|14|2|1843|30|6|1902
+25|Abrial|Jean, Pierre, Léon|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/25|28|12|1836|4|2|1894
+32|Adam|Achille, Gabriel, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/32|1|12|1859|15|12|1914
+55|Aimelafille|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/55|28|9|1844|22|12|1926
+85|Alicot|Jean-Jacques, César, Eugène, Michel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/85|17|7|1842|10|3|1912
+5919|Alype dit Pierre-Alype|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5919|24|2|1846|10|2|1906
+105|Amagat|Louis, Amans|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/105|12|7|1847|5|7|1890
+188|Arène|Emmanuel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/188|1|1|1856|14|7|1908
+190|Argeliès|Jean-Baptiste, Justin, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/190|28|7|1862|16|11|1914
+193|Armand|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/193|6|3|1829|28|11|1898
+195|Armez|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/195|19|7|1838|18|9|1917
+201|Arnault|Ferdinand, Louis, Barthélemy|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/201|21|9|1837|2|7|1894
+205|Arnous|Marie,Gustave, Louis, Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/205|30|6|1846|11|9|1901
+211|Arribat|Pierre, Adolphe, Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/211|24|11|1855|30|12|1889
+251|Audiffred|Jean-Honoré|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/251|12|12|1840|27|10|1917
+304|Aymé-Martin|Albin, Paul, Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/304|13|5|1859|4|12|1937
+305|Aynard|Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/305|1|1|1837|25|6|1913
+310|Babaud-Lacroze|Antoine, Pierre, Alfred, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/310|29|11|1846|20|6|1930
+337|Baïhaut|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/337|2|4|1843|26|3|1917
+338|Baile|Martial, François, Germain|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/338|31|7|1833|12|7|1906
+4353|Baillardel de Lareinty|Jules, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4353|10|9|1852|26|5|1900
+358|Balsan|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/358|16|4|1838|4|2|1912
+376|Barascud|Antoine, Hippolythe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/376|10|6|1819|9|4|1899
+381|Barbé|François, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/381|4|2|1836|29|7|1890
+394|Barbotin|René, François, Julien,|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/394|13|3|1831|21|1|1915
+3104|Bardi de Fourtou|Oscar|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3104|3|1|1836|6|12|1897
+410|Bargy|Nicolas, Julien, dit Amédée|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/410|22|6|1847|12|11|1892
+420|Barodet|Désiré, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/420|27|7|1823|18|4|1906
+434|Barrès|Maurice, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/434|22|9|1862|4|12|1923
+451|Barthou|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/451|23|7|1862|9|10|1934
+452|Bartissol|Edmond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/452|20|12|1841|16|7|1916
+462|Basly|Emile, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/462|29|3|1854|11|2|1928
+470|Bastid|Adrien, Pierre, Rémy|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/470|1|10|1853|5|4|1903
+481|Batiot|Aristide, Armand, Constant|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/481|8|4|1843|3|2|1895
+490|Baudin|Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/490|29|7|1853|11|4|1918
+502|Baulard|Jules, Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/502|11|2|1827|7|2|1910
+521|Bazille|Camille, Justin, Anatole|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/521|1|5|1854|1|2|1900
+538|Beauquier|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/538|18|12|1833|12|7|1916
+609|Bénazet|Paul, Antoine, Théodore|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/609|22|11|1843|22|12|1920
+648|Bérard|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/648|29|10|1829|8|2|1914
+651|Béraud|Auguste, Bruno|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/651|17|1|1858|2|2|1905
+664|Berger|Georges, Paul, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/664|5|10|1834|8|7|1910
+663|Berger|François, Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/663|10|1|1829|14|2|1903
+670|Bergerot|Alphonse, Louis, Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/670|7|9|1820|12|2|1912
+747|Bertrand|Paul, Charles, Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/747|11|12|1847|17|11|1936
+776|Bezanson|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/776|25|1|1825|1|7|1893
+777|Bézine|Paul, Edmond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/777|11|6|1854|5|9|1919
+800|Bigot|Julien, Armand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/800|18|1|1831|15|1|1914
+827|Bischoffsheim|Raphaël, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/827|22|7|1823|20|5|1906
+831|Bizarelli|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/831|25|7|1836|19|6|1902
+834|Bizot|Eugène,  Jean, Jacques|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/834|5|1|1855|25|7|1908
+835|Bizouard-Bert|Mathieu|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/835|10|6|1826|26|4|1898
+837|Blachère|Ernest, Henri, Bernard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/837|3|5|1837|11|3|1904
+851|Blanc|Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/851|20|6|1806|28|4|1896
+849|Blanc|Louis, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/849|14|4|1838|24|10|1914
+870|Blin de Bourdon|Alexandre, Raoul, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/870|20|5|1837|17|4|1940
+941|Bonnefoy-Sibourg|Georges, Aguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/941|28|9|1849|10|7|1918
+965|Bony-Cisternes|Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/965|15|12|1847|18|9|1928
+970|Bordet|François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/970|7|4|1829|15|3|1901
+978|Borie|Léon, Etienne|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/978|21|3|1843|10|7|1908
+987|Borriglione|Alfred, Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/987|17|2|1841|29|7|1902
+988|Bory|Armand, Jean, Antoine, Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/988|8|7|1844|20|5|1931
+3149|Bosquillon de Frescheville|Joseph, Anatole|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3149|23|2|1823|18|2|1911
+1009|Boucher|Joseph, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1009|23|9|1829|28|3|1907
+1008|Boucher|Henry, Hippolyte, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1008|19|9|1847|1|2|1927
+1017|Boudeau|Elie, Isidore, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1017|4|2|1852|28|5|1912
+1018|Boudenoot|Louis, Charles, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1018|2|5|1855|22|10|1922
+1021|Boudeville|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1021|23|9|1824|22|2|1895
+1029|Bouge|Auguste, Eugène, César, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1029|23|6|1853|8|1|1931
+1049|Boulanger-Bernet|Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1049|12|1|1831|17|10|1903
+1059|Boullay|Etienne|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1059|16|5|1825|28|5|1893
+1085|Bourgeois|Paul, Antoine, Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1085|6|3|1827|16|3|1912
+1083|Bourgeois|Léon, Victor, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1083|29|5|1851|29|9|1925
+1087|Bourgeois dit Bourgeois-Du-Jura|Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1087|19|2|1831|23|2|1900
+1098|Bourlier|Charles, Nicolas|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1098|5|4|1830|13|2|1903
+1100|Bourlon de Rouvre|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1100|16|11|1850|16|2|1924
+1131|Bouthier de Rochefort|Jean-Baptiste, Augustin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1131|8|4|1814|13|6|1891
+1148|Bovier-Lapierre|Amédée-Pierre,Marie, Auguste, Ennemond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1148|27|3|1837|25|12|1899
+1150|Boyer|Antoine, Jean-Baptiste, dit Antide|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1150|26|10|1850|24|7|1918
+1158|Boysset|Charles, Guillaume|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1158|29|4|1817|22|5|1901
+1182|Braud|Ernest,  Jean, François-Xavier|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1182|11|7|1846|3|12|1915
+1201|Breton|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1201|19|4|1841|12|11|1901
+1224|Briens|Ernest, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1224|13|7|1835|10|7|1907
+1233|Brincard|Louis, Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1233|11|3|1842|18|1|1920
+1240|Brisson|Henri, Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1240|31|7|1835|13|4|1912
+1259|Brousse|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1259|25|9|1850|27|2|1914
+1271|Brugnot|Alfred, Barthélemy|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1271|11|5|1827|7|4|1903
+1293|Brunier|Marie, Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1293|26|10|1841|5|11|1891
+1308|Bully|Joseph, Ambroise|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1308|8|2|1822|12|2|1890
+1312|Burdeau|Auguste, Laurent|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1312|10|9|1851|12|12|1894
+1331|Buvignier|Charles, Jean, Victor|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1331|1|1|1823|24|12|1902
+1338|Cabart-Danneville|Charles, Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1338|24|6|1846|24|7|1918
+1355|Caffarelli|Jean, Louis, Maximilien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1355|5|2|1855|23|12|1911
+50|Caillard d'Aillières|Augustin, Fernand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/50|31|1|1849|2|2|1897
+1393|Calvinhac|Gustave, François, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1393|24|6|1849|6|7|1902
+1397|Cambe|Hippolyte, Pierre, Raymond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1397|26|9|1844|11|10|1912
+1462|Carquet|Francis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1462|12|10|1845|23|7|1899
+1471|Carron de la Carrière|Paul, Ange, Louis, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1471|22|7|1852|12|5|1915
+1501|Castelin|André|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1501|5|7|1858|24|7|1912
+1539|Cavaignac|Godefroy, Jacques, Marie, Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1539|21|5|1853|24|9|1905
+1541|Cavalié|Louis, Henri, Angeli|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1541|4|3|1831|2|5|1916
+1554|Cazauvieilh|Octave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1554|4|5|1834|14|7|1892
+1556|Caze|Edmond, Marie, Justin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1556|16|9|1839|10|9|1907
+1567|Ceccaldi|Dominique, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1567|2|2|1833|8|7|1897
+1597|Chabrié|Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1597|15|2|1823|19|6|1899
+1644|Chantelauze|Laurent|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1644|24|5|1847|25|3|1903
+1672|Charmes|Francis, Marie, Julien, Joseph, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1672|21|4|1848|4|1|1916
+1694|Chassaing|Henri-Blaise|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1694|15|12|1855|25|4|1908
+1709|Chaudey|Georges, Gabriel, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1709|23|5|1857|10|3|1940
+1712|Chaulin-Servinière|Lucien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1712|11|6|1848|26|7|1898
+1727|Chautemps|Emile, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1727|2|5|1850|10|12|1918
+1744|Chavoix|Henri, Jean, Georges, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1744|28|1|1844|28|3|1928
+1779|Chevandier|Antoine-Daniel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1779|27|5|1822|9|1|1893
+1794|Chiché|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1794|9|9|1854|5|9|1937
+1802|Chollet|André, Florimond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1802|20|11|1830|3|9|1911
+1818|Christophle|Albert, Silas, Médéric, Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1818|13|7|1830|23|1|1904
+1822|Cibiel|Alfred, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1822|11|5|1841|14|7|1914
+4131|Cillard de Kermenguy|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4131|1|12|1810|27|11|1893
+1831|Clament|Clément, Pierre, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1831|17|2|1851|20|3|1925
+1832|Clapot|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1832|19|5|1850|28|7|1926
+1838|Clausel de Coussergues|Claude|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1838|3|12|1831|2|7|1896
+1840|Clauzel|Jean-Marie, Albin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1840|17|6|1842|24|1|1893
+1842|Clech|Jean-Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1842|9|5|1850|14|2|1891
+1843|Clédou|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1843|25|5|1841|17|10|1903
+1844|Clemenceau|Georges, Eugène, Benjamin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1844|28|9|1841|24|11|1929
+1855|Clerjounie|Jean, Léon|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1855|11|12|1837|20|7|1891
+1862|Cluseret|Gustave, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1862|13|6|1823|22|7|1900
+1869|Cochery|Georges, Charles, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1869|20|3|1855|8|7|1914
+1878|Codet|Jean, Julien, Augustin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1878|24|7|1852|10|10|1920
+1942|Constans|Ernest, Jean, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1942|3|5|1833|7|4|1913
+1960|Cordier|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1960|16|1|1844|25|12|1919
+1968|Corneau|Emile, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1968|19|7|1826|10|2|1906
+1978|Cornudet des Chaumettes|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1978|19|2|1855|2|9|1921
+1987|Cosmao-Dumenez|Sélim|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1987|29|2|1840|6|4|1909
+2011|Coudreuse|Julien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2011|26|2|1837|27|11|1898
+2042|Cousset|Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2042|16|1|1833|12|7|1895
+2051|Coutisson|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2051|21|4|1832|7|1|1900
+2053|Couturier|Valentin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2053|2|5|1829|18|2|1902
+5612|Cunéo d'Ornano|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5612|15|11|1845|17|5|1906
+187|d'Arenberg|Auguste, Louis, Albéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/187|15|9|1837|24|1|1924
+2849|d'Espeuilles|Albéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2849|12|11|1840|23|11|1931
+2855|d'Estourmel|Marie, Reimbold|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2855|16|1|1841|25|5|1902
+2823|Daliney d'Elva|Christian, Marie, Alphonse|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2823|21|9|1850|5|3|1925
+2134|Darlan|Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2134|10|6|1848|8|12|1912
+2165|Dautresme|Lucien, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2165|21|5|1826|18|2|1892
+2177|David|Théophile, Timothée, Honoré|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2177|11|10|1851|12|4|1892
+2169|David|Alban, Bernard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2169|19|10|1837|1|7|1905
+2182|Daynaud|Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2182|1|6|1838|8|3|1918
+367|de Bar|Raymond, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/367|4|2|1842|28|5|1922
+501|de Baudry d'Asson|Léon, Armand, Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/501|15|6|1836|12|5|1915
+590|de Belleval|Henri, Louis, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/590|20|1|1860|30|5|1914
+636|de Benoit|Norbert, Marie, Solange, Guillaume|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/636|12|5|1838|9|2|1906
+898|de Boisboissel|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/898|28|9|1849|11|7|1915
+915|de Boissy d'Anglas|François, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/915|19|2|1846|21|1|1921
+1564|de Cazenove de Pradines|Edouard, Pierre, Michel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1564|31|12|1838|13|7|1896
+1801|de Choiseul-Praslin|Horace, Eugène, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1801|23|2|1837|6|12|1915
+1890|de Colbert-Laplace|Jean, Pierre, Louis, Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1890|6|7|1843|9|10|1917
+1914|de Colombet de Landos|Anatole, Bernard, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1914|7|9|1833|30|9|1898
+1980|de Cornulier|Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1980|8|10|1825|6|1|1898
+2545|de Dompierre d'Hornoy|Charles, Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2545|24|2|1816|21|3|1901
+2577|de Douville-Maillefeu|Gaston|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2577|6|7|1835|29|1|1895
+3280|de Gasté|Joseph, Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3280|30|7|1811|2|9|1893
+3533|de Goyon|Aimery|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3533|13|3|1847|6|5|1918
+3690|de Guilloutet|Adhémar, Joseph, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3690|6|4|1819|10|11|1902
+4125|de Kergariou|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4125|8|10|1846|21|3|1897
+4126|de Kergorlay|Pierre, Henri, Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4126|14|9|1847|29|7|1919
+4172|de La Bourdonnaye|Marie, Ferdinand, Raoul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4172|12|5|1837|3|2|1911
+4903|de la Jumellière de Maillé|Armand, Urbain, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4903|1|7|1816|9|6|1903
+4182|de La Noue|Charles-Adolphe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4182|6|3|1843|13|7|1908
+4171|de Laborie de La Batut|Charles-Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4171|9|5|1854|11|3|1933
+4236|de Lacretelle|Pierre, Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4236|21|7|1815|17|2|1899
+4242|de Ladoucette|Etienne, Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4242|23|4|1844|5|12|1912
+4251|de Laffitte de Lajoannenque|Laure, Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4251|26|2|1824|11|4|1908
+4298|de Lamarzelle|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4298|4|7|1852|16|3|1929
+4328|de Lanessan|Antoine, Jean-Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4328|13|7|1843|7|11|1919
+4339|de Lanjuinais|Paul-Henry|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4339|24|7|1834|2|2|1916
+7587|de Le Gonidec de Traissan|Olivier|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7587|24|2|1839|18|1|1912
+7833|de Lévis-Mirepoix|Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7833|1|5|1846|1|4|1928
+4809|de Lorgeril|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4809|13|6|1849|26|7|1897
+4857|de Lur-Saluces|Amédée, Eugène, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4857|5|7|1839|2|10|1894
+4868|de Mackau|Frédéric, Armand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4868|29|11|1832|6|5|1918
+4897|de Mahy|François, Césaire|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4897|22|7|1830|19|11|1906
+5367|de Montalembert|Geoffroy|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5367|16|12|1850|16|10|1926
+5383|de Montéty|Louis, Albert, Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5383|24|11|1849|31|7|1912
+5384|de Montfort|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5384|3|2|1840|10|10|1911
+5385|de Montgolfier|Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5385|28|7|1828|9|6|1899
+5393|de Montsaulnin|François-Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5393|5|6|1838|29|4|1910
+5463|de Moustier|René|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5463|16|2|1850|21|7|1935
+5482|de Mun|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5482|28|2|1841|6|10|1914
+5978|de Plazanet|Charles, Théophile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5978|15|4|1821|26|5|1892
+6593|de Ramel|Fernand, Augustin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6593|27|3|1847|25|12|1915
+6668|de Rémusat|Pierre, Charles, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6668|19|1|1864|13|7|1946
+6054|de Rohan-Chabot de Léon|Alain, Charles, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6054|1|12|1844|6|1|1914
+6867|de Solages|Jérôme|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6867|20|7|1862|15|6|1927
+6868|de Soland|Théobald|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6868|1|12|1821|8|3|1906
+6998|de Terves|Léonce, Pierre, Gabriel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6998|1|7|1840|29|4|1916
+7421|de Villebois-Mareuil|Christian|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7421|10|7|1852|22|4|1924
+7456|de Villeneuve|Christian, Henri, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7456|8|7|1852|3|4|1931
+7440|de Witt|Conrad, Jacob, Dionys, Cornélis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7440|15|11|1824|20|7|1909
+2183|Deandréis|Elisée|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2183|20|6|1838|29|1|1911
+2237|Dejardin-Verkinder|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2237|10|6|1840|15|3|1920
+2250|Delafosse|Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2250|18|7|1843|10|7|1910
+2249|Delafosse|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2249|2|3|1841|31|1|1916
+2254|Delahaye|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2254|5|5|1851|18|4|1925
+2261|Delanoue dit Thiérry-Delanoue|Thierry|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2261|17|3|1843|21|12|1927
+2272|Delaunay|Alexis, Achille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2272|22|1|1838|18|5|1915
+2283|Delcassé|Théophile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2283|1|3|1852|21|2|1923
+2309|Dellestable|François, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2309|31|12|1851|30|1|1922
+2313|Delmas|Charles, Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2313|27|3|1834|19|10|1898
+2328|Deloncle|François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2328|14|7|1856|21|10|1922
+2339|Delpech|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2339|8|9|1834|2|4|1896
+2341|Delpeuch|Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2341|24|7|1860|20|9|1930
+2353|Deluns-Montaud|Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2353|5|6|1845|8|11|1907
+2359|Demarçay |Maurice, Marc, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2359|26|10|1835|9|9|1907
+2367|Denécheau|Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2367|13|5|1845|28|4|1926
+2369|Deniau|Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2369|1|2|1834|26|7|1893
+2385|Denizot|Isidore|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2385|4|4|1830|4|12|1891
+2386|Denoix|Arnaud, Elie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2386|29|6|1848|26|12|1917
+8209|Déprez|André, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/8209|23|6|1839|15|3|1900
+2398|Deproge|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2398|5|7|1850|19|12|1921
+2409|Déroulède|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2409|2|9|1846|30|1|1914
+4165|des Acres de l'Aigle|Robert, Arthur, Espérance|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4165|23|11|1843|14|3|1931
+6106|des Rotours|Eugène, Robert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6106|23|10|1833|28|3|1895
+2416|Descamps|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2416|13|10|1832|21|10|1910
+2418|Descaure|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2418|11|5|1848|18|1|1893
+2425|Deschanel|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2425|13|2|1855|28|4|1922
+2443|Desjardins|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2443|23|9|1845|20|3|1917
+2442|Desjardins|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2442|21|5|1840|24|3|1893
+2445|Desmons|Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2445|14|10|1832|4|1|1910
+2451|Després|Armand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2451|12|4|1834|22|7|1896
+2463|Dethou|Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2463|18|4|1819|20|6|1896
+2474|Develle|Jules, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2474|12|4|1845|30|10|1919
+2479|Deville|Félix-François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2479|14|3|1841|7|1|1896
+2517|Dillon|Arthur|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2517|18|5|1834|2|9|1922
+2519|Dindeau|Charles, Jacques|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2519|24|12|1841|17|7|1898
+2569|Doumer|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2569|22|3|1857|7|5|1932
+2587|Dreyfus|Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2587|19|7|1851|10|4|1905
+2595|Dron|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2595|21|10|1856|17|7|1930
+6424|du Breil de Pontbriant|Fernand-René|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6424|9|11|1848|26|11|1916
+5216|du Mesnildot|Edouard, Auguste, Bernardin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5216|21|12|1833|3|2|1910
+5789|du Périer de Larsan|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5789|29|2|1844|25|7|1908
+4187|du Vergier de La Rochejaquelein|Julien, Gaston|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4187|27|3|1833|30|7|1897
+2619|Dubois|Emile, André, Désiré|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2619|21|7|1839|3|2|1905
+2616|Dubois|Arnauld|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2616|23|1|1842|23|2|1919
+2632|Dubost|Henri, Antonin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2632|6|4|1842|16|4|1921
+2643|Duchasseint|Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2643|20|1|1814|21|2|1895
+2650|Duclaud|André|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2650|8|4|1824|6|7|1890
+2657|Ducoudray|François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2657|19|7|1842|21|5|1898
+2661|Ducroz|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2661|21|5|1820|21|6|1891
+2665|Dufaure|Amédée|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2665|27|11|1851|12|6|1915
+2681|Dugué de la Fauconnerie|Henri, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2681|11|5|1835|26|7|1914
+2685|Dujardin-Beaumetz|Henri, Charles, Etienne|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2685|29|12|1852|27|9|1913
+2686|Dulau|Constant|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2686|26|7|1857|25|4|1911
+2688|Dumas|Alexandre, Gilbert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2688|7|7|1852|27|10|1941
+1632|Dumas de Champvallier|John, Alexander, Edgar|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1632|19|4|1826|1|3|1890
+2697|Dumay|Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2697|10|9|1841|27|4|1926
+2707|Dumonteil|Léon, Jean-Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2707|28|7|1853|12|10|1933
+2725|Duportal|Eugène, André|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2725|14|2|1848|29|7|1910
+10133|Dupuy|Charles, Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/10133|5|11|1851|23|7|1923
+2744|Dupuy-Dutemps|Ludovic|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2744|5|1|1847|17|12|1928
+2745|Dupuytrem|Raymond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2745|9|9|1863|13|1|1927
+2763|Durand-Savoyat|James|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2763|11|12|1849|9|2|1914
+2799|Duval|César, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2799|20|1|1841|21|4|1910
+2806|Duvigneau|Jacques|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2806|21|7|1833|14|3|1902
+2808|Duvivier|Nicolas, Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2808|10|7|1817|27|10|1889
+2818|Eliez-Evrard|Evrard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2818|4|12|1843|16|3|1932
+2828|Engerand|Auguste, Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2828|23|4|1841|9|5|1899
+2837|Escanyé|Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2837|15|5|1833|1|9|1906
+2839|Eschassériaux|Eugène, René, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2839|25|7|1823|31|7|1906
+2859|Etcheverry|Louis, Félix, Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2859|22|2|1853|15|10|1907
+2861|Etienne|Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2861|15|12|1844|13|5|1921
+2864|Euzière|Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2864|20|5|1842|4|2|1920
+2893|Fairé|Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2893|1|3|1824|5|2|1908
+2901|Fallières|Armand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2901|6|11|1841|22|6|1931
+2903|Fanien|Achille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2903|19|1|1827|25|7|1915
+2907|Farcy|Eugène, Jérôme|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2907|19|3|1830|26|2|1910
+2911|Farjon|Adrien, Vital|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2911|25|1|1850|15|12|1907
+2931|Fauré|Justin, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2931|3|1|1840|20|12|1915
+2925|Faure|Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2925|31|1|1841|16|2|1899
+2933|Faure dit Maurice-Faure|Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2933|7|1|1850|8|12|1919
+2959|Féraud|François, Tiburce|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2959|18|7|1821|26|2|1901
+4178|Ferron de La Ferronnays|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4178|15|9|1842|25|9|1907
+2981|Ferroul|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2981|13|12|1853|29|12|1921
+2988|Ferry|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2988|7|1|1821|7|1|1897
+2985|Ferry|Albert, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2985|27|2|1833|16|12|1893
+3032|Floquet|Charles, Thomas|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3032|2|10|1828|18|1|1896
+3038|Flourens|Emile, Léopold|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3038|26|4|1841|6|1|1920
+3040|Folliet|André|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3040|18|3|1838|22|3|1905
+3052|Forcioli|Dominique|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3052|6|4|1838|9|11|1917
+3076|Fougeirol|Edouard-Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3076|9|4|1843|12|7|1912
+3081|Fould|Achille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3081|10|7|1861|15|2|1926
+3084|Fouquet|Louis, Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3084|13|1|1841|3|12|1912
+3086|Fouquier|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3086|1|9|1838|25|12|1901
+3116|Franc|Hippolyte, Paul, Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3116|2|2|1825|25|3|1898
+3125|François|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3125|27|12|1833|16|1|1892
+3132|Franconie|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3132|15|1|1845|23|1|1910
+3148|Freppel|Charles-Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3148|1|6|1827|22|12|1891
+3159|Frogier de Pontlevoy|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3159|3|7|1827|21|1|1915
+3160|Froin|Alcée|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3160|16|6|1823|6|9|1894
+3162|Froment|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3162|14|9|1838|12|11|1909
+3172|Frugier-Puyboyer|Amédée|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3172|14|4|1839|29|1|1893
+3187|Gabriel|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3187|14|9|1848|10|6|1915
+3191|Gacon|Jules, Gabriel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3191|8|10|1847|21|11|1914
+3201|Gaillard|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3201|10|4|1847|30|9|1933
+3202|Gaillard|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3202|21|6|1839|23|1|1911
+3222|Gallix|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3222|15|10|1838|25|3|1927
+3229|Galpin|Gaston|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3229|9|1|1841|21|5|1923
+3235|Gamard|Georges|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3235|30|10|1837|23|9|1903
+3261|Garnier|Frédéric, Jean, François, Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3261|24|2|1836|6|7|1905
+3262|Garnier|Etienne, Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3262|27|4|1822|20|7|1890
+3282|Gastellier|Casimir|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3282|1|1|1830|3|5|1895
+3301|Gaussorgues|Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3301|29|7|1841|25|6|1903
+3305|Gauthier de Clagny|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3305|14|9|1853|16|12|1927
+3314|Gavini|Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3314|24|7|1856|29|10|1938
+3361|Gérard|Henri, Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3361|22|3|1818|9|4|1903
+3366|Gerbay|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3366|17|4|1835|16|10|1891
+3372|Germain|Henri, Antoine, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3372|19|2|1824|2|2|1905
+3374|Germain|Constant|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3374|16|6|1839|8|2|1892
+3385|Gervais|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3385|28|2|1851|25|2|1933
+3387|Gerville-Réache|Gaston, Marie, Sidoine, Théonile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3387|23|7|1854|30|5|1908
+3392|Gévelot|Jules, Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3392|6|6|1826|17|7|1904
+3405|Giguet|Honoré|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3405|13|1|1834|13|12|1914
+3411|Gillot|Léon|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3411|29|5|1851|20|11|1907
+6875|Girard de Soubeyran|Georges, Jean, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6875|3|11|1828|2|2|1897
+3445|Girodet|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3445|23|3|1849|16|4|1898
+3462|Godelle|Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3462|21|10|1832|19|3|1899
+3472|Goirand|Léopold|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3472|7|1|1845|26|6|1926
+3478|Gonnet|Gontran|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3478|25|1|1815|19|9|1899
+3489|Gotteron|André, Marie, Antoine, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3489|11|5|1849|9|4|1930
+3498|Goujon|Julien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3498|22|5|1854|18|3|1912
+3516|Gourvil|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3516|29|3|1845|15|2|1899
+3517|Goussot|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3517|2|12|1862|2|4|1930
+3547|Granet|Félix, Armand, Etienne|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3547|29|7|1849|12|3|1936
+3549|Granger|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3549|20|4|1844|21|5|1914
+1488|Granier de Cassagnac|Paul, Adolphe, Marie, Prosper|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1488|2|12|1842|4|11|1904
+3559|Graux|Georges, Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3559|15|2|1843|3|10|1900
+3566|Greffulhe|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3566|25|12|1848|31|3|1932
+3591|Grisez|François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3591|6|12|1841|31|5|1927
+3607|Grousset|Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3607|20|10|1843|7|2|1897
+3618|Guéguen|Joseph, René|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3618|4|11|1832|4|5|1891
+3623|Guéneau|Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3623|13|7|1853|1|12|1894
+3649|Guichard|Claudius|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3649|25|5|1826|15|7|1895
+3659|Guieysse|Pierre-Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3659|11|5|1841|19|5|1914
+3672|Guillaumou|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3672|17|4|1834|||
+3674|Guillemaut|Lucien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3674|21|7|1842|10|4|1917
+3675|Guillemet|Gaston|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3675|25|5|1851|21|1|1914
+3676|Guillemin|Léon|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3676|9|12|1859|22|3|1899
+2605|Guillo Du Bodan|Charles, Maurice, Christophe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/2605|23|5|1827|16|11|1897
+7958|Guyot|Yves|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7958|6|9|1843|22|2|1928
+3714|Guyot-Dessaigne|Edmond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3714|25|12|1833|31|12|1907
+3727|Hainsselin|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3727|9|2|1835|24|9|1925
+6438|Haudos de Possesse|Lucien, Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6438|24|3|1846|||
+3763|Haulon|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3763|2|10|1822|3|12|1908
+3768|Haussmann|Georges, Jean, Victor|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3768|13|7|1847|18|1|1902
+3775|Haynaut|Eugène, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3775|13|9|1844|19|12|1891
+3787|Hély d'Oissel|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3787|15|2|1833|16|6|1920
+3790|Hémon|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3790|25|2|1844|4|3|1914
+3806|Herbecq|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3806|23|7|1835|28|12|1902
+3807|Herbet|Hippolyte|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3807|27|7|1846|7|7|1903
+3828|Hervieu|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3828|22|1|1852|20|2|1928
+3844|Hiroux|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3844|2|4|1827|27|6|1890
+3861|Horteur|Jules, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3861|17|9|1842|12|9|1895
+3879|Hovelacque|Abel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3879|14|11|1843|22|2|1896
+3882|Hubbard|Gustave-Adolphe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3882|22|5|1858|14|5|1927
+3912|Hurard|Marius|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3912|14|10|1848|8|5|1902
+3940|Isambard|Louis-Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3940|8|3|1845|19|7|1904
+3941|Isambert|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3941|20|10|1841|14|4|1902
+3945|Isoard|Joseph, Marius, Victor|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3945|15|12|1839|4|5|1894
+3962|Jacquemart|Eugène, Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3962|3|10|1836|4|4|1894
+3963|Jacquemin|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3963|15|3|1847|22|11|1902
+3966|Jacques|Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3966|26|9|1828|14|6|1900
+3984|Jaluzot|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3984|5|5|1834|21|2|1916
+3985|Jamais|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3985|10|12|1856|10|11|1893
+3998|Jaouen|Armand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3998|5|12|1832|16|7|1901
+4011|Jaurès|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4011|3|9|1859|31|7|1914
+4035|Joffrin|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4035|16|3|1846|15|9|1890
+4039|Jolibois|Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4039|4|6|1819|20|12|1896
+4047|Jonnart|Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4047|27|12|1857|30|9|1927
+4062|Jouffray|Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4062|22|2|1841|3|5|1924
+4064|Jouffroy d'Abbans|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4064|20|4|1820|26|1|1903
+4072|Jourdan|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4072|7|7|1843|2|4|1932
+4073|Jourde|Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4073|23|9|1848|30|1|1923
+4099|Jullien|Philippe, Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4099|10|7|1845|24|7|1912
+4101|Jumel|François-Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4101|5|9|1847|11|7|1918
+4153|Krantz|Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4153|24|7|1848|30|4|1924
+4174|La Chambre|Charles-Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4174|25|10|1816|9|11|1907
+4186|La Rochefoucauld de Bisaccia|Marie, Charles, Gabriel, Sosthène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4186|14|9|1825|28|7|1908
+4195|Labat|Jules, Jean, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4195|28|1|1819|27|10|1914
+4209|Labrousse|Philippe, Michel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4209|3|5|1847|11|12|1910
+4210|Labussière|Alphonse|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4210|1|2|1845|14|4|1924
+4222|Lachièze|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4222|4|11|1840|27|2|1925
+4223|Lachize|Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4223|20|11|1859|8|10|1921
+4231|Lacôte|Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4231|15|4|1838|18|12|1899
+4235|Lacretelle|Charles, Nicolas|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4235|30|10|1822|14|11|1891
+4238|Lacroix|Guillaume|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4238|11|12|1834|30|6|1901
+4245|Lafargue|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4245|15|1|1843|25|11|1911
+4252|Laffon|René|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4252|16|7|1847|2|9|1891
+4260|Lafont|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4260|24|1|1845|24|3|1896
+4264|Lagnel|Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4264|8|10|1831|9|4|1907
+4270|Lagrange|Victor, Etienne|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4270|3|1|1845|16|7|1894
+4272|Laguerre|Georges|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4272|24|6|1858|17|6|1912
+4281|Laisant|Charles, Ange|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4281|1|11|1841|5|5|1920
+4292|Lalou|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4292|26|6|1841|27|11|1918
+4312|Lamendin|Arthur|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4312|2|3|1852|3|11|1920
+4335|Langlet|Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4335|7|9|1841|7|3|1927
+4346|Laporte|Gaston|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4346|16|4|1842|23|7|1903
+4363|Laroche-Joubert|Edgard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4363|12|9|1843|14|11|1913
+4374|Lasbaysses|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4374|12|2|1831|11|2|1893
+4376|Lascombes|Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4376|13|7|1840|28|6|1905
+4384|Lasserre|Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4384|6|11|1862|11|11|1933
+4383|Lasserre|Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4383|23|5|1836|28|12|1889
+4400|Laur|Francis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4400|5|9|1844|26|5|1934
+7496|Laurençon|Léon|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7496|16|10|1841|12|7|1922
+7525|Lavertujon|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7525|19|4|1855|11|9|1907
+7528|Laville|André, Gilbert, Adolphe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7528|6|6|1831|6|7|1912
+7532|Lavy|Jean-Baptiste, Aimé|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7532|26|9|1850|3|11|1921
+7546|Le Borgne|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7546|1|9|1844|24|1|1907
+7552|Le Cerf|René|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7552|21|11|1846|4|3|1901
+7562|Le Cour Grandmaison|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7562|12|2|1848|17|1|1901
+7585|Le Gavrian|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7585|28|2|1832|11|7|1901
+7591|Le Hérissé|René|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7591|14|12|1857|23|5|1922
+7605|Le Myre de Vilers|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7605|17|2|1833|9|3|1918
+7613|Le Provost de Launay|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7613|8|6|1850|17|7|1912
+7616|Le Roux|Paul, Georges, Anne, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7616|26|9|1850|26|4|1923
+7619|Le Roy|Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7619|21|2|1847|4|12|1919
+3906|Le Sage d'Hauteroche d'Hulst|Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/3906|1|10|1841|6|11|1896
+7623|Le Senne|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7623|21|4|1848|13|2|1901
+1198|Le Tonelier de Breteuil|Henry, Charles, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1198|17|9|1848|4|11|1916
+7631|Le Veillé|Georges|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7631|31|3|1861|13|7|1893
+7638|Lebaudy|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7638|4|7|1858|17|10|1937
+7637|Lebaudy|Gustave, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7637|26|2|1827|19|12|1889
+7646|Lebon|Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7646|13|11|1849|28|2|1906
+7555|Lechevallier|Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7555|20|1|1840|27|1|1905
+4091|Leclerc de Juigné|Charles, Etienne, Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4091|15|6|1825|13|10|1900
+7665|Lecomte|Maxime|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7665|1|3|1846|10|6|1914
+7666|Leconte|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7666|21|12|1824|6|9|1905
+7673|Ledieu|Elie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7673|21|7|1834|7|1|1917
+7718|Léglise|Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7718|19|11|1843|12|11|1915
+8238|Legludic|Léon, Prosper|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/8238|16|4|1843|28|7|1904
+7726|Legrand|Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7726|13|5|1834|31|5|1895
+7723|Legrand|Arthur, Marie, Alexis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7723|28|10|1833|8|5|1916
+7727|Legras|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7727|22|7|1840|17|4|1896
+7750|Lemercier|Anatole, Jean, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7750|25|6|1820|26|12|1897
+7775|Léouzon-Le-Duc|Claude|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7775|11|10|1860|3|11|1932
+7798|Leroy|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7798|25|4|1844|8|12|1895
+7796|Leroy|Arthur|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7796|8|7|1828|27|3|1909
+7818|Letellier|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7818|16|3|1841|7|7|1910
+7829|Lévêque|Henri, Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7829|8|7|1829|24|1|1910
+7831|Levet|Georges, Jean, Angel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7831|13|4|1834|25|7|1911
+7839|Leydet|Victor|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7839|3|7|1845|22|10|1908
+7842|Leygues|Raymond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7842|8|4|1850|15|7|1929
+7840|Leygues|Jean, Claude, Georges|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7840|29|10|1856|2|9|1933
+7857|Linard|Désiré, Adolphe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7857|29|10|1839|30|4|1898
+7881|Lombard|Louis, Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7881|21|3|1851|30|12|1918
+4805|Loreau|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4805|20|12|1843|11|3|1922
+4812|Loriot|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4812|27|3|1850|31|7|1930
+4813|Lorois|Paul, Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4813|29|9|1831|4|1|1899
+4828|Loup|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4828|24|6|1846|27|2|1922
+4830|Loustalot|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4830|4|1|1826|27|7|1898
+4864|Mac-Adaras|James-Dyer|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4864|21|6|1838|8|11|1919
+4867|Macherez|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4867|11|12|1841|1|7|1904
+4874|Madier de Montjau|Noël, François, Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4874|1|7|1814|26|5|1892
+4889|Magnien|Gabriel, Adolphe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4889|5|1|1836|8|9|1914
+4898|Maigne|Julien, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4898|25|7|1816|17|1|1893
+4916|Malartre|Pierre, François, Florentin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4916|29|11|1834|12|11|1911
+4919|Malausséna|Arthur|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4919|26|10|1846|26|6|1899
+4953|Mandeville|Lucien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4953|1|7|1838|26|5|1914
+4986|Maréchal|Alexis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4986|13|7|1837|29|5|1914
+4988|Maret|Henry|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4988|4|3|1837|5|1|1917
+5011|Marmottan|Pierre, Joseph, Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5011|30|7|1832|5|1|1914
+5044|Martin|Marien, dit Marius|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5044|16|1|1848|23|1|1926
+5051|Martineau|Albert, Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5051|18|12|1859|25|1|1945
+5055|Martinon|Honoré, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5055|15|7|1854|9|7|1947
+5058|Marty|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5058|31|1|1838|5|11|1916
+5059|Maruéjouls|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5059|4|7|1837|22|10|1908
+5063|Mas|Alphonse|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5063|31|1|1850|27|1|1931
+5093|Mathé|Pierre, Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5093|20|12|1834|27|7|1911
+5094|Mathé|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5094|27|5|1837|27|10|1907
+5116|Maujan|Adolphe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5116|3|6|1853|23|4|1914
+4266|Mayjurou Sclafer de Lagorsse|François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4266|24|1|1842|18|4|1917
+5159|Mège|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5159|18|12|1847|6|5|1925
+5164|Meilhodon|Antoine, Justin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5164|15|1|1827|2|7|1900
+5168|Méline|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5168|20|5|1838|21|12|1925
+5175|Ménard-Dorian|Paul, François, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5175|26|4|1846|16|4|1907
+5195|Mercier|Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5195|18|3|1836|7|7|1897
+5209|Merlou|Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5209|18|2|1849|23|9|1909
+5223|Mesureur|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5223|2|4|1847|19|7|1925
+5247|Mézières|Alfred, Jean, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5247|19|11|1826|10|10|1915
+5251|Michau|Théophile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5251|8|3|1843|12|5|1915
+5256|Michel|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5256|7|3|1848|1|10|1891
+5269|Michou|Casimir, Laurent|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5269|29|12|1823|31|7|1901
+5284|Millerand|Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5284|10|2|1859|6|4|1943
+5286|Millevoye|Lucien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5286|1|7|1850|25|3|1918
+5289|Million|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5289|18|9|1829|14|7|1901
+5293|Millochau|Emile, Narcisse|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5293|15|3|1846|24|9|1929
+5302|Mir|Eugène, Bertrand, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5302|14|4|1843|26|3|1930
+4130|Monjaret de Kerjégu |James, Marie, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4130|27|2|1846|23|12|1908
+5370|Montaut|Bernard, Louis, Célestin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5370|27|7|1823|12|2|1899
+5403|Moreau|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5403|8|4|1837|13|6|1903
+1207|Moreau  Du Breuil de Saint-Germain |Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1207|3|12|1838|9|4|1919
+5420|Morillot|Léon|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5420|19|7|1838|20|10|1909
+5424|Morin-Latour|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5424|23|2|1834|5|10|1895
+4170|Morisson de La Bassetière|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4170|24|5|1857|7|1|1941
+5433|Moroux|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5433|6|6|1849|23|3|1906
+5446|Mougin|Xavier|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5446|14|6|1837|22|10|1912
+5476|Muller|Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5476|19|9|1843|26|4|1917
+5481|Multedo|Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5481|17|5|1846|13|9|1908
+5506|Naquet|Alfred, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5506|6|10|1834|10|11|1916
+5537|Neyrand|Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5537|7|9|1837|7|10|1907
+5558|Nivert|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5558|21|10|1844|||
+5591|Obissier Saint-Martin|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5591|26|11|1833|3|7|1911
+5606|Olry|Jacques|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5606|11|9|1833|25|6|1901
+5609|Ordinaire|Dionys, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5609|10|6|1826|15|10|1896
+5615|Orsat|Léon|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5615|27|6|1849|16|10|1897
+5638|Ouvré|André|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5638|23|5|1852|23|9|1918
+5657|Pajot|Christophe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5657|30|6|1844|5|2|1929
+5670|Papelier|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5670|5|12|1845|10|10|1918
+5568|Parfait dit Noël-Parfait|Noël|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5568|30|12|1813|19|11|1896
+5700|Pasquier|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5700|1|4|1839|10|3|1928
+5702|Passy|Louis, Charles, Paulin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5702|4|12|1830|31|7|1913
+5728|Paulin-Méry|César, Auguste, Paulin dit|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5728|14|6|1860|25|1|1913
+5729|Paulmier|Charles, Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5729|2|4|1848|22|7|1907
+5764|Pelletan|Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5764|23|6|1846|4|6|1915
+1484|Perier dit Casimir-Perier|Jean, Paul, Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/1484|8|11|1847|11|3|1907
+5810|Perrier|Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5810|15|4|1836|7|4|1914
+5837|Pesson|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5837|22|6|1843|21|2|1891
+5871|Peyrusse|Jules-Victor|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5871|21|3|1831|20|1|1917
+5873|Peytral|Paul, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5873|20|1|1842|30|11|1919
+5886|Philipon|Edouard, Paul, Lucien|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5886|8|1|1851|17|3|1926
+5905|Pichon|Stephen|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5905|10|7|1857|18|9|1933
+5907|Picot|Ernest, Charles, Eusèbe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5907|9|4|1848|19|4|1919
+5914|Piérard|André|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5914|7|3|1854|5|3|1906
+710|Pierres de Bernis|François, Henri, Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/710|8|1|1842|16|7|1902
+5956|Piou|Jacques, Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5956|6|7|1838|12|5|1932
+5981|Plichon|Jean, Ignace, Alexis, Winoc|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5981|14|6|1863|22|9|1936
+5987|Pochon|Alexandre, Joseph, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5987|7|6|1840|13|9|1908
+5994|Poincaré|Raymond|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/5994|20|7|1860|15|10|1934
+6426|Pontois|Honoré, Jean, Félix|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6426|26|7|1837|5|7|1902
+6434|Porteu de la Morandière|Armand, Albert, Hyacinthe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6434|9|12|1839|8|3|1906
+6450|Poulié|Charles, Paul, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6450|4|2|1845|16|7|1914
+6455|Poupin|Victor, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6455|3|1|1838|28|6|1906
+6457|Pourquery de Boisserin|Joseph-Gaston|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6457|8|6|1852|10|7|1920
+6484|Prax-Paris|Adrien, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6484|2|10|1829|22|9|1909
+6490|Prénat|Edouard, Claude, Marie, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6490|23|7|1839|2|3|1932
+6496|Prevet|Frédéric, Alphonse, Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6496|18|3|1852|25|2|1914
+7108|Prévost-Sansac de Touchimbert|Jean, Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7108|7|11|1820|29|7|1892
+6514|Prost|Victor|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6514|7|1|1847|15|4|1891
+6516|Proust|Antonin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6516|5|3|1832|23|3|1905
+6564|Quintaa|Justin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6564|6|12|1843|28|7|1900
+6567|Rabier|Fernand, Athos|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6567|23|7|1855|15|4|1933
+6581|Raiberti  |Flaminius|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6581|13|4|1862|16|12|1929
+6590|Rambourgt|Eugène, Arsène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6590|4|10|1844|30|10|1914
+6605|Raspail|Camille, François|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6605|17|7|1827|26|5|1893
+6609|Rathier|Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6609|11|11|1859|5|1|1895
+6613|Rauline|Gustave, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6613|1|6|1822|3|3|1904
+6631|Raynal|David|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6631|26|2|1840|28|1|1903
+6634|Raynaud|Mary|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6634|25|7|1844|||
+6636|Razimbaud|Jules-Antoine,  Louis, Barthélémy|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6636|24|7|1837|13|10|1915
+6638|Réal|Gabriel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6638|29|4|1845|19|10|1919
+6639|Réaux|Emile, Marie, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6639|10|6|1851|15|4|1902
+6661|Reille-Soult-Dalmatie|René, Charles|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6661|4|2|1835|21|11|1898
+6663|Reinach|Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6663|30|9|1856|18|4|1921
+6672|Renard|Léon, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6672|16|3|1836|5|1|1916
+6694|Revest|Emile, Marie, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6694|26|2|1828|17|6|1899
+6697|Révillon|Antoine, dit Tony|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6697|30|12|1831|11|2|1898
+6701|Rey|Emile, Maurice, Lucien, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6701|4|10|1838|16|11|1922
+6700|Rey|Aristide, Emile, Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6700|12|7|1834|19|2|1901
+6704|Reybert|Louis, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6704|11|11|1844|18|1|1897
+6727|Ribot|Alexandre, Félix, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6727|7|2|1842|13|1|1923
+6729|Ricard|Louis, Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6729|17|3|1839|2|3|1921
+6728|Ricard|Henri, Charles, Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6728|26|7|1849|21|3|1910
+6739|Richard|Pierre, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6739|18|4|1864|4|9|1911
+6782|Riotteau|Emile, Alexandre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6782|18|12|1837|8|4|1927
+6785|Rioust de Largentaye|Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6785|6|3|1853|15|1|1921
+6001|Rivet|Gustave|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6001|25|2|1848|20|6|1936
+6017|Robert-Mitchell|Robert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6017|21|5|1839|1|1|1916
+6031|Roche|Jules, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6031|22|5|1841|8|4|1923
+6029|Roche|Ernest, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6029|29|10|1850|27|12|1917
+6059|Rolland|Edouard, Antoine, Guillaume|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6059|7|5|1833|7|9|1919
+6081|Roques|Gaston|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6081|8|3|1862|19|5|1938
+6120|Rouilly|Pierre, Frédéric|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6120|14|7|1823|28|1|1892
+6135|Rousse|Charles, Raphaël, Martial|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6135|26|1|1860|26|12|1925
+6152|Rouvier|Maurice, Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6152|17|4|1842|7|6|1911
+6164|Roux dit Charles-Roux|Charles, Jules, Théodore|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6164|14|11|1841|6|3|1918
+6177|Royer|Louis, Auguste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6177|29|11|1833|7|7|1923
+6175|Royer|Gabriel, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6175|1|10|1825|26|11|1898
+6179|Rozet|Albin, Antoine|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6179|5|12|1852|13|9|1915
+6203|Sabouraud|Gaston, Ambroise|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6203|8|6|1846|15|12|1899
+6215|Saint-Germain|Marcel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6215|31|1|1853|8|2|1939
+6219|Saint-Martin|Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6219|5|5|1840|30|12|1926
+6230|Saint-Romme|Auguste, Mathias|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6230|3|11|1844|11|3|1920
+6250|Salis|Jacques, Michel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6250|21|3|1848|16|11|1919
+6297|Sarrien|Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6297|15|10|1840|28|11|1915
+6327|Say|Léon, Jean-Baptiste|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6327|6|6|1826|21|4|1896
+17834|Schneider|Henri, Adolphe, Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/17834|10|12|1840|17|5|1898
+6372|Seignobos|Charles, André|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6372|25|7|1822|28|6|1892
+6386|Sentenac|Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6386|24|1|1835|5|2|1915
+6397|Serph|Marc, Gusman|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6397|12|7|1820|26|3|1902
+6821|Sibille|Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6821|21|5|1847|26|7|1932
+6832|Siegfried|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6832|12|2|1837|26|9|1922
+6834|Signard|Maurice|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6834|3|7|1840|13|11|1903
+6842|Simon|Fidèle|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6842|6|7|1837|5|5|1911
+7875|Simon dit Lockroy|Edouard, Etienne|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7875|17|7|1838|22|11|1913
+6860|Sirot|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6860|17|2|1843|12|2|1918
+6879|Souhet|Marcellin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6879|5|3|1845|15|7|1925
+6888|Sourigues|Benoît-Martin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6888|11|2|1820|2|9|1891
+6901|Spuller|Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6901|8|12|1835|23|7|1896
+6922|Surchamp|Abel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6922|26|4|1846|2|2|1913
+6937|Tailliandier|Henri, André, Joseph|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6937|23|6|1847|28|4|1914
+6945|Talou|Léon, Jean|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6945|15|7|1835|11|1|1900
+6959|Tassin|Pierre|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6959|21|1|1837|20|11|1908
+6967|Taudière|Jacques, Paul|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6967|30|11|1834|15|5|1915
+6990|Terrail-Mermeix|Gabriel, Dieudonné, Jean, Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6990|27|7|1859|18|10|1930
+6996|Terrier|Louis, Jean, Jacques|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6996|8|7|1854|20|7|1895
+7014|Thellier de Poncheville|Charles, Louis, Zephirin|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7014|13|10|1842|26|10|1915
+7016|Théron|Ferdinand|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7016|5|5|1834|1|7|1911
+7017|Theulier|Albert, Pierre, Emmanuel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7017|1|11|1840|4|9|1912
+7018|Thévenet |François, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7018|6|4|1845|7|4|1910
+7031|Thiers|Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7031|15|5|1843|8|2|1890
+7037|Thirion-Montauban|Stéphen, Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7037|22|9|1843|29|11|1900
+7045|Thomas|Alfred, Jean, Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7045|29|10|1826|28|1|1899
+7055|Thomson|Gaston, Arnold, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7055|29|1|1848|14|5|1932
+7056|Thonion|Bernard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7056|17|12|1830|2|4|1917
+7062|Thorel|Jules, Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7062|9|9|1842|22|10|1906
+7082|Tiphaine|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7082|30|6|1836|24|7|1914
+4179|Tirel de La Martinière |Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/4179|17|2|1849|14|4|1918
+7038|Tivrier dit Thivrier|Christophe|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7038|16|5|1841|8|7|1895
+7130|Trannin|Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7130|4|9|1842|29|10|1894
+7138|Trélat|Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7138|6|3|1821|30|10|1907
+7154|Tricoche|Jean ,Victor, Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7154|9|1|1829|27|5|1900
+7163|Trouillot|Georges, Marie, Denis, Gabriel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7163|7|5|1851|20|11|1916
+7174|Turigny|Jean, Placide|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7174|17|1|1822|1|7|1905
+7179|Turrel|Adolphe, Jean, Eugène|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7179|28|5|1856|19|12|1945
+7191|Vacher|Léon, Cléry|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7191|28|3|1832|15|7|1903
+7193|Vacherie|Henri|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7193|25|6|1847|7|7|1917
+6222|Vaissière de Saint-Martin-Valogne|Etienne, Marie, Aimé|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6222|14|9|1831|15|10|1911
+7444|Vallé|Ernest|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7444|19|9|1845|24|1|1920
+7452|Vallon|Aristide, Louis, Antoine, Maximin, Marie|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7452|26|7|1827|11|3|1897
+7454|Varlet|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7454|19|9|1837|7|12|1895
+6308|Vasse Du Saussay|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/6308|22|3|1846|7|4|1932
+7458|Vernhes|Emile, Hercule|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7458|20|10|1820|14|5|1890
+7459|Vernière|Pierre, Michel|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7459|11|10|1847|23|10|1918
+7468|Vian|Georges|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7468|8|2|1842|19|1|1905
+7450|Viette|Jules|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7450|6|5|1843|15|2|1894
+7443|Viger|Albert|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7443|19|10|1843|8|7|1926
+7463|Vignancour|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7463|22|7|1841|13|1|1900
+7464|Vilar|Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7464|26|7|1847|28|1|1930
+7466|Vilfeu|André, Marie, Edouard|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7466|25|12|1850|30|3|1896
+7434|Ville|Pierre, Alphonse|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7434|20|9|1839|8|5|1918
+7457|Villemonte-Laclergerie|Marc, Thimotée|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7457|20|7|1851|12|5|1926
+7461|Viox|Camille|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7461|30|6|1833|18|2|1910
+7433|Vival|Louis|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7433|24|7|1847|18|7|1906
+7467|Waddington|Richard, Pendrell|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7467|22|5|1838|26|6|1913
+7462|Werquin|Achille, Alfred|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7462|3|6|1834|19|9|1891
+7455|Wickerscheimer|Charles, Emile|http://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/7455|22|2|1849|18|11|1915
