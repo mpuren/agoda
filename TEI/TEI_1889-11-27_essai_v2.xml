@@ -242,11 +242,11 @@
       
       
       <!-- SOLUTION 1 mais pas de < seg > possible  -->
-      <back>
+      <!--<back>
          <head>Annexes au procès-verbal de la séance du <date>mardi 26 novembre 1889</date>.</head>
          
          <listEvent xml:id="vot18891126">
-            <event xml:id="vot1" type="voting" corresp="#aDefinir"> <!-- corresp référence au sujet des div -->
+            <event xml:id="vot1" type="voting" corresp="#aDefinir"> <!-\- corresp référence au sujet des div -\->
                <head>
                   <label>SCRUTIN</label>
                   <note>Sur les conclusions du 7e bureau tendant à l'annulation des opérations électorales de la <placeName>1re circonscription de l'arrondissement de Lorient (Morbihan)</placeName>.</note>
@@ -280,7 +280,7 @@
                            <persName>Boysset</persName>. <persName>Braud</persName>. <persName>Breton</persName>. <persName>Briens</persName>. <persName>Brisson(Henri)</persName>. 
                            <persName>Brousse (Emile)</persName>. <persName>Brugnot</persName>. <persName>Brunier</persName>. <persName>Bully</persName>. <persName>Burdeau</persName>.<persName>Buvignier</persName>.
                            
-                           <!-- Idem pour le balisage -->
+                           <!-\- Idem pour le balisage -\->
                            Cabart-Danneville. Calvinhac. Carquet. 
                            Casimir-Perier (Aube). Cavaignac (Godefroy).
                            Cavalié. Cazauvieilh. Caze (Edmond). Cha-
@@ -372,7 +372,7 @@
                            de Larsan (du) (Gironde). Perrier (Antoine) (Sa-
                            voie). Pesson (Albert). Peytral. Philipon. 
                            Pichon (Seine). Pierre Alype. Pierre Legrand
-                           <!--<cb n="1"/>-->
+                           <!-\-<cb n="1"/>-\->
                            (Nord). Pochon. Poincaré (Raymond). Ponle-
                            voy (Frogier de). Poupin. Pourquery de Bois-
                            serin. Prévet. Prost (Victor). Proust (Anto-
@@ -414,7 +414,7 @@
                            (comte de 1’)</persName>. <persName>Ailliéres (d’)</persName>. <persName>Aimel (Henri)</persName>.
                            <persName>Amagat</persName>. <persName>Arenberg (prince d’)</persName>. <persName>Argeliès</persName>. <persName>Arnault</persName>. <persName>Arnous</persName>.
                            
-                           <!-- Idem pour le balisage -->
+                           <!-\- Idem pour le balisage -\->
                            Balsan. Bar (de). Barascud. Barbotin.
                            Barrés (Maurice). Belleval (de). Benazet. Benoit
                            (de). Berger (Maine-et-Loire). Bergerot. Ber-
@@ -492,7 +492,7 @@
                            ques. Retours (baron des). Rouvre (Bourion
                            de). Roy de loulay (Louis).
                            
-                           <!--<cb n="3"/>-->
+                           <!-\-<cb n="3"/>-\->
                            Sabouraud. Saint-Martin (de)(Indre). Saint-
                            Martin (Seine). Saussay (dm. Serph (Gus-
                            man). Solages (marquis de). Soubeyran (ba-
@@ -517,7 +517,7 @@
                            <persName>Delahaye</persName>, <persName>Dillon</persName>. <persName>Douviile-Maillefeu (comte de)</persName>. <persName>Dufaure (Amédée)</persName>. 
                            <persName>Dupuytrem</persName>.
                            
-                           <!-- Idem pour le balisage -->
+                           <!-\- Idem pour le balisage -\->
                            Etienne.
                            
                            Fallières. Floquet (Charles). Fould (Achille).
@@ -559,7 +559,7 @@
                      </relation>
                      
                      <relation name="abs" active="#congé" passive="#vot1">
-                        <!-- passive = "#vot1# active= renvoie à l'XML de la section "Excuses et demandes de congés" -->
+                        <!-\- passive = "#vot1# active= renvoie à l'XML de la section "Excuses et demandes de congés" -\->
                         <desc>
                            Absents par congés :
                            MM. <persName>Baïhaut</persName>. <persName>Bourlier</persName>. <persName>Féraud</persName>. <persName>Girodet</persName>.
@@ -606,7 +606,7 @@
                            MM. <persName>Abeille</persName>. <persName>Arène (Emmanuel)</persName>. <persName>Armez</persName>.
                            <persName>Audifred</persName>.
                            
-                           <!-- Idem pour le abalisage -->
+                           <!-\- Idem pour le abalisage -\->
                            Baile ( Martial ). Bargy. Barodet. Barthou.
                            Bartissol. Batiot (Aristide). Baulard. Bérard.
                            Bertrand. Bézine. Bizarelli. Bizot. Bizouard.
@@ -732,7 +732,7 @@
                            <persName>Aimel (Henri)</persName>. <persName>Amagat</persName>. <persName>Arenberg (prince d)</persName>. <persName>Argeliès</persName>. 
                            <persName>Armand (comte)</persName>. <persName>Arnous</persName>. <persName>Aynard</persName>.
                            
-                           <!-- Idem pour le balisage -->
+                           <!-\- Idem pour le balisage -\->
                            Balsan. Bar (de). Barascud. Barbotin. Bar-
                            rès (Maurice). Baudry-d'Asson (de). Belval (de).
 
@@ -855,7 +855,7 @@
                            
                            MM. <persName>Arnault</persName>. <persName>Arribat</persName>.
                            
-                           <!-- Idem pour le balisage -->
+                           <!-\- Idem pour le balisage -\->
                            Barbe. Bastid (Adrien). Baudin. Beauquier.
                            Berger (Georges) (Seine). Bischoffsheim. Bor-
                            riglione. Boudeville.
@@ -899,7 +899,7 @@
                      </relation>
                      
                      <relation name="abs" active="#congé" passive="#vot1">
-                        <!-- passive = "#vot1# active= renvoie à l'XML de la section "Excuses et demandes de congés" -->
+                        <!-\- passive = "#vot1# active= renvoie à l'XML de la section "Excuses et demandes de congés" -\->
                         <desc>
                            ABSENTS PAR CONGÉ :
                            
@@ -918,10 +918,10 @@
             </event>
 
             <event ref="#vot18891125" type="rectifications">
-               <!-- ref = xml:id des scrutins concernés donc ici #vot18891125 -->
+               <!-\- ref = xml:id des scrutins concernés donc ici #vot18891125 -\->
                <head>Rectifications aux scrutins de la séance du <date>25 novembre 1889</date>.</head>
                
-               <!-- Obligation de garder la balise < desc > sinon le doc n'est plus valide -->
+               <!-\- Obligation de garder la balise < desc > sinon le doc n'est plus valide -\->
                <desc/>
                
                <note type="rectification"><seg>M. <persName>Michau</persName> <placeName>(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>, déclare avoir voté <quote>« pour »</quote>.</seg></note>
@@ -935,16 +935,19 @@
                <note type="rectification">M. <persName>Léon Say</persName>, porté comme s'étant abstenu dans le scrutin sur la demande d'enquête — élection de M. <persName>Blachère</persName>, — déclare avoir votés <quote>« contre »</quote> l'enquête.</note>
             </event>
          </listEvent>
-      </back>
+      </back>-->
       
-      <!-- SOLUTION 2 ANNEXES : fonctionne avec < seg > mais pas forcément la meilleure solution -->
-      <!--<back>
+      
+      
+      <!-- SOLUTION 2 ANNEXES : fonctionne avec < seg > -->
+      <back>
          <head>Annexes au procès-verbal de la séance du <date>mardi 26 novembre 1889</date>.</head>
          <listEvent xml:id="vot18891126">
-            <event xml:id="vot1" type="voting" corresp="#aDefinir"> <!-\- corresp référence au sujet des div -\->
+            <!-- VOTE 1 -->
+            <event xml:id="vot1" type="voting" corresp="#aDefinir"> <!-- corresp référence au sujet des div -->
                <head>
                   <label>SCRUTIN</label>
-                  <note>Sur les conclusions du 7e bureau tendant à l'annulation des opérations électorales de la <placeName>1re circonscription de l'arrondissement de Lorient (Morbihan)</placeName>.</note>
+                  <note>Sur les conclusions du 7e bureau tendant à l'annulation des opérations électorales de la 1re circonscription de l'<placeName>arrondissement de Lorient (Morbihan)</placeName>.</note>
                </head>
                
                <desc>
@@ -980,19 +983,76 @@
                   <listRelation>
                      <relation name="votecontre" active="#vot1"/>
                   </listRelation>
-                  <desc>Ont voté contre : </desc>
-                  <seg> MM. <persName>Abrial (Léon)</persName>. <persName>Adam (Achille)</persName>. <persName>Aigle (comte de 1’)</persName>. <persName>Ailliéres (d’)</persName>. <persName>Aimel (Henri)</persName>.
-                     <persName>Amagat</persName>. <persName>Arenberg (prince d’)</persName>. <persName>Argeliès</persName>. <persName>Arnault</persName>. <persName>Arnous</persName>.</seg>
+                  <desc>Ont voté contre :</desc>
+                  <seg>
+                     MM. <persName>Abrial (Léon)</persName>. <persName>Adam (Achille)</persName>. <persName>Aigle (comte de 1’)</persName>. <persName>Ailliéres (d’)</persName>. <persName>Aimel (Henri)</persName>.
+                     <persName>Amagat</persName>. <persName>Arenberg (prince d’)</persName>. <persName>Argeliès</persName>. <persName>Arnault</persName>. <persName>Arnous</persName>.
+                  </seg>
+                  
+                  <listRelation>
+                     <relation  name="abstention" active="#vot1"/>
+                  </listRelation>
+                  <desc>N'ont pas pris part au vote :</desc>
+                  <seg>
+                     MM. <persName>Armand (comte)</persName>. <persName>Barbe</persName>. <persName>Batiot (Aristide)</persName>.<persName>Baudin</persName>. <persName>Baudry d'Asson (de)</persName>. <persName>Bischofsheim</persName>.<persName> Boyer (Antide)</persName>. 
+                     <persName>Cazenove de Pradine (de)</persName>. <persName>Colombet (de)</persName>. <persName>Constans</persName>. <persName>Couturier</persName>. <persName>Delahaye</persName>, <persName>Dillon</persName>. <persName>Douviile-Maillefeu (comte de)</persName>. 
+                     <persName>Dufaure (Amédée)</persName>. <persName>Dupuytrem</persName>.
+                  </seg>
+                  
+                  <listRelation>
+                     <relation name="abs" active="#congé" passive="#vot1"/>
+                     <!-- passive = "#vot1# active= renvoie à l'XML de la section "Excuses et demandes de congés" -->
+                  </listRelation>
+                  <desc>Absents par congés : </desc>
+                  <seg>
+                     MM. <persName>Baïhaut</persName>. <persName>Bourlier</persName>. <persName>Féraud</persName>. <persName>Girodet</persName>. <persName>Gonnet (Gontrand)</persName>. <persName>Jullien</persName>. <persName>Le Cour</persName>. 
+                     <persName>Piol (Jacques)</persName>. <persName>Turrel (Adolphe)</persName>.
+                  </seg>        
+               </note>
+               
+               <note type="nbvotantsinitial">
+                  Les nombres annoncés en séance avaient été de:
+                  <desc>
+                     <measure type="nbvotants" quantity="514">Nombre de votants <num>514</num></measure>
+                     <measure type="maj" quantity="258">Majorité absolue <num>258</num></measure>
+                     <measure type="ayes">Pour l'adoption <num>333</num></measure>
+                     <measure type="noes">Contre <num>181</num></measure>
+                  </desc>
+                  Mais, après vérification, ces nombres ont été rectifiés conformément à la liste de scrutin ci-dessus.
                </note>
             </event>
             
+            <!-- VOTE 2 -->
             <event xml:id="vot2" type="voting" corresp="#aDefinir">
                <head></head>
                <desc></desc>
                <note></note>
             </event>
+            
+            <!-- RECTIFICATIONS -->
+            <event ref="#vot18891125" type="rectifications">
+               <!-- ref = xml:id des scrutins concernés donc ici #vot18891125 -->
+               <head>Rectifications aux scrutins de la séance du <date>25 novembre 1889</date>.</head>
+               
+               <!-- Obligation de garder la balise < desc > sinon le doc n'est plus valide -->
+               <desc/>
+               
+               <note type="rectification"><seg>M. <persName>Michau</persName> <placeName>(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>, déclare avoir voté « pour ».</seg></note>
+               
+               <note type="rectification"><seg>M. <persName>Léon Bourgeois</persName> <placeName>(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté « pour » dans le scrutin sur la demande d'invalidation de l'élection de M. <persName>de La Martinière</persName> dans la 2e circonscription de <placeName>Coutances (Manche)</placeName>, et qu'en réalité il « s'était abstenu ».</seg></note>
+               
+               <note type="rectification"><seg>M. <persName>Argeliés</persName>, absent an moment des scrutins du <date>25 novembre</date> sur les demandes d'invalidation des élections de MM. <persName>Blachére</persName> et <persName>de La Martinière</persName>, déclare que, s'il avait été présent, il aurait voté « pour » la validation des élections.</seg></note>
+               
+               <note type="rectification">
+                  <seg>MM. <persName>Varlet</persName> et <persName>Charles Dupuy</persName> <placeName>(Haute-Loire)</placeName>, absents au moment des votes :</seg>
+                  <seg>1° Sur le passage à la discussion des articles de la proposition de M. <persName>Ferroul</persName>;</seg> 
+                  <seg>2° Sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>,</seg>
+                  <seg>Déclarent que, s'ils avaient été présents, ils auraient voté « conre » dans ces deux scrutins.</seg></note>
+               
+               <note type="rectification"><seg>M. <persName>Léon Say</persName>, porté comme s'étant abstenu dans le scrutin sur la demande d'enquête — élection de M. <persName>Blachère</persName>, — déclare avoir votés « contre » l'enquête.</seg></note>
+            </event>
          </listEvent>
-      </back>-->
+      </back>
    </text>
 </TEI>
 
