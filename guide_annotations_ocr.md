@@ -12,6 +12,7 @@
 |                 |                                   | ```<persName>M. le <roleName>ministre des finances</roleName></persName>```                           |
 | **lieu**        | placeName (anciennement LOC)      | ```<placeName>Département de la Corrèze, arrondissement de Tulle, 1re circonscription</placeName>.``` |
 | **institution** | orgName (transformation de TITRE) | ```la <orgName>Chambre des députés</orgName>```                                                       |
+| **nombre**      | num (anciennement CARDINAL)       | ```<num>258</num>```                                                                                  |                                                      |
 
 ## Structure du texte
 
