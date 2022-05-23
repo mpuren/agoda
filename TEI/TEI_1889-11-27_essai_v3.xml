@@ -94,7 +94,7 @@
 
                <item xml:id="propositionresolution">Dépôt, par <persName ref="#pers_ID">M. le marquis de La Ferronnays</persName> et plusieurs de ses collègues, d'une proposition de résolution tendant à la nomination d'une commission de onze membres à l'effet de réviser, s'il y a lieu, le régime légal et administratif en vigueur pour la protection du vignoble français contre le phylloxera.</item>
 
-               <item> Congés. </item>
+               <item xml:id="congés"> Congés. </item>
             </list>
          </div>
 
@@ -195,7 +195,7 @@
             </u>
 
             <u who="#pers_ID" xml:id="CR_1889-11-26_u20" ana="#speaker">
-               <seg xml:id="CR_1889-11-26_u20.1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Il n'y à pas d'autres observations ?...</seg>
+               <seg xml:id="CR_1889-11-26_u20.1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Il n'y a pas d'autres observations ?...</seg>
                <seg xml:id="CR_1889-11-26_u20.2">Le procès-verbal est adopté.</seg>
             </u>
          </div>
@@ -288,25 +288,29 @@
             
             <!-- [...] -->
             
-            
+            <!-- Vote à la fin de la discussion -->
             <u who="#pers_ID" xml:id="CR_1889-11-26_u.." ana="#speaker">
                <seg xml:id="CR_1889-11-26_u..1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Je mets aux voix les conclusions du <num>7e</num> bureau, tendant à l’annulation des opérations électorales dans la <placeName ref="#lieu_ID"><num>1re</num> circonscription de Lorient</placeName>.</seg>
                <seg xml:id="CR_1889-11-26_u..2">Il y a une demande de scrutin signée de MM. <persName ref="#pers_ID">Alfred Naquet</persName>, <persName ref="#pers_ID">Louis de Belleval</persName>, <persName ref="#pers_ID">Lucien Millevoye</persName>, <persName ref="#pers_ID">Eugène Farey</persName>, <persName ref="#pers_ID">Pontois</persName>, <persName ref="#pers_ID">Vacher</persName>, <persName ref="#pers_ID">Le Veillé</persName>, <persName ref="#pers_ID">Jourde</persName>, <persName ref="#pers_ID">Laguerre</persName>, <persName ref="#pers_ID">Dumonteil</persName>, <persName ref="#pers_ID">Paulin Méry</persName>, <persName ref="#pers_ID">Pierre Richard</persName>, <persName ref="#pers_ID">Terrail-Mermeix</persName>, <persName ref="#pers_ID">Léouzon-Ledue</persName>, <persName ref="#pers_ID">Argeliès</persName>, <persName ref="#pers_ID">Déroulède</persName>, <persName ref="#pers_ID">Barrès</persName>, <persName ref="#pers_ID">Chiché</persName>, <persName ref="#pers_ID">Le Hérissé</persName>, <persName ref="#pers_ID">Granger</persName>, etc.</seg>
                <seg xml:id="CR_1889-11-26_u..3">Le scrutin est ouvert.</seg>
             </u>
             
-            <note type="comment">(Les votes sont recueillis, et MM. les <roleName ref="#pers_ID">secrétaires</roleName> en font le dépouillement.)</note>
+            <note type="comment"><seg>(Les votes sont recueillis, et MM. les <roleName ref="#pers_ID">secrétaires</roleName> en font le dépouillement.)</seg></note>
             
             <u who="#pers_ID" xml:id="CR_1889-11-26_u..." ana="#speaker">
                <!-- Solution 1 -->
-               <seg xml:id="CR_1889-11-26_u...1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Voici le résultat du dépouillement du scrutin :</seg>
+               <!--<seg xml:id="CR_1889-11-26_u...1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Voici le résultat du dépouillement du scrutin :</seg>
                <seg xml:id="CR_1889-11-26_u...2">Nombre des votants <num>514</num></seg>
                <seg xml:id="CR_1889-11-26_u...3">Majorité absolue <num>258</num></seg>
                <seg xml:id="CR_1889-11-26_u...4">Pour l'adoption <num>333</num></seg>
                <seg xml:id="CR_1889-11-26_u...5">Contre <num>181</num></seg>
+               <seg xml:id="CR_1889-11-26_u...6">La <orgName ref="#org_ID">Chambre des députés</orgName> a adopté.</seg>
+               <seg xml:id="CR_1889-11-26_u...7"> En conséquence, les opérations électorales de la <placeName ref="#lieu_ID"><num>1re</num> circonscription électorale de Lorient</placeName> sont annulées.</seg>
+               <seg>Avis en sera donné à <persName ref="#pers_ID">M. le <roleName ref="#pers_ID">ministre de l'intérieur</roleName></persName>.</seg>-->              
                
                <!-- Solution 2 -->
-               <!--<table rows="4" cols="2">
+               <seg xml:id="CR_1889-11-26_u...1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Voici le résultat du dépouillement du scrutin :</seg>
+               <table rows="4" cols="2" corresp="vot18891126_vot1">
                   <row>
                      <cell role="label">Nombre des votants</cell>
                      <cell role="data"><num>514</num></cell>                     
@@ -323,7 +327,7 @@
                      <cell role="label">Contre</cell>
                      <cell role="data"><num>181</num></cell>
                   </row>
-               </table>-->
+               </table>
                <seg xml:id="CR_1889-11-26_u...6">La <orgName ref="#org_ID">Chambre des députés</orgName> a adopté.</seg>
                <seg xml:id="CR_1889-11-26_u...7"> En conséquence, les opérations électorales de la <placeName ref="#lieu_ID"><num>1re</num> circonscription électorale de Lorient</placeName> sont annulées.</seg>
                <seg>Avis en sera donné à <persName ref="#pers_ID">M. le <roleName ref="#pers_ID">ministre de l'intérieur</roleName></persName>.</seg>
