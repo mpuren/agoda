@@ -26,7 +26,7 @@ L'encodage TEI doit être pensé en fonction de plusieurs critères :
 - 1. les différentes exploitations des textes que l'on souhaite mettre en place
 - 2. les particularités de la source
 - 3. les projets similaires déjà réalisés
-- 4. le processus de balisage automatique
+- 4. le processus de balisage automatique / aspects techniques (standard TEI)
 
 Ces critères orientent (1)/ déterminent (2)/ influencent (3)/ contraignent (4) nos choix d'encodage.
 
@@ -37,7 +37,7 @@ Qu'est-ce que l'on veut extraire/ manipuler/ analyser ?
 - Les **entités nommées** : 
   - Référencement des personnes
   - Référencement des lieux
-  - Référenncement des institutions
+  - Référencement des institutions
 
 - Les **interventions des députés/ interventions des groupes parlementaires**
 
@@ -56,8 +56,9 @@ Qu'est-ce que l'on veut extraire/ manipuler/ analyser ?
 #### 2- Particularités de la source
 
 - **Débats oraux retranscrits à l'écrit** : 
-  - Source est construite avec plusieurs étapes (oral + sténographes + typographes du journal)  
-  *--> Quelle étape garder dans notre encodage ? Celui de la source finale (journal), celui du texte, celui de la parole ? --> Juste le texte.*
+  - Genèse : plusieurs étapes avant d'obtenir la publication finale (oral + sténographes + typographes du journal)  
+  *--> Quelle(s) étape(s) garder dans notre encodage ? Celui de la publication finale (journal), celui du texte en lui-même, celui de la parole ? --> Solution médiane : journal et texte.*  
+  !! Pas de logique d'encodage génétique du texte.
 
 - **Construction particulière du texte écrit** (mise en scène de la séance) :
   - Éléments oraux rapportés
@@ -67,33 +68,39 @@ Qu'est-ce que l'on veut extraire/ manipuler/ analyser ?
   *--> Difficulté pour déterminer la transparence de la retranscription de la séance. Mise en scène fidèle ? Faire des recherches sur l'élaboration du CR.* 
   
 - **Mise en page du journal** :
-  - Colonnes
-  - Changements de page
-  - Particularités typographiques (italique, gras)
-  *--> Faut-il la garder ? --> Solution médiane.*
+  - Colonnes (passages à la ligne)
+  - Changements de pages
+  - Particularités typographiques (italique, gras)  
+  *--> Faut-il garder la mise en page ? --> Solution médiane : on garde juste les changements de pages pour le sourçage.*
 
-- **Nombre important de débats** : 
+- **Nombre important de débats** :   
   *--> Comment organiser l'ensemble du corpus ?*
   - Création d'un corpus contenant un ensemble de composants
 
 - **Liens entre les débats** :
-  - Débats contiennent des références à des séances précédentes 
-  *--> Utilisation de d'ID pour les relier.*
+  - Débats contiennent des références à des séances précédentes   
+  *--> Utilisation d'ID pour les relier.*
 
 **L'encodage TEI doit prendre en compte un ensemble de particularités textuels.**  
 
-!! Pas de logique d'encodage génétique du texte.
-
 #### 3- Projets similaires réalisés 
+- **Benchmarking** : 
+ - Analyse de projets sur l'annotation automatique de grands corpus (TIME US)
 
-- Analyse de projets sur l'annotation automatique de grands corpus (TIME US)
+ - Analyse de projets similaires sur l'annotation de débats (ParlaClarin et ParlaMint) : analyse des ODD, voir les différents partis pris
+ par rapport à cette source.
 
-- Analyse de projets similaires sur l'annotation de débats (ParlaClarin et ParlaMint) : analyse des ODD, voir les différents partis pris par rapport à cette source.
+**Voir les méthodes appliquées / choix effectués et voir ce que l'on pourrait réutiliser et appliquer à nos propres débats.**
 
-**Voir les méthodes appliquées/ choix effectués et voir ce que l'on pourrait réutiliser et appliquer à nos propres débats.**
+#### 4- Contraintes techniques
 
-#### 4- Processus de balisage automatique
+**4.1- Format/ standard d'encodage**  
+Obtenir un encodage conforme et valide.  
+Respecter : 
+- XML
+- TEI
 
+**4.2- Processus de balisage automatique**  
 Intention d’utiliser une méthode d’encodage automatique des documents.  
 
 **Comment l'automatisation influence-t-elle les choix d'encodage ?**  
@@ -102,12 +109,12 @@ Ce processus de balisage automatique nécessite de :
 - **Penser les balises en fonction de ce qui sera possible d'appliquer automatiquement**.
 
 Travail en amont : 
+- **Adapter l'encodage en fonction de la capacité de l'OCR** : 
+  - On pense les entrées en fonction de ce qui est possible ou non (capacité de l'OCR à prendre en charge tel ou tel aspect).
 - **Penser l'encodage en fonction de l'annotation possible dans l'OCR** pour gagner du temps lors de la transformation :
   - OCR offre des entrées utiles pour notre encodage : mise en page du texte déterminée (titre, italique), NER, étiquettes multiples. On peut donc réutiliser ces éléments. 
 - **Penser l'annotation dans l'outil d'OCR en fonction de la TEI** :
   - Possible de penser les entrées/ étiquettes de l'OCR en fonction de nos besoins (noms de balise TEI à insérer) pour anticiper au maximum.  
-- **Adapter l'encodage en fonction de la capacité de l'OCR** : 
-  - On pense les entrées en fonction de ce qui est possible ou non (capacité de l'OCR à prendre en charge tel ou tel aspect).
 
 **Choix des balises en fonction de ce qui est reconnu par l'OCR/ capacité de l'OCR et en fonction de ce qui est possible de faire techniquement : cela limite les choix d'encodage.**
 
@@ -116,12 +123,13 @@ Plusieurs solutions de transformations possibles en fonction de l'OCR choisi : *
 - transformation du fichier XML PAGE (OCR eScriptorium) avec une feuille de transformation XSLT
 - JSON (epita) à la TEI par XSLT
 - JSON (epita) à XML puis à la TEI par XSLT
-- **JSON (epita) à TEI par scripts python** *--> c cette méthode que l'on appliquera*
+- **JSON (epita) à TEI par scripts python**   
+*--> c cette méthode que l'on appliquera*
 
 - Encodage en plusieurs étapes, scripts python pour l'encodage étape par étape :
- - Texte brut --> encodage structuré --> encodage enrichi  
+ - Texte brut --> encodage structuré --> encodage enrichi
 
-- Garder le texte brut pour laisser la possibilité aux utilisateurs de faire leur propre analyse. Commande pour obtenir le texte brut (enlever les balises JSON) : 
+- Garder le texte brut pour laisser la possibilité aux utilisateurs de faire leur propre analyse. Commande pour obtenir le texte brut (enlever les balises) : 
 ```
 sudo apt install jq
 
@@ -137,9 +145,9 @@ JQ
 - Prise de parole
 - Commentaires contextuels/ descriptions
 - Éléments structurels de l'écrit : sommaire, annexes
-- Entités nommées (référencements personnes, lieux).
+- Entités nommées (référencements personnes, lieux, institutions).
 
-- Importance de la mise en page *--> abandon pour plusieurs raisons*
+- Importance de la mise en page *--> abandon de certains aspects pour plusieurs raisons*
 
 **Autres (à mettre de côté) :**
 - Actions de post-correction des OCR dans la TEI : coquilles reconnues par TEI Process, balise < corr >, (Eric de la Clergerie).
@@ -375,7 +383,7 @@ Interrogation toutefois sur la part que prend le typographe du journal dans la p
 
 ### Problèmes de la mise en page
 
-- Solution médiane à adopter car indication des changements de page = essentiel pour le sourçage. Encodage des changements de page mais pas des colonnes ni sauts de ligne.
+- Solution médiane à adopter car indication des changements de pages = essentiel pour le sourçage. Encodage des changements de page mais pas des colonnes ni sauts de ligne.
 
 - Solution permettant de les intégrer dans un < incident > :
 ```
@@ -390,15 +398,15 @@ Interrogation toutefois sur la part que prend le typographe du journal dans la p
 **Attention particulière sur les particularités de l'extrait :**
 - lecture d'une lettre : ```<quote><seg/></quote>```
 - lecture d'un rapport d'une élection contestée : ```<quote><seg/></quote>```
-- votes au sein du texte : *--> revenir dessus*
+- votes au sein du texte : *--> revenir dessus. Relier ces votes avec les annexes : utiliser @corresp ?*
 - ordre du jour : *--> revenir dessus*
 
-**Découvertes :**
-- Certaines parties n'ont pas de titres (les discussions), commence par "l'ordre du jour appelle...".
+**Attention :**
+- Certaines parties n'ont pas de titres (les discussions), commence par "l'ordre du jour appelle...". *--> Utiliser l'IA pour traiter ces cas-là.*
 
 **Questionnements :**
 *Entités nommées*
-- Bien définir ce qu'on inclut dans un < placeName > et < persName > (MM. M. ? rôle/statut annoncé après ? personne mentionnée par son rôle/statut ?) 
+- Bien définir ce qu'on inclut dans un < placeName > et < persName > (MM. M. ? rôle/statut annoncé après ? personne mentionnée par son rôle/statut ?). Choix retenus : 
 ```
 <persName>M. Leygues</persName>
 ```
@@ -430,7 +438,7 @@ MM. <persName>Paul Déroulède</persName> <persName>Georges Laguerre</persName>
 - Parfois citations sans guillemets. *--> Problématique à prendre en compte.*
 
 *Prise de parole/ segmentation*
-- numéroter les < div > ? *--> pour l'instant oui avec @n.*
+- numéroter les < div > ? *--> non car cela est complexe à baliser automatiquement et certaines div n'ont pas besoin d'être numérotées (div avant les pb).*
 
 - numéroter les < u > et les < seg > comme dans parlamint ? *--> oui, revoir le nom des @xml:id.*
 ```
@@ -440,9 +448,9 @@ MM. <persName>Paul Déroulède</persName> <persName>Georges Laguerre</persName>
 <seg xml:id="CR_1889-11-26_u1.1"/>
 ```
 
-*Date*
-- Doute date : encoder les dates "samedi" "11 novembre 1880" ? *--> oui et rajouter l'attribut @when.*
-
+*Date et heure*
+- Encoder les dates "samedi" "11 novembre 1880" ? *--> oui et rajouter l'attribut @when.*
+- Encoder les heures ? *--> oui avec < time > et @when.*
 
 ### Problèmes des annexes
 - Pas de < seg > possible dans la solution 1 des annexes. *--> reprise complète de l'encodage, vote non plus pensé comme événement mais inclus dans des divisions.*
@@ -451,20 +459,20 @@ MM. <persName>Paul Déroulède</persName> <persName>Georges Laguerre</persName>
 
 **Sommaire :**
 ```
-<div type="contents" n="1">
+<div type="contents">
             <head>SOMMAIRE</head>
             <list>
                <item xml:id="pv">Procès verbal : MM. <persName ref="#PD_2409">Paul Déroulède</persName>, <persName ref="#pers_ID">Georges Laguerre</persName>, <persName ref="#pers_ID">Briens</persName>, <persName ref="#pers_ID">Bizouard-Bert</persName>, <persName ref="#pers_ID">Vernière</persName>.</item>
 
                <item xml:id="congé">Excuses et demandes de congé.</item>
-
+		<!-- [...] -->
             </list>
          </div>
 ```
 
 **Section et prises de parole :**
 ```
-<div type="part" corresp="#pv" n="2">
+<div type="part" corresp="#pv">
             <!-- le @corresp renvoie au @xml:id de l'< item > du sommaire -->
 
             <head>Présidence de <persName ref="#pers_ID">M. Charles Floquet</persName></head>
@@ -489,6 +497,67 @@ MM. <persName>Paul Déroulède</persName> <persName>Georges Laguerre</persName>
                <seg xml:id="CR_1889-11-26_u3.2">La plus importante des rectifications concerne le procès-verbal. En effet, au moment où la <orgName ref="#org_ID">Chambre</orgName> s'est prononcée en majorité en faveur de la validation d’un de nos collègues de l'<placeName ref="#lieu_ID">Ardèche</placeName>, ni mes amis ni moi n'avons applaudi au succès de telle ou telle candidature représentant telle ou telle opinion ; ni mes amis ni moi n’avons même applaudi à la défaite de ce que j'appellerai le groupe des invalideurs. <incident><desc>(Bruit à gauche.)</desc></incident></seg>
             </u>
 </div>
+```
+**Votes de la séance au sein du texte** à valider
+```
+<u who="#pers_ID" xml:id="CR_1889-11-26_u.." ana="#speaker">
+	<seg xml:id="CR_1889-11-26_u..1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Je mets aux voix les conclusions du <num>7e</num> bureau, tendant à l’annulation des opérations électorales dans la <placeName ref="#lieu_ID"><num>1re</num> circonscription de Lorient</placeName>.</seg>
+	<seg xml:id="CR_1889-11-26_u..2">Il y a une demande de scrutin signée de MM. <persName ref="#pers_ID">Alfred Naquet</persName>, <persName ref="#pers_ID">Louis de Belleval</persName>, [...] etc.</seg>
+	<seg xml:id="CR_1889-11-26_u..3">Le scrutin est ouvert.</seg>
+</u>
+            
+<note type="comment"><seg>(Les votes sont recueillis, et MM. les <roleName ref="#pers_ID">secrétaires</roleName> en font le dépouillement.)</seg></note>
+            
+<u who="#pers_ID" xml:id="CR_1889-11-26_u..." ana="#speaker">
+	<seg xml:id="CR_1889-11-26_u...1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Voici le résultat du dépouillement du scrutin :</seg>
+		<table rows="4" cols="2" corresp="vot18891126_vot1">
+                  <row>
+                     <cell role="label">Nombre des votants</cell>
+                     <cell role="data"><num>514</num></cell>                     
+                  </row>
+                  <row>
+                     <cell role="label">Majorité absolue</cell>
+                     <cell role="data"><num>258</num></cell>
+                  </row>
+                  <row>
+                     <cell role="label">Pour l'adoption</cell>
+                     <cell role="data"><num>333</num></cell>
+                  </row>
+                  <row>
+                     <cell role="label">Contre</cell>
+                     <cell role="data"><num>181</num></cell>
+                  </row>
+               </table>
+	<seg xml:id="CR_1889-11-26_u...6">La <orgName ref="#org_ID">Chambre des députés</orgName> a adopté.</seg>
+	<seg xml:id="CR_1889-11-26_u...7"> En conséquence, les opérations électorales de la <placeName ref="#lieu_ID"><num>1re</num> circonscription électorale de Lorient</placeName> sont annulées.</seg>
+	<seg>Avis en sera donné à <persName ref="#pers_ID">M. le <roleName ref="#pers_ID">ministre de l'intérieur</roleName></persName>.</seg>
+</u>
+```
+
+**Ordre du jour** à valider
+```
+<div type="agenda">
+	<head>RÈGLEMENT DE L'ORDRE DU JOUR</head>
+            
+	<!-- Solution 1 -->
+	<u who="#pers_ID" ana="#speaker" xml:id="CR_1889-11-26_u....">
+		<seg xml:id="CR_1889-11-26_u....1"><persName ref="#pers_ID">M. le président</persName>. <date when="1889-11-28">Jeudi</date> à <time when="02:00:00">deux heures</time>, séance publique </seg>:
+		<seg xml:id="CR_1889-11-26_u....2">Scrutin pour la nomination de deux membres de la <orgName ref="#org_ID">commission supérieure de la caisse nationale des retraites pour la vieillesse</orgName>;</seg> 
+		<seg xml:id="CR_1889-11-26_u....3">Scrutin pour la nomination de deux membres de la <orgName ref="#org_ID">commission de surveillance des Caisses d'amortissement et des dépôts et consignations</orgName> ;</seg>
+		<seg xml:id="CR_1889-11-26_u....4">Suite de la vérification des pouvoirs :</seg>
+		<seg xml:id="CR_1889-11-26_u....5">Discussion des conclusions du rapport du <num>6e</num> bureau sur l'élection de <persName ref="#pers_ID">M. du Mesnildot</persName> ;</seg>
+		<!-- [...] -->
+		<seg xml:id="CR_1889-11-26_u....14">Il n’y a pas d'observation ?...</seg>
+		<seg xml:id="CR_1889-11-26_u....15">L'ordre du jour est ainsi réglé.</seg>
+	</u>
+            
+	<note type="closing" xml:id="CR_1889-11-26_n4"><seg xml:id="CR_1889-11-26_n4.1">(La séance est levée à <time when="06:10:00">six heures dix minutes</time>.)</seg></note>
+</div>
+```
+
+**Signature**
+```
+<signed><seg>Le <roleName ref="#pers_ID">Chef du service sténographique</roleName> de la <orgName ref="#org_ID">Chambre des députés</orgName>, <persName ref="#pers_ID">EMILE GROSSELIN</persName>.</seg></signed>
 ```
 
 **Annexes : votes de la séance**
