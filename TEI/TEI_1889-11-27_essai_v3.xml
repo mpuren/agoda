@@ -66,7 +66,7 @@
       <!-- Définir les @xml:id des < div > pour les votes (< div > pour la liste des votes de la séance, < div > pour le vote en particulier) -->
       <!-- Définir les @type des < measure > : @type pour le nombre des votants, la majorité absolue -->
       <!-- Définir les @type des < note > : les @type correspondent aux étiquettes établies dans l'OCR -->
-      <!-- Définir les @corresp des rectifications en fonction de @xml:id des votes de la séance précédente -->
+      <!-- (Définir les @corresp des rectifications en fonction de @xml:id des votes de la séance précédente) -->
 
 
 
@@ -296,17 +296,6 @@
             <note type="comment" xml:id="CR_1889-11-26_n3"><seg xml:id="CR_1889-11-26_n3.1">(Les votes sont recueillis, et MM. les <roleName ref="#pers_ID">secrétaires</roleName> en font le dépouillement.)</seg></note>
             
             <u who="#pers_ID" xml:id="CR_1889-11-26_u..." ana="#speaker">
-               <!-- Solution 1 -->
-               <!--<seg xml:id="CR_1889-11-26_u...1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Voici le résultat du dépouillement du scrutin :</seg>
-               <seg xml:id="CR_1889-11-26_u...2">Nombre des votants <num>514</num></seg>
-               <seg xml:id="CR_1889-11-26_u...3">Majorité absolue <num>258</num></seg>
-               <seg xml:id="CR_1889-11-26_u...4">Pour l'adoption <num>333</num></seg>
-               <seg xml:id="CR_1889-11-26_u...5">Contre <num>181</num></seg>
-               <seg xml:id="CR_1889-11-26_u...6">La <orgName ref="#org_ID">Chambre des députés</orgName> a adopté.</seg>
-               <seg xml:id="CR_1889-11-26_u...7"> En conséquence, les opérations électorales de la <placeName ref="#lieu_ID"><num>1re</num> circonscription électorale de Lorient</placeName> sont annulées.</seg>
-               <seg>Avis en sera donné à <persName ref="#pers_ID">M. le <roleName ref="#pers_ID">ministre de l'intérieur</roleName></persName>.</seg>-->              
-               
-               <!-- Solution 2 -->
                <seg xml:id="CR_1889-11-26_u...1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Voici le résultat du dépouillement du scrutin :</seg>
                <table rows="4" cols="2" corresp="vot18891126_vot1">
                <!-- L'attribut @corresp relie ce vote avec le vote présent en annexe -->
@@ -400,8 +389,7 @@
          <!-- Ordre du jour -->
          <div type="agenda">
             <head>RÈGLEMENT DE L'ORDRE DU JOUR</head>
-            
-            <!-- Solution 1 -->
+
             <u who="#pers_ID" ana="#speaker" xml:id="CR_1889-11-26_u....">
                <seg xml:id="CR_1889-11-26_u....1"><persName ref="#pers_ID">M. le président</persName>. <date when="1889-11-28">Jeudi</date> à <time when="02:00:00">deux heures</time>, séance publique </seg>:
                <seg xml:id="CR_1889-11-26_u....2">Scrutin pour la nomination de deux membres de la <orgName ref="#org_ID">commission supérieure de la caisse nationale des retraites pour la vieillesse</orgName>;</seg> 
@@ -420,30 +408,9 @@
                <seg xml:id="CR_1889-11-26_u....15">L'ordre du jour est ainsi réglé.</seg>
             </u>
             
-            <!--<!-\- Solution 2 -\->
-            <u who="#pers_ID" ana="#speaker" xml:id="CR_1889-11-26_u....">
-               <seg xml:id="CR_1889-11-26_u....1"><persName ref="#pers_ID">M. le président</persName>. <date when="1889-11-28">Jeudi</date> à <time when="02:00:00">deux heures</time>, séance publique </seg>:
-               <list>
-                  <item>Scrutin pour la nomination de deux membres de la <orgName ref="#org_ID">commission supérieure de la caisse nationale des retraites pour la vieillesse</orgName>;</item> 
-                  <item>Scrutin pour la nomination de deux membres de la <orgName ref="#org_ID">commission de surveillance des Caisses d'amortissement et des dépôts et consignations</orgName> ;</item>
-                  <item>Suite de la vérification des pouvoirs :</item>
-                  <item>Discussion des conclusions du rapport du <num>6e</num> bureau sur l'élection de <persName ref="#pers_ID">M. du Mesnildot</persName> ;</item>
-                  <item>Discussion des conclusions du rapport du <num>5e</num> bureau sur l'élection de <persName ref="#pers_ID">M. Delahaye</persName> ;</item>
-                  <item>Discussion des conclusions du rapport du <num>4e</num> bureau sur l'élection de <persName ref="#pers_ID">M. Peyrusse</persName> ;</item>
-                  <item>Discussion des conclusions du rapport du <num>6e</num> bureau sur l'élection de <persName ref="#pers_ID">M. Lachièze</persName>;</item>
-                  <item>Discussion des conclusions du rapport du <num>11e</num> bureau sur l'élection de <persName ref="#pers_ID">M. Dupuytrem</persName>;</item>
-                  <item>Discussion des conclusions du rapport du <num>7e</num> bureau sur l'élection de <persName ref="#pers_ID">M. de Montalembert</persName>;</item>
-                  <item>Discussion des conclusions du rapport du <num>2e</num> bureau sur l'élection de <persName ref="#pers_ID">M. de Montsaulnin</persName> ;</item>
-                  <item>Discussion des conclusions du rapport du <num>6e</num> bureau sur l'élection de <persName ref="#pers_ID">M. Fairé</persName>;</item>
-                  <item>Discussion des conclusions du rapport du <num>9e</num> bureau sur l'élection de <persName ref="#pers_ID">M. Paulin Méry</persName>.</item>
-               </list>
-               <seg xml:id="CR_1889-11-26_u....2">Il n’y a pas d'observation ?...</seg>
-               <seg xml:id="CR_1889-11-26_u....3">L'ordre du jour est ainsi réglé.</seg>
-            </u>-->
-            
             <note type="closing" xml:id="CR_1889-11-26_n4"><seg xml:id="CR_1889-11-26_n4.1">(La séance est levée à <time when="06:10:00">six heures dix minutes</time>.)</seg></note>
             
-            <signed xml:id="CR_1889-11-26_s1"><seg xml:id="CR_1889-11-26_s1.1">Le <roleName ref="#pers_ID">Chef du service sténographique</roleName> de la <orgName ref="#org_ID">Chambre des députés</orgName>, <persName ref="#pers_ID">EMILE GROSSELIN</persName>.</seg></signed>
+            <signed><seg>Le <roleName ref="#pers_ID">Chef du service sténographique</roleName> de la <orgName ref="#org_ID">Chambre des députés</orgName>, <persName ref="#pers_ID">EMILE GROSSELIN</persName>.</seg></signed>
             </div>
             
 
@@ -464,6 +431,7 @@
          <head>Annexes au procès-verbal de la séance du <date when="1889-11-26">mardi 26 novembre 1889</date>.</head>
 
          <div xml:id="vot18891126">
+            
             <!-- VOTE 1 -->
             <div xml:id="vot18891126_vot1" type="voting" corresp="#discussion7ebureau">
                <head>
@@ -477,33 +445,6 @@
                   <measure type="ayes" quantity="330">Pour l'adoption <num>330</num></measure>
                   <measure type="noes" quantity="176">Contre <num>176</num></measure>
                </desc>
-               
-               <!--<table rows="4" cols="2">
-                  <row>
-                     <cell role="label">Nombre des votants</cell>
-                     <cell role="data"><num>506</num></cell>                     
-                  </row>
-                  <row>
-                     <cell role="label">Majorité absolue</cell>
-                     <cell role="data"><num>254</num></cell>
-                  </row>
-                  <row>
-                     <cell role="label">Pour l'adoption</cell>
-                     <cell role="data"><num>330</num></cell>
-                  </row>
-                  <row>
-                     <cell role="label">Contre</cell>
-                     <cell role="data"><num>176</num></cell>
-                  </row>
-               </table>-->
-               
-               <!--<note>
-                  <seg>Nombre des votants <num>506</num></seg>
-                  <seg>Majorité absolue <num>254</num></seg>
-                  <seg>Pour l'adoption <num>330</num></seg>
-                  <seg>Contre <num>176</num></seg>
-               </note>-->
-
 
                <note type="result" xml:id="CR_1889-11-26_n6"><seg xml:id="CR_1889-11-26_n6.1">La <orgName ref="#org_ID">Chambre des députés</orgName> a adopté.</seg></note>
 
