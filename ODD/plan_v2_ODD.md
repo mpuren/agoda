@@ -43,11 +43,11 @@
 
 ## 4.2  Métadonnées de l'encodage (encodingDesc - revisionDesc)
 ### 4.2.1 Description de l'encodage (encodingDesc)
-#### 4.2.1 Description du pojet (projectDesc)
+#### 4.2.1 Description du projet (projectDesc)
 #### 4.2.2 Déclaration des pratiques éditoriales (editorialDecl)
 #### 4.2.3 Déclaration des balises (tagsDecl)
 #### 4.2.4 Déclaration des classifications (classDecl)
-###4.2.2 Description des révisions (revisionDesc)
+### 4.2.2 Description des révisions (revisionDesc)
 
 ## 4.3 Métadonnées non bibliographiques (profileDesc - standOff)
 ### 4.3.1 Index des participants (particDesc)
