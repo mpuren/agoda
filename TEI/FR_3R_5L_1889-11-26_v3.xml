@@ -4,69 +4,253 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
    <teiHeader>
+      
+      <!-- FILEDESC -->
+      <!-- Description bibliographique du fichier électronique -->
       <fileDesc>
+         
          <titleStmt>
-            <title>Title</title>
+            
+            <!-- Titre en français et anglais -->
+            <title type="main" xml:lang="fr"></title>
+            <title type="main" xml:lang="en"></title>
+            
+            <!-- Possibilité d'un titre subordonné -->
+            <!--<title type="sub" xml:lang="fr"></title>
+            <title type="sub" xml:lang="en"></title>-->
+            
+            <!-- Contient le titre descriptif formalisé d’une réunion ou d’une conférence, employé dans une description bibliographique pour un article provenant d'une telle réunion, ou comme le titre ou le préambule aux publications qui en émanent. -->
+            <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
+            <meeting n="5" >5e législature. - Session extraordinaire de 1889.</meeting>
+            
+            
+            <!-- La suite du < titleStmt > n'est pas détaillée dans composant de ParlaClarin -->
+            <!-- Indique la responsabilité quant au contenu intellectuel d'une édition lorsque les éléments spécifiques relatifs aux auteurs, éditeurs, etc. ne suffisent pas ou ne s'appliquent pas -->
+            <respStmt>
+               
+               <!-- Noms -->
+               <persName ref="https://..."></persName>
+               <persName ref="https://..."></persName>
+               
+               <!-- Précise de quelle responsabilité il s'agit -->
+               <resp xml:lang="fr"></resp>
+               <resp xml:lang="en"></resp>
+               
+            </respStmt>
+            
+            <!-- Désigne le nom d’une personne ou d’un organisme responsable du financement d’un projet ou d’un texte -->
+            <funder>
+               <orgName xml:lang="fr"></orgName>
+               <orgName xml:lang="en"></orgName>
+            </funder>
+            
          </titleStmt>
+         
+         
+         
+         <!-- Pas présent dans composant de ParlaClarin -->
+         <editionStmt>
+            
+            <!-- Décrit les particularités de l’édition d’un texte -->
+            <!-- À garder pour le composant quand même ? -->
+            <edition>1</edition>
+            
+         </editionStmt>
+         
+         
+         
+         <!-- Pas présent dans composant de ParlaClarin -->
+         <extent>
+            
+            <!-- Donne infos sur la taille du composant : discours et mots, mettre l'unité correspondante de la langue dans le texte. Ex : -->
+            <measure unit="utterances" quantity="75122" xml:lang="sl">75.122 govorov</measure>
+            <measure unit="utterances" quantity="75122" xml:lang="en">75,122 utterances</measure>
+            <measure unit="words" quantity="20190034" xml:lang="sl">20.190.034 besed</measure>
+            <measure unit="words" quantity="20190034" xml:lang="en">20,190,034 words</measure>
+            
+         </extent>
+         
+         
+         
+         <!-- Regroupe des informations concernant la publication ou la diffusion d’un texte électronique ou d’un autre type de texte. -->
          <publicationStmt>
-            <p>Publication Information</p>
+            
+            <!-- Éditeur du corpus (non présent dans ParlaClarin) -->
+            <publisher>
+               <orgName xml:lang="fr"></orgName>
+               <orgName xml:lang="en"></orgName>
+               <ref target="https://..."></ref>
+            </publisher>
+            
+            <!-- Idée de parlaClarin à la place de < publisher > : -->
+            <!--<authority></authority>-->
+            
+            <!-- Identifiant (non présent dans ParlaClarin) -->
+            <idno type="..." subtype="..."></idno>
+            
+            <!-- Licence -->
+            <availability status="free">
+               <licence>http://creativecommons.org/licenses/by/4.0/</licence>
+               <p xml:lang="fr">Description en prose de la licence.</p>
+               <p xml:lang="en"></p>
+            </availability>
+            
+            <!-- Date de parution -->
+            <date when="2022-06-03"></date>
+            
+            <!-- Idée de parlaCalrin (donne le nom d’une personne ou d’un organisme responsable de la diffusion d’un texte) -->
+            <!--<distributor></distributor>-->
+            
          </publicationStmt>
+                  
+                  
+                  
+                  
+         <!-- Description de la source -->
          <sourceDesc>
-            <p>Information about the source</p>
+            
+            <!-- Référence bibliographique faiblement adaptée dans laquelle les sous-composants peuvent ou non être balisés -->
+            <bibl>
+               <!-- Titre du document en question -->
+               <title type="main" xml:lang="fr"></title>
+               <title type="main" xml:lang="en"></title>
+               
+               <!--<title type="sub" xml:lang="fr"></title>
+               <title type="sub" xml:lang="en"></title>-->
+               
+               <!-- Donne un identifiant standardisé qui peut être utilisé pour identifier une référence bibliographique (URL dont les transcriptions sont issues) -->
+               <idno type="URI"></idno>
+               
+               <!-- Date de la transcription du document en question -->
+               <date when="2022-06-07"></date>
+            </bibl>
+            
          </sourceDesc>
+         
       </fileDesc>
+      
+      
+      
+      <!-- ENCODINGDESC -->
+      <!-- Documente la relation d'un texte électronique avec sa ou ses sources -->
+      <!-- Non présent dans composant de ParlaCarin -->
+      <encodingDesc>
+
+         <!-- Description du projet -->
+         <projectDesc>
+            <p xml:lang="fr"></p>
+            <p xml:lang="en"></p>
+         </projectDesc>
+         
+         <!-- Compte des balises utilisées dans la partie données. Ex : -->
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="body" occurs="1"/>
+               <tagUsage gi="desc" occurs="188"/>
+               <tagUsage gi="div" occurs="3"/>
+               <tagUsage gi="head" occurs="3"/>
+               <tagUsage gi="incident" occurs="18"/>
+               <tagUsage gi="note" occurs="3"/>
+               <tagUsage gi="seg" occurs="595"/>
+               <tagUsage gi="u" occurs="256"/>
+            </namespace>
+         </tagsDecl>
+         
+      </encodingDesc>
+      
+      
+      
+      <!-- PROFILEDESC -->
+      <!-- Description détaillée des aspects non bibliographiques -->
       <profileDesc>
-         <particDesc>
-            <listPerson>
-               <person xml:id="PD_2409">
-                  <persName> Paul Déroulède </persName>
-               </person>
-               <person xml:id="pers_ID">
-                  <persName></persName>
-               </person>
-            </listPerson>
-            <listOrg>
-               <org xml:id="org_ID">
-                  <orgName></orgName>
-               </org>
-            </listOrg>
-         </particDesc>
+         
+         <!-- Décrit le(s) contexte(s) dans lesquels se situe une interaction linguistique -->
          <settingDesc>
-            <listPlace>
-               <place xml:id="lieu_ID">
-                  <placeName></placeName>
-               </place>
-            </listPlace>
+            
+            <setting>
+               
+               <!-- Lieu -->
+               <name type="place"></name>
+               <name type="city"></name>
+               <name type="country" key=".."></name>
+               
+               <!-- Date -->
+               <date when="1889-11-26">November 26th, 1889</date>
+            </setting>
+            
          </settingDesc>
+         
       </profileDesc>
+      
+      
+      
+      
+      <!-- REVISIONDESC -->
+      <!-- Optionnel, à la fois dans le composant et corpus -->
+      <!-- Résumé de l’historique des révisions d’un fichier -->
+      <!-- Non présent dans composant de ParlaClarin -->
+      <revisionDesc>
+         
+         <change when="2022-06-07"><name>Personne</name>: description en texte libre de la modification.</change>
+         <change when="2022-06-07"><name></name>: </change>
+         
+      </revisionDesc>
+      
    </teiHeader>
-   <text ana="#IIIR_5L">
+   
+   
+   
+   <text ana="#FR_3R_5L_1889-11-26">
 
       <!-- Éléments de l'en-tête du document à insérer dans le teiHeader (ce qui était présent anciennement dans le < front > -->
       
       <!-- Définir les @ana dans les < text > (par rapport à la taxonomie sur les sous-corpus) (dire que c'est la IIIe République 5e législature) -->
+      <!-- FR_3R_5L_1889-11-26 -->
+      
       
       <!-- SOMMAIRE -->
       <!-- Définir les @xml:id des < item >, les id sont appelés ensuite dans les @corresp des < div >  -->
+      <!-- Déterminer une taxonomie à partir du contenu des item, analyse à faire -> soit à inclure dans les @type des < div > soit à inclure dans les @xml:id des < item > directement. @xml:id pourrait avoir plutôt un numéro. -->
+
+
 
       <!-- PARTIES -->
       <!-- Définir les @type des < div > : les @type correspondent aux étiquettes établies dans l'OCR -->
+      <!-- cf cas ci-dessus : analyse contenu des items -->
+      
       <!-- Définir les @type des < note > : les @type correspondent aux étiquettes établies dans l'OCR -->
+      <!--  à déterminer ensuite, après annotations en masse, récupérer toutes les notes et déterminer l'ensemble des types de notes-->
       
       <!-- Définir les @xml:id des < u > -->
       <!-- Définir les @xml:id des < seg > -->
       
+      <!-- Définir les @xml:id des < note > -->
+      <!-- Numérotation continue sur le texte et les annexes -->
+      
       <!-- ENTITÉS NOMMÉES -->
       <!-- Définir les @xml:id des personnes pour pouvoir remplir les @who dans les < u >, les @ref dans les < persName > et < roleName > -->
+      <!-- Utiliser l'id de data BnF, pour ceux qui ne sont pas référencés dans data, il faudra les créer -->
+      
       <!-- Définir les @xml:id des lieux pour pouvoir remplir les @ref dans les < placeName > -->
-      <!-- Définir les @xml:id des institutions pour pouvoir remplir les @ref dans les < orgName > -->
+      <!-- Ville, département, pays à prendre en compte, utiliser geonames -->
+      
+      <!-- Définir les @xml:id des institutions/ partis politiques pour pouvoir remplir les @ref dans les < orgName > -->
+      <!-- data BnF -->
+      
       <!-- Définir les @ana dans les < u > (par rapport à la taxonomie sur la typologie des orateurs) -->
+      <!-- orateur (speaker), personne anonyme (unknown), rapporteur (rapporteur/ recorder), président (chair) -->
 
       <!-- ANNEXES -->
       <!-- Définir les @xml:id des < div > pour les votes (< div > pour la liste des votes de la séance, < div > pour le vote en particulier) -->
+      <!-- C'est bon, cf texte -->
+      
       <!-- Définir les @type des < measure > : @type pour le nombre des votants, la majorité absolue -->
+      <!-- C'est bon, cf texte -->
+      
       <!-- Définir les @type des < note > : les @type correspondent aux étiquettes établies dans l'OCR -->
       <!-- (Définir les @corresp des rectifications en fonction de @xml:id des votes de la séance précédente) -->
+      
+      <!-- Définir les @type des < div > des annexes : voting/ rectification ? A VOIR -->
 
 
 
@@ -113,7 +297,7 @@
                <seg xml:id="CR_1889-11-26_u1.1"><persName ref="#pers_ID">M. Paul Déroulède</persName>. Je demande la parole.</seg>
             </u>
 
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u2" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u2" ana="#chair">
                <seg xml:id="CR_1889-11-26_u2.1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Vous avez la parole.</seg>
             </u>
 
@@ -123,7 +307,7 @@
             </u>
 
             <!-- Personne anonyme -->
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u4" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u4" ana="#unknown">
                <seg xml:id="CR_1889-11-26_u4.1"><persName ref="#pers_ID">Voix au centre</persName>. Ce n'est pas une rectificaion.</seg>
             </u>
 
@@ -141,7 +325,7 @@
             </u>
 
             <!-- Personne anonyme -->
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u8" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u8" ana="#unknown">
                <seg xml:id="CR_1889-11-26_u8.1"><persName ref="#pers_ID">Un membre au centre</persName>. Vous avez été la majorité hier!</seg>
             </u>
 
@@ -157,7 +341,7 @@
                <seg xml:id="CR_1889-11-26_u11.1"><persName ref="#pers_ID">M. Paul Déroulède</persName>. Je n'ai pas insulté, je n'insulte pas, de parti pris, la majorité; au contraire je l'ai applaudie hier dans sa première manifestation de justice et de conscience. <incident><desc>(Très bien! sur quelques bancs à l'extrémité gauche de la salle. —Bruit.</desc></incident>)</seg>
             </u>
             
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u12" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u12" ana="#chair">
                <seg xml:id="CR_1889-11-26_12.1"><persName ref="#pers_ID">M. le président</persName>. Monsieur <persName ref="#pers_ID">Déroulède</persName>, il faudrait vous renfermer dans les limites d'une rectification au procès-verbal. Vous pouvez dire en quoi vous le trouvez inexact, mais rien de plus.</seg>
             </u>
 
@@ -192,7 +376,7 @@
                <seg xml:id="CR_1889-11-26_u19.1"><persName ref="#pers_ID"> M. Vernière</persName>. Au nom de <persName ref="#pers_ID">M. Ménard-Dorian</persName>, retenu dans une commission, je suis chargé de déclarer qu'il s’est abstenu volontairement, hier, dans le vote relatif à l'élection de <persName ref="#pers_ID">M. de La Martinière</persName>, tandis que dans le Journal officiel il est porté comme ayant voté <quote>« contre »</quote>.</seg>
             </u>
 
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u20" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u20" ana="#chair">
                <seg xml:id="CR_1889-11-26_u20.1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Il n'y a pas d'autres observations ?...</seg>
                <seg xml:id="CR_1889-11-26_u20.2">Le procès-verbal est adopté.</seg>
             </u>
@@ -201,7 +385,7 @@
          <!-- PARTIE 2 -->
          <div type="part" corresp="#congé">
             <head>EXCUSES ET DEMANDES DE CONGÉ</head>
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u21" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u21" ana="#chair">
                <seg xml:id="CR_1889-11-26_u21.1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. <persName ref="#pers_ID">M. Le Cour</persName> s'excuse de ne pouvoir assister à la séance de ce jour.</seg>
                <seg xml:id="CR_1889-11-26_u21.2">MM. <persName ref="#pers_ID">Girodet</persName> et <persName ref="#pers_ID">Baïhaut</persName> s’excusent de ne pouvoir assister à la séance de ce jour, et demandent des congés.</seg>
                <seg xml:id="CR_1889-11-26_u21.3">Les demandes seront renvoyées à la commission des congés.</seg>
@@ -211,7 +395,7 @@
          <!-- PARTIE 3 -->
          <div type="part" corresp="#communication">
             <head>COMMUNICATION DU GOUVERNEMENT.</head>
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u22" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u22" ana="#chair">
                <seg xml:id="CR_1889-11-26_u22.1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. J'ai reçu de <persName ref="#pers_ID">M. le <roleName ref="#pers_ID">ministre des finances</roleName></persName> la lettre suivante :</seg>
                <!-- Lettre lue -->
                <quote>
@@ -232,12 +416,12 @@
          <!-- PARTIE 4 -->
          <div type="part" corresp="#rapportelections">
             <head>SUITE DE LA VÉRIFICATION DES POUVOIRS</head>
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u23" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u23" ana="#chair">
                <seg xml:id="CR_1889-11-26_u23.1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. L'ordre du jour appelle la suite de la vérification des pouvoirs.</seg>
                <seg xml:id="CR_1889-11-26_u23.2"><persName ref="#pers_ID">M. Reybert</persName> a la parole pour donner lecture d’un rapport sur une élection non contestée.</seg>
             </u>
 
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u24" ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u24" ana="#rapporteur">
                <!-- Lecture d'un rapport -->
                <quote>
                   <seg xml:id="CR_1889-11-26_u24.1"><persName ref="#pers_ID">M. Reybert, <roleName ref="#pers_ID">rapporteur</roleName></persName>. —<placeName ref="#lieu_ID">Département de la Corrèze, arrondissement de Tulle, <num>1re</num> circonscription</placeName>.</seg>
@@ -287,7 +471,7 @@
             <!-- [...] -->
             
             <!-- Vote à la fin de la discussion -->
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u.." ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u.." ana="#chair">
                <seg xml:id="CR_1889-11-26_u..1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Je mets aux voix les conclusions du <num>7e</num> bureau, tendant à l’annulation des opérations électorales dans la <placeName ref="#lieu_ID"><num>1re</num> circonscription de Lorient</placeName>.</seg>
                <seg xml:id="CR_1889-11-26_u..2">Il y a une demande de scrutin signée de MM. <persName ref="#pers_ID">Alfred Naquet</persName>, <persName ref="#pers_ID">Louis de Belleval</persName>, <persName ref="#pers_ID">Lucien Millevoye</persName>, <persName ref="#pers_ID">Eugène Farey</persName>, <persName ref="#pers_ID">Pontois</persName>, <persName ref="#pers_ID">Vacher</persName>, <persName ref="#pers_ID">Le Veillé</persName>, <persName ref="#pers_ID">Jourde</persName>, <persName ref="#pers_ID">Laguerre</persName>, <persName ref="#pers_ID">Dumonteil</persName>, <persName ref="#pers_ID">Paulin Méry</persName>, <persName ref="#pers_ID">Pierre Richard</persName>, <persName ref="#pers_ID">Terrail-Mermeix</persName>, <persName ref="#pers_ID">Léouzon-Ledue</persName>, <persName ref="#pers_ID">Argeliès</persName>, <persName ref="#pers_ID">Déroulède</persName>, <persName ref="#pers_ID">Barrès</persName>, <persName ref="#pers_ID">Chiché</persName>, <persName ref="#pers_ID">Le Hérissé</persName>, <persName ref="#pers_ID">Granger</persName>, etc.</seg>
                <seg xml:id="CR_1889-11-26_u..3">Le scrutin est ouvert.</seg>
@@ -295,7 +479,7 @@
             
             <note type="comment" xml:id="CR_1889-11-26_n3"><seg xml:id="CR_1889-11-26_n3.1">(Les votes sont recueillis, et MM. les <roleName ref="#pers_ID">secrétaires</roleName> en font le dépouillement.)</seg></note>
             
-            <u who="#pers_ID" xml:id="CR_1889-11-26_u..." ana="#speaker">
+            <u who="#pers_ID" xml:id="CR_1889-11-26_u..." ana="#chair">
                <seg xml:id="CR_1889-11-26_u...1"><persName ref="#pers_ID">M. le <roleName ref="#pers_ID">président</roleName></persName>. Voici le résultat du dépouillement du scrutin :</seg>
                <table rows="4" cols="2" corresp="vot18891126_vot1">
                <!-- L'attribut @corresp relie ce vote avec le vote présent en annexe -->
@@ -390,7 +574,7 @@
          <div type="agenda">
             <head>RÈGLEMENT DE L'ORDRE DU JOUR</head>
 
-            <u who="#pers_ID" ana="#speaker" xml:id="CR_1889-11-26_u....">
+            <u who="#pers_ID" ana="#chair" xml:id="CR_1889-11-26_u....">
                <seg xml:id="CR_1889-11-26_u....1"><persName ref="#pers_ID">M. le président</persName>. <date when="1889-11-28">Jeudi</date> à <time when="02:00:00">deux heures</time>, séance publique </seg>:
                <seg xml:id="CR_1889-11-26_u....2">Scrutin pour la nomination de deux membres de la <orgName ref="#org_ID">commission supérieure de la caisse nationale des retraites pour la vieillesse</orgName>;</seg> 
                <seg xml:id="CR_1889-11-26_u....3">Scrutin pour la nomination de deux membres de la <orgName ref="#org_ID">commission de surveillance des Caisses d'amortissement et des dépôts et consignations</orgName> ;</seg>
@@ -430,18 +614,18 @@
       <back>
          <head>Annexes au procès-verbal de la séance du <date when="1889-11-26">mardi 26 novembre 1889</date>.</head>
 
-         <div xml:id="vot18891126">
+         <div xml:id="CR_1889-11-26_vot">
             
             <!-- VOTE 1 -->
-            <div xml:id="vot18891126_vot1" type="voting" corresp="#discussion7ebureau">
+            <div xml:id="CR_1889-11-26_vot1" type="voting" corresp="#discussion7ebureau">
                <head>
                   <label>SCRUTIN</label>
                   <note xml:id="CR_1889-11-26_n5"><seg xml:id="CR_1889-11-26_n5.1">Sur les conclusions du <num>7e</num> bureau tendant à l'annulation des opérations électorales de la <placeName ref="#lieu_ID"><num>1re</num> circonscription de l'arrondissement de Lorient (Morbihan)</placeName>.</seg></note>
                </head>
 
                <desc>
-                  <measure type="nbvotants" quantity="506">Nombre des votants <num>506</num></measure>
-                  <measure type="maj" quantity="254">Majorité absolue <num>254</num></measure>
+                  <measure type="nbvoters" quantity="506">Nombre des votants <num>506</num></measure>
+                  <measure type="majority" quantity="254">Majorité absolue <num>254</num></measure>
                   <measure type="ayes" quantity="330">Pour l'adoption <num>330</num></measure>
                   <measure type="noes" quantity="176">Contre <num>176</num></measure>
                </desc>
@@ -498,8 +682,8 @@
                <note type="numbersannounced" xml:id="CR_1889-11-26_n8">
                   <seg xml:id="CR_1889-11-26_n8.1">Les nombres annoncés en séance avaient été de:</seg>
                   <desc>
-                     <measure type="nbvotants" quantity="514">Nombre de votants<num>514</num></measure>
-                     <measure type="maj" quantity="258">Majorité absolue <num>258</num></measure>
+                     <measure type="nbvoters" quantity="514">Nombre de votants<num>514</num></measure>
+                     <measure type="majority" quantity="258">Majorité absolue <num>258</num></measure>
                      <measure type="ayes">Pour l'adoption <num>333</num></measure>
                      <measure type="noes">Contre <num>181</num></measure>
                   </desc>
@@ -508,15 +692,15 @@
             </div>
 
             <!-- VOTE 2 -->
-            <div xml:id="vot18891126_vot2" type="voting" corresp="#discussion10ebureau">
+            <div xml:id="CR_1889-11-26_vot2" type="voting" corresp="#discussion10ebureau">
                <head>
                   <label>SCRUTIN</label>
                   <note xml:id="CR_1889-11-26_n9"><seg xml:id="CR_1889-11-26_n9.1">Sur l'amendement de <persName ref="#pers_ID">M. Leygues</persName>, tendant à l'annulation don opérations électorales de la <placeName ref="#lieu_ID"><num>2e</num> circonscription de Montauban (Tarn-et-Garonne)</placeName>. (Résultat du pointage.)</seg></note>
                </head>
 
                <desc>
-                  <measure type="nbvotants" quantity="516">Nombre de votants <num>516</num></measure>
-                  <measure type="maj" quantity="259">Majorité absolue <num>259</num></measure>
+                  <measure type="nbvoters" quantity="516">Nombre de votants <num>516</num></measure>
+                  <measure type="majority" quantity="259">Majorité absolue <num>259</num></measure>
                   <measure type="ayes" quantity="275">Pour l'adoption <num>275</num></measure>
                   <measure type="noes" quantity="241">Contre <num>241</num></measure>
                </desc>
@@ -577,24 +761,24 @@
          </div>
 
          <!-- RECTIFICATIONS -->
-         <div corresp="#vot18891125" type="rectification">
+         <div corresp="#CR_1889-11-25_vot" type="rectification">
             <head>Rectifications aux scrutins de la séance du <date>25 novembre 1889</date>.</head>
 
             <!-- Les @corresp sont à remplir en fonction des contenus des @xml:id des < div > des votes de la séance précédente -->
-            <note corresp="#vot18891125_vot1" xml:id="CR_1889-11-26_n13"><seg xml:id="CR_1889-11-26_n13.1"><persName ref="#pers_ID">M. Michau</persName> <placeName ref="#lieu_ID">(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de <persName ref="#pers_ID">M. Maxime Lecomte</persName>, déclare avoir voté « pour ».</seg></note>
+            <note corresp="#CR_1889-11-25_vot1" xml:id="CR_1889-11-26_n13"><seg xml:id="CR_1889-11-26_n13.1"><persName ref="#pers_ID">M. Michau</persName> <placeName ref="#lieu_ID">(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de <persName ref="#pers_ID">M. Maxime Lecomte</persName>, déclare avoir voté « pour ».</seg></note>
 
-            <note corresp="#vot18891125_vot2" xml:id="CR_1889-11-26_n14"><seg xml:id="CR_1889-11-26_n14.1"><persName ref="#pers_ID">M. Léon Bourgeois</persName> <placeName ref="#lieu_ID">(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté « pour » dans le scrutin sur la demande d'invalidation de l'élection de <persName ref="#pers_ID">M. de La Martinière</persName> dans la <placeName ref="#lieu_ID"><num>2e</num> circonscription de Coutances (Manche)</placeName>, et qu'en réalité il « s'était abstenu ».</seg></note>
+            <note corresp="#CR_1889-11-25_vot2" xml:id="CR_1889-11-26_n14"><seg xml:id="CR_1889-11-26_n14.1"><persName ref="#pers_ID">M. Léon Bourgeois</persName> <placeName ref="#lieu_ID">(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté « pour » dans le scrutin sur la demande d'invalidation de l'élection de <persName ref="#pers_ID">M. de La Martinière</persName> dans la <placeName ref="#lieu_ID"><num>2e</num> circonscription de Coutances (Manche)</placeName>, et qu'en réalité il « s'était abstenu ».</seg></note>
 
-            <note corresp="#vot18891125_vot3" xml:id="CR_1889-11-26_n15"><seg xml:id="CR_1889-11-26_n15.1">M. <persName ref="#pers_ID">Argeliés</persName>, absent an moment des scrutins du <date when="1889-11-25">25 novembre</date> sur les demandes d'invalidation des élections de MM. <persName ref="#pers_ID">Blachére</persName> et <persName ref="#pers_ID">de La Martinière</persName>, déclare que, s'il avait été présent, il aurait voté « pour » la validation des élections.</seg></note>
+            <note corresp="#CR_1889-11-25_vot3" xml:id="CR_1889-11-26_n15"><seg xml:id="CR_1889-11-26_n15.1">M. <persName ref="#pers_ID">Argeliés</persName>, absent an moment des scrutins du <date when="1889-11-25">25 novembre</date> sur les demandes d'invalidation des élections de MM. <persName ref="#pers_ID">Blachére</persName> et <persName ref="#pers_ID">de La Martinière</persName>, déclare que, s'il avait été présent, il aurait voté « pour » la validation des élections.</seg></note>
 
-            <note corresp="#vot18891125_vot4" xml:id="CR_1889-11-26_n16">
+            <note corresp="#CR_1889-11-25_vot4" xml:id="CR_1889-11-26_n16">
                <seg xml:id="CR_1889-11-26_n16.1">MM. <persName ref="#pers_ID">Varlet</persName> et <persName ref="#pers_ID">Charles Dupuy</persName> <placeName ref="#lieu_ID">(Haute-Loire)</placeName>, absents au moment des votes :</seg>
                <seg xml:id="CR_1889-11-26_n16.2">1° Sur le passage à la discussion des articles de la proposition de M. <persName ref="#pers_ID">Ferroul</persName>;</seg>
                <seg xml:id="CR_1889-11-26_n16.3">2° Sur l'urgence de la proposition de M. <persName ref="#pers_ID">Maxime Lecomte</persName>,</seg>
                <seg xml:id="CR_1889-11-26_n16.4">Déclarent que, s'ils avaient été présents, ils auraient voté « conre » dans ces deux scrutins.</seg>
             </note>
 
-            <note corresp="#vot18891125_vot5" xml:id="CR_1889-11-26_n17"><seg xml:id="CR_1889-11-26_n17.1"><persName ref="#pers_ID">M. Léon Say</persName>, porté comme s'étant abstenu dans le scrutin sur la demande d'enquête — élection de <persName ref="#pers_ID">M. Blachère</persName>, — déclare avoir votés « contre » l'enquête.</seg></note>
+            <note corresp="#CR_1889-11-25_vot5" xml:id="CR_1889-11-26_n17"><seg xml:id="CR_1889-11-26_n17.1"><persName ref="#pers_ID">M. Léon Say</persName>, porté comme s'étant abstenu dans le scrutin sur la demande d'enquête — élection de <persName ref="#pers_ID">M. Blachère</persName>, — déclare avoir votés « contre » l'enquête.</seg></note>
          </div>
       </back>
    </text>

@@ -200,9 +200,10 @@
             </u>
             
             <!-- "Voix au centre", qu'est-ce qu'on pourra mettre dans @who ? -->
+            
             <lb/><u who="#vot1" ana="speaker">
                <seg>
-                  Mes amis et moi 
+                  M. <persName>Paul Déroulède</persName>. Mes amis et moi 
                   <lb/>avons applaudi à ce que nous avons cru, à 
                   <lb/>ce que nous croyons encore être la forma- 
                   <lb/>tion spontanée d'une majorité de con- 
@@ -216,7 +217,7 @@
             
             <lb/><u who="#vot1" ana="speaker">
                <seg>
-                  La tolérance pour 
+                  <persName>Gustave Rivet</persName>. La tolérance pour 
                   <lb/>toutes Les ignominies qui ont été commises 
                   <lb/>Pendant la période électorale.
                </seg>

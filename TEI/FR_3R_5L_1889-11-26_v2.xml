@@ -227,8 +227,9 @@
             </u>
             
             <u who="#vot1" ana="speaker">
-               <seg>M. <persName>Reybert</persName>, rapporteur. — <placeName>Département de la Corrèze, arrondissement de Tulle, 1re circonscription</placeName>.</seg>
+               <seg>M. <persName>Reybert</persName>, rapporteur. — <placeName>Département de la Corrèze, arrondissement de Tulle</placeName>, 1re circonscription.</seg>
                <seg>Les élections du <date>22 septembre</date> ont donné les résultats suivants :</seg>
+               <quote>
                <seg>Electeurs inscrits, <num>17,950</num>, dont le quart est de <num>4,263</num>.</seg>
                <seg>Nombre des votants, <num>12,322</num>.</seg>
                <seg>Bulletins blancs et nuls, à déduire, <num>133</num>.</seg>
@@ -236,8 +237,11 @@
                <seg>Ont obtenu : MM. <persName>Borie</persName>, député sortant... <num>7.508</num> voix</seg>
                <seg><persName>Vachal</persName>, ancien député... <num>4.748</num></seg>
                <seg>M. <persName>Borie</persName> a été proclamé député comme ayant réuni un nombre de voix au moins égal à la majorité absolue des suffrages</seg>
+               </quote>
             </u>
          </div>
+         <div><signed>Bla</signed></div>
+         <div><u></u></div>
       </body>
       
       
@@ -1030,20 +1034,20 @@
             </event>
             
             <!-- RECTIFICATIONS -->
-            <event ref="#vot18891125" type="rectifications">
+            <event ref="#vot18891125" type="rectificationsvotes">
                <!-- ref = xml:id des scrutins concernés donc ici #vot18891125 -->
                <head>Rectifications aux scrutins de la séance du <date>25 novembre 1889</date>.</head>
                
                <!-- Obligation de garder la balise < desc > sinon le doc n'est plus valide -->
                <desc/>
                
-               <note type="rectification"><seg>M. <persName>Michau</persName> <placeName>(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>, déclare avoir voté « pour ».</seg></note>
+               <note><seg>M. <persName>Michau</persName> <placeName>(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>, déclare avoir voté « pour ».</seg></note>
                
-               <note type="rectification"><seg>M. <persName>Léon Bourgeois</persName> <placeName>(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté « pour » dans le scrutin sur la demande d'invalidation de l'élection de M. <persName>de La Martinière</persName> dans la 2e circonscription de <placeName>Coutances (Manche)</placeName>, et qu'en réalité il « s'était abstenu ».</seg></note>
+               <note><seg>M. <persName>Léon Bourgeois</persName> <placeName>(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté « pour » dans le scrutin sur la demande d'invalidation de l'élection de M. <persName>de La Martinière</persName> dans la 2e circonscription de <placeName>Coutances (Manche)</placeName>, et qu'en réalité il « s'était abstenu ».</seg></note>
                
-               <note type="rectification"><seg>M. <persName>Argeliés</persName>, absent an moment des scrutins du <date>25 novembre</date> sur les demandes d'invalidation des élections de MM. <persName>Blachére</persName> et <persName>de La Martinière</persName>, déclare que, s'il avait été présent, il aurait voté « pour » la validation des élections.</seg></note>
+               <note><seg>M. <persName>Argeliés</persName>, absent an moment des scrutins du <date>25 novembre</date> sur les demandes d'invalidation des élections de MM. <persName>Blachére</persName> et <persName>de La Martinière</persName>, déclare que, s'il avait été présent, il aurait voté « pour » la validation des élections.</seg></note>
                
-               <note type="rectification">
+               <note>
                   <seg>MM. <persName>Varlet</persName> et <persName>Charles Dupuy</persName> <placeName>(Haute-Loire)</placeName>, absents au moment des votes :</seg>
                   <seg>1° Sur le passage à la discussion des articles de la proposition de M. <persName>Ferroul</persName>;</seg> 
                   <seg>2° Sur l'urgence de la proposition de M. <persName>Maxime Lecomte</persName>,</seg>
