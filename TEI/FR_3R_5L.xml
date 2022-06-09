@@ -25,17 +25,6 @@
             <!--<meeting n="5" >5e législature</meeting>-->
             
             
-            <!-- ParlaClarin indique l'auteur et l'éditeur du corpus + respStmt -->
-            <!--<author ref="http://...">
-               <forename></forename>
-               <surname></surname>
-            </author>
-            
-            <editor ref="https://...">
-               <forename></forename>
-               <surname></surname>
-            </editor>-->
-            
             <!-- Indique la responsabilité quant au contenu intellectuel d'une édition lorsque les éléments spécifiques relatifs aux auteurs, éditeurs, etc. ne suffisent pas ou ne s'appliquent pas -->
             <respStmt>
                <resp xml:lang="fr"></resp>
@@ -89,7 +78,7 @@
             <!-- Donne le nom de la personne ou de l'organisme responsable de la publication d’un fichier électronique, autre qu’un éditeur ou un distributeur -->
             <!--<authority></authority>-->
             
-            <!-- Identifiant permettant d'indiquer où trouver le corpus complet -->
+            <!-- Identifiant permettant d'indiquer où trouver le corpus complet --> 
             <idno type="..." subtype="..."></idno>
             
             <!-- Licence -->
@@ -177,7 +166,7 @@
                <seriesStmt>
                   <title></title>
                   <biblScope unit="paper"></biblScope>
-                  <biblScope unit="aaa">La Daniella</biblScope>
+                  <biblScope unit="aaa"></biblScope>
                </seriesStmt>
             </biblFull>
          </sourceDesc>-->
@@ -207,11 +196,11 @@
                <p xml:lang="en">No correction of source texts was performed.</p>
             </correction>
             
-            <!-- Normalisation effectuée sur le texte source dans sa conversion vers sa forme électronique. Ex : -->
+            <!--<!-\- Normalisation effectuée sur le texte source dans sa conversion vers sa forme électronique. Ex : -\->
             <normalization>
                <p xml:lang="fr"></p>
                <p xml:lang="en">Text has not been normalised, except for spacing.</p>
-            </normalization>
+            </normalization>-->
             
             <!-- Résume la façon dont les traits d'union sécants de fin de ligne d’un texte source ont été traités dans sa version encodée. Ex : -->
             <hyphenation>
@@ -234,12 +223,12 @@
          </editorialDecl>
          
          <!-- Idée de ParlaClarin : mettre un appInfo qui permet d'enregistrer des informations sur l'application qui a été utilisée pour traiter le fichier TEI -->
-         <!--<appInfo>
+         <appInfo>
             <application version="111" ident="aaa">
                <label></label>
                <desc></desc>
             </application>
-         </appInfo>-->
+         </appInfo>
          
          <!-- Donne l’information détaillée sur le balisage appliqué à un document -->
          <tagsDecl>
@@ -319,9 +308,9 @@
          </textClass>-->
          
          <!-- Description des participants : orateurs + institutions/ partis politiques -->
-         <particDesc>
+         <!--<particDesc>
             
-            <!-- Liste des orateurs -->
+            <!-\- Liste des orateurs -\->
             <listPerson>
                
                <person xml:id="PD_2409">
@@ -343,17 +332,17 @@
                   
                   <occupation xml:lang="fr">Militant politique</occupation>
                   
-                  <!-- Pour les orateurs qui sont députés ou membres de partis politiques : il faut mettre l'élément < affiliation > -->
-                  <!-- Description non formalisée portant sur l'affiliation présente ou passée d'une personne à une organisation -->
-                  <!-- @role donne le role à l'aide d'un vocabulaire contrôlé, @ref désigne l'organisation/ ou le parti dans laquelle/lequel la personne joue un rôle (très souvent l'Assemblée pour notre cas), @ana renvoie à la période pendant laquelle il était rattaché à l'organisation/ parti -->
-                  <affiliation role="aaa" ref="#aaa" from="1889-08-01" to="1890-06-21" ana="#aaa"/>
+                  <!-\- Pour les orateurs qui sont députés ou membres de partis politiques : il faut mettre l'élément < affiliation > -\->
+                  <!-\- Description non formalisée portant sur l'affiliation présente ou passée d'une personne à une organisation -\->
+                  <!-\- @role donne le role à l'aide d'un vocabulaire contrôlé, @ref désigne l'organisation/ ou le parti dans laquelle/lequel la personne joue un rôle (très souvent l'Assemblée pour notre cas), @ana renvoie à la période pendant laquelle il était rattaché à l'organisation/ parti -\->
+                  <!-\-<affiliation role="aaa" ref="#aaa" from="1889-08-01" to="1890-06-21" ana="#aaa"/>-\->
                   
                   <idno type="URI" subtype="wikimedia">https://en.wikipedia.org/...</idno>
                   
-                  <!-- Possibilité d'associer une image -->
-                  <!--<figure>
+                  <!-\- Possibilité d'associer une image -\->
+                  <!-\-<figure>
                      <graphic url="https://api.parliament.uk/photo/Paa3j0vS.jpg?crop=CU_1:1"/>
-                  </figure>-->
+                  </figure>-\->
                   
                </person>
                
@@ -363,14 +352,14 @@
                
             </listPerson>
             
-            <!-- Liste des organisations -->
+            <!-\- Liste des organisations -\->
             <listOrg>
                
                <org xml:id="org_ID" role="aaa" xml:lang="fr">
-                  <!-- @full permet de dire s'il s'agit d'un composant écrit en toutes lettres, sous une forme abrégée ou avec les initiales -->
+                  <!-\- @full permet de dire s'il s'agit d'un composant écrit en toutes lettres, sous une forme abrégée ou avec les initiales -\->
                   <orgName full="yes"></orgName>
                   
-                  <!-- Données liées à tout type d'évènement significatif dans l'existence d'une personne, d'un lieu ou d'une organisation. Ex : -->
+                  <!-\- Données liées à tout type d'évènement significatif dans l'existence d'une personne, d'un lieu ou d'une organisation. Ex : -\->
                   <event from="2011-10-22">
                      <label xml:lang="en">existence</label>
                   </event>
@@ -378,16 +367,16 @@
                   <idno type="wikimedia">https://en.wikipedia.org/...</idno>
                </org>
                
-               <!-- Possibilité de mettre une liste des relations entre les organisations -->
+               <!-\-<!-\\- Possibilité de mettre une liste des relations entre les organisations -\\->
                <listRelation>
                   
                   <relation name="aaa" mutual="#aaa #aaa #aaa #aaa" from="2014-10-11" to="2018-12-09" ana="#period_54"/>
                   <relation name="bbb" active="#bbb #bbb" passive="#bbb" from="2014-10-11" to="2018-12-09" ana="#bbb"/>
                   
-               </listRelation>
+               </listRelation>-\->
             </listOrg>
             
-         </particDesc>
+         </particDesc>-->
          
          <!-- Indique les langues utilisées dans les textes et dans les métadonnées -->
          <langUsage>
@@ -418,6 +407,70 @@
    
    <!-- Élément conteneur pour les données liées/ infos contextuelles/ annotations -->
    <standOff>
+      <!-- Liste des orateurs -->
+      <listPerson>
+         
+         <person xml:id="PD_2409">
+            
+            <persName>
+               <forename>Paul</forename>
+               <surname>Déroulède</surname>
+            </persName>
+            
+            <sex value="M">M.</sex>
+            
+            <birth when="1846-09-02">
+               <placeName>Paris</placeName>
+            </birth>
+            
+            <death when="1914-01-31">
+               <placeName>Nice</placeName>
+            </death>
+            
+            <occupation xml:lang="fr">Militant politique</occupation>
+            
+            <!-- Pour les orateurs qui sont députés ou membres de partis politiques : il faut mettre l'élément < affiliation > -->
+            <!-- Description non formalisée portant sur l'affiliation présente ou passée d'une personne à une organisation -->
+            <!-- @role donne le role à l'aide d'un vocabulaire contrôlé, @ref désigne l'organisation/ ou le parti dans laquelle/lequel la personne joue un rôle (très souvent l'Assemblée pour notre cas), @ana renvoie à la période pendant laquelle il était rattaché à l'organisation/ parti -->
+            <!--<affiliation role="aaa" ref="#aaa" from="1889-08-01" to="1890-06-21" ana="#aaa"/>-->
+            
+            <idno type="URI" subtype="wikimedia">https://en.wikipedia.org/...</idno>
+            
+            <!-- Possibilité d'associer une image -->
+            <!--<figure>
+                     <graphic url="https://api.parliament.uk/photo/Paa3j0vS.jpg?crop=CU_1:1"/>
+                  </figure>-->
+            
+         </person>
+         
+         <person xml:id="pers_ID">
+            <persName>...</persName>
+         </person>
+         
+      </listPerson>
+      
+      <listOrg>
+         
+         <org xml:id="org_ID" role="aaa" xml:lang="fr">
+            <!-- @full permet de dire s'il s'agit d'un composant écrit en toutes lettres, sous une forme abrégée ou avec les initiales -->
+            <orgName full="yes"></orgName>
+            
+            <!-- Données liées à tout type d'évènement significatif dans l'existence d'une personne, d'un lieu ou d'une organisation. Ex : -->
+            <event from="2011-10-22">
+               <label xml:lang="en">existence</label>
+            </event>
+            
+            <idno type="wikimedia">https://en.wikipedia.org/...</idno>
+         </org>
+         
+         <!--<!-\- Possibilité de mettre une liste des relations entre les organisations -\->
+               <listRelation>
+                  
+                  <relation name="aaa" mutual="#aaa #aaa #aaa #aaa" from="2014-10-11" to="2018-12-09" ana="#period_54"/>
+                  <relation name="bbb" active="#bbb #bbb" passive="#bbb" from="2014-10-11" to="2018-12-09" ana="#bbb"/>
+                  
+               </listRelation>-->
+      </listOrg>
       
       <!-- Liste des lieux cités -->
       <listPlace>

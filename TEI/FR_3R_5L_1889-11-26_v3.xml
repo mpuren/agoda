@@ -127,6 +127,60 @@
             
          </sourceDesc>
          
+         <!-- Autre solution plus détaillée -->
+         <!--<sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title type="main"></title>
+                  <title type="sub"></title>
+                  
+                  <author ref="https://...">
+                     <persName ref="#">
+                        <forename></forename>
+                        <surname></surname>
+                     </persName>
+                  </author>
+               </titleStmt>
+               
+               <publicationStmt>
+                  <publisher></publisher> 
+                  
+                  <pubPlace>
+                     <location>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                     </location>
+                  </pubPlace>
+                  
+                  <date from="1889" to="1889"></date>
+                  
+                  <authority>
+                     <persName xml:id="aaa">
+                        <forename> </forename>
+                        <surname> </surname>
+                        <roleName type="directeur"></roleName>
+                     </persName>
+                  </authority>
+                
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">
+                     Gallica Bibliothèque nationale de France
+                  </distributor>
+                  
+                  <availability>
+                     <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
+                        ...
+                     </licence>
+                  </availability>
+               </publicationStmt>
+               
+               <seriesStmt>
+                  <title></title>
+                  <biblScope unit="paper"></biblScope>
+                  <biblScope unit="aaa">La Daniella</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>-->
+         
       </fileDesc>
       
       

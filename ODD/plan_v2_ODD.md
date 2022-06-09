@@ -50,10 +50,10 @@
 ### 4.2.2 Description des révisions (revisionDesc)
 
 ## 4.3 Métadonnées non bibliographiques (profileDesc - standOff)
-### 4.3.1 Index des participants (particDesc)
+### 4.3.1 Index des participants (standOff)
 #### 4.3.1.1 Description des orateurs
 #### 4.3.1.2 Description des organisations
-### 4.3.2 Index des lieux (settingDesc - standOff))
+### 4.3.2 Index des lieux (settingDesc - standOff)
 #### 4.3.2.1 Description du lieu de la séance
 #### 4.3.2.2 Description des lieux mentionnés 
 ### 4.3.3 Utilisation des langues (langUsage)
@@ -198,10 +198,10 @@ Fichier du composant : FR_3R_5L_1889-11-26
 ###4.2.2 Description des révisions (revisionDesc)
 
 ## 4.3 Métadonnées non bibliographiques (profileDesc - standOff)
-### 4.3.1 Index des participants (particDesc)
+### 4.3.1 Index des participants (standOff)
 #### 4.3.1.1 Description des orateurs
 #### 4.3.1.2 Description des organisations
-### 4.3.2 Index des lieux (settingDesc - standOff))
+### 4.3.2 Index des lieux (settingDesc - standOff)
 #### 4.3.2.1 Description du lieu de la séance
 #### 4.3.2.2 Description des lieux mentionnés 
 ### 4.3.3 Utilisation des langues (langUsage)
