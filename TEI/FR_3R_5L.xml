@@ -8,6 +8,7 @@
       <!-- FILEDESC -->
       <!-- Description bibliographique du fichier électronique -->
       <fileDesc>
+         
          <titleStmt>
             
             <!-- Titre en français et anglais -->
@@ -15,16 +16,16 @@
             <title type="main" xml:lang="en"></title>
            
             <!-- Possibilité d'un titre subordonné -->
-            <!--<title type="sub" xml:lang="fr"></title>
-            <title type="sub" xml:lang="en"></title>-->
+            <title type="sub" xml:lang="fr"></title>
+            <title type="sub" xml:lang="en"></title>
             
             
             <!-- Contient le titre descriptif formalisé d’une réunion ou d’une conférence, employé dans une description bibliographique pour un article provenant d'une telle réunion, ou comme le titre ou le préambule aux publications qui en émanent. -->
             <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
-            <meeting n="5" >5e législature. - Session extraordinaire de 1889.</meeting>
+            <!--<meeting n="5" >5e législature</meeting>-->
             
             
-            <!-- ParlaClarin indique l'auteur et l'éditeur du corpus -->
+            <!-- ParlaClarin indique l'auteur et l'éditeur du corpus + respStmt -->
             <!--<author ref="http://...">
                <forename></forename>
                <surname></surname>
@@ -56,39 +57,44 @@
          <editionStmt>
             
             <!-- Décrit les particularités de l’édition d’un texte -->
-            <edition>1</edition>
+            <edition>Première édition</edition>
             
          </editionStmt>
          
-         <!-- Donne infos sur la taille du corpus : discours et mots. Ex : -->
-         <extent>
+         <!-- Donne infos sur la taille du corpus : discours et mots. À renseigner à la toute fin du processus. Ex : -->
+         <!--<extent>
             
             <measure unit="utterances" quantity="481604" xml:lang="en">481,604 utterances</measure>
             <measure unit="words" quantity="32732720" xml:lang="en">32,732,720 words</measure>
             <measure unit="utterances" quantity="481604" xml:lang="fr">481 604 interventions</measure>
             <measure unit="words" quantity="32732720" xml:lang="fr">32 732 720 mots</measure>
             
-         </extent>
+         </extent>-->
          
          <!-- Regroupe des informations concernant la publication ou la diffusion d’un texte électronique ou d’un autre type de texte. -->
          <publicationStmt>
             
             <!-- éditeur du corpus -->
-            <publisher>
+            <!-- Donne le nom de l'organisme responsable de la publication ou de la distribution d'un élément de la bibliographie -->
+            <publisher xml:lang="fr"></publisher>
+            <publisher xml:lang="en"></publisher>
+            
+           <!-- <publisher>
                <orgName xml:lang="fr"></orgName>
                <orgName xml:lang="en"></orgName>
                <ref target="https://..."></ref>
-            </publisher>
+            </publisher>-->
             
             <!-- Idée de parlaClarin à la place de < publisher > : -->
+            <!-- Donne le nom de la personne ou de l'organisme responsable de la publication d’un fichier électronique, autre qu’un éditeur ou un distributeur -->
             <!--<authority></authority>-->
             
-            <!-- Identifiant -->
+            <!-- Identifiant permettant d'indiquer où trouver le corpus complet -->
             <idno type="..." subtype="..."></idno>
             
             <!-- Licence -->
             <availability status="free">
-               <licence>http://creativecommons.org/licenses/by/4.0/</licence>
+               <licence>http://...</licence>
                <p xml:lang="fr">Description en prose de la licence.</p>
                <p xml:lang="en"></p>
             </availability>
@@ -96,8 +102,8 @@
             <!-- Date de parution -->
             <date when="2022-06-03"></date>
             
-            <!-- Idée de parlaCalrin (donne le nom d’une personne ou d’un organisme responsable de la diffusion d’un texte) -->
-            <!--<distributor></distributor>-->
+            <!-- Idée de parlaClarin (donne le nom d’une personne ou d’un organisme responsable de la diffusion d’un texte) -->
+            <!--<distributor>CLARIN Git repository</distributor>-->
             
          </publicationStmt>
          
@@ -121,6 +127,60 @@
             </bibl>
             
          </sourceDesc>
+         
+         <!-- Autre solution plus détaillée -->
+         <!--<sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title type="main"></title>
+                  <title type="sub"></title>
+                  
+                  <author ref="https://...">
+                     <persName ref="#">
+                        <forename></forename>
+                        <surname></surname>
+                     </persName>
+                  </author>
+               </titleStmt>
+               
+               <publicationStmt>
+                  <publisher></publisher> 
+                  
+                  <pubPlace>
+                     <location>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                     </location>
+                  </pubPlace>
+                  
+                  <date from="1889" to="1889"></date>
+                  
+                  <authority>
+                     <persName xml:id="aaa">
+                        <forename> </forename>
+                        <surname> </surname>
+                        <roleName type="directeur"></roleName>
+                     </persName>
+                  </authority>
+                
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">
+                     Gallica Bibliothèque nationale de France
+                  </distributor>
+                  
+                  <availability>
+                     <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
+                        ...
+                     </licence>
+                  </availability>
+               </publicationStmt>
+               
+               <seriesStmt>
+                  <title></title>
+                  <biblScope unit="paper"></biblScope>
+                  <biblScope unit="aaa">La Daniella</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>-->
          
       </fileDesc>
       
@@ -184,8 +244,8 @@
          <!-- Donne l’information détaillée sur le balisage appliqué à un document -->
          <tagsDecl>
             
-            <!-- Compte des balises utilisées pour le corpus entier. Ex : -->
-            <namespace name="http://www.tei-c.org/ns/1.0">
+            <!-- Compte des balises utilisées pour le corpus entier. À renseigner à la toute fin du processus. Ex : -->
+            <!--<namespace name="http://www.tei-c.org/ns/1.0">
                <tagUsage gi="body" occurs="1"/>
                <tagUsage gi="desc" occurs="188"/>
                <tagUsage gi="div" occurs="3"/>
@@ -194,7 +254,7 @@
                <tagUsage gi="note" occurs="3"/>
                <tagUsage gi="seg" occurs="595"/>
                <tagUsage gi="u" occurs="256"/>
-            </namespace>
+            </namespace>-->
             
          </tagsDecl>
          
@@ -203,6 +263,7 @@
             
             <!-- La taxonomie est décrite puis énumération des catégories, ces dernières sont explicitées dans l'élément catDesc -->
             <taxonomy xml:id="a">
+               
                <desc xml:lang="fr">
                   <term></term>
                </desc>
@@ -210,14 +271,14 @@
                   <term></term>
                </desc>
                
-               <category xml:id="b">
+               <category xml:id="ab">
                   <catDesc xml:lang="fr">
                      <term></term>: </catDesc>
                   <catDesc xml:lang="en">
                      <term></term>: </catDesc>
                </category>
                
-               <category xml:id="c">
+               <category xml:id="ac">
                   <catDesc xml:lang="fr">
                      <term></term>: </catDesc>
                   <catDesc xml:lang="en">
