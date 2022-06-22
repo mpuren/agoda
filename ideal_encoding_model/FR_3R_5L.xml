@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xml:id="FR_3R_5L" xml:lang="fr">
+   <teiHeader>
+      
+      <!-- FILEDESC -->
+      <!-- Description bibliographique du fichier électronique -->
+      <fileDesc>
+         
+         <titleStmt>
+            
+            <!-- Titre en français et anglais -->
+            <title type="main" xml:lang="fr"></title>
+            <title type="main" xml:lang="en"></title>
+           
+            <!-- Possibilité d'un titre subordonné -->
+            <title type="sub" xml:lang="fr"></title>
+            <title type="sub" xml:lang="en"></title>
+            
+            
+            <!-- Contient le titre descriptif formalisé d’une réunion ou d’une conférence, employé dans une description bibliographique pour un article provenant d'une telle réunion, ou comme le titre ou le préambule aux publications qui en émanent. -->
+            <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
+            <!--<meeting n="5" >5e législature</meeting>-->
+            
+            
+            <!-- Indique la responsabilité quant au contenu intellectuel d'une édition lorsque les éléments spécifiques relatifs aux auteurs, éditeurs, etc. ne suffisent pas ou ne s'appliquent pas -->
+            <respStmt>
+               <resp xml:lang="fr"></resp>
+               <resp xml:lang="en"></resp>
+               <persName></persName>
+               <persName></persName>
+            </respStmt>
+            
+            
+            <!-- Désigne le nom d’une personne ou d’un organisme responsable du financement d’un projet ou d’un texte -->
+            <funder>
+               <orgName xml:lang="fr"></orgName>
+               <orgName xml:lang="en"></orgName>
+            </funder>
+            
+         </titleStmt>
+         
+         
+         <editionStmt>
+            
+            <!-- Décrit les particularités de l’édition d’un texte -->
+            <edition>Première édition</edition>
+            
+         </editionStmt>
+         
+         <!-- Donne infos sur la taille du corpus : discours et mots. À renseigner à la toute fin du processus. Ex : -->
+         <!--<extent>
+            
+            <measure unit="utterances" quantity="481604" xml:lang="en">481,604 utterances</measure>
+            <measure unit="words" quantity="32732720" xml:lang="en">32,732,720 words</measure>
+            <measure unit="utterances" quantity="481604" xml:lang="fr">481 604 interventions</measure>
+            <measure unit="words" quantity="32732720" xml:lang="fr">32 732 720 mots</measure>
+            
+         </extent>-->
+         
+         <!-- Regroupe des informations concernant la publication ou la diffusion d’un texte électronique ou d’un autre type de texte. -->
+         <publicationStmt>
+            
+            <!-- éditeur du corpus -->
+            <!-- Donne le nom de l'organisme responsable de la publication ou de la distribution d'un élément de la bibliographie -->
+            <publisher xml:lang="fr"></publisher>
+            <publisher xml:lang="en"></publisher>
+            
+           <!-- <publisher>
+               <orgName xml:lang="fr"></orgName>
+               <orgName xml:lang="en"></orgName>
+               <ref target="https://..."></ref>
+            </publisher>-->
+            
+            <!-- Idée de parlaClarin à la place de < publisher > : -->
+            <!-- Donne le nom de la personne ou de l'organisme responsable de la publication d’un fichier électronique, autre qu’un éditeur ou un distributeur -->
+            <!--<authority></authority>-->
+            
+            <!-- Identifiant permettant d'indiquer où trouver le corpus complet --> 
+            <idno type="..." subtype="..."></idno>
+            
+            <!-- Licence -->
+            <availability status="free">
+               <licence>http://...</licence>
+               <p xml:lang="fr">Description en prose de la licence.</p>
+               <p xml:lang="en"></p>
+            </availability>
+            
+            <!-- Date de parution -->
+            <date when="2022-06-03"></date>
+            
+            <!-- Idée de parlaClarin (donne le nom d’une personne ou d’un organisme responsable de la diffusion d’un texte) -->
+            <!--<distributor>CLARIN Git repository</distributor>-->
+            
+         </publicationStmt>
+         
+         <!-- Description de la source -->
+         <sourceDesc>
+            
+            <!-- Référence bibliographique faiblement adaptée dans laquelle les sous-composants peuvent ou non être balisés -->
+            <bibl>
+               <!-- Titre de la source -->
+               <title type="main" xml:lang="fr"></title>
+               <title type="main" xml:lang="en"></title>
+               
+               <!--<title type="sub" xml:lang="fr"></title>
+               <title type="sub" xml:lang="en"></title>-->
+               
+               <!-- Donne un identifiant standardisé qui peut être utilisé pour identifier une référence bibliographique (URL dont les transcriptions sont issues) -->
+               <idno type="URI"></idno>
+               
+               <!-- Date de la transcription la plus ancienne et la plus récente, possible d'utiliser @from @to -->
+               <date when="2022-06-07"></date>
+            </bibl>
+            
+         </sourceDesc>
+         
+         <!-- Autre solution plus détaillée -->
+         <!--<sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title type="main"></title>
+                  <title type="sub"></title>
+                  
+                  <author ref="https://...">
+                     <persName ref="#">
+                        <forename></forename>
+                        <surname></surname>
+                     </persName>
+                  </author>
+               </titleStmt>
+               
+               <publicationStmt>
+                  <publisher></publisher> 
+                  
+                  <pubPlace>
+                     <location>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                     </location>
+                  </pubPlace>
+                  
+                  <date from="1889" to="1889"></date>
+                  
+                  <authority>
+                     <persName xml:id="aaa">
+                        <forename> </forename>
+                        <surname> </surname>
+                        <roleName type="directeur"></roleName>
+                     </persName>
+                  </authority>
+                
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">
+                     Gallica Bibliothèque nationale de France
+                  </distributor>
+                  
+                  <availability>
+                     <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
+                        ...
+                     </licence>
+                  </availability>
+               </publicationStmt>
+               
+               <seriesStmt>
+                  <title></title>
+                  <biblScope unit="paper"></biblScope>
+                  <biblScope unit="aaa"></biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>-->
+         
+      </fileDesc>
+      
+      
+      
+      <!-- ENCODINGDESC -->
+      <!-- Documente la relation d'un texte électronique avec sa ou ses sources -->
+      <encodingDesc>
+         
+         <!-- Description du projet dans le cadre duquel le corpus a été compilé -->
+         <projectDesc>
+            
+            <p xml:lang="fr"><ref target="https://..."></ref> ...</p>
+            <p xml:lang="en"></p>
+            
+         </projectDesc>
+         
+         <!-- Précisions sur les pratiques et les principes éditoriaux appliqués au cours de l’encodage du texte. Plusieurs dimensions prises en compte : -->
+         <editorialDecl>
+            
+            <!-- Corrections apportées au texte. Ex : -->
+            <correction>
+               <p xml:lang="fr"></p>
+               <p xml:lang="en">No correction of source texts was performed.</p>
+            </correction>
+            
+            <!--<!-\- Normalisation effectuée sur le texte source dans sa conversion vers sa forme électronique. Ex : -\->
+            <normalization>
+               <p xml:lang="fr"></p>
+               <p xml:lang="en">Text has not been normalised, except for spacing.</p>
+            </normalization>-->
+            
+            <!-- Résume la façon dont les traits d'union sécants de fin de ligne d’un texte source ont été traités dans sa version encodée. Ex : -->
+            <hyphenation>
+               <p xml:lang="fr"></p>
+               <p xml:lang="en">No end-of-line hyphens were present in the source.</p>
+            </hyphenation>
+            
+            <!-- Décrit la pratique éditoriale adoptée par rapport aux guillements dans l’original. Ex : -->
+            <quotation>
+               <p xml:lang="fr"></p>
+               <p xml:lang="en">Quotation marks have been left in the text and are not explicitly marked up.</p>
+            </quotation>
+            
+            <!-- Décrit les principes selon lesquels le texte a été segmenté. Ex : -->
+            <segmentation>
+               <p xml:lang="fr"></p>
+               <p xml:lang="en">The texts are segmented into utterances (speeches) and segments (corresponding to paragraphs in the source transcription).</p>
+            </segmentation>
+            
+         </editorialDecl>
+         
+         <!-- Idée de ParlaClarin : mettre un appInfo qui permet d'enregistrer des informations sur l'application qui a été utilisée pour traiter le fichier TEI -->
+         <appInfo>
+            <application version="111" ident="aaa">
+               <label></label>
+               <desc></desc>
+            </application>
+         </appInfo>
+         
+         <!-- Donne l’information détaillée sur le balisage appliqué à un document -->
+         <tagsDecl>
+            
+            <!-- Compte des balises utilisées pour le corpus entier. À renseigner à la toute fin du processus. Ex : -->
+            <!--<namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="body" occurs="1"/>
+               <tagUsage gi="desc" occurs="188"/>
+               <tagUsage gi="div" occurs="3"/>
+               <tagUsage gi="head" occurs="3"/>
+               <tagUsage gi="incident" occurs="18"/>
+               <tagUsage gi="note" occurs="3"/>
+               <tagUsage gi="seg" occurs="595"/>
+               <tagUsage gi="u" occurs="256"/>
+            </namespace>-->
+            
+         </tagsDecl>
+         
+         <!-- Déclaration des classes : définition des vocabulaires contrôlés-->
+         <classDecl>
+            
+            <!-- La taxonomie est décrite puis énumération des catégories, ces dernières sont explicitées dans l'élément catDesc -->
+            <taxonomy xml:id="a">
+               
+               <desc xml:lang="fr">
+                  <term></term>
+               </desc>
+               <desc xml:lang="en">
+                  <term></term>
+               </desc>
+               
+               <category xml:id="ab">
+                  <catDesc xml:lang="fr">
+                     <term></term>: </catDesc>
+                  <catDesc xml:lang="en">
+                     <term></term>: </catDesc>
+               </category>
+               
+               <category xml:id="ac">
+                  <catDesc xml:lang="fr">
+                     <term></term>: </catDesc>
+                  <catDesc xml:lang="en">
+                     <term></term>: </catDesc>
+               </category>
+               
+            </taxonomy>
+            
+            <taxonomy>
+               <desc>...</desc>
+               <category></category>
+            </taxonomy>
+            
+         </classDecl>
+   
+      </encodingDesc>
+      
+      
+      
+      
+      <!-- PROFILEDESC -->
+      <!-- Description détaillée des aspects non bibliographiques -->
+      <profileDesc>
+         
+         <!-- Décrit le(s) contexte(s) dans lesquels se situe une interaction linguistique -->
+         <!-- Donne des infos sur le lieu et le moment où les réunions incluses ont eu lieu -->
+         <settingDesc>
+            <setting>
+               <name type="city">Paris</name>
+               <name type="country" key="FR">France</name>
+               <date from="1889" to="1889"></date>
+            </setting>
+         </settingDesc>
+         
+         <!-- Informations décrivant la nature ou le sujet d’un texte selon les termes issus des taxonomies (idée de ParlaMint, ex: parlement bicaméral/ chambre basse) -->
+         <!--<textClass>
+            <catRef scheme="#..." target="#..."/>
+         </textClass>-->
+         
+         <!-- Description des participants : orateurs + institutions/ partis politiques -->
+         <!--<particDesc>
+            
+            <!-\- Liste des orateurs -\->
+            <listPerson>
+               
+               <person xml:id="PD_2409">
+                  
+                  <persName>
+                     <forename>Paul</forename>
+                     <surname>Déroulède</surname>
+                  </persName>
+                  
+                  <sex value="M">M.</sex>
+                  
+                  <birth when="1846-09-02">
+                     <placeName>Paris</placeName>
+                  </birth>
+                  
+                  <death when="1914-01-31">
+                     <placeName>Nice</placeName>
+                  </death>
+                  
+                  <occupation xml:lang="fr">Militant politique</occupation>
+                  
+                  <!-\- Pour les orateurs qui sont députés ou membres de partis politiques : il faut mettre l'élément < affiliation > -\->
+                  <!-\- Description non formalisée portant sur l'affiliation présente ou passée d'une personne à une organisation -\->
+                  <!-\- @role donne le role à l'aide d'un vocabulaire contrôlé, @ref désigne l'organisation/ ou le parti dans laquelle/lequel la personne joue un rôle (très souvent l'Assemblée pour notre cas), @ana renvoie à la période pendant laquelle il était rattaché à l'organisation/ parti -\->
+                  <!-\-<affiliation role="aaa" ref="#aaa" from="1889-08-01" to="1890-06-21" ana="#aaa"/>-\->
+                  
+                  <idno type="URI" subtype="wikimedia">https://en.wikipedia.org/...</idno>
+                  
+                  <!-\- Possibilité d'associer une image -\->
+                  <!-\-<figure>
+                     <graphic url="https://api.parliament.uk/photo/Paa3j0vS.jpg?crop=CU_1:1"/>
+                  </figure>-\->
+                  
+               </person>
+               
+               <person xml:id="pers_ID">
+                  <persName>...</persName>
+               </person>
+               
+            </listPerson>
+            
+            <!-\- Liste des organisations -\->
+            <listOrg>
+               
+               <org xml:id="org_ID" role="aaa" xml:lang="fr">
+                  <!-\- @full permet de dire s'il s'agit d'un composant écrit en toutes lettres, sous une forme abrégée ou avec les initiales -\->
+                  <orgName full="yes"></orgName>
+                  
+                  <!-\- Données liées à tout type d'évènement significatif dans l'existence d'une personne, d'un lieu ou d'une organisation. Ex : -\->
+                  <event from="2011-10-22">
+                     <label xml:lang="en">existence</label>
+                  </event>
+                  
+                  <idno type="wikimedia">https://en.wikipedia.org/...</idno>
+               </org>
+               
+               <!-\-<!-\\- Possibilité de mettre une liste des relations entre les organisations -\\->
+               <listRelation>
+                  
+                  <relation name="aaa" mutual="#aaa #aaa #aaa #aaa" from="2014-10-11" to="2018-12-09" ana="#period_54"/>
+                  <relation name="bbb" active="#bbb #bbb" passive="#bbb" from="2014-10-11" to="2018-12-09" ana="#bbb"/>
+                  
+               </listRelation>-\->
+            </listOrg>
+            
+         </particDesc>-->
+         
+         <!-- Indique les langues utilisées dans les textes et dans les métadonnées -->
+         <langUsage>
+            
+            <language ident="fr" xml:lang="fr">français</language>
+            <language ident="en" xml:lang="fr">anglais</language>
+            <language ident="fr" xml:lang="en">French</language>
+            <language ident="en" xml:lang="en">English</language>
+            
+         </langUsage>
+         
+      </profileDesc>
+      
+      
+      
+      
+      <!-- REVISIONDESC -->
+      <!-- Optionnel, à la fois dans le composant et corpus -->
+      <!-- Résumé de l’historique des révisions d’un fichier -->
+      <revisionDesc>
+         
+         <change when="2022-06-07"><name>Personne</name>: description en texte libre de la modification.</change>
+         <change when="2022-06-07"><name></name>: </change>
+         
+      </revisionDesc>
+      
+   </teiHeader>
+   
+   <!-- Élément conteneur pour les données liées/ infos contextuelles/ annotations -->
+   <standOff>
+      <!-- Liste des orateurs -->
+      <listPerson>
+         
+         <person xml:id="PD_2409">
+            
+            <persName>
+               <forename>Paul</forename>
+               <surname>Déroulède</surname>
+            </persName>
+            
+            <sex value="M">M.</sex>
+            
+            <birth when="1846-09-02">
+               <placeName>Paris</placeName>
+            </birth>
+            
+            <death when="1914-01-31">
+               <placeName>Nice</placeName>
+            </death>
+            
+            <occupation xml:lang="fr">Militant politique</occupation>
+            
+            <!-- Pour les orateurs qui sont députés ou membres de partis politiques : il faut mettre l'élément < affiliation > -->
+            <!-- Description non formalisée portant sur l'affiliation présente ou passée d'une personne à une organisation -->
+            <!-- @role donne le role à l'aide d'un vocabulaire contrôlé, @ref désigne l'organisation/ ou le parti dans laquelle/lequel la personne joue un rôle (très souvent l'Assemblée pour notre cas), @ana renvoie à la période pendant laquelle il était rattaché à l'organisation/ parti -->
+            <!--<affiliation role="aaa" ref="#aaa" from="1889-08-01" to="1890-06-21" ana="#aaa"/>-->
+            
+            <idno type="URI" subtype="wikimedia">https://en.wikipedia.org/...</idno>
+            
+            <!-- Possibilité d'associer une image -->
+            <!--<figure>
+                     <graphic url="https://api.parliament.uk/photo/Paa3j0vS.jpg?crop=CU_1:1"/>
+                  </figure>-->
+            
+         </person>
+         
+         <person xml:id="pers_ID">
+            <persName>...</persName>
+         </person>
+         
+      </listPerson>
+      
+      <listOrg>
+         
+         <org xml:id="org_ID" role="aaa" xml:lang="fr">
+            <!-- @full permet de dire s'il s'agit d'un composant écrit en toutes lettres, sous une forme abrégée ou avec les initiales -->
+            <orgName full="yes"></orgName>
+            
+            <!-- Données liées à tout type d'évènement significatif dans l'existence d'une personne, d'un lieu ou d'une organisation. Ex : -->
+            <event from="2011-10-22">
+               <label xml:lang="en">existence</label>
+            </event>
+            
+            <idno type="wikimedia">https://en.wikipedia.org/...</idno>
+         </org>
+         
+         <!--<!-\- Possibilité de mettre une liste des relations entre les organisations -\->
+               <listRelation>
+                  
+                  <relation name="aaa" mutual="#aaa #aaa #aaa #aaa" from="2014-10-11" to="2018-12-09" ana="#period_54"/>
+                  <relation name="bbb" active="#bbb #bbb" passive="#bbb" from="2014-10-11" to="2018-12-09" ana="#bbb"/>
+                  
+               </listRelation>-->
+      </listOrg>
+      
+      <!-- Liste des lieux cités -->
+      <listPlace>
+         
+         <place xml:id="lieu_ID">
+            <placeName></placeName>
+            
+            <location>
+               <country key="FR"/>                     
+               <region></region>
+               <settlement></settlement>
+            </location>
+            
+            <idno type="URI" subtype="wikimedia">https://en.wikipedia.org/...</idno>
+         </place>
+         
+      </listPlace>
+      
+   </standOff>
+   
+   
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="FR_3R_5L_1889-11-26_v3.xml"/>
+</teiCorpus>
