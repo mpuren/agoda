@@ -492,5 +492,5 @@
    </standOff>
    
    
-   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="FR_3R_5L_1889-11-26_v3.xml"/>
+   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="FR_3R_5L_1889-11-26_ideal_encoding_model.xml"/>
 </teiCorpus>

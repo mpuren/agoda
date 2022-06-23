@@ -21,7 +21,7 @@
             
             <!-- Contient le titre descriptif formalisé d’une réunion ou d’une conférence, employé dans une description bibliographique pour un article provenant d'une telle réunion, ou comme le titre ou le préambule aux publications qui en émanent. -->
             <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
-            <meeting n="5" >5e législature. - Session extraordinaire de 1889.</meeting>
+            <meeting >5e législature. - Session extraordinaire de 1889. 10e séance</meeting>
             
             
             <!-- La suite du < titleStmt > n'est pas détaillée dans composant de ParlaClarin -->
@@ -107,43 +107,35 @@
                   
                   
          <!-- Description de la source -->
-         <sourceDesc>
+         <!--<sourceDesc>
             
-            <!-- Référence bibliographique faiblement adaptée dans laquelle les sous-composants peuvent ou non être balisés -->
+            <!-\- Référence bibliographique faiblement adaptée dans laquelle les sous-composants peuvent ou non être balisés -\->
             <bibl>
-               <!-- Titre du document en question -->
+               <!-\- Titre du document en question -\->
                <title type="main" xml:lang="fr"></title>
                <title type="main" xml:lang="en"></title>
                
-               <!--<title type="sub" xml:lang="fr"></title>
-               <title type="sub" xml:lang="en"></title>-->
+               <!-\-<title type="sub" xml:lang="fr"></title>
+               <title type="sub" xml:lang="en"></title>-\->
                
-               <!-- Donne un identifiant standardisé qui peut être utilisé pour identifier une référence bibliographique (URL dont les transcriptions sont issues) -->
+               <!-\- Donne un identifiant standardisé qui peut être utilisé pour identifier une référence bibliographique (URL dont les transcriptions sont issues) -\->
                <idno type="URI"></idno>
                
-               <!-- Date de la transcription du document en question -->
+               <!-\- Date de la transcription du document en question -\->
                <date when="2022-06-07"></date>
             </bibl>
             
-         </sourceDesc>
+         </sourceDesc>-->
          
          <!-- Autre solution plus détaillée -->
-         <!--<sourceDesc>
+         <sourceDesc>
             <biblFull>
                <titleStmt>
-                  <title type="main"></title>
-                  <title type="sub"></title>
-                  
-                  <author ref="https://...">
-                     <persName ref="#">
-                        <forename></forename>
-                        <surname></surname>
-                     </persName>
-                  </author>
+                  <title>Journal officiel de la République française. Débats parlementaires. Chambre des députés : compte rendu in-extenso</title>                 
                </titleStmt>
                
                <publicationStmt>
-                  <publisher></publisher> 
+                  <publisher>A déterminer.</publisher> 
                   
                   <pubPlace>
                      <location>
@@ -152,34 +144,28 @@
                      </location>
                   </pubPlace>
                   
-                  <date from="1889" to="1889"></date>
-                  
-                  <authority>
-                     <persName xml:id="aaa">
-                        <forename> </forename>
-                        <surname> </surname>
-                        <roleName type="directeur"></roleName>
-                     </persName>
-                  </authority>
+                  <!-- date de publication -->
+                  <date when="1889-11-27">27 novembre 1889</date>
                 
-                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">
-                     Gallica Bibliothèque nationale de France
-                  </distributor>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">Source gallica.bnf.fr / Bibliothèque nationale de France</distributor>
                   
                   <availability>
                      <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
-                        ...
+                        <p>Les contenus accessibles sur le site Gallica sont pour la plupart des reproductions numériques d'œuvres tombées dans le domaine public provenant des collections de la BnF.</p>
+                        <p>Ces contenus sont considérés, en vertu du code des relations entre le public et l’administration, comme étant des informations publiques et leur réutilisation s'inscrit dans le cadre des dispositions prévues aux articles L. 321-1 à L. 327-1 de ce code.</p>
                      </licence>
+
                   </availability>
                </publicationStmt>
                
                <seriesStmt>
-                  <title></title>
-                  <biblScope unit="paper"></biblScope>
-                  <biblScope unit="aaa">La Daniella</biblScope>
+                  <title>Journal Officiel de la République française</title>
+                  <biblScope unit="series">Débats parlementaires</biblScope>
+                  <biblScope unit="volume">Chambre des députés</biblScope>
+                  <idno type="ISSN">1270-5942</idno>
                </seriesStmt>
             </biblFull>
-         </sourceDesc>-->
+         </sourceDesc>
          
       </fileDesc>
       
@@ -224,12 +210,12 @@
             <setting>
                
                <!-- Lieu -->
-               <name type="place"></name>
-               <name type="city"></name>
-               <name type="country" key=".."></name>
+               <name type="place">Palais Bourbon</name>
+               <name type="city">Paris</name>
+               <name type="country" key="FRA">France</name>
                
                <!-- Date -->
-               <date when="1889-11-26">November 26th, 1889</date>
+               <date when="1889-11-26">mardi 26 novembre</date>
             </setting>
             
          </settingDesc>
@@ -819,20 +805,20 @@
             <head>Rectifications aux scrutins de la séance du <date>25 novembre 1889</date>.</head>
 
             <!-- Les @corresp sont à remplir en fonction des contenus des @xml:id des < div > des votes de la séance précédente -->
-            <note corresp="#CR_1889-11-25_vot1" xml:id="CR_1889-11-26_n13"><seg xml:id="CR_1889-11-26_n13.1"><persName ref="#pers_ID">M. Michau</persName> <placeName ref="#lieu_ID">(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de <persName ref="#pers_ID">M. Maxime Lecomte</persName>, déclare avoir voté « pour ».</seg></note>
+            <note type="comment" corresp="#CR_1889-11-25_vot1" xml:id="CR_1889-11-26_n13"><seg xml:id="CR_1889-11-26_n13.1"><persName ref="#pers_ID">M. Michau</persName> <placeName ref="#lieu_ID">(Nord)</placeName>, porté comme s'étant abstenu dans le scrutin sur l'urgence de la proposition de <persName ref="#pers_ID">M. Maxime Lecomte</persName>, déclare avoir voté « pour ».</seg></note>
 
-            <note corresp="#CR_1889-11-25_vot2" xml:id="CR_1889-11-26_n14"><seg xml:id="CR_1889-11-26_n14.1"><persName ref="#pers_ID">M. Léon Bourgeois</persName> <placeName ref="#lieu_ID">(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté « pour » dans le scrutin sur la demande d'invalidation de l'élection de <persName ref="#pers_ID">M. de La Martinière</persName> dans la <placeName ref="#lieu_ID"><num>2e</num> circonscription de Coutances (Manche)</placeName>, et qu'en réalité il « s'était abstenu ».</seg></note>
+            <note type="comment" corresp="#CR_1889-11-25_vot2" xml:id="CR_1889-11-26_n14"><seg xml:id="CR_1889-11-26_n14.1"><persName ref="#pers_ID">M. Léon Bourgeois</persName> <placeName ref="#lieu_ID">(Marne)</placeName> déclare qu'il a été porté par erreur comme ayant voté « pour » dans le scrutin sur la demande d'invalidation de l'élection de <persName ref="#pers_ID">M. de La Martinière</persName> dans la <placeName ref="#lieu_ID"><num>2e</num> circonscription de Coutances (Manche)</placeName>, et qu'en réalité il « s'était abstenu ».</seg></note>
 
-            <note corresp="#CR_1889-11-25_vot3" xml:id="CR_1889-11-26_n15"><seg xml:id="CR_1889-11-26_n15.1">M. <persName ref="#pers_ID">Argeliés</persName>, absent an moment des scrutins du <date when="1889-11-25">25 novembre</date> sur les demandes d'invalidation des élections de MM. <persName ref="#pers_ID">Blachére</persName> et <persName ref="#pers_ID">de La Martinière</persName>, déclare que, s'il avait été présent, il aurait voté « pour » la validation des élections.</seg></note>
+            <note type="comment" corresp="#CR_1889-11-25_vot3" xml:id="CR_1889-11-26_n15"><seg xml:id="CR_1889-11-26_n15.1">M. <persName ref="#pers_ID">Argeliés</persName>, absent an moment des scrutins du <date when="1889-11-25">25 novembre</date> sur les demandes d'invalidation des élections de MM. <persName ref="#pers_ID">Blachére</persName> et <persName ref="#pers_ID">de La Martinière</persName>, déclare que, s'il avait été présent, il aurait voté « pour » la validation des élections.</seg></note>
 
-            <note corresp="#CR_1889-11-25_vot4" xml:id="CR_1889-11-26_n16">
+            <note type="comment" corresp="#CR_1889-11-25_vot4" xml:id="CR_1889-11-26_n16">
                <seg xml:id="CR_1889-11-26_n16.1">MM. <persName ref="#pers_ID">Varlet</persName> et <persName ref="#pers_ID">Charles Dupuy</persName> <placeName ref="#lieu_ID">(Haute-Loire)</placeName>, absents au moment des votes :</seg>
                <seg xml:id="CR_1889-11-26_n16.2">1° Sur le passage à la discussion des articles de la proposition de M. <persName ref="#pers_ID">Ferroul</persName>;</seg>
                <seg xml:id="CR_1889-11-26_n16.3">2° Sur l'urgence de la proposition de M. <persName ref="#pers_ID">Maxime Lecomte</persName>,</seg>
                <seg xml:id="CR_1889-11-26_n16.4">Déclarent que, s'ils avaient été présents, ils auraient voté « conre » dans ces deux scrutins.</seg>
             </note>
 
-            <note corresp="#CR_1889-11-25_vot5" xml:id="CR_1889-11-26_n17"><seg xml:id="CR_1889-11-26_n17.1"><persName ref="#pers_ID">M. Léon Say</persName>, porté comme s'étant abstenu dans le scrutin sur la demande d'enquête — élection de <persName ref="#pers_ID">M. Blachère</persName>, — déclare avoir votés « contre » l'enquête.</seg></note>
+            <note type="comment" corresp="#CR_1889-11-25_vot5" xml:id="CR_1889-11-26_n17"><seg xml:id="CR_1889-11-26_n17.1"><persName ref="#pers_ID">M. Léon Say</persName>, porté comme s'étant abstenu dans le scrutin sur la demande d'enquête — élection de <persName ref="#pers_ID">M. Blachère</persName>, — déclare avoir votés « contre » l'enquête.</seg></note>
          </div>
       </back>
    </text>
