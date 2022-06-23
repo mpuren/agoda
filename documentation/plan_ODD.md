@@ -26,10 +26,8 @@
 ## 3.1 Caractères
 
 ## 3.2 Valeurs standards
- 
-## 3.3 Langues
 
-## 3.4 Taxonomies
+## 3.3 Taxonomies
 
 <hr/>
 
@@ -162,9 +160,7 @@ Fichier du composant : FR_3R_5L_1889-11-26
 ## 3.2 Valeurs standards
 (Éléments temporels)
 
-## 3.3 Langues
-
-## 3.4 Taxonomies
+## 3.3 Taxonomies
 - du sous-corpus : correspon aux @ana présent dans < text > : "FR_3R_5L_" + la date de la séance. 
 ```
 <text ana="#FR_3R_5L_1889-11-26">
