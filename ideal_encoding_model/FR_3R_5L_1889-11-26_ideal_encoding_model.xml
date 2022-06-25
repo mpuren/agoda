@@ -13,12 +13,12 @@
             <title type="sub" xml:lang="fr">Chambre des députés : compte rendu in-extenso</title>
             <title type="sub" xml:lang="eng">Chamber of Deputies: verbatim report</title>
             <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
-            <meeting n="E1" corresp="XXX" ana="#parla.lower #parla.session #XXX">Session
+            <meeting n="E1" ana="#parla.lower #parla.session">Session
                extraordinaire de 1889</meeting>
             <!-- La valeur de l'attribut @n est définie de la façon suivante : la lettre correspond au type de session (O pour ordinaire et E pour extraordinaire) ; le numéro correspond à la place de la session dans la législature. Ici il s'agit de la première session extraordinaire de la 5ème législature de la Troisième République.  -->
-            <meeting n="5L" corresp="XXX" ana="#parla.lower #parla.legislature #XXX">5e
+            <meeting n="5L" ana="#parla.lower #parla.legislature">5e
                législature</meeting>
-            <meeting n="10" corresp="XXX" ana="#parla.lower #parla.sitting  #XXX">10e
+            <meeting n="10" ana="#parla.lower #parla.sitting">10e
                séance</meeting>
             <respStmt>
                <persName>
