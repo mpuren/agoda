@@ -29,7 +29,7 @@
         "origin": "computer",
         "parent": 256,
         "persons": [],
-        "text_ocr": "118\nCHAMBRE DES DEPUTES \u2014 SEANCE DU 26 NOVEMBRE 1889",
+        "text_ocr": "178\nCHAMBRE DES DEPUTES \u2014 SEANCE DU 26 NOVEMBRE 1889",
         "type": "TITLE_LEVEL_1"
     },
     {
@@ -214,7 +214,7 @@
         "text_ocr": "",
         "type": "COLUMN_LEVEL_2"
     },
-        {
+    {
         "activities": [],
         "box": [
             212.9696569401034,
@@ -223,7 +223,7 @@
             161.36017021656795
         ],
         "checked": true,
-        "comment": "pb, seg-beginning-pb, quote",
+        "comment": "seg-end quote",
         "id": 623,
         "ner_xml": "",
         "origin": "computer",
@@ -256,7 +256,7 @@
             760.2217200845664
         ],
         "checked": true,
-        "comment": "seg, quote, incident",
+        "comment": "seg quote incident",
         "id": 278,
         "ner_xml": "<PER>Messieurs, je ne</PER> veux <ACT>nullement incri</ACT>-\u2029miner 1c1 la <ACT>juridiction</ACT> du S\u00e9nat trans-",
         "origin": "computer",
@@ -280,7 +280,7 @@
             259.75460126849885
         ],
         "checked": true,
-        "comment": "seg, quote, incident",
+        "comment": "seg quote incident",
         "id": 306,
         "ner_xml": "<PER>Gest Armand Car</PER><ACT>rel, par exemple, com-\u2029paraissant \u00e0 son tour</ACT> <LOC>devant la Chambre</LOC>",
         "origin": "computer",
@@ -304,7 +304,7 @@
             78
         ],
         "checked": true,
-        "comment": "seg, incident",
+        "comment": "seg incident",
         "id": 315,
         "ner_xml": "<PER>C</PER>'<PER>est le grand Arago, Fran\u00e7ois Arago</PER>,\u2029dans cette <LOC>Assembl\u00e9e</LOC> de 18<CARDINAL>34</CARDINAL>... (Interrup-\u2029tions \u00e0 gauche.",
         "origin": "computer",
@@ -326,7 +326,7 @@
             52
         ],
         "checked": true,
-        "comment": "seg",
+        "comment": "u-end seg",
         "id": 316,
         "ner_xml": "<PER>Mais, messieurs</PER>, j'<ACT>invoque vos meilleurs\u2029auteurs</ACT>; je ne puis pas...",
         "origin": "computer",
@@ -345,7 +345,7 @@
             48
         ],
         "checked": true,
-        "comment": "u-par, seg",
+        "comment": "u seg",
         "id": 317,
         "ner_xml": "<PER>M. Armand Despr\u00e9s</PER>. Nous ne voulons\u2029Das tuer M. DIIIOn.",
         "origin": "computer",
@@ -364,7 +364,7 @@
             290.9531805496829
         ],
         "checked": true,
-        "comment": "u-beginning, incident, seg",
+        "comment": "u-beginning seg incident quote",
         "id": 318,
         "ner_xml": "<PER>M. Cuneo d</PER>'<PER>Orn</PER>ano. Vous ne pouvez ce-",
         "origin": "computer",
@@ -429,7 +429,7 @@
             160
         ],
         "checked": true,
-        "comment": "seg, incident",
+        "comment": "seg incident",
         "id": 331,
         "ner_xml": "Parmi les accus\u00e9s il y avait <PER>Godefroy\u2029Cavaignac</PER>, Armand <PER>Marr</PER>ast, et, parmi les\u2029d\u00e9fenseurs, Michel de Bourges, Tr\u00e9lat, Fr\u00e9<ACT>-\u2029d\u00e9ric</ACT> De<PER>ge</PER>orge, <PER>Lamennais</PER>, Car<ACT>not</ACT>, <ACT>Ras-\u2029pail</ACT>, Marie, Pierre <PER>Leroux</PER>, <PER>Ledru-Rol</PER>lin...\u2029(Bruit \u00e0 gauche.",
         "origin": "computer",
@@ -455,7 +455,7 @@
             84
         ],
         "checked": true,
-        "comment": "seg, incident",
+        "comment": "seg incident",
         "id": 332,
         "ner_xml": "Voyons ! Ces <PER>noms-</PER>l\u00e0 ne vous <ACT>disent</ACT> plus\u2029rien aujourd'hui? (Exclamations sur les\u2029m\u00e9mes banes.",
         "origin": "computer",
@@ -474,7 +474,7 @@
             186
         ],
         "checked": true,
-        "comment": "seg, quote, incident",
+        "comment": "seg quote incident",
         "id": 333,
         "ner_xml": "<PER>Eh bien, c</PER>'<PER>est la vaillante phalange des\u2029d\u00e9fenseurs</PER> qui, s'<ACT>adressant aux accus\u00e9s\u2029d'avril traduits devant la haute cour de ce\u2029temps</ACT>, leur disait : \u00ab Pers\u00e9v\u00e9rez, citoyens ;\u2029l'infamie du juge fait la gloire de l'ac-\u2029eus\u00e9 ! \u00bb (Applaudissements sur quelques\u2029bancs \u00e0 l'extr\u00eamit\u00e9 gauche de la salle.",
         "origin": "computer",
@@ -496,7 +496,7 @@
             106
         ],
         "checked": true,
-        "comment": "seg-end-cb, end-cb",
+        "comment": "seg-beginning",
         "id": 334,
         "ner_xml": "Voil\u00e0 comment <ACT>les ap\u00f4tres du parti r\u00e9pu-\u2029blicain, dans les temps h\u00e9ro\u00efques</ACT>, \u00e0 l<ACT>'</ACT>\u00e9po-\u2029que o\u00f9 vous luttiez non pas pour vous par<ACT>-\u2029tag</ACT>er <ACT>le pouvoir et les portefeuilles</ACT>, mais",
         "origin": "computer",
@@ -515,7 +515,7 @@
             106.07347552377749
         ],
         "checked": true,
-        "comment": "u-end, seg-beginning-cb, beginning-cb",
+        "comment": "u-end seg-end",
         "id": 335,
         "ner_xml": "<ACT>pour la doctrine du parti r\u00e9publicain, pour</ACT>",
         "origin": "computer",
@@ -534,7 +534,7 @@
             182.94874698516048
         ],
         "checked": true,
-        "comment": "u-par, seg",
+        "comment": "u seg",
         "id": 339,
         "ner_xml": "<PER>M. Terrier</PER>. <PER>Nous</PER> n'avons pas besoin de\u2029vous pour nous <ACT>apprendre \u00e0 respecter les\u2029gloires du parti r\u00e9publicain</ACT> ! Ces hommes\u2029dont vous rappelez le souvenir, nous les\u2029estimions avant vous et nous continuerons\u2029\u00e0 les estimer malgr\u00e9 l'\u00e9loge que vous en",
         "origin": "computer",
@@ -555,7 +555,7 @@
             162.95152802016042
         ],
         "checked": true,
-        "comment": "u-beginning, incident, seg",
+        "comment": "u seg incident",
         "id": 627,
         "ner_xml": "",
         "origin": "computer",
@@ -573,7 +573,7 @@
             53.96998624260743
         ],
         "checked": true,
-        "comment": "u-par, seg",
+        "comment": "u seg",
         "id": 622,
         "ner_xml": "",
         "origin": "computer",
@@ -592,7 +592,7 @@
             104.99131665566597
         ],
         "checked": true,
-        "comment": "u-par, seg",
+        "comment": "u seg",
         "id": 341,
         "ner_xml": "<PER>M. Cuneo d</PER><ACT>'</ACT><PER>Ornano</PER>. ...<ACT>et je prends mes\u2029devanciers, mes mod\u00e8les, o\u00f9 je veux dans\u2029cette grande histoire pleine de h\u00e9ros, d'</ACT>o-",
         "origin": "computer",
@@ -614,7 +614,7 @@
             30.991316655665855
         ],
         "checked": true,
-        "comment": "u-par, seg",
+        "comment": "u seg",
         "id": 342,
         "ner_xml": "<PER>Voix</PER> \u00e0 gauche. vous ne les imitez pas",
         "origin": "computer",
@@ -633,7 +633,7 @@
             52
         ],
         "checked": true,
-        "comment": "u-beginning, incident, seg",
+        "comment": "u-beginning seg incident",
         "id": 343,
         "ner_xml": "<PER>M. Cuneo d</PER>'<PER>Ornano</PER>. Au contraire, je\u2029vous les oppose ! (Rires approbatifs \u00e0 droite.",
         "origin": "computer",
@@ -655,7 +655,7 @@
             262
         ],
         "checked": true,
-        "comment": "seg, incident",
+        "comment": "seg incident",
         "id": 344,
         "ner_xml": "Je vois bien que <PER>mes adversaires</PER> n'au-\u2029ront rien \u00e0 r\u00e9pondre \u00e0 mes arguments,\u2029puisqu'ils essayent de faire d\u00e9vier le d\u00e9bat\u2029des grands souvenirs que j'invoque. Il ne\u2029s'agit pas de savoir ce que je suis. Je suis\u2029un <ACT>d\u00e9put\u00e9 de mon pays, fid\u00e8le au suffrage\u2029universel, que je d\u00e9fendrai contre tous, et\u2029m\u00eame contre</ACT> vous. (Applaudissements sur\u2029certains bancs \u00e0 l'extr\u00e9mit\u00e9 gauche de la\u2029salle. \u2014 Bruit \u00e0 gauche.)",
         "origin": "computer",
@@ -693,7 +693,7 @@
             155.9930533245331
         ],
         "checked": true,
-        "comment": "seg, u-end",
+        "comment": "u-end seg",
         "id": 346,
         "ner_xml": "Lorsque je vous <ACT>parle de Michel de Bour-\u2029ges, d'Arago, d'Armand Carrel, protestant\u2029contre les jurys d'exception, contre les tri-\u2029bunaux politiques, contre les s\u00e9nateurs\u2029transform\u00e9s en juges</ACT>, j<ACT>'</ACT>ai le droit de m<ACT>'</ACT>en\u2029r\u00e9cla",
         "origin": "computer",
@@ -712,7 +712,7 @@
             51.59027465434565
         ],
         "checked": true,
-        "comment": "u-par, seg",
+        "comment": "u seg",
         "id": 347,
         "ner_xml": "<PER>M. Terrier</PER>. Ah ! s'ils pouvaient encore\u2029VOl\u0161",
         "origin": "computer",
@@ -731,7 +731,7 @@
             78
         ],
         "checked": true,
-        "comment": "u-par, seg",
+        "comment": "u seg",
         "id": 348,
         "ner_xml": "<PER>M. le pr\u00e9sident</PER>. Messieurs, il faut vous\u2029habituer \u00e0 entendre vos adversaires en si-\u2029lence quand ils sont \u00e0 la tribune.",
         "origin": "computer",
@@ -749,7 +749,7 @@
             105
         ],
         "checked": true,
-        "comment": "u-par, seg, incident",
+        "comment": "u seg incident",
         "id": 624,
         "ner_xml": "",
         "origin": "computer",
@@ -767,7 +767,7 @@
             54.66256179907032
         ],
         "checked": true,
-        "comment": "seg, comment",
+        "comment": "comment seg",
         "id": 625,
         "ner_xml": "",
         "origin": "computer",
@@ -785,7 +785,7 @@
             178.78665414108423
         ],
         "checked": true,
-        "comment": "u-par, seg, incident",
+        "comment": "u seg, incident",
         "id": 626,
         "ner_xml": "",
         "origin": "computer",
@@ -804,7 +804,7 @@
             373.10168860146086
         ],
         "checked": true,
-        "comment": "u-beginning, incident, seg",
+        "comment": "u-beginning seg incident",
         "id": 351,
         "ner_xml": "<PER>eo</PER>.)\u2029M. <PER>Cuneo d</PER>'<PER>Ornano</PER>. Je pourrai, en effet,\u2029vous en faire entendre bien d'autres, mes-\u2029sieurs ! Mais l'histoire m\u00eame du parti r\u00e9pu-\u2029blicain \u00e9tait-elle autre chose qu'une longue\u2029protestation, tant\u00f4t par la force, tant\u00f4t par\u2029l'\u00e9loquence enflamm\u00e9e de ses <ACT>tribu</ACT>ns, con-\u2029tre ce pr\u00e9tendu droit que <ACT>certains gouver-\u2029nements s</ACT>'<ACT>arroge</ACT>aient <ACT>de transformer des\u2029Assembl\u00e9es politiques en tribunaux et de\u2029faire de la justice \u2014 alors qu</ACT>'<ACT>elle devrait\u2029planer impartiale au-dessus de tous les\u2029partis</ACT> \u2014 <ACT>un instrument pour les partis, une\u2029arme pour</ACT> leurs passions? (Tr\u00e8s bien! tr\u00e8s\u2029bien! a droite.",
         "origin": "computer",
@@ -827,7 +827,7 @@
             185.71127178378492
         ],
         "checked": true,
-        "comment": "seg, incident",
+        "comment": "seg incident",
         "id": 352,
         "ner_xml": "Je vous citerai encore d'autres noms :<PER>\u2029Cormen</PER>in, qui ne vous est pas encore\u2029tout \u00e0 fait inconnu (Sourires \u00e0 droite), qui<ACT>\u2029a \u00e9t\u00e9 un d\u00e9fenseur de l</ACT>'<ACT>id\u00e9e d\u00e9mocratique,\u2029qui a lutt\u00e9</ACT> pour <ACT>elle avec son talent, par ses\u2029discours, par ses pamphlets, par ses bro</ACT>-\u2029CHU",
         "origin": "computer",
@@ -846,7 +846,7 @@
             28
         ],
         "checked": true,
-        "comment": "seg-end-cb, end-cb",
+        "comment": "seg-beginning",
         "id": 353,
         "ner_xml": "<PER>Eh bien</PER>, voulez-vous me permettre de",
         "origin": "computer",
@@ -865,7 +865,7 @@
             290
         ],
         "checked": true,
-        "comment": "seg-beginning-cb, beginning-cb",
+        "comment": "seg-end",
         "id": 354,
         "ner_xml": "vous rappeler ses paroles? Je ne feral pas\u2029d'autre citation. Voici ce que disait Corme-\u2029nin du haut de cette tribune, pour protes-\u2029ter contre l'habitude que le gouverne-\u2029ment d'alors prenait de livrer des d\u00e9pu-\u2029t\u00e9s aux s\u00e9nateur<ACT>s</ACT>, aux membres de la<ACT>\u2029Chambre</ACT> haute \u2014 comme on disait d\u00e9j\u00e0,\u2029\u2014 c'est-\u00e0-dire \u00e0 la Chambre des pairs,\u2029qui avait le droit de juger les d\u00e9pu-\u2029t\u00e9s, de les condamner et de les fl\u00e9trir, de\u2029ses condamnations politiques tout au moins :",
         "origin": "computer",
@@ -884,7 +884,7 @@
             658.0
         ],
         "checked": true,
-        "comment": "seg, quote, incident",
+        "comment": "seg quote incident",
         "id": 355,
         "ner_xml": "\u201c Comment! messieurs, vous ne sentiriez\u2029pas l'\u00e9norme diff\u00e9rence qu'il y a, pour <ACT>des\u2029d\u00e9put\u00e9s, entre les s\u00fbret\u00e9s du jury et les\u2029p\u00e9rils d</ACT>'<ACT>une juridiction exceptionnelle et\u2029rivale</ACT> ! Comment ! vous renverriez vos col-\u2029l\u00e8gues devant des hommes qui nous juge-\u2029ront si nous les avons offens\u00e9s, et que nous\u2029ne pourrons pas juger \u00e0 notre tour s'ils nous\u2029offensaient; devant des hommes qui se-\u2029raient tous r\u00e9cusables pour suspicion l\u00e9gi-\u2029time, s'ils allaient juger l'un des v\u00f4tres... \u00bb\u2029(Tr\u00e8s bien! tr\u00e8s bien! \u00e0 droite) \u00ab comme\u2029moi, par exemple, qui ai attaqu\u00e9 l'h\u00e9-\u2029r\u00e9dit\u00e9 de la pairie, ses dotations, son\u2029existence; devant des hommes qui, par\u2029une monstrueuse copulation, sont \u00e0 la fois\u2029d\u00e9nonciateurs, accusateurs<ACT>, instructeurs,\u2029jur\u00e9</ACT>s<ACT>, juges et parties</ACT>... \u00bb (Nouvelles mar-\u2029ques d'approbation sur les m\u00eames bancs);\u2029\u00ab ... devant des hommes qui vous tien-\u2029draient bient\u00f4t, malgr\u00e9 vous, sous le\u2029joug de vos pr\u00e9c\u00e9dents et qui \u00e9touffe-\u2029raient sous la menace toujours pendante\u2029de leur accusation les remontrances et\u2029I\u00e9nergie d'une opposition g\u00e9n\u00e9reuse !",
         "origin": "computer",
@@ -903,7 +903,7 @@
             286.89537581467266
         ],
         "checked": true,
-        "comment": "seg, quote, incident",
+        "comment": "seg quote incident",
         "id": 356,
         "ner_xml": "\u00ab Non, je ne puis croire que vous ne\u2029vous sentiez pas <ACT>offens</ACT>\u00e9s <ACT>de subir la pr\u00e9-\u2029v\u00f4tale juridiction de l</ACT>'<ACT>autre Chambre</ACT>. Je\u2029ne puis croire que vous acceptiez une si\u2029humiliante condition. Je ne l'accepterais\u2029pas, moi. Mes commettants ne m'ont pas\u2029envoy\u00e9 pour que j'allasse tra\u00eener sur la\u2029sellette de la pairie les restes de votre d\u00e9-\u2029gradation politique. \u00bb (Applaudissements\u2029sur quelques bancs \u00e0 l'extr\u00e9mit\u00e9 gauche de la\u2029sALle.",
         "origin": "computer",
@@ -922,7 +922,7 @@
             524
         ],
         "checked": true,
-        "comment": "seg, incident",
+        "comment": "seg incident",
         "id": 357,
         "ner_xml": "Voil\u00e0 ce que M. <PER>de Cormenin</PER> disait aux\u2029d\u00e9put\u00e9s de ce temps-l\u00e0, et il semble que\u2029j'ai quelque peine \u00e0 faire entendre cette ci-\u2029tation aux d\u00e9pnt\u00e9s de ce temps-ci. (Mouve-\u2029ments divers.) Cependant, est-il vrai, est-il\u2029\u00e9vident, oui ou non, que si vous continuez\u2029dans cette voie, vous vous mettez sous le\u2029joug de la Chambre haute? Vous lui donnez\u2029le droit de substituer la mort <ACT>civile</ACT> \u00e0 la\u2029mort sanglante et d'\u00e9tablir une sorte de\u2029guillotine s\u00e8che rempla\u00e7ant la guillo-\u2029tine d'autrefois... Et, quand vous frap-\u2029pez un citoyen, non pas de d\u00e9capitation\u2029mat\u00e9rielle, mais de d\u00e9capitation morale,\u2029quand vous le privez de ses droits de ci-<ACT>\u2029toyen, d</ACT>'<ACT>homme et de Fran\u00e7ais</ACT>, ne faites-\u2029vous pas plus, en v\u00e9rit\u00e9, que de lui trancher\u2029la t\u00eate, comme faisait le tribunal politique\u2029de la Terreur? (Tr\u00e8s bien! tr\u00e8s bien! \u00e0\u2029droite. \u2014 Bruit \u00e0 gauche.",
         "origin": "computer",
@@ -941,7 +941,7 @@
             368
         ],
         "checked": true,
-        "comment": "seg, incident",
+        "comment": "seg incident",
         "id": 358,
         "ner_xml": "Ces <ACT>condamnations, ces jugements poli-\u2029tiques</ACT>, vous voyez ce que ces ap\u00f4tres de\u2029l'<ACT>id\u00e9e</ACT> r\u00e9publicaine en pensaient. N'avais-je\u2029pas le droit de r\u00e9veiller ces souvenirs dans\u2029vos m\u00e9moires? N'avais-je pas le droit de\u2029vous dire : Retournez-vous vers ceux qui\u2029vous ont devanc\u00e9s, demandez-leur <ACT>conseil</ACT>,<ACT>\u2029demandez-leur l'inspiration qui doit vous\u2029guider vous-m\u00eames dans votre vie civique,\u2029vous, citoyens, qui pouvez</ACT> \u00eatre <ACT>entr\u00e9s</ACT> ici\u2029avec <ACT>des passions</ACT> politiques, mais qui,\u2029pour un d\u00e9bat de ce genre, devez les d\u00e9-\u2029poser \u00e0 l'entr\u00e9e de cette salle?... (Applaudis-\u2029sementi a droite.)",
         "origin": "computer",
@@ -960,7 +960,7 @@
             78
         ],
         "checked": true,
-        "comment": "u-par, seg, incident",
+        "comment": "u seg incident",
         "id": 359,
         "ner_xml": "<PER>M. Jumel et plusieurs de ses coll\u00e8gues</PER>.\u2029Vous devriez nous donner l'exemple ! (Tr\u00e8s\u2029bien! tr\u00e8s bien! au centre et \u00e0 qauche.",
         "origin": "computer",
@@ -979,7 +979,7 @@
             82
         ],
         "checked": true,
-        "comment": "u-beginning, seg-end-pb, incident, end-pb",
+        "comment": "u-beginning seg-beginning incident",
         "id": 360,
         "ner_xml": "<PER>M. Cuneo d</PER>'<PER>Ornano</PER>. Mais, messieurs, je<ACT>\u2029tiens un langage tr\u00e8s mod\u00e9r\u00e9 et tr\u00e8s cour-\u2029toi</ACT>s (Oui! oui! tr\u00e8s bien! \u00e0 droite); il me",
         "origin": "computer",
