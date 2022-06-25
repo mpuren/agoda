@@ -14,7 +14,8 @@
                Chambre des députés, 5e législature (1889-1893)</title>
             <title type="sub" xml:lang="en">Proceedings of the debates in plenary sitting of the
                Chamber of Deputies,5th legislature (1889-1893)</title>
-            <meeting n="5-lower" corresp="#XXX" ana="#parla.lower #parla.term">5e
+            <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
+            <meeting n="5-lower" ana="#parla.lower #parla.term">5e
                législature</meeting>
             <respStmt>
                <persName>Fanny Lebreton</persName>
@@ -279,17 +280,17 @@
             <language ident="fr" xml:lang="en">Français</language>
             <language ident="en" xml:lang="en">English</language>
          </langUsage>
-            <settingDesc>
-               <setting>
-                  <name type="place">Palais Bourbon</name>
-                  <name type="city">Paris</name>
-                  <name type="country" key="FR">France</name>
+         <settingDesc>
+            <setting>
+               <name type="place">Palais Bourbon</name>
+               <name type="city">Paris</name>
+               <name type="country" key="FR">France</name>
                <date from="1889" to="1889"/>
             </setting>
          </settingDesc>
-            <textClass>
-               <catRef scheme="#parla.legislature" target="#parla.bi #parla.lower"/>
-            </textClass>
+         <textClass>
+            <catRef scheme="#parla.legislature" target="#parla.bi #parla.lower"/>
+         </textClass>
          <!-- Description des participants : orateurs + institutions/ partis politiques -->
          <!--<particDesc>
             
