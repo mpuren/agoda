@@ -7,45 +7,61 @@
       <fileDesc>
          <titleStmt>
             <title type="main" xml:lang="fr">Journal officiel de la République française. Débats
-               parlementaires. Chambre des députés : compte rendu in-extenso</title>
+               parlementaires</title>
             <title type="main" xml:lang="eng">Official Journal of the French Republic. Parliamentary
-               debates. Chamber of Deputies: verbatim report</title>
+               debates</title>
+            <title type="sub" xml:lang="fr">Chambre des députés : compte rendu in-extenso</title>
+            <title type="sub" xml:lang="eng">Chamber of Deputies: verbatim report</title>
             <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
-            <meeting ana="#parla.lower">5e législature. Session extraordinaire de 1889. 10e
+            <meeting n="E1" corresp="XXX" ana="#parla.lower #parla.session #XXX">Session
+               extraordinaire de 1889</meeting>
+            <!-- La valeur de l'attribut @n est définie de la façon suivante : la lettre correspond au type de session (O pour ordinaire et E pour extraordinaire) ; le numéro correspond à la place de la session dans la législature. Ici il s'agit de la première session extraordinaire de la 5ème législature de la Troisième République.  -->
+            <meeting n="5L" corresp="XXX" ana="#parla.lower #parla.legislature #XXX">5e
+               législature</meeting>
+            <meeting n="10" corresp="XXX" ana="#parla.lower #parla.sitting  #XXX">10e
                séance</meeting>
             <respStmt>
                <persName>
                   <forename>Fanny</forename>
                   <surname>Lebreton</surname>
+                  <ptr type="id-hal" target="fanny-lebreton"/>
                </persName>
                <resp xml:lang="fr">Transformation du JSON en XML-TEI et ajout automatique des
                   balises TEI par des scripts Python</resp>
-               <resp xml:lang="en">Transforation from JSON to XML-TEI and automatic addition of TEI
-                  tags by Python scripts </resp>
+               <resp xml:lang="en">Transformation from JSON to XML-TEI and automatic addition of TEI
+                  tags by Python scripts</resp>
+            </respStmt>
+            <respStmt>
+               <persName>
+                  <forename>Marie</forename>
+                  <surname>Puren</surname>
+                  <ptr type="id-hal" target="marie-puren"/>
+                  <ptr type="orcid" target="0000-0001-5452-3913"/>
+               </persName>
+               <resp xml:lang="fr">TEI Header</resp>
+               <resp xml:lang="eng">TEI Header</resp>
             </respStmt>
             <funder>
                <orgName xml:lang="fr">Bibliothèque nationale de France</orgName>
                <orgName xml:lang="en">National Library of France</orgName>
             </funder>
-
          </titleStmt>
-         <extent>
-            <!-- Comment ajouter les données ci-dessous de manière automatique ? -->
+         <!-- <extent>
+            Comment ajouter les données ci-dessous de manière automatique ? 
             <measure unit="pages" quantity="10" xml:lang="fr">X pages</measure>
             <measure unit="pages" quantity="10" xml:lang="eng">X pages</measure>
             <measure unit="utterances" quantity="75122" xml:lang="sl">75.122 énoncés</measure>
             <measure unit="utterances" quantity="75122" xml:lang="en">75,122 utterances</measure>
             <measure unit="words" quantity="20190034" xml:lang="sl">20.190.034 mots</measure>
             <measure unit="words" quantity="20190034" xml:lang="en">20,190,034 words</measure>
-         </extent>
+         </extent> -->
          <publicationStmt>
             <publisher>AGODA</publisher>
             <authority>Bnf DataLab</authority>
             <availability status="restricted" n="cc-by">
                <licence target="https://creativecommons.org/licenses/by/4.0/"/>
             </availability>
-
-            <!-- Date de parution à ajouter en fonction de la date de publication -->
+            <!-- Date de parution à ajouter en fonction de la date de production du fichier -->
             <date when="2022-06-03"/>
          </publicationStmt>
          <sourceDesc>
@@ -54,10 +70,9 @@
                   <title>Journal officiel de la République française. Débats parlementaires. Chambre
                      des députés : compte rendu in-extenso</title>
                </titleStmt>
-
                <publicationStmt>
-                  <publisher>A déterminer.</publisher>
-
+                  <publisher xml:lang="fr">Pas d'information disponible</publisher>
+                  <publisher xml:lang="en">No information available</publisher>
                   <pubPlace>
                      <location>
                         <country key="FR"/>
@@ -68,7 +83,7 @@
                   <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">Source
                      gallica.bnf.fr / Bibliothèque nationale de France</distributor>
                   <availability>
-                     <licence
+                     <licence xml:lang="fr"
                         target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
                         <p>Les contenus accessibles sur le site Gallica sont pour la plupart des
                            reproductions numériques d'œuvres tombées dans le domaine public
@@ -88,8 +103,49 @@
                </seriesStmt>
             </biblFull>
          </sourceDesc>
-
       </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p xml:lang="fr"><ref target="https://www.bnf.fr/fr/les-projets-de-recherche#bnf-agoda"
+                  >AGODA</ref> est un projet qui a pour objectif rendre disponible au format XML-TEI
+               les textes de débats parlementaires à la Chambre des députés au cours de la Troisième
+               République, suivant l'<ref
+                  target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_documentation.xml"
+                  >ODD</ref> défini pour le projet à partir des <ref
+                  target="https://github.com/clarin-eric/parla-clarin">recommandations produites par
+                  Parla-CLARIN</ref>. Dans une optique de preuve de concept, la phase 1 du projet
+               AGODA se concentre plus particulièrement sur la 5ème législature (1889-1893). Les
+               textes encodés sont d'abord extraits des documents numérisés disponibles sur <ref
+                  target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item">Gallica</ref>, la
+               bibliothèque numérique de la Biliothèque nationale de France, puis ils sont convertis
+               en XML-TEI au moyen de scripts Python.</p>
+            <p xml:lang="en">is a project that aims to make available in XML-TEI format the texts of
+               parliamentary debates in the Chamber of Deputies during the Third Republic, following
+               the <ref
+                  target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_documentation.xml"
+                  >ODD</ref> defined for the project from the <ref
+                  target="https://github.com/clarin-eric/parla-clarin">Parla-CLARIN
+                  recommendations</ref>. From a proof-of-concept perspective, phase 1 of the AGODA
+               project focuses more specifically on the 5th legislature (1889-1893). The encoded
+               texts are first extracted from the digitised documents available on <ref
+                  target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item">Gallica</ref>,
+               the digital library of the Biliothèque nationale de France, then they are converted
+               into XML-TEI using Python scripts.</p>
+         </projectDesc>
+         <!--  A compléter une fois le document encodé
+         <tagsDecl>
+            <namespace name="http://www.tei-c.org/ns/1.0">
+               <tagUsage gi="body" occurs="1"/>
+               <tagUsage gi="desc" occurs="188"/>
+               <tagUsage gi="div" occurs="3"/>
+               <tagUsage gi="head" occurs="3"/>
+               <tagUsage gi="incident" occurs="18"/>
+               <tagUsage gi="note" occurs="3"/>
+               <tagUsage gi="seg" occurs="595"/>
+               <tagUsage gi="u" occurs="256"/>
+            </namespace>
+         </tagsDecl>-->
+      </encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="fr">Français</language>
@@ -104,13 +160,7 @@
          </settingDesc>
       </profileDesc>
    </teiHeader>
-
-
-
    <text ana="#FR_3R_5L_1889-11-26">
-
-      <!-- Éléments de l'en-tête du document à insérer dans le teiHeader (ce qui était présent anciennement dans le < front > -->
-
       <!-- Définir les @ana dans les < text > (par rapport à la taxonomie sur les sous-corpus) (dire que c'est la IIIe République 5e législature) -->
       <!-- FR_3R_5L_1889-11-26 -->
 
