@@ -713,7 +713,7 @@
             26.2924283697796
         ],
         "checked": true,
-        "comment": "opening",
+        "comment": "opening seg",
         "id": 303,
         "ner_xml": "<PER>L</PER>d Se\u2029nce est ouverte \u00e0 deux heures",
         "origin": "computer",
