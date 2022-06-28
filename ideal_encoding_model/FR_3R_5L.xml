@@ -65,7 +65,7 @@
                         <settlement type="city">Paris</settlement>
                      </location>
                   </pubPlace>
-                  <date when="1889-11-27">27 novembre 1889</date>
+                  <date from="1889-11-13" to="1893-07-23">13 novembre 1889 - 23 juillet 1893</date>
                   <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">Source
                      gallica.bnf.fr / Bibliothèque nationale de France</distributor>
                   <availability>
@@ -280,7 +280,7 @@
                <name type="place">Palais Bourbon</name>
                <name type="city">Paris</name>
                <name type="country" key="FR">France</name>
-               <date from="1889" to="1893"/>
+               <date from="1889-11-12" to="1893-07-22">12 novembre 1889 - 22 juillet 1893</date>
             </setting>
          </settingDesc>
          <textClass>
