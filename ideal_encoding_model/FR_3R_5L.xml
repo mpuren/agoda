@@ -15,8 +15,7 @@
             <title type="sub" xml:lang="en">Proceedings of the debates in plenary sitting of the
                Chamber of Deputies,5th legislature (1889-1893)</title>
             <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
-            <meeting n="5-lower" ana="#parla.lower #parla.term">5e
-               législature</meeting>
+            <meeting n="5-lower" ana="#parla.lower #parla.term">5e législature</meeting>
             <respStmt>
                <persName>Fanny Lebreton</persName>
                <persName>Marie Puren</persName>
@@ -135,11 +134,11 @@
                <p xml:lang="en">Text has not been normalised, except for spacing.</p>
             </normalization>-->
 
-            <!-- Résume la façon dont les traits d'union sécants de fin de ligne d’un texte source ont été traités dans sa version encodée. Ex : -->
+            <!-- Résume la façon dont les traits d'union sécants de fin de ligne d’un texte source ont été traités dans sa version encodée. Ex : 
             <hyphenation>
                <p xml:lang="fr"/>
                <p xml:lang="en">No end-of-line hyphens were present in the source.</p>
-            </hyphenation>
+            </hyphenation>-->
 
             <!-- Décrit la pratique éditoriale adoptée par rapport aux guillements dans l’original. Ex : -->
             <quotation>
@@ -157,12 +156,12 @@
          </editorialDecl>
 
          <!-- Idée de ParlaClarin : mettre un appInfo qui permet d'enregistrer des informations sur l'application qui a été utilisée pour traiter le fichier TEI -->
-         <appInfo>
+         <!-- <appInfo>
             <application version="111" ident="aaa">
                <label/>
                <desc/>
             </application>
-         </appInfo>
+         </appInfo>-->
 
          <!-- Donne l’information détaillée sur le balisage appliqué à un document -->
          <tagsDecl>
@@ -190,10 +189,6 @@
                   <category xml:id="parla.chambers">
                      <catDesc xml:lang="fr"><term>Chambres</term></catDesc>
                      <catDesc xml:lang="en"><term>Chambers</term></catDesc>
-                     <category xml:id="parla.uni">
-                        <catDesc xml:lang="fr"><term>Unicaméralisme</term></catDesc>
-                        <catDesc xml:lang="en"><term>Unicameralism</term></catDesc>
-                     </category>
                      <category xml:id="parla.bi">
                         <catDesc xml:lang="fr"><term>Bicaméralisme</term></catDesc>
                         <catDesc xml:lang="en"><term>Bicameralism</term></catDesc>
@@ -256,9 +251,9 @@
                      meeting</catDesc>
                </category>
                <category xml:id="unknown">
-                  <catDesc xml:lang="fr"><term>Gouvernement</term>: type d'orateur inconnu</catDesc>
-                  <catDesc xml:lang="en"><term>Government</term>: : unknown type of
-                     speaker</catDesc>
+                  <catDesc xml:lang="fr"><term>Orateur inconnu</term>: orateur prenant la parole
+                     mais non identifié</catDesc>
+                  <catDesc xml:lang="en"><term>vvv</term>: vvv</catDesc>
                </category>
             </taxonomy>
             <taxonomy xml:id="subcorpus">
@@ -285,16 +280,27 @@
                <name type="place">Palais Bourbon</name>
                <name type="city">Paris</name>
                <name type="country" key="FR">France</name>
-               <date from="1889" to="1889"/>
+               <date from="1889" to="1893"/>
             </setting>
          </settingDesc>
          <textClass>
             <catRef scheme="#parla.legislature" target="#parla.bi #parla.lower"/>
          </textClass>
-         <!-- Description des participants : orateurs + institutions/ partis politiques -->
+         <particDesc>
+            <!-- Description des participants : orateurs + institutions/ partis politiques -->
+            <listPerson>
+               <!-- valeur du @xml-id : FR pour France, DEP pour députés et numéro du député dans la Base de données de députés. -->
+               <person xml:id="FR-DEP-1844">
+                  <persName>
+                     <forename>Georges</forename>
+                     <surname>Clémenceau</surname>
+                  </persName>
+               </person>
+            </listPerson>
+         </particDesc>
+
          <!--<particDesc>
-            
-            <!-\- Liste des orateurs : ajouter liste des députés automatiquement à partir des données récupérées par Pierre ? -\->
+  
             <listPerson>
                
                <person xml:id="PD_2409">
@@ -364,94 +370,6 @@
 
       </profileDesc>
    </teiHeader>
-
-   <!-- Élément conteneur pour les données liées/ infos contextuelles/ annotations -->
-   <standOff>
-      <!-- Liste des orateurs -->
-      <listPerson>
-
-         <person xml:id="PD_2409">
-
-            <persName>
-               <forename>Paul</forename>
-               <surname>Déroulède</surname>
-            </persName>
-
-            <sex value="M">M.</sex>
-
-            <birth when="1846-09-02">
-               <placeName>Paris</placeName>
-            </birth>
-
-            <death when="1914-01-31">
-               <placeName>Nice</placeName>
-            </death>
-
-            <occupation xml:lang="fr">Militant politique</occupation>
-
-            <!-- Pour les orateurs qui sont députés ou membres de partis politiques : il faut mettre l'élément < affiliation > -->
-            <!-- Description non formalisée portant sur l'affiliation présente ou passée d'une personne à une organisation -->
-            <!-- @role donne le role à l'aide d'un vocabulaire contrôlé, @ref désigne l'organisation/ ou le parti dans laquelle/lequel la personne joue un rôle (très souvent l'Assemblée pour notre cas), @ana renvoie à la période pendant laquelle il était rattaché à l'organisation/ parti -->
-            <!--<affiliation role="aaa" ref="#aaa" from="1889-08-01" to="1890-06-21" ana="#aaa"/>-->
-
-            <idno type="URI" subtype="wikimedia">https://en.wikipedia.org/...</idno>
-
-            <!-- Possibilité d'associer une image -->
-            <!--<figure>
-                     <graphic url="https://api.parliament.uk/photo/Paa3j0vS.jpg?crop=CU_1:1"/>
-                  </figure>-->
-
-         </person>
-
-         <person xml:id="pers_ID">
-            <persName>...</persName>
-         </person>
-
-      </listPerson>
-
-      <listOrg>
-
-         <org xml:id="org_ID" role="aaa" xml:lang="fr">
-            <!-- @full permet de dire s'il s'agit d'un composant écrit en toutes lettres, sous une forme abrégée ou avec les initiales -->
-            <orgName full="yes"/>
-
-            <!-- Données liées à tout type d'évènement significatif dans l'existence d'une personne, d'un lieu ou d'une organisation. Ex : -->
-            <event from="2011-10-22">
-               <label xml:lang="en">existence</label>
-            </event>
-
-            <idno type="wikimedia">https://en.wikipedia.org/...</idno>
-         </org>
-
-         <!--<!-\- Possibilité de mettre une liste des relations entre les organisations -\->
-               <listRelation>
-                  
-                  <relation name="aaa" mutual="#aaa #aaa #aaa #aaa" from="2014-10-11" to="2018-12-09" ana="#period_54"/>
-                  <relation name="bbb" active="#bbb #bbb" passive="#bbb" from="2014-10-11" to="2018-12-09" ana="#bbb"/>
-                  
-               </listRelation>-->
-      </listOrg>
-
-      <!-- Liste des lieux cités -->
-      <listPlace>
-
-         <place xml:id="lieu_ID">
-            <placeName/>
-
-            <location>
-               <country key="FR"/>
-               <region/>
-               <settlement/>
-            </location>
-
-            <idno type="URI" subtype="wikimedia">https://en.wikipedia.org/...</idno>
-         </place>
-
-      </listPlace>
-
-   </standOff>
-
-
    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
       href="FR_3R_5L_1889-11-26_ideal_encoding_model.xml"/>
 </teiCorpus>
