@@ -4,9 +4,9 @@
 
 # 1. Introduction (Pierre Marie)
 ## 1.1 Contextualisation  
-
+Pierre
 ## 1.2 Objectifs scientifiques
-
+Pierre
 ## 1.3 Choix de transcription 
 ### 1.3.1 Éléments transcrits
 ### 1.3.2 Éléments non transcrits
@@ -26,12 +26,12 @@
 ## 3.1 Caractères
 
 ## 3.2 Valeurs standards
-
 ## 3.3 Taxonomies
 
 <hr/>
 
 # 4. Métadonnées (Pierre Marie Fanny)
+Marie
 ## 4.1 Métadonnées bibliographiques (fileDesc)
 ### 4.1.1 Mention de titres (titleStmt)
 ### 4.1.2 Mention d'édition (editionStmt)
