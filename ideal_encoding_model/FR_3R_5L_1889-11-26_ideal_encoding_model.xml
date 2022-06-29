@@ -2,16 +2,16 @@
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="FR_3R_5L_1889-11-26_v3" xml:lang="fr">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="FR_3R_5L_1889-11-26_ideal_encoding_model" xml:lang="fr">
    <teiHeader>
       <fileDesc>
          <titleStmt>
             <title type="main" xml:lang="fr">Journal officiel de la République française. Débats
                parlementaires</title>
-            <title type="main" xml:lang="eng">Official Journal of the French Republic. Parliamentary
+            <title type="main" xml:lang="en">Official Journal of the French Republic. Parliamentary
                debates</title>
             <title type="sub" xml:lang="fr">Chambre des députés : compte rendu in-extenso</title>
-            <title type="sub" xml:lang="eng">Chamber of Deputies: verbatim report</title>
+            <title type="sub" xml:lang="en">Chamber of Deputies: verbatim report</title>
             <!-- @n correspond au numéro de la législature, à garder ? -> @corresp indique l'organe gouvernemental (corresp="#PO717460"), @ana pointe vers 3 taxonomies (chambre basse, législature, def de la législature)(ana="#parla.lower #parla.term") -->
             <meeting n="E1" ana="#parla.lower #parla.session">Session
                extraordinaire de 1889</meeting>
@@ -39,7 +39,7 @@
                   <ptr type="orcid" target="0000-0001-5452-3913"/>
                </persName>
                <resp xml:lang="fr">TEI Header</resp>
-               <resp xml:lang="eng">TEI Header</resp>
+               <resp xml:lang="en">TEI Header</resp>
             </respStmt>
             <funder>
                <orgName xml:lang="fr">Bibliothèque nationale de France</orgName>
@@ -49,7 +49,7 @@
          <!-- <extent>
             Comment ajouter les données ci-dessous de manière automatique ? 
             <measure unit="pages" quantity="10" xml:lang="fr">X pages</measure>
-            <measure unit="pages" quantity="10" xml:lang="eng">X pages</measure>
+            <measure unit="pages" quantity="10" xml:lang="en">X pages</measure>
             <measure unit="utterances" quantity="75122" xml:lang="sl">75.122 énoncés</measure>
             <measure unit="utterances" quantity="75122" xml:lang="en">75,122 utterances</measure>
             <measure unit="words" quantity="20190034" xml:lang="sl">20.190.034 mots</measure>
