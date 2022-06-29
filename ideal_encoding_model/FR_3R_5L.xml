@@ -250,10 +250,10 @@
                   <catDesc xml:lang="en"><term>Government</term>: member of government invited at a
                      meeting</catDesc>
                </category>
+               <!-- Modification de la définition de "unknown"-->
                <category xml:id="unknown">
-                  <catDesc xml:lang="fr"><term>Orateur inconnu</term>: orateur prenant la parole
-                     mais non identifié</catDesc>
-                  <catDesc xml:lang="en"><term>vvv</term>: vvv</catDesc>
+                  <catDesc xml:lang="fr"><term>Orateur inconnu</term>: orateur non identifié</catDesc>
+                  <catDesc xml:lang="en"><term>Unknown speaker</term>: unidentified speaker</catDesc>
                </category>
             </taxonomy>
             <taxonomy xml:id="subcorpus">
