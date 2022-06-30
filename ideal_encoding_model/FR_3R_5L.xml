@@ -58,7 +58,8 @@
                      des députés : compte rendu in-extenso</title>
                </titleStmt>
                <publicationStmt>
-                  <publisher>A déterminer.</publisher>
+                  <publisher xml:lang="fr">Pas d'information disponible</publisher>
+                  <publisher xml:lang="en">No information available</publisher>
                   <pubPlace>
                      <location>
                         <country key="FR"/>
@@ -252,8 +253,10 @@
                </category>
                <!-- Modification de la définition de "unknown"-->
                <category xml:id="unknown">
-                  <catDesc xml:lang="fr"><term>Orateur inconnu</term>: orateur non identifié</catDesc>
-                  <catDesc xml:lang="en"><term>Unknown speaker</term>: unidentified speaker</catDesc>
+                  <catDesc xml:lang="fr"><term>Orateur inconnu</term>: orateur non
+                     identifié</catDesc>
+                  <catDesc xml:lang="en"><term>Unknown speaker</term>: unidentified
+                     speaker</catDesc>
                </category>
             </taxonomy>
             <taxonomy xml:id="subcorpus">
