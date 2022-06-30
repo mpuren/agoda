@@ -155,15 +155,18 @@
                   (corresponding to paragraphs in the source transcription).</p>
             </segmentation>
          </editorialDecl>
-
-         <!-- Idée de ParlaClarin : mettre un appInfo qui permet d'enregistrer des informations sur l'application qui a été utilisée pour traiter le fichier TEI -->
-         <!-- <appInfo>
-            <application version="111" ident="aaa">
-               <label/>
-               <desc/>
+         <appInfo>
+            <application ident="outil-soduco" version="1">
+               <label>Outil Soduco</label>
+               <desc>Application utiliser pour océriser les textes</desc>
             </application>
-         </appInfo>-->
-
+         </appInfo>
+         <appInfo>
+            <application ident="python" version="3.10.4">
+               <label>Python</label>
+               <desc>Language utilisé pour baliser automatiquement le document en XML-TEI</desc>
+            </application>
+         </appInfo>
          <!-- Donne l’information détaillée sur le balisage appliqué à un document -->
          <tagsDecl>
             <!-- Compte des balises utilisées pour le corpus entier. À renseigner à la toute fin du processus. Ex : -->
@@ -178,8 +181,6 @@
                <tagUsage gi="u" occurs="256"/>
             </namespace>-->
          </tagsDecl>
-
-         <!-- Déclaration des classes : nous utilisons la taxonomie ParlaMint réduite.-->
          <classDecl>
             <taxonomy xml:id="parla.legislature">
                <desc xml:lang="fr"><term>Législature</term></desc>
@@ -257,16 +258,6 @@
                      identifié</catDesc>
                   <catDesc xml:lang="en"><term>Unknown speaker</term>: unidentified
                      speaker</catDesc>
-               </category>
-            </taxonomy>
-            <taxonomy xml:id="subcorpus">
-               <desc xml:lang="fr"><term>Sous-corpus</term></desc>
-               <desc xml:lang="en"><term>Subcorpora</term></desc>
-               <category xml:id="reference">
-                  <catDesc xml:lang="fr"><term>Référence</term>: sous-corpus de référence, jusqu'à
-                     2019-10-31</catDesc>
-                  <catDesc xml:lang="en"><term>Reference</term>: reference subcorpus, until
-                     2022-07-31</catDesc>
                </category>
             </taxonomy>
          </classDecl>
