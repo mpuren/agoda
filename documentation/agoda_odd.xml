@@ -17,7 +17,6 @@
                     <resp xml:lang="en">Documentation writing</resp>
                 </respStmt>
             </titleStmt>
-
             <publicationStmt>
                 <publisher>AGODA</publisher>
                 <authority>Bnf DataLab</authority>
@@ -98,14 +97,14 @@
                             <item>dans le <gi>teiCorpus</gi></item>
                             <item>dans chacun des documents TEI composant le corpus.</item>
                         </list> Les métadonnées enregistrées dans le <gi>teiCorpus</gi> concernent
-                        l'ensemble des documents, tandis que celles enregistrés dans les fichiers
-                        TEI individuels sont spécifiques à chaque numéro du Journal Officiel,
-                        c'est-à-dire à chaque séance. Les métadonnées contenues dans ces
-                            <gi>teiHeader</gi> peuvent donc différer ; par ailleurs, le
-                            <gi>teiHeader</gi> dans le <gi>teiCorpus</gi> comportent également des
+                        l'ensemble des documents, tandis que celles enregistrées dans les fichiers
+                        TEI individuels sont spécifiques à chaque numéro du <title>Journal
+                            Officiel</title>, c'est-à-dire à chaque séance. Les métadonnées
+                        contenues dans ces <gi>teiHeader</gi> peuvent donc différer ; par ailleurs,
+                        le <gi>teiHeader</gi> dans le <gi>teiCorpus</gi> comportent également des
                         éléments supplémentaires. </p>
                     <div3>
-                        <head>Métadonnées bibliographiques (fileDesc)</head>
+                        <head>Métadonnées bibliographiques (<gi>fileDesc</gi>)</head>
                         <p>L'élément <gi>fileDesc</gi> contient les métadonnées bibliographiques
                             décrivant le fichier électronique. Il contient également l'élément
                                 <gi>sourceDesc</gi> permettant d'enregistrer les informations
@@ -113,22 +112,21 @@
                                 <gi>sourceDesc</gi> pour encoder les données bibliographiques
                             décrivant la source numérisée, ici le <title>Journal officiel de la
                                 République française. Débats parlementaires. Chambre des députés :
-                                compte rendu in-extenso</title>, au niveau du périoddique (dans
+                                compte rendu in-extenso</title>, au niveau du périodique (dans
                             l'élément <gi>teiCorpus</gi>) et au niveau du numéro (dans l'élément
                                 <gi>TEI</gi>).</p>
                         <div4>
-                            <head>Mention de titres <gi>titleStmt</gi></head>
+                            <head>Mention de titres (<gi>titleStmt</gi>)</head>
                             <p> Quatre éléments sont contenus dans <gi>titleStmt</gi> :
                                     <gi>title</gi>, <gi>meeting</gi>, <gi>respStmt</gi> et
                                     <gi>funder</gi> apparaissent dans cet ordre. L'usage des deux
                                 premiers éléments diffère au niveau du corpus et du document, tandis
                                 que <gi>respStmt</gi> et <gi>funder</gi> sont utilisés de manière
                                 similaire. </p>
-
                             <p>Au niveau du corpus et du document, on distingue le titre principal
-                                et le sous-titre grâce à l'attribut <att>type</att>. U attribut
-                                @xml-lang permet de fournir ces titres en français et en
-                                anglais.</p>
+                                et le sous-titre grâce à l'attribut <att>type</att>. L'attribut
+                                    <att>xml-lang</att> permet de fournir ces titres en français et
+                                en anglais.</p>
                             <p/>
                             <p> Dans <gi>teiCorpus</gi> : <list>
                                     <item>le titre principal est le suivant : "Corpus des débats
@@ -204,49 +202,44 @@
                                         séance</meeting>
                                 </egXML>
                             </p>
-                            <div5>
-                                <head>Utilisation de <gi>respStmt</gi> et <gi>funder</gi></head>
-                                <p>
-                                    <gi>respStmt</gi> enregistre les noms de personnes ayant
-                                    participé à la production du document électronique et à leur
-                                    responsabilité respective. <egXML
-                                        xmlns="http://www.tei-c.org/ns/Examples">
-                                        <respStmt>
-                                            <persName>
-                                                <forename>Fanny</forename>
-                                                <surname>Lebreton</surname>
-                                                <ptr type="id-hal" target="fanny-lebreton"/>
-                                            </persName>
-                                            <resp xml:lang="fr">Transformation du JSON en XML-TEI et
-                                                ajout automatique des balises TEI par des scripts
-                                                Python</resp>
-                                            <resp xml:lang="en">Transformation from JSON to XML-TEI
-                                                and automatic addition of TEI tags by Python
-                                                scripts</resp>
-                                        </respStmt>
-                                        <respStmt>
-                                            <persName>
-                                                <forename>Marie</forename>
-                                                <surname>Puren</surname>
-                                                <ptr type="id-hal" target="marie-puren"/>
-                                                <ptr type="orcid" target="0000-0001-5452-3913"/>
-                                            </persName>
-                                            <resp xml:lang="fr">TEI Header</resp>
-                                            <resp xml:lang="en">TEI Header</resp>
-                                        </respStmt>
-                                    </egXML>
-                                </p>
-                                <p> La source du financement du projet est indiqué dans l'élément
-                                        <gi>funder</gi>. </p>
-                            </div5>
+                            <p>
+                                <gi>respStmt</gi> enregistre les noms de personnes ayant participé à
+                                la production du document électronique et à leur responsabilité
+                                respective. <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <respStmt>
+                                        <persName>
+                                            <forename>Fanny</forename>
+                                            <surname>Lebreton</surname>
+                                            <ptr type="id-hal" target="fanny-lebreton"/>
+                                        </persName>
+                                        <resp xml:lang="fr">Transformation du JSON en XML-TEI et
+                                            ajout automatique des balises TEI par des scripts
+                                            Python</resp>
+                                        <resp xml:lang="en">Transformation from JSON to XML-TEI and
+                                            automatic addition of TEI tags by Python scripts</resp>
+                                    </respStmt>
+                                    <respStmt>
+                                        <persName>
+                                            <forename>Marie</forename>
+                                            <surname>Puren</surname>
+                                            <ptr type="id-hal" target="marie-puren"/>
+                                            <ptr type="orcid" target="0000-0001-5452-3913"/>
+                                        </persName>
+                                        <resp xml:lang="fr">TEI Header</resp>
+                                        <resp xml:lang="en">TEI Header</resp>
+                                    </respStmt>
+                                </egXML>
+                            </p>
+                            <p> La source du financement du projet est indiqué dans l'élément
+                                    <gi>funder</gi>. </p>
                         </div4>
                         <div4>
-                            <head>Mention d'édition <gi>editionStmt</gi></head>
+                            <head>Mention d'édition (<gi>editionStmt</gi>)</head>
                             <p> L'élément <gi>editionStmt</gi> renseigne le numéro de l'édition
                                 électronique. </p>
                         </div4>
                         <div4>
-                            <head>Étendue <gi>extent</gi></head>
+                            <head>Taille du corpus (<gi>extent</gi>)</head>
                             <p> L'élément <gi>extent</gi> donne des informations sur la taille du
                                 corpus. On y trouve trois types de mesures : <list>
                                     <item>le nombre d'interventions (une intervention correspondant
@@ -278,7 +271,7 @@
                                 de mots dans le corpus. </p>
                         </div4>
                         <div4>
-                            <head>Mention de publication <gi>publicationStmt</gi></head>
+                            <head>Mention de publication (<gi>publicationStmt</gi>)</head>
                             <p> Le contenu de cet élément est semblable au niveau du corpus et du
                                 document. Il est utilisé pour donner des informations sur la
                                 publication du document électronique. </p>
@@ -297,7 +290,7 @@
                             </p>
                         </div4>
                         <div4>
-                            <head>Description de la source <gi>sourceDesc</gi></head>
+                            <head>Description de la source (<gi>sourceDesc</gi>)</head>
                             <p> Les informations bibliographiques décrivant la source numérisée dont
                                 dérive le fichier électronique sont contenues dans
                                     <gi>sourceDesc</gi>. Nous utilisons l'élément <gi>biblFull</gi>
@@ -364,7 +357,7 @@
                         </div4>
                     </div3>
                     <div3>
-                        <head>Métadonnées de l'encodage <gi>encodingDesc</gi></head>
+                        <head>Métadonnées de l'encodage (<gi>encodingDesc</gi>)</head>
                         <p>Cet élément donne des informations sur les principes éditoriaux et de
                             transcription utilisés. </p>
                         <div4>
@@ -393,53 +386,45 @@
                         </div4>
                         <div4>
                             <head>Elements supplémentaires utilisés dans <gi>teiCorpus</gi></head>
-                            <div5>
+                            <!--<div5>
                                 <head>Déclaration des pratiques éditoriales
-                                    <gi>editorialDecl</gi></head>
-                            </div5>
-                            <div5>
-                                <head>Informations sur les application utilisées pour traiter les
-                                    documents dans <gi>appInfo</gi></head>
-                                <p> Nous utilisons l'élément <gi>appInfo</gi> pour donner des
-                                    informations sur les logiciels et les langages utilisés pour
-                                    traiter les documents numérisés. <egXML
-                                        xmlns="http://www.tei-c.org/ns/Examples">
-                                        <appInfo>
-                                            <application ident="outil-soduco" version="1">
-                                                <label>Outil Soduco</label>
-                                                <desc>Application utilisée pour océriser les
-                                                  textes</desc>
-                                            </application>
-                                        </appInfo>
-                                        <appInfo>
-                                            <application ident="python" version="3.10.4">
-                                                <label>Python</label>
-                                                <desc>Language utilisé pour baliser automatiquement
-                                                  le document en XML-TEI</desc>
-                                            </application>
-                                        </appInfo>
-                                    </egXML>
-                                </p>
-                            </div5>
-                            <div5>
-                                <head>Déclaration des classifications dans <gi>classDecl</gi></head>
-                                <p> Dans <gi>teiCorpus</gi>, l'élément <gi>classDecl</gi> contient
-                                    les taxonomies utilisées. Nous utilisons deux taxonomies
-                                    réduites, provenant des taxonomies utilisées par le projet
-                                    ParlaMint. Nous utilisons une taxonomie pour la législature et
-                                    une autre pour les types d'orateurs. L'exemple ci-dessous
-                                    présente un extrait de la taxonomie des types d'orateur (ici,
-                                    pour un orateur non identifié). <egXML
-                                        xmlns="http://www.tei-c.org/ns/Examples">
-                                        <category xml:id="unknown">
-                                            <catDesc xml:lang="fr"><term>Orateur inconnu</term>:
-                                                orateur non identifié</catDesc>
-                                            <catDesc xml:lang="en"><term>Unknown speaker</term>:
-                                                unidentified speaker</catDesc>
-                                        </category>
-                                    </egXML>
-                                </p>
-                            </div5>
+                                    (<gi>editorialDecl</gi>)</head>
+                            </div5>-->
+                            <p> Nous utilisons l'élément <gi>appInfo</gi> pour donner des
+                                informations sur les logiciels et les langages utilisés pour traiter
+                                les documents numérisés. <egXML
+                                    xmlns="http://www.tei-c.org/ns/Examples">
+                                    <appInfo>
+                                        <application ident="outil-soduco" version="1">
+                                            <label>Outil Soduco</label>
+                                            <desc>Application utilisée pour océriser les
+                                                textes</desc>
+                                        </application>
+                                    </appInfo>
+                                    <appInfo>
+                                        <application ident="python" version="3.10.4">
+                                            <label>Python</label>
+                                            <desc>Language utilisé pour baliser automatiquement le
+                                                document en XML-TEI</desc>
+                                        </application>
+                                    </appInfo>
+                                </egXML>
+                            </p>
+                            <p> Dans <gi>teiCorpus</gi>, l'élément <gi>classDecl</gi> contient les
+                                taxonomies utilisées. Nous utilisons deux taxonomies réduites,
+                                provenant des taxonomies utilisées par le projet ParlaMint. Nous
+                                utilisons une taxonomie pour la législature et une autre pour les
+                                types d'orateurs. L'exemple ci-dessous présente un extrait de la
+                                taxonomie des types d'orateur (ici, pour un orateur non identifié).
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <category xml:id="unknown">
+                                        <catDesc xml:lang="fr"><term>Orateur inconnu</term>: orateur
+                                            non identifié</catDesc>
+                                        <catDesc xml:lang="en"><term>Unknown speaker</term>:
+                                            unidentified speaker</catDesc>
+                                    </category>
+                                </egXML>
+                            </p>
                         </div4>
                     </div3>
                     <div3>
