@@ -1,13 +1,4 @@
-import json
 import re
-
-#with open("/home/fanny/Documents/AGODA/Docs de travail AGODA Github/Transformations/JSON/FR_3R_5L_1889-11-26.json") as f:
-    #x = f.read()
-    #print(json.loads(x))
-
-#with open("/home/fanny/Documents/AGODA/Docs de travail AGODA Github/Transformations/JSON/FR_3R_5L_1889-11-26_p178.json") as f:
-    #data = json.load(f)
-
 
 def add_seg(data):
     """
@@ -17,11 +8,11 @@ def add_seg(data):
     for i in range(len(data)):
         if "comment" in data[i]:
             if re.search(r"seg[^-]|seg$", data[i]["comment"]) and not re.search(r"quote-beginning|quote-end", data[i]["comment"]): # expression régulière : seg pouvant être suivi de n'importe quel caractère sauf le "-", et seg  en fin de ligne
-                data[i]['text_ocr'] = "".join(["<seg>", data[i]['text_ocr'], "</seg>"])
+                data[i]['text_ocr'] = "".join(['<seg>', data[i]['text_ocr'], '</seg>'])
             elif re.search(r"seg-beginning", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join(["<seg>", data[i]['text_ocr']])
+                data[i]['text_ocr'] = "".join(['<seg>', data[i]['text_ocr']])
             elif re.search(r"seg-end", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join([data[i]['text_ocr'], "</seg>"])
+                data[i]['text_ocr'] = "".join([data[i]['text_ocr'], '</seg>'])
             else:
                 pass
     return data
@@ -34,12 +25,12 @@ def add_signed(data):
     for i in range(len(data)):
         if "comment" in data[i]:
             if re.search(r"signed", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join(["<signed>", data[i]['text_ocr'], "</signed>"])
+                data[i]['text_ocr'] = "".join(['<signed>', data[i]['text_ocr'], '</signed>'])
             else:
                 pass
     return data
 
-# NE FONCTIONNE PAS : A REPRENDRE
+# NE FONCTIONNE PAS : À REPRENDRE
 def add_page_beginning(data):
     """
     Ajoute l'élément TEI "pb" lorsqu'il y a l'étiquette "page-number" ou "page-number-ref", "seg-end"

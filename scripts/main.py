@@ -10,7 +10,7 @@ path_to_json = '/home/fanny/Documents/AGODA/Docs de travail AGODA Github/Transfo
 compteur = 1
 
 
-# Fonction principale
+# Fonction principale permettant d'appliquer l'ensemble des définitions définies dans les autres scripts
 def main(x,compteur):
   """
   Expliquer fonction
@@ -18,7 +18,7 @@ def main(x,compteur):
   """
 
 
-  # appeler les fichier contenant les définitions classées par thématiques
+  # Appeler les définitions classées par thématiques dans un ordre bien précis
   add_quote(x)
   add_incident(x)
   add_seg(x)
@@ -27,10 +27,9 @@ def main(x,compteur):
   add_signed(x)
   nettoyage_saut_ligne(x)
 
-  # écrire dans un fichier pour chacune des séances
-  # nommer chaque fichier d'une certaine façon
+# Gestion des éléments obligatoires en XML TEI à ajouter (élément racine par exemple) ici ?
 
-  # Écriture du contenu de data dans les JSON - étape pas obligatoire
+  # Écriture du contenu de data dans les JSON - étape intermédiaire à enlever par la suite
   with open('essai' + str(compteur) + '.json', 'w') as f:
     json.dump(x, f)
 
@@ -59,5 +58,9 @@ for file_name in [file for file in os.listdir(path_to_json) if file.endswith('.j
         if len(data[i]["text_ocr"]) > 0:
           output_xml.write(data[i]['text_ocr'])
 
+  # autre méthode pour la création de fichiers .xml ?
+  # écrire dans un fichier pour chacune des séances --> à gérer
+  # nommer chaque fichier d'une certaine façon --> à gérer
+  # vérification du schéma TEI --> à gérer
 
 output_xml.close()

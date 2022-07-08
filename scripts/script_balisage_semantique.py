@@ -1,12 +1,4 @@
-import json
 import re
-
-#with open("/home/fanny/Documents/AGODA/Docs de travail AGODA Github/Transformations/JSON/FR_3R_5L_1889-11-26.json") as f:
-    #x = f.read()
-    #print(json.loads(x))
-
-#with open("/home/fanny/Documents/AGODA/Docs de travail AGODA Github/Transformations/JSON/FR_3R_5L_1889-11-26_p178.json") as f:
-    #data = json.load(f)
 
 def add_utterance(data):
     """
@@ -16,11 +8,11 @@ def add_utterance(data):
     for i in range(len(data)):
         if "comment" in data[i]:
             if re.search(r"u | u$", data[i]["comment"]): # expression régulière : mettre des espaces pour ne pas que ça prenne en compte la lettre u dans un mot
-                data[i]['text_ocr'] = "".join(["<u>", data[i]['text_ocr'], "</u>"])
+                data[i]['text_ocr'] = "".join(['<u>', data[i]['text_ocr'], '</u>'])
             elif re.search(r"u-beginning", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join(["<u>", data[i]['text_ocr']])
+                data[i]['text_ocr'] = "".join(['<u>', data[i]['text_ocr']])
             elif re.search(r"u-end", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join([data[i]['text_ocr'], "</u>"])
+                data[i]['text_ocr'] = "".join([data[i]['text_ocr'], '</u>'])
             else:
                 pass
     return data
@@ -41,10 +33,15 @@ def add_comment(data):
                 data[i]['text_ocr'] = "".join([data[i]['text_ocr'], '</note>'])
             elif re.search(r"result", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<note type="result">', data[i]['text_ocr'], '</note>'])
+            elif re.search(r"opening", data[i]["comment"]):
+                data[i]['text_ocr'] = "".join(['<note type="opening">', data[i]['text_ocr'], '</note>'])
+            elif re.search(r"closing", data[i]["comment"]):
+                data[i]['text_ocr'] = "".join(['<note type="closing">', data[i]['text_ocr'], "</note>"])
             else:
                 pass
     return data
 
+# Si pas de parenthèse ouvrante ou fermante, l'idée ne fonctionne pas
 def add_incident(data):
     """
     Ajoute l'élément TEI "incident" et "desc" pour chacun des paragraphes étiquetés "incident", "incident-beginning", "incident-end"
@@ -65,6 +62,7 @@ def add_incident(data):
                 pass
     return data
 
+# Si pas de guillemet ouvrant ou fermant, l'idée ne fonctionne pas
 def add_quote(data):
     """
     Ajoute l'élément TEI "quote" pour chacun des paragraphes étiquetés "quote", "quote-beginning", "quote-end"
