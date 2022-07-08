@@ -3,7 +3,7 @@
     xmlns:rng="http://relaxng.org/ns/structure/1.0" xml:lang="en">
 
     <!-- COMPLÉTER le teiHeader -->
-    
+
     <teiHeader>
         <fileDesc>
             <titleStmt>
@@ -93,18 +93,47 @@
                 <!-- PARTIE 4 -->
                 <div2>
                     <head>Métadonnées</head>
+                    <p> La TEI permet d'ajouter de nombreuses métadonnées aux fichiers TEI. Ces
+                        métadonnées sont enregistrées dans l'élément <gi>teiHeader</gi> qui apparaît
+                        à deux niveaux : <list>
+                            <item>dans le <gi>teiCorpus</gi></item>
+                            <item>dans chacun des documents TEI composant le corpus.</item>
+                        </list> Les métadonnées enregistrées dans le <gi>teiCorpus</gi> concernent
+                        l'ensemble des documents, tandis que celles enregistrés dans les fichiers
+                        TEI individuels sont spécifiques à chaque numéro du Journal Officiel,
+                        c'est-à-dire à chaque séance. Les métadonnées contenues dans ces
+                            <gi>teiHeader</gi> peuvent donc différer ; par ailleurs, le
+                            <gi>teiHeader</gi> dans le <gi>teiCorpus</gi> comportent également des
+                        éléments supplémentaires. </p>
+                    <div3>
+                        <head>Métadonnées bibliographiques (fileDesc)</head>
+                        <p>L'élément <gi>fileDesc</gi> contient les métadonnées bibliographiques
+                            décrivant le fichier électronique. Il contient également l'élément
+                                <gi>sourceDesc</gi> permettant d'enregistrer les informations
+                            décrivant la source dont le fichier TEI est dérivé. Nous utilisons
+                                <gi>sourceDesc</gi> pour encoder les données bibliographiques
+                            décrivant la source numérisée, ici le <title>Journal officiel de la
+                                République française. Débats parlementaires. Chambre des députés :
+                                compte rendu in-extenso</title>, au niveau du périoddique (dans
+                            l'élément <gi>teiCorpus</gi>) et au niveau du numéro (dans l'élément
+                                <gi>TEI</gi>).</p>
+                        <div4>
+                            <head>Mention de titres (titleStmt)</head>
+                        </div4>
+                    </div3>
                 </div2>
 
                 <!-- PARTIE 5 -->
                 <div2>
                     <head>Balisage physique</head>
+                    <div3/>
                 </div2>
 
                 <!-- PARTIE 6 -->
                 <div2>
                     <head>Balisage sémantique</head>
                 </div2>
-                
+
                 <!-- PARTIE 7 -->
                 <div2>
                     <head>Bibliographie</head>
