@@ -216,9 +216,6 @@ Dans <teiCorpus> :
             <title type="sub" xml:lang="en">Proceedings of the debates in plenary sitting of the
                Chamber of Deputies,5th legislature (1889-1893)</title>
 
-Au niveau du document TEI individuel:
-- le titre principal est "Journal officiel de la République française. Débats parlementaires" ;
-- le sous-titre est "Chambre des députés : compte rendu in-extenso".
 
             <title type="main" xml:lang="fr">Journal officiel de la République française. Débats
                parlementaires</title>

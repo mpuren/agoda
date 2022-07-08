@@ -65,7 +65,6 @@
                     then they are converted into XML-TEI using Python scripts.</p>
             </projectDesc>
         </encodingDesc>
-
         <revisionDesc>
             <change when="2022-07-05"/>
         </revisionDesc>
@@ -118,8 +117,333 @@
                             l'élément <gi>teiCorpus</gi>) et au niveau du numéro (dans l'élément
                                 <gi>TEI</gi>).</p>
                         <div4>
-                            <head>Mention de titres (titleStmt)</head>
+                            <head>Mention de titres <gi>titleStmt</gi></head>
+                            <p> Quatre éléments sont contenus dans <gi>titleStmt</gi> :
+                                    <gi>title</gi>, <gi>meeting</gi>, <gi>respStmt</gi> et
+                                    <gi>funder</gi> apparaissent dans cet ordre. L'usage des deux
+                                premiers éléments diffère au niveau du corpus et du document, tandis
+                                que <gi>respStmt</gi> et <gi>funder</gi> sont utilisés de manière
+                                similaire. </p>
+
+                            <p>Au niveau du corpus et du document, on distingue le titre principal
+                                et le sous-titre grâce à l'attribut <att>type</att>. U attribut
+                                @xml-lang permet de fournir ces titres en français et en
+                                anglais.</p>
+                            <p/>
+                            <p> Dans <gi>teiCorpus</gi> : <list>
+                                    <item>le titre principal est le suivant : "Corpus des débats
+                                        parlementaires français de la Troisième République" ;</item>
+                                    <item>le sous-titre est composé du texte "Comptes-rendus des
+                                        débats en séance publique de la Chambre des députés" suivi
+                                        de la législature et des dates de début et fin de cette
+                                        dernière.</item>
+                                </list>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <title type="main" xml:lang="fr">Corpus des débats
+                                        parlementaires français de la Troisième République</title>
+                                    <title type="main" xml:lang="en">Corpus of French Parliamentary
+                                        Debates of the Third Republic</title>
+                                    <title type="sub" xml:lang="fr">Comptes-rendus des débats en
+                                        séance publique de la Chambre des députés, 5e législature
+                                        (1889-1893)</title>
+                                    <title type="sub" xml:lang="en">Proceedings of the debates in
+                                        plenary sitting of the Chamber of Deputies,5th legislature
+                                        (1889-1893)</title>
+                                </egXML>
+                            </p>
+                            <p> Au niveau du document TEI individuel: <list>
+                                    <item>le titre principal est "Journal officiel de la République
+                                        française. Débats parlementaires" ;</item>
+                                    <item>le sous-titre est "Chambre des députés : compte rendu
+                                        in-extenso".</item>
+                                </list>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <title type="main" xml:lang="fr">Journal officiel de la
+                                        République française. Débats parlementaires</title>
+                                    <title type="main" xml:lang="en">Official Journal of the French
+                                        Republic. Parliamentary debates</title>
+                                    <title type="sub" xml:lang="fr">Chambre des députés : compte
+                                        rendu in-extenso</title>
+                                    <title type="sub" xml:lang="en">Chamber of Deputies: verbatim
+                                        report</title>
+                                </egXML>
+                            </p>
+                            <p> L'élément <gi>meeting</gi> renseigne le titre d'une réunion ou d'une
+                                conférence. Un attribut <att>ana</att> associe systématiquement les
+                                éléments appropriés provenant de la taxonomie décrite dans (ajouter
+                                lien vers la section). </p>
+                            <p> Dans <gi>teiCorpus</gi>, l'élément <gi>meeting</gi> renseigne le
+                                numéro de la législature. La valeur de l'attribut @n correspond au
+                                numéro de législature suivi du type de chambre ("lower" pour la
+                                Chambre des députés vs. "higher" pour le Sénat). <egXML
+                                    xmlns="http://www.tei-c.org/ns/Examples">
+                                    <meeting n="5-lower" ana="#parla.lower #parla.term">5e
+                                        législature</meeting>
+                                </egXML>
+                            </p>
+                            <p> Dans les documents TEI composant le corpus, l'élément
+                                    <gi>meeting</gi> est utilisé trois fois : <list>
+                                    <item>Un premier élément enregistre s'il s'agit d'une session
+                                        ordinaire ou d'une session extraordinaire. La valeur de
+                                        l'attribut <att>n</att> est définie de la façon suivante :
+                                        la lettre correspond au type de session (O pour ordinaire et
+                                        E pour extraordinaire) ; le numéro correspond à la place de
+                                        la session dans la législature.</item>
+                                    <item>Le deuxième élément indique le numéro de la législature.
+                                        La valeur de l'attribut @n a pour valeur le numéro de la
+                                        législature suivi de la lettre L pour "législature".</item>
+                                    <item>Le troisième élément enregistre le numéro de la séance.
+                                        L'attribut <att>n</att> permet d'enregistrer le numéro de la
+                                        séance.</item>
+                                </list><egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <meeting n="E1" ana="#parla.lower #parla.session">Session
+                                        extraordinaire de 1889</meeting>
+                                    <meeting n="5L" ana="#parla.lower #parla.legislature">5e
+                                        législature</meeting>
+                                    <meeting n="10" ana="#parla.lower #parla.sitting">10e
+                                        séance</meeting>
+                                </egXML>
+                            </p>
+                            <div5>
+                                <head>Utilisation de <gi>respStmt</gi> et <gi>funder</gi></head>
+                                <p>
+                                    <gi>respStmt</gi> enregistre les noms de personnes ayant
+                                    participé à la production du document électronique et à leur
+                                    responsabilité respective. <egXML
+                                        xmlns="http://www.tei-c.org/ns/Examples">
+                                        <respStmt>
+                                            <persName>
+                                                <forename>Fanny</forename>
+                                                <surname>Lebreton</surname>
+                                                <ptr type="id-hal" target="fanny-lebreton"/>
+                                            </persName>
+                                            <resp xml:lang="fr">Transformation du JSON en XML-TEI et
+                                                ajout automatique des balises TEI par des scripts
+                                                Python</resp>
+                                            <resp xml:lang="en">Transformation from JSON to XML-TEI
+                                                and automatic addition of TEI tags by Python
+                                                scripts</resp>
+                                        </respStmt>
+                                        <respStmt>
+                                            <persName>
+                                                <forename>Marie</forename>
+                                                <surname>Puren</surname>
+                                                <ptr type="id-hal" target="marie-puren"/>
+                                                <ptr type="orcid" target="0000-0001-5452-3913"/>
+                                            </persName>
+                                            <resp xml:lang="fr">TEI Header</resp>
+                                            <resp xml:lang="en">TEI Header</resp>
+                                        </respStmt>
+                                    </egXML>
+                                </p>
+                                <p> La source du financement du projet est indiqué dans l'élément
+                                        <gi>funder</gi>. </p>
+                            </div5>
                         </div4>
+                        <div4>
+                            <head>Mention d'édition <gi>editionStmt</gi></head>
+                            <p> L'élément <gi>editionStmt</gi> renseigne le numéro de l'édition
+                                électronique. </p>
+                        </div4>
+                        <div4>
+                            <head>Étendue <gi>extent</gi></head>
+                            <p> L'élément <gi>extent</gi> donne des informations sur la taille du
+                                corpus. On y trouve trois types de mesures : <list>
+                                    <item>le nombre d'interventions (une intervention correspondant
+                                        à une chaîne de caractères contenus dans un élément
+                                            <gi>u</gi>),</item>
+                                    <item>le nombre de mots</item>
+                                    <item>le nombre de pages (uniquement dans les documents TEI
+                                        individuels).</item>
+                                </list>
+                                <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <extent>
+                                        <measure unit="pages" quantity="19" xml:lang="fr">19
+                                            pages</measure>
+                                        <measure unit="pages" quantity="19" xml:lang="en">19
+                                            pages</measure>
+                                        <measure unit="utterances" quantity="75122" xml:lang="sl"
+                                            >75.122 énoncés</measure>
+                                        <measure unit="utterances" quantity="75122" xml:lang="en"
+                                            >75,122 utterances</measure>
+                                        <measure unit="words" quantity="20190034" xml:lang="sl"
+                                            >20.190.034 mots</measure>
+                                        <measure unit="words" quantity="20190034" xml:lang="en"
+                                            >20,190,034 words</measure>
+                                    </extent>
+                                </egXML>
+                            </p>
+                            <p> Ces chiffres sont fournis pour chaque document TEI. Dans
+                                    <gi>teiCorpus</gi>, il s'agit du nombre total d'interventions et
+                                de mots dans le corpus. </p>
+                        </div4>
+                        <div4>
+                            <head>Mention de publication <gi>publicationStmt</gi></head>
+                            <p> Le contenu de cet élément est semblable au niveau du corpus et du
+                                document. Il est utilisé pour donner des informations sur la
+                                publication du document électronique. </p>
+                            <p> Nous utilisons de la façon suivante quatre des éléments qui peuvent
+                                être contenus dans le <gi>publicationStmt</gi>: <list>
+                                    <item> L'élément <gi>publisher</gi> contient le nom du projet
+                                        responsable de la publication du document, à savoir AGODA. </item>
+                                    <item> L'élément <gi>authority</gi> enregistre le nom de
+                                        'organisme en charge de la publication du fichier, ici BnF
+                                        Datalab. </item>
+                                    <item> Le document électronique est distribué sous une licence
+                                        CC-BY comme indiqué dans l'élément <gi>availability</gi>. </item>
+                                    <item> Dans l'élément <gi>date</gi>, on trouve la date de
+                                        production du document électronique. </item>
+                                </list>
+                            </p>
+                        </div4>
+                        <div4>
+                            <head>Description de la source <gi>sourceDesc</gi></head>
+                            <p> Les informations bibliographiques décrivant la source numérisée dont
+                                dérive le fichier électronique sont contenues dans
+                                    <gi>sourceDesc</gi>. Nous utilisons l'élément <gi>biblFull</gi>
+                                afin d'en donner une description bibliographique structurée. Les
+                                informations contenues dans l'élément <gi>biblFull</gi> sont
+                                similaires au niveau du corpus et au niveau du document, excepté le
+                                texte dans l'élément <gi>date</gi>. Nous indiquons en effet les
+                                dates extrêmes de la législature dans le <gi>teiCorpus</gi>, tandis
+                                qu'on trouve la date de publication du compte-rendu de la séance
+                                dans le <title>Journal Officiel</title>. <egXML
+                                    xmlns="http://www.tei-c.org/ns/Examples">
+                                    <sourceDesc>
+                                        <biblFull>
+                                            <titleStmt>
+                                                <title>Journal officiel de la République française.
+                                                  Débats parlementaires. Chambre des députés :
+                                                  compte rendu in-extenso</title>
+                                            </titleStmt>
+                                            <publicationStmt>
+                                                <publisher xml:lang="fr">Pas d'information
+                                                  disponible</publisher>
+                                                <publisher xml:lang="en">No information
+                                                  available</publisher>
+                                                <pubPlace>
+                                                  <location>
+                                                  <country key="FR"/>
+                                                  <settlement type="city">Paris</settlement>
+                                                  </location>
+                                                </pubPlace>
+                                                <date when="1889-11-27">27 novembre 1889</date>
+                                                <distributor
+                                                  facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1"
+                                                  >Source gallica.bnf.fr / Bibliothèque nationale de
+                                                  France</distributor>
+                                                <availability>
+                                                  <licence xml:lang="fr"
+                                                  target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica">
+                                                  <p>Les contenus accessibles sur le site Gallica
+                                                  sont pour la plupart des reproductions numériques
+                                                  d'œuvres tombées dans le domaine public provenant
+                                                  des collections de la BnF.</p>
+                                                  <p>Ces contenus sont considérés, en vertu du code
+                                                  des relations entre le public et l’administration,
+                                                  comme étant des informations publiques et leur
+                                                  réutilisation s'inscrit dans le cadre des
+                                                  dispositions prévues aux articles L. 321-1 à L.
+                                                  327-1 de ce code.</p>
+                                                  </licence>
+                                                </availability>
+                                            </publicationStmt>
+                                            <seriesStmt>
+                                                <title>Journal Officiel de la République
+                                                  française</title>
+                                                <biblScope unit="series">Débats
+                                                  parlementaires</biblScope>
+                                                <biblScope unit="volume">Chambre des
+                                                  députés</biblScope>
+                                                <idno type="ISSN">1270-5942</idno>
+                                            </seriesStmt>
+                                        </biblFull>
+                                    </sourceDesc>
+                                </egXML>
+                            </p>
+                        </div4>
+                    </div3>
+                    <div3>
+                        <head>Métadonnées de l'encodage <gi>encodingDesc</gi></head>
+                        <p>Cet élément donne des informations sur les principes éditoriaux et de
+                            transcription utilisés. </p>
+                        <div4>
+                            <head>Elements communs à <gi>teiCorpus</gi> et aux documents
+                                individuels</head>
+                            <p>Dans <gi>projectDesc</gi>, nous décrivons le contexte de production
+                                des fichiers XML-TEI, et de la constitution du corpus.</p>
+                            <p> Dans l'élément <gi>tagsDecl</gi>, nous donnons des informations sur
+                                la fréquence d'apparition d'éléments particuliers. Cette liste
+                                d'éléments respecte celle utilisée par le projet ParlaMint et pourra
+                                être utilisée pour valider l'intégrité et une meilleure
+                                intéropérabilité des fichiers TEI en cas d'échange des données.
+                                    <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                    <namespace name="http://www.tei-c.org/ns/1.0">
+                                        <tagUsage gi="body" occurs="1"/>
+                                        <tagUsage gi="desc" occurs="188"/>
+                                        <tagUsage gi="div" occurs="3"/>
+                                        <tagUsage gi="head" occurs="3"/>
+                                        <tagUsage gi="incident" occurs="18"/>
+                                        <tagUsage gi="note" occurs="3"/>
+                                        <tagUsage gi="seg" occurs="595"/>
+                                        <tagUsage gi="u" occurs="256"/>
+                                    </namespace>
+                                </egXML>
+                            </p>
+                        </div4>
+                        <div4>
+                            <head>Elements supplémentaires utilisés dans <gi>teiCorpus</gi></head>
+                            <div5>
+                                <head>Déclaration des pratiques éditoriales
+                                    <gi>editorialDecl</gi></head>
+                            </div5>
+                            <div5>
+                                <head>Informations sur les application utilisées pour traiter les
+                                    documents dans <gi>appInfo</gi></head>
+                                <p> Nous utilisons l'élément <gi>appInfo</gi> pour donner des
+                                    informations sur les logiciels et les langages utilisés pour
+                                    traiter les documents numérisés. <egXML
+                                        xmlns="http://www.tei-c.org/ns/Examples">
+                                        <appInfo>
+                                            <application ident="outil-soduco" version="1">
+                                                <label>Outil Soduco</label>
+                                                <desc>Application utilisée pour océriser les
+                                                  textes</desc>
+                                            </application>
+                                        </appInfo>
+                                        <appInfo>
+                                            <application ident="python" version="3.10.4">
+                                                <label>Python</label>
+                                                <desc>Language utilisé pour baliser automatiquement
+                                                  le document en XML-TEI</desc>
+                                            </application>
+                                        </appInfo>
+                                    </egXML>
+                                </p>
+                            </div5>
+                            <div5>
+                                <head>Déclaration des classifications dans <gi>classDecl</gi></head>
+                                <p> Dans <gi>teiCorpus</gi>, l'élément <gi>classDecl</gi> contient
+                                    les taxonomies utilisées. Nous utilisons deux taxonomies
+                                    réduites, provenant des taxonomies utilisées par le projet
+                                    ParlaMint. Nous utilisons une taxonomie pour la législature et
+                                    une autre pour les types d'orateurs. L'exemple ci-dessous
+                                    présente un extrait de la taxonomie des types d'orateur (ici,
+                                    pour un orateur non identifié). <egXML
+                                        xmlns="http://www.tei-c.org/ns/Examples">
+                                        <category xml:id="unknown">
+                                            <catDesc xml:lang="fr"><term>Orateur inconnu</term>:
+                                                orateur non identifié</catDesc>
+                                            <catDesc xml:lang="en"><term>Unknown speaker</term>:
+                                                unidentified speaker</catDesc>
+                                        </category>
+                                    </egXML>
+                                </p>
+                            </div5>
+                        </div4>
+                    </div3>
+                    <div3>
+                        <head>Métadonnées non bibliographiques <gi>profileDesc</gi></head>
                     </div3>
                 </div2>
 
