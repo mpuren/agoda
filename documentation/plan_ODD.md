@@ -103,11 +103,22 @@ Marie ?
 # 1. Introduction (Pierre Marie)
 ## 1.1 Contextualisation + explication de la source   
 
-Fonctionnement de la chambre
-- chambre haute versus basse
-- session extraordinaire et ordinaire
+Pierre ?
+Mise en place de la 3ème République
+Lois constitutionnelles
+Système bicaméral et pouvoir des 2 chambres (Chambre haute vs Chambre basse)
+Mode d'élection de la Chambre des députés
+Durée du mandat et législature
+Rôle de la Chambre des Députés
 
-(notamment préciser comment le texte est produit, particularités de la source)
+Marie ?
+Fonctionnement de la Chambre des députés :
+- Fonctionnement des sesssions
+- Fonctionnement des séances
+- Prises de parole
+
+Marie et/ou Pierre
+Rédaction des comptes-rendus
 
 ## 1.2 Objectifs scientifiques  
 
