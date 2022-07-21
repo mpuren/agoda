@@ -1,6 +1,7 @@
 import json, os
-from script_balisage_formel import add_seg, add_signed
+from script_balisage_formel import add_seg, add_signed, add_page_number
 from script_balisage_semantique import add_utterance, add_comment, add_incident, add_quote
+from script_balisage_logique import add_structure, add_division
 from script_nettoyage import nettoyage_saut_ligne
 
 # Chemin vers les fichiers JSON
@@ -19,12 +20,16 @@ def main(x,compteur):
 
 
   # Appeler les définitions classées par thématiques dans un ordre bien précis
-  add_quote(x)
-  add_incident(x)
-  add_seg(x)
-  add_comment(x)
-  add_utterance(x)
-  add_signed(x)
+  #add_quote(x)
+  #add_incident(x)
+  #add_seg(x)
+  #add_comment(x)
+  #add_utterance(x)
+  #add_signed(x)
+  #add_division(x)
+  add_page_number(x)
+  add_structure(x)
+
   nettoyage_saut_ligne(x)
 
 # Gestion des éléments obligatoires en XML TEI à ajouter (élément racine par exemple) ici ?
