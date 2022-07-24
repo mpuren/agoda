@@ -1,4 +1,4 @@
-# Réflexions encodage TEI - Avril et Mai 2022
+# Réflexions encodage TEI - Avril, Mai, Juin 2022
 
 ## 1- Comment penser l'encodage ? 
 
@@ -635,3 +635,30 @@ MM. <persName>Paul Déroulède</persName> <persName>Georges Laguerre</persName>
 </div>
 ```
 
+## 3- Modélisation de l'encodage TEI : réflexions sur les choix d'encodage - Juin 2022 (ideal_encoding_model)
+
+### Changement de pages
+- Changement de pages en dehors des incident :
+```
+<pb n="175"/>
+```
+- Changement de pages dans les incident :
+```
+<ref target="#175"/>
+```
+
+### Structure générale
+- Cas d'un numéro avec plusieurs séances : 
+```
+<div type="siting">...</div>
+```
+```
+<div type ="other-sitting">...</div>
+```
+
+- Interrogation pour inclure sommaire dans un front, mais abandon de l'idée à cause des numéros ayant plusieurs séances. 
+
+- Parties complémentaires (présentes après la signature) à inclure dans le back.
+
+### Métadonnées
+- particDesc pour les personnes, tout le reste dans un standOff
