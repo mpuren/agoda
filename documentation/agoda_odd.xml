@@ -7,8 +7,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>AGODA : schéma TEI pour les actes parlementaires français de la Troisième
-                    République</title>
+                <title>AGODA : schéma TEI pour les débats parlementaires français de la Chambre des
+                    députés</title>
                 <respStmt>
                     <persName>Fanny Lebreton</persName>
                     <persName>Marie Puren</persName>
@@ -76,16 +76,270 @@
                 <!-- PARTIE 1 -->
                 <div2>
                     <head>Introduction</head>
+                    <div3>
+                        <head>Contextualisation</head>
+                        <p>À RÉDIGER</p>
+                    </div3>
+
+                    <div3>
+                        <head>Objectifs scientifiques</head>
+                        <p>À RÉDIGER</p>
+                    </div3>
+
+                    <div3>
+                        <head>Choix de transcriptions</head>
+                        <p>À RÉDIGER</p>
+                    </div3>
                 </div2>
 
                 <!-- PARTIE 2 -->
                 <div2>
                     <head>Organisation générale</head>
+                    <p>Le projet AGODA traite un grand nombre de données que nous structurons selon
+                        une organisation particulière.</p>
+                    <p>Nous avons divisé l'ensemble des comptes rendus des débats parlementaires en
+                        plusieurs corpus, ces derniers étant constitués, pour chacun, de plusieurs
+                        composants.</p>
+
+                    <div3>
+                        <head>Structure du corpus</head>
+                        <p>Un corpus correspond au regroupement des comptes rendus des débats
+                            parlementaires de la Chambre des députés propre à une législature.
+                            Chaque corpus est un document XML, ayant comme racine l'élément
+                                <gi>teiCorpus</gi>.</p>
+                        <p>L'élément racine contient ensuite : <list>
+                                <item>l'élément enfant <gi>teiHeader</gi>, permettant d'indiquer les
+                                    métadonnées du corpus dans son ensemble (pour le détail de son
+                                    contenu, cf. partie 1.4 Métadonnées) ;</item>
+                                <item>l'élément enfant <gi>standOff</gi>, contenant les données
+                                    liées et les informations contextuelles (pour le détail de son
+                                    contenu, cf. partie 1.4 Métadonnées) ;</item>
+                                <item>une série d'éléments <gi>xi:include</gi>, permettant de
+                                    stocker l'ensemble des fichiers XML comportant les comptes
+                                    rendus d'une même législature au sein de ce fichier XML central.
+                                    Ce mécanisme d'inclusion XInclude nous permet donc de constituer
+                                    le corpus avec le regroupement des fichiers composants.</item>
+                            </list>
+                        </p>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <![CDATA[<teiCorpus xmlns="http://www.tei-c.org/ns/1.0" xml:id="FR_3R_5L" xml:lang="fr">
+                               
+                               <!-- Métadonnées du corpus -->
+                               <teiHeader>...</teiHeader>
+                               <standOff>...</standOff>
+                               
+                               <!-- Stockage du composant correspondant à la séance du 26 novembre 1889 -->
+                               <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="FR_3R_5L_1889-11-26.xml"/>
+
+                               
+                               <!-- Stockage des autres composants du corpus de façon identique -->
+                               ...
+                           </teiCorpus>]]>
+                        </egXML>
+
+                        <p>L'élément racine <gi>teiCorpus</gi> doit être complété par : <list>
+                                <item>l'attribut <att>xmlns</att> afin de déterminer l'espace de nom
+                                    TEI (http://www.tei-c.org/ns/1.0) ; il n'est pas nécessaire de
+                                    repréciser cet espace de nom dans la suite du fichier, car
+                                    l'ensemble des éléments de niveau inférieur en héritent ;</item>
+                                <item>l'attribut <att>xml:id</att> indiquant l'identifiant unique de
+                                    la racine du corpus construit de la même façon que le nom du
+                                    fichier corpus (cf. partie 1.2.3 Nommage des fichiers) ;</item>
+                                <item>l'attribut <att>xml:lang</att> ayant pour valeur le code de
+                                    langue des données textuelles du fichier (cf. partie 1.3.2
+                                    Valeurs standards).</item>
+                            </list></p>
+
+                        <p>Concernant, les inclusions de fichiers réalisées à partir des éléments
+                                <gi>xi:include</gi> : <list>
+                                <item>ils dépendent d'un autre espace de nom propre à XInclude
+                                    (http://www.w3.org/2001/XInclude), que nous définissons à l'aide
+                                    de l'attribut <att>xmlns:xi</att> ;</item>
+                                <item>ils contiennent l'attribut <att>href</att> afin d'indiquer le
+                                    chemin menant vers le fichier XML à inclure ; ce chemin est
+                                    construit avec le nom du fichier composant seulement, car nous
+                                    avons décidé d'enregistrer le fichier corpus au sein même du
+                                    dossier contenant l'ensemble des fichiers composants.</item>
+                            </list></p>
+                    </div3>
+
+                    <div3>
+                        <head>Structure des composants</head>
+                        <p>Un composant correspond à un compte rendu de débat parlementaire de la
+                            Chambre des députés. Il se rattache à un corpus, et donc à une
+                            législature.</p>
+                        <p>Il est possible, parfois, que certains numéros du <hi rend="italic"
+                                >Journal Officiel</hi> contiennent plusieurs séances ayant eu lieu
+                            le même jour. Le composant est alors constitué de plusieurs comptes
+                            rendus.</p>
+                        <p>Chaque composant est un document XML, ayant comme racine l'élément
+                                <gi>TEI</gi>.</p>
+                        <p>L'élément racine contient ensuite : <list>
+                                <item>l'élément enfant <gi>teiHeader</gi>, permettant d'indiquer les
+                                    métadonnées spécifiques du composant en question (pour le détail
+                                    de son contenu, cf. partie 1.4. Métadonnées ;</item>
+                                <item>l'élément enfant <gi>text</gi>, contenant le(s) compte(s)
+                                    rendu(s) dans l'élément <gi>body</gi>, ainsi que les parties
+                                    complémentaires incluses dans l'élément <gi>back</gi>.</item>
+                            </list>
+                        </p>
+                        <p>L'élément <gi>body</gi> peut contenir un ou plusieurs compte(s) rendu(s)
+                            et est structuré de la façon suivante : <list>
+                                <item>le premier compte rendu est inclus dans une division ayant un
+                                    attribut <att>type</att> de valeur "<val>sitting</val>" ;</item>
+                                <item>les comptes rendus suivant le premier sont inclus, pour
+                                    chacun, dans une division ayant un attribut <att>type</att> de
+                                    valeur "<val>other-sitting</val>".</item>
+                            </list></p>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <![CDATA[<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="FR_3R_5L_1889-11-26" xml:lang="fr">
+                               
+                               <!-- Métadonnées du composant -->
+                               <teiHeader>...</teiHeader>
+                               
+                               <!-- Compte(s) rendu(s) -->
+                               <text ana="#FR_3R_5L_1889-11-26">
+                               
+                                   <!-- Parties principales -->
+                                   <body>
+                                        <!-- Premier compte rendu -->
+                                        <div type="sitting">...</div>
+                                        
+                                        <!-- Deuxième compte rendu -->
+                                        <div type="other-sitting">...</div>
+                                   </body>
+
+                                   <!-- Parties complémentaires -->
+                                   <back>...</back>
+                                   
+                               </text>
+                           </TEI>]]>
+                        </egXML>
+
+                        <p>Tout comme l'élément <gi>teiCorpus</gi>, l'élément racine <gi>TEI</gi>
+                            doit être complété par les trois mêmes attributs : l'attribut
+                                <att>xmlns</att> ayant pour valeur l'espace de nom TEI, l'attribut
+                                <att>xml:id</att> ayant pour valeur un identifiant unique composé du
+                            nom du fichier (cf. partie 1.2.3 Nommage des fichiers), et l'attribut
+                                <att>xml:lang</att> ayant pour valeur le code de langue des données
+                            textuelles du fichier (cf. partie 1.3.2 Valeurs standards).</p>
+                        <p>L'élément <gi>text</gi> est complété par l'attribut d'analyse
+                                <att>ana</att> prenant pour valeur le nom du fichier en
+                            question.</p>
+                    </div3>
+
+                    <div3>
+                        <head>Nommage des fichiers</head>
+                        <p>Les <hi rend="bold">noms des fichiers corpus</hi> doivent être construits
+                            selon les règles suivantes : <list>
+                                <item>le nom du fichier du corpus doit commencer par le code du pays
+                                    (cf. partie 1.3.2 Valeurs standards) dans lequel ont lieu les
+                                    débats — essentiellement des cas français pour le projet AGODA
+                                    ;</item>
+                                <item>le code du pays est ensuite suivi par le numéro de la
+                                    République complété par la lettre "R" ;</item>
+                                <item>cette dernière est suivie, enfin, par le numéro de la
+                                    législature complété par la lettre "L".</item>
+                            </list>
+                        </p>
+
+                        <p>L'ensemble de ces informations doivent être séparé par le tiret du bas
+                            (unicode U+005F).</p>
+
+                        <p>Exemple de nom de fichier corpus : <hi rend="bold">FR_3R_5L</hi></p>
+
+                        <p>Les <hi rend="bold">noms des fichiers composants</hi> suivent les mêmes
+                            règles de construction que celles des fichiers corpus. Afin de
+                            distinguer les différents composants, nous ajoutons, à cette racine
+                            commune, la date exacte de la séance (cf. partie 1.3.2 Valeurs
+                            standards).</p>
+
+                        <p>Exemple de nom de fichier composant : <hi rend="bold"
+                                >FR_3R_5L_1889-11-26</hi></p>
+
+                        <p>Pour la <hi rend="bold">conservation des fichiers</hi>, nous avons décidé
+                            de stocker l'ensemble des fichiers composants ainsi que le fichier
+                            racine corpus dans un même dossier. Ce dossier prend pour nom le même
+                            nom que celui du fichier racine du corpus.</p>
+                    </div3>
+
                 </div2>
 
                 <!-- PARTIE 3 -->
                 <div2>
                     <head>Prérequis généraux</head>
+                    <div3>
+                        <head>Caractères</head>
+                        <p>Le corpus doit être codé en Unicode, selon le codage de caractères
+                            UTF-8.</p>
+                        <p>Certains caractères requièrent un traitement spécifique : <list>
+                                <item>il est recommandé de supprimer les traits d'union (U+002D)
+                                    coupant un mot en fin de ligne et de joindre les deux parties du
+                                    mot ;</item>
+                                <item>il est recommandé de supprimer les sauts de lignes (caractères
+                                    "\n") dus à la disposition du texte en colonne — disposition que
+                                    nous ne conservons pas dans l'encodage.</item>
+                                <item><hi rend="bold">À COMPLÉTER SI BESOIN</hi> : nettoyage des
+                                    doubles espaces ?</item>
+                            </list>
+                        </p>
+                    </div3>
+
+                    <div3>
+                        <head>Valeurs standards</head>
+                        <p>Certaines informations requièrent l'utilisation de codes normalisés : <list>
+                                <item><hi rend="bold">Code des noms de pays</hi></item>
+                            </list> Il convient d'utiliser la <hi rend="bold">norme ISO 3166</hi>
+                            pour les codes des noms de pays, et en particulier la norme <hi
+                                rend="bold">ISO 3166-1 alpha-2</hi>. Conformément à cette dernière,
+                            la valeur d'un code de nom de pays doit comporter deux lettres
+                            majuscules. L'attribut <att>key</att> prend pour valeur ce code.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <country key="FR"/>
+                        </egXML>
+                        <p>
+                            <list>
+                                <item><hi rend="bold">Code des noms de langues</hi></item>
+                            </list> Il convient d'utiliser la <hi rend="bold">norme ISO 639-1</hi>
+                            pour les codes des noms de langues. Conformément à cette dernière, la
+                            valeur d'un code de nom de langue doit comporter deux lettres
+                            minuscules. L'attribut <att>xml:lang</att> prend pour valeur ce
+                            code.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <title xml:lang="fr">Journal officiel de la République française. Débats
+                                parlementaires</title>
+                        </egXML>
+
+                        <p>
+                            <list>
+                                <item><hi rend="bold">Informations temporelles</hi></item>
+                            </list> Il convient d'utiliser la <hi rend="bold">norme ISO 8601</hi>
+                            pour les informations temporelles — date et heure. Conformément à cette
+                            norme, les éléments se suivent par ordre croissant de précision. Ainsi,
+                            la représentation numérique de la date est construite selon l'ordre
+                            année-mois-jour, chaque élément étant séparé de celui qui le précède par
+                            un tiret court (unicode U+002D). De la même manière, la représentation
+                            numérique de l'heure est construite selon l'ordre heure (de '00' à '24')
+                            - minute (de '00' à '59') - seconde (de '00' à '60'), chaque élément
+                            étant séparé par deux-points (unicode U+003A). Les attributs
+                                <att>when</att>, <att>from</att> et <att>to</att> prennent pour
+                            valeur ces indications temporelles. </p>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <date when="1889-11-27">27 novembre 1889</date>
+                        </egXML>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <time when="02:00:00">deux heures</time>
+                        </egXML>
+                    </div3>
+
+                    <div3>
+                        <head>Taxonomies</head>
+                        <p>À RÉDIGER.</p>
+                    </div3>
                 </div2>
 
                 <!-- PARTIE 4 -->
@@ -435,17 +689,746 @@
                 <!-- PARTIE 5 -->
                 <div2>
                     <head>Balisage physique</head>
-                    <div3/>
+                    <p>Le balisage physique correspond à l'encodage de la structure du document. Il
+                        prend en compte deux catégories structurelles différentes : d'une part, les
+                        éléments structurels formels, d'autre part, les éléments structurels
+                        logiques.</p>
+
+                    <div3>
+                        <head>Balisage formel</head>
+                        <p>Les éléments structurels formels correspondent aux traits éditoriaux du
+                            document, c'est-à-dire la mise en page et la typographie propre à la
+                            publication du <hi rend="italic">Journal Officiel</hi>.</p>
+
+                        <p>Le balisage formel ne constitue pas le coeur de notre encodage, c'est
+                            pourquoi nous n'encodons pas l'ensemble de ces éléments. Voici
+                            ci-dessous ce que nous ne balisons pas : <list>
+                                <item>les alinéas, les sauts de ligne, les changements de colonne,
+                                    ainsi que l'emplacement du texte ne sont pas représentés
+                                    ;</item>
+                                <item>les éléments typographiques tels que les graisses et les
+                                    petites capitales ne sont pas reproduits non plus ;</item>
+                                <item>par la même, les éléments formels non transcrits, mentionnés
+                                    en partie 1.1.3 Choix de transcription, ne sont pas indiqués
+                                    dans l'encodage.</item>
+                            </list></p>
+
+                        <p>Toutefois, nous avons souhaité garder trois éléments formels dans
+                            l'encodage.</p>
+                        <p><list>
+                                <item><hi rend="bold">Changements de page</hi></item>
+                            </list> Nous encodons l'indication des changements de page afin de
+                            faciliter le sourçage. Nous avons balisé cette information à l'aide de
+                            deux éléments distincts — éléments choisis en fonction du contexte
+                            d'emploi.</p>
+
+                        <p>Nous employons l'élément autofermant <gi>pb</gi> lorsque le changement de
+                            page n'intervient pas dans un élément <gi>incident</gi>, car selon le
+                            cadre de la TEI, cet élément n'est pas autorisé au sein de ce dernier.
+                            L'élément <gi>pb</gi> est complété par l'attribut <att>n</att> ayant
+                            pour valeur le numéro de la page.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <pb n="175"/>
+                        </egXML>
+
+                        <p>Nous employons l'élément autofermant <gi>ref</gi> lorsque le changement
+                            de page intervient dans l'élément <gi>incident</gi>. Il est complété par
+                            l'attribut <att>target</att> prenant pour valeur le numéro de la
+                            page.</p>
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <ref target="#175"/>
+                        </egXML>
+
+                        <p><list>
+                                <item><hi rend="bold">Paragraphes</hi></item>
+                            </list> Nous avons décidé de reproduire aussi les paragraphes (du corps
+                            du texte et des parties complémentaires) à l'aide de l'élément
+                                <gi>seg</gi> pour plus de clarté. Celui-ci contient l'attribut
+                                <att>xml:id</att> permettant de numéroter chaque paragraphe à l'aide
+                            d'un identifiant unique.</p>
+                        <p>La numérotation est construite à partir de celles présentes dans les
+                            éléments parents de <gi>seg</gi> — éléments <gi>u</gi> et <gi>note</gi>
+                            — auxquelles nous ajoutons un point et le numéro du paragraphe. (Pour
+                            plus d'informations sur la construction des numérotations, se référer
+                            aux parties 1.6.1.1 Énoncés et 1.6.1.2 Commentaires des
+                            sténographes.).</p>
+                        <p>La numérotation des paragraphes repart à 0 à chaque changement d'énoncés
+                            et à chaque changement de notes.</p>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <seg xml:id="CR_1889-11-26_u1.1"><persName ref="#pers_ID">M. Paul
+                                    Déroulède</persName>. Je demande la parole.</seg>
+                        </egXML>
+
+                        <p><list>
+                                <item><hi rend="bold">Signature</hi></item>
+                            </list> Nous encodons également la signature présente à chaque fin de
+                            séance, située avant les parties complémentaires (annexes, erratum,
+                            etc.). Nous utilisons pour cela l'élément <gi>signed</gi> prévu à cet
+                            effet. Nous comprenons la signature comme un segment à part entière. Ce
+                            dernier ne contient pas l'attribut <att>xml:id</att>.</p>
+
+                        <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                            <signed><seg>Le <roleName ref="#pers_ID">Chef du service
+                                        sténographique</roleName> de la <orgName ref="#org_ID"
+                                        >Chambre des députés</orgName>, <persName ref="#pers_ID"
+                                        >EMILE GROSSELIN</persName>.</seg></signed>
+                        </egXML>
+
+                    </div3>
+
+                    <div3>
+                        <head>Balisage logique</head>
+                        <p>Les éléments structurels logiques correspondent à l'organisation du
+                            contenu textuel : sommaire, parties, titres, tableaux, annexes, etc.
+                            Chaque compte rendu de séance est composé d'un sommaire, d'un corps de
+                            texte et de parties complémentaires.</p>
+
+                        <div4>
+                            <head>Éléments structurels du sommaire</head>
+                            <p>Le sommaire énumère l'ensemble des parties de la séance. Il est
+                                présent dans chaque compte rendu et est construit de la façon
+                                suivante : <list>
+                                    <item>le sommaire est inclus dans une sous-division (élément TEI
+                                            <gi>div</gi>) ayant un attribut <att>type</att> de
+                                        valeur "<val>contents</val>" ;</item>
+                                    <item>la division est composée ensuite : <list>
+                                            <item>d'un en-tête (élément TEI <gi>head</gi>),</item>
+                                            <item>d'une liste (élément TEI <gi>list</gi>) contenant
+                                                un ensemble d'items (élément TEI <gi>item</gi>)
+                                                correspondant aux différentes parties de la séance ;
+                                                chaque item est complété par un identifiant unique
+                                                (attribut TEI <att>xml:id</att>) (VALEURS DES ID À
+                                                DÉTERMINER).</item>
+                                        </list></item>
+                                </list></p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="contents">
+                                    <head>SOMMAIRE</head>
+                                    <list>
+                                        <item xml:id="pv">Procès verbal : MM. <persName
+                                                ref="#PD_2409">Paul Déroulède</persName>, <persName
+                                                ref="#pers_ID">Georges Laguerre</persName>,
+                                                <persName ref="#pers_ID">Briens</persName>,
+                                                <persName ref="#pers_ID">Bizouard-Bert</persName>,
+                                                <persName ref="#pers_ID">Vernière</persName>.</item>
+                                        <!-- [...] -->
+                                    </list>
+                                </div>
+                            </egXML>
+                        </div4>
+
+                        <div4>
+                            <head>Éléments structurels du corps du texte</head>
+                            <p>Le corps du texte correspond au développement de chacune des parties
+                                comprenant les propos tenus lors des séances.</p>
+                            <p>Le corps du texte se situe à la suite du sommaire et prend fin au
+                                niveau de la signature du Chef du service sténographique. Il est
+                                composé des éléments suivants :</p>
+
+                            <list>
+                                <item><hi rend="bold">Sous-divisions</hi></item>
+                            </list>
+                            <p>Chaque partie est encodée à l'aide de l'élément TEI <gi>div</gi> et
+                                d'un attribut <att>type</att> ayant pour valeur "<val>part</val>".
+                                Cette valeur d'attribut permet de signifier que le texte balisé
+                                correspond à une partie.</p>
+                            <p>Lorsque la partie en question est mentionnée en amont dans le
+                                sommaire, nous complétons l'élément avec l'attribut
+                                    <att>corresp</att> permettant de relier la partie en question à
+                                l'item du sommaire correspondant, à l'aide de l'<gi>xml:id</gi> de
+                                l'item.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="part" corresp="#àdéfinir">
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+                            <p>Au contraire, lorsque la partie en question n'est pas mentionnée dans
+                                le sommaire, nous n'incluons pas de <att>corresp</att>, mais nous
+                                complétons l'attribut <att>type</att> par une autre valeur
+                                définissant de façon précise le sujet de la partie.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="agenda">
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+
+                            <list>
+                                <item><hi rend="bold">Titres</hi></item>
+                            </list>
+                            <p>Certaines parties peuvent commencer avec un titre. Nous encodons
+                                alors l'information à l'aide de l'élément TEI <gi>head</gi>.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <head>COMMUNICATION DU GOUVERNEMENT.</head>
+                            </egXML>
+
+                            <p>Il est possible que le titre soit divisé en deux parties. Dans ce
+                                cas, l'élément <gi>head</gi> doit contenir la première partie du
+                                titre dans l'élément <gi>label</gi> et la seconde partie du titre
+                                dans l'élément <gi>note</gi>.</p>
+
+                            <list>
+                                <item><hi rend="bold">Notes structurelles</hi></item>
+                            </list>
+                            <p>Certaines informations apportées par les sténographes ne
+                                correspondent pas aux parties du discours ni à un commentaire de
+                                type sémantique. Nous avons décidé d'encoder ces cas-là à l'aide de
+                                l'élément <gi>note</gi>. Cet élément est complété par l'attribut
+                                    <att>xml:id</att> associant un identifiant unique à
+                                l'information et la numérotant. La valeur de l'identifiant unique
+                                est construite de la même façon que pour les notes sémantiques (cf.
+                                partie 1.6.1.2. Commentaires des sténographes).</p>
+
+                            <list>
+                                <item><hi rend="bold">Tableaux</hi></item>
+                            </list>
+                            <p>Le corps du texte peut également contenir des données présentées sous
+                                forme de tableau.</p>
+                            <p>Nous encodons ces données à l'aide de l'élément TEI <gi>table</gi>,
+                                puis des éléments <gi>row</gi> et <gi>cell</gi> pour préciser les
+                                lignes et les colonnes. L'élément <gi>table</gi> est complété par
+                                les attributs <att>rows</att> et <att>cols</att> prenant pour valeur
+                                le nombre de lignes et de colonnes.</p>
+                            <p>L'élément <gi>cell</gi> peut avoir aussi l'attribut <att>role</att>
+                                afin de préciser le contenu de la colonne.</p>
+                            <p>Lorsqu'il s'agit d'un tableau relatant les résultats de votes,
+                                l'élément <gi>table</gi> peut aussi contenir l'attribut
+                                    <att>corresp</att> afin de pointer vers l'identifiant unique du
+                                vote correspondant présent en annexes.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <table rows="4" cols="2" corresp="vot18891126_vot1">
+                                    <row>
+                                        <cell role="label">Nombre des votants</cell>
+                                        <cell role="data"><num>514</num></cell>
+                                    </row>
+                                    <row>
+                                        <cell role="label">Majorité absolue</cell>
+                                        <cell role="data"><num>258</num></cell>
+                                    </row>
+                                    <row>
+                                        <cell role="label">Pour l'adoption</cell>
+                                        <cell role="data"><num>333</num></cell>
+                                    </row>
+                                    <row>
+                                        <cell role="label">Contre</cell>
+                                        <cell role="data"><num>181</num></cell>
+                                    </row>
+                                </table>
+                            </egXML>
+
+                        </div4>
+
+                        <div4>
+                            <head>Éléments structurels des parties complémentaires</head>
+                            <p>Les comptes rendus des débats peuvent contenir, en plus du corps du
+                                texte, des parties complémentaires. Ces dernières correspondent à
+                                tous les suppléments ajoutés à la partie principale : annexes,
+                                erratum, errata, pétitions, nominations des bureaux, listes, etc.
+                                Elles sont incluses dans l'élément TEI <gi>back</gi> prévu à cet
+                                effet.</p>
+                            <p>Chaque partie est incluse dans une division que nous typons selon le
+                                sujet.</p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="appendices">
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="erratum">
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="petition">
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="offices">
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="lists">
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+
+                            <p>Ces différentes parties peuvent commencer avec un titre simple ou un
+                                titre composé, que nous encodons de la même façon que les titres du
+                                corps du texte (cf. partie 1.5.2.2. Éléments structurels du corps du
+                                texte).</p>
+
+                            <list>
+                                <item><hi rend="bold">Le cas des annexes</hi></item>
+                            </list>
+                            <p>Les annexes conteniennent le détail des votes ayant eu lieu lors de
+                                la séance et peuvent apporter aussi des rectifications portant sur
+                                les scrutins des séances précédentes. Elles sont structurées de la
+                                manière suivante.</p>
+
+                            <p><hi rend="bold">Structure des scrutins de la séance</hi></p>
+
+                            <p>L'ensemble des scrutins sont contenus dans une division ayant pour
+                                attribut un <att>xml:id</att>. La valeur de ce dernier doit
+                                commencer par "CR" puis être suivie de la date de la séance,
+                                construite selon la norme ISO 8601, puis par "vot".</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div xml:id="CR_1889-11-26_vot">
+                                    <!-- Scrutin 1 -->
+                                    <!-- Scrutin 2 -->
+                                    <!-- etc. -->
+                                </div>
+                            </egXML>
+
+                            <p>Chaque scrutin est inclu dans une division. L'élément <gi>div</gi>
+                                est complété par les attributs : <list>
+                                    <item><att>xml:id</att>, dont la valeur est construite de la
+                                        même façon que celui de la <gi>div</gi> englobant l'ensemble
+                                        des scrutins, et à laquelle on ajoute une numérotation
+                                        ;</item>
+                                    <item><att>type</att>, prenant pour valeur "<val>voting</val>"
+                                        ;</item>
+                                    <item><att>corresp</att>, permettant de pointer vers le sujet du
+                                        vote, c'est-à-dire vers l'<gi>xml:id</gi> de l'item
+                                        correspondant présent dans le sommaire.</item>
+                                </list></p>
+
+                            <p>Chaque scrutin commence toujours par un titre composé que nous
+                                encodons comme les titres composés du corps du texte (cf. partie
+                                1.5.2.2. Éléments structurels du corps du texte).</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div xml:id="CR_1889-11-26_vot1" type="voting"
+                                    corresp="#discussion7ebureau">
+                                    <head>
+                                        <label>SCRUTIN</label>
+                                        <note xml:id="CR_1889-11-26_n5"><seg
+                                                xml:id="CR_1889-11-26_n5.1">Sur les conclusions du
+                                                  <num>7e</num> bureau tendant à l'annulation des
+                                                opérations électorales de la <placeName
+                                                  ref="#lieu_ID"><num>1re</num> circonscription de
+                                                  l'arrondissement de Lorient
+                                                (Morbihan)</placeName>.</seg></note>
+                                    </head>
+                                    <!-- [...] -->
+                                </div>
+                            </egXML>
+
+                            <p>Le titre est suivi ensuite du détail du scrutin présenté sous forme
+                                de tableau. Cependant, contrairement aux tableaux présents dans le
+                                corps du texte, nous avons décidé d'encoder ces informations
+                                différemment : <list>
+                                    <item>nous comprenons l'ensemble des données dans un
+                                            <gi>desc</gi> ;</item>
+                                    <item>chaque ligne est encodée à l'aide de l'élément
+                                            <gi>measure</gi>, ayant comme attributs <att>type</att>
+                                        et <att>quantity</att>, ces derniers permettent d'indiquer
+                                        le nombre des voix en fonction d'une classification (nombre
+                                        de votants, majorité, vote pour, vote contre).</item>
+                                </list></p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <desc>
+                                    <measure type="nbvoters" quantity="506">Nombre des votants
+                                            <num>506</num></measure>
+                                    <measure type="majority" quantity="254">Majorité absolue
+                                            <num>254</num></measure>
+                                    <measure type="ayes" quantity="330">Pour l'adoption
+                                            <num>330</num></measure>
+                                    <measure type="noes" quantity="176">Contre
+                                        <num>176</num></measure>
+                                </desc>
+                            </egXML>
+
+                            <p>Le résultat du scrutin est ensuite indiqué et est encodé avec
+                                l'élément <gi>note</gi>, complété par l'attribut <att>type</att>
+                                ayant pour valeur <val>result</val>. Tout comme les éléments
+                                    <gi>note</gi> présents dans le corps du texte, il doit avoir un
+                                identifiant unique.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note type="result" xml:id="CR_1889-11-26_n6"><seg
+                                        xml:id="CR_1889-11-26_n6.1">La <orgName ref="#org_ID"
+                                            >Chambre des députés</orgName> a adopté.</seg></note>
+                            </egXML>
+
+                            <p>Le détail du scrutin est ensuite complété par la liste des votants
+                                classée en fonction de leur vote. La liste est contenue dans une
+                                    <gi>note</gi> ayant comme <att>type</att>
+                                    "<val>voterslists</val>". L'élément <gi>note</gi> doit là aussi
+                                avoir un identifiant unique. Chaque prise de partie (pour, contre,
+                                abstention, absence) est encodée à l'aide de l'élément
+                                <gi>desc</gi>.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note type="voterslist" xml:id="CR_1889-11-26_n7">
+                                    <desc>Ont voté pour :</desc>
+                                    <seg xml:id="CR_1889-11-26_n7.1"> MM.<persName ref="#pers_ID"
+                                            >Abeille</persName>. <persName ref="#pers_ID">Arène
+                                            (Emmanuel)</persName>. </seg>
+                                    <!-- [...] -->
+                                    <desc>Ont voté contre :</desc>
+                                    <seg xml:id="CR_1889-11-26_n7.3"> MM. <persName ref="#pers_ID"
+                                            >Abrial (Léon)</persName>.</seg>
+                                    <!-- [...] -->
+                                    <desc>N'ont pas pris part au vote :</desc>
+                                    <seg xml:id="CR_1889-11-26_n7.4"> MM. <persName ref="#pers_ID"
+                                            >Armand (comte)</persName>. <persName ref="#pers_ID"
+                                            >Barbe</persName>.</seg>
+                                    <!-- [...] -->
+                                    <desc>Absents par congés : </desc>
+                                    <seg xml:id="CR_1889-11-26_n7.5"> MM. <persName ref="#pers_ID"
+                                            >Baïhaut</persName>. <persName ref="#pers_ID"
+                                            >Bourlier</persName>.</seg>
+                                    <!-- [...] -->
+                                </note>
+                            </egXML>
+
+                            <p>Enfin, il est possible que les scrutins de la séance présents dans le
+                                corps du texte soient erronés. Ces résultats erronés sont mentionnés
+                                au sein des annexes, à la suite des scrutins non erronés. Ils sont
+                                inclus dans l'élément <gi>note</gi> ayant pour <att>type</att>
+                                    "<val>numbersannounced</val>". Les données sont ensuite
+                                structurées de la même façon que les scrutins non erronés, évoqués
+                                ci-dessus.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note type="numbersannounced" xml:id="CR_1889-11-26_n8">
+                                    <seg xml:id="CR_1889-11-26_n8.1">Les nombres annoncés en séance
+                                        avaient été de:</seg>
+                                    <desc>
+                                        <measure type="nbvoters" quantity="514">Nombre de
+                                                votants<num>514</num></measure>
+                                        <measure type="majority" quantity="258">Majorité absolue
+                                                <num>258</num></measure>
+                                        <measure type="ayes" quantity="333">Pour l'adoption
+                                                <num>333</num></measure>
+                                        <measure type="noes" quantity="181">Contre
+                                            <num>181</num></measure>
+                                    </desc>
+                                    <seg xml:id="CR_1889-11-26_n8.2">Mais, après vérification, ces
+                                        nombres ont été rectifiés conformément à la liste de scrutin
+                                        ci-dessus.</seg>
+                                </note>
+                            </egXML>
+
+                            <p><hi rend="bold">Structure des rectifications de scrutins de séances
+                                    précédentes</hi></p>
+                            <p>En plus des scrutins de la séance, les annexes peuvent contenir des
+                                rectifications de scrutins de séances précédentes. Nous encodons ces
+                                informations dans une division ayant pour <att>type</att>
+                                    "<val>rectification</val>", et renvoyant vers l'identifiant
+                                unique associé à l'ensemble des scrutins de la séance en question à
+                                l'aide de l'attribut <att>corresp</att>.</p>
+                            <p>Cette partie peut contenir un titre, que nous encodons à l'aide de
+                                l'élément <gi>head</gi>.</p>
+                            <p>Chaque rectification est ensuite inclue dans <gi>note</gi>, élément
+                                TEI qui est complété par l'attribut <att>type</att> ayant pour
+                                valeur "<val>comment</val>", par l'attribut <att>xml:id</att> afin
+                                de lui donner un identifiant unique, et par l'attribut
+                                    <att>corresp</att> ce dernier permettant de renvoyer vers
+                                l'identifiant unique associé au scrutin de la séance précédente.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <div type="rectification" corresp="#CR_1889-11-25_vot">
+                                    <head>Rectifications aux scrutins de la séance du <date>25
+                                            novembre 1889</date>.</head>
+                                    <note type="comment" xml:id="CR_1889-11-26_n13"
+                                        corresp="#CR_1889-11-25_vot1"><seg
+                                            xml:id="CR_1889-11-26_n13.1"><persName ref="#pers_ID">M.
+                                                Michau</persName>
+                                            <placeName ref="#lieu_ID">(Nord)</placeName>, porté
+                                            comme s'étant abstenu dans le scrutin sur l'urgence de
+                                            la proposition de <persName ref="#pers_ID">M. Maxime
+                                                Lecomte</persName>, déclare avoir voté « pour
+                                            ».</seg></note>
+                                </div>
+                            </egXML>
+
+                            <list>
+                                <item><hi rend="bold">Autres cas</hi></item>
+                            </list>
+                            <p>Les autres parties complémentaires (erratum, errata, pétitions,
+                                nominations des bureaux, listes, etc.) n'ont pas de particularité
+                                nécessitant un encodage spécifique.</p>
+                            <p>Ils peuvent contenir un titre (<gi>head</gi>), et des paragraphes
+                                    (<gi>seg</gi>), informations encodées de la même manière que le
+                                reste du texte.</p>
+                        </div4>
+                    </div3>
                 </div2>
 
                 <!-- PARTIE 6 -->
                 <div2>
                     <head>Balisage sémantique</head>
+                    <p>Le balisage sémantique correspond à un premier niveau d'encodage analytique.
+                        Il permet d'apporter une signification au mot ou à une expresison encodé. Il
+                        représente d'une part les éléments constitutifs du discours (prises de
+                        parole, commentaires, citations), et d'autre part les entités nommées
+                        (personnes,lieux, organisations, éléments temporels et quantifiables.</p>
+
+                    <div3>
+                        <head>Éléments du discours</head>
+
+                        <div4>
+                            <head>Énoncés</head>
+                            <p>Un énoncé correspond à la prise de parole d'une personne. Le début de
+                                l'énoncé débute toujours avec le nom de l'orateur, lorsque celui-ci
+                                est connu.</p>
+                            <p>Chaque énoncé est inclus dans l'élément <gi>u</gi>, balise TEI
+                                permettant d'encoder une partie de discours.</p>
+                            <p>Cet élément est complété par deux attributs : <list>
+                                    <item>l'attribut <att>who</att> permet d'associer une personne à
+                                        la prise de parole à l'aide d'un identifiant unique, et de
+                                        pointer vers les métadonnées de l'orateur ; </item>
+                                    <item>l'attribut <att>ana</att> permet de pointer vers la
+                                        typologie des types d'orateurs — speaker, unknown,
+                                        rapporteur, chair, secretary, guest, government — afin de
+                                        distinguer les différentes prises de parole (cf. partie
+                                        1.3.3 Taxonomies).</item>
+                                </list>
+                                <hi rend="bold">Cas particulier :</hi> il est possible que le nom de
+                                l'orateur ne puisse être déterminé. Pour ces cas, l'attribut
+                                    <att>who</att> doit être omis, et le pointeur <att>ana</att>
+                                indique le type "unknown" présent dans la taxonomie des types
+                                d'orateurs. </p>
+                            <p>L'élément <gi>u</gi> est complété aussi par : <list>
+                                    <item>l'attribut <att>xml:id</att> ayant pour valeur un
+                                        identifiant unique et permettant de numéroter chaque énoncé
+                                        ; cet identifiant est composé du type de l'écrit ("CR" pour
+                                        compte rendu), puis de la date de la séance, puis de la
+                                        lettre "u" pour "utterance" suivie de la numérotation,
+                                        chaque information étant séparée par un tiret du bas
+                                        (unicode U+005F).</item>
+                                </list> La numérotation des énoncés doit être continue tout au long
+                                de la séance, elle repart à 0 à chaque début de séance. </p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <u who="#pers_ID" xml:id="CR_1889-11-26_u1" ana="#speaker"> ... </u>
+                            </egXML>
+
+                            <p>Chaque énoncé peut contenir un ou des paragraphe(s) (élément
+                                    <gi>seg</gi>, cf. partie 1.5.1 Balisage formel). Il peut
+                                contenir également des commentaires (élément <gi>note</gi>, cf.
+                                partie 1.6.1.2 Commentaires des sténographes).</p>
+                        </div4>
+
+                        <div4>
+                            <head>Commentaires des sténographes</head>
+                            <p>Les discours des orateurs sont complétés par des commentaires
+                                contextuels ajoutés par les sténographes. Ces commentaires replacent
+                                les propos retranscrits dans un contexte d'énonciation. Ils
+                                indiquent l'heure du début et l'heure de la fin de la séance, ils
+                                mettent en avant également les phénomènes ou événements interrompant
+                                le discours, et ils peuvent donner diverses informations sur les
+                                actions effectuées en séance (vote, dépouillement, etc.).</p>
+                            <p>Ces commentaires contextuels apportent un sens, ils sont de type
+                                sémantique, c'est pourquoi nous les distinguons des commentaires
+                                dits "structurels" que nous avons évoqués précédemment en partie
+                                1.5.2 Balisage logique.</p>
+                            <p>Au sein de ces commentaires contextuels, nous avons distingué deux
+                                types de commentaires, que nous balisons de deux manières
+                                différentes.</p>
+
+                            <p>D'une part, tous les commentaires portant sur l'organisation de la
+                                séance et les actions effectuées sont encodés à l'aide de l'élément
+                                TEI <gi>note</gi>. Ces éléments sont typés ensuite à l'aide de
+                                l'attribut <att>type</att> en fonction de la nature du commentaire.
+                                Nous avons mis en avant 4 valeurs différentes pour le typage : <list>
+                                    <item>"<val>opening</val>" pour typer le commentaire indiquant
+                                        l'ouverture de la séance ;</item>
+                                </list></p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note type="opening" xml:id="CR_1889-11-26_n1"><seg>La séance est
+                                        ouverte à <time when="02:00:00">deux
+                                    heures</time>.</seg></note>
+                            </egXML>
+                            <p>
+                                <list>
+                                    <item>"<val>closing</val>" pour typer le commentaire indiquant
+                                        la fin de la séance ;</item>
+                                </list>
+                            </p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note type="closing" xml:id="CR_1889-11-26_n4"><seg
+                                        xml:id="CR_1889-11-26_n4.1">(La séance est levée à <time
+                                            when="06:10:00">six heures dix
+                                    minutes</time>.)</seg></note>
+                            </egXML>
+                            <p>
+                                <list>
+                                    <item>"<val>result</val>" pour typer le commentaire indiquant le
+                                        résultat des votes ;</item>
+                                </list>
+                            </p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note type="result" xml:id="CR_1889-11-26_n6"><seg
+                                        xml:id="CR_1889-11-26_n6.1">La <orgName ref="#org_ID"
+                                            >Chambre des députés</orgName> a adopté.</seg></note>
+                            </egXML>
+
+                            <p>
+                                <list>
+                                    <item>"<val>comment</val>" pour typer l'ensemble des autres
+                                        commentaires apportant une information sémantique
+                                        supplémentaire au discours.</item>
+                                </list></p>
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <note type="comment" xml:id="CR_1889-11-26_n3"><seg
+                                        xml:id="CR_1889-11-26_n3.1">(Les votes sont recueillis, et
+                                        MM. les <roleName ref="#pers_ID">secrétaires</roleName> en
+                                        font le dépouillement.)</seg></note>
+                            </egXML>
+
+
+                            <p>Tout comme les énoncés, les éléments <gi>note</gi> sont complétés par
+                                l'attribut <att>xml:id</att> permettant d'associer un identifiant
+                                unique aux commentaires, et de les numéroter. Cet identifiant est
+                                composé de la même façon que pour les éléments <gi>u</gi> à
+                                l'exception de la dernière information : la lettre "u" suivie de la
+                                numérotation est remplacée par la lettre "n" pour "note", également
+                                suivie de la numérotation.</p>
+
+                            <p>La numérotation des notes doit être continue tout au long de la
+                                séance, elle repart à 0 à chaque début de séance.</p>
+                            <p>Chaque note peut contenir un ou des paragraphe(s).</p>
+
+                            <p>D'autre part, tous les commentaires portant sur l'atmosphère de la
+                                séance — événements et phénomènes interrompant le discours — sont
+                                encodés à l'aide de l'élément TEI <gi>incident</gi> prévu à cet
+                                effet, et du sous-élément <gi>desc</gi>.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <incident><desc>(Bruit à gauche.)</desc></incident>
+                            </egXML>
+                            <p>Ces éléments <gi>incident</gi> peuvent être inclus au sein des
+                                paragraphes constituant les énoncés.</p>
+                        </div4>
+
+                        <div4>
+                            <head>Citations</head>
+                            <p>Les discours peuvent parfois contenir des citations. Ces dernières,
+                                transcrites entre guillemets, sont signifiées à l'aide de
+                                    <gi>quote</gi>, élément TEI prévu pour contenir une expression
+                                ou un passage dont l'origine est extérieure au texte.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <quote>« Oui, nous les validerons tous ! »</quote>
+                            </egXML>
+                        </div4>
+                    </div3>
+
+                    <div3>
+                        <head>Entités nommées</head>
+                        <p>Les entités nommées, autrement dit les expressions linguistiques
+                            désignant un nom de personne, un nom de lieu, un nom d'organisation, un
+                            élément temporel, un élément quantifiable, doivent être référencées à
+                            l'aide de balises précises.</p>
+                        <div4>
+                            <head>Personnes</head>
+                            <p>Chaque personne citée dans le compte rendu doit être encodée.</p>
+                            <p>Les noms et prénoms des personnes sont balisés à l'aide de
+                                    <gi>persName</gi>, élément TEI permettant de contenir un nom
+                                propre ou une expression nominale se référant à une personne.
+                                L'attribut <att>ref</att> complète cet élément et permet de donner
+                                l'identifiant unique de la personne renvoyant vers l'index des noms
+                                de personnes citées.</p>
+                            <p>Cet élément peut inclure les titres honorifiques. Ainsi lorsqu'il
+                                s'agit d'une seule personne citée, le titre "M." pour "Monsieur"
+                                doit être inclus dans l'élément. Au contraire, lorsqu'il s'agit de
+                                plusieurs personnes citées à la suite, le titre "MM." pour
+                                "Messieurs" ne doit pas être inclus dans l'élément.</p>
+                            <p>Lorsque le rôle de la personne est mentionné à la place ou en
+                                complément du nom de la personne, nous employons l'élément
+                                    <gi>roleName</gi>, ce dernier étant propre à l'encodage d'un
+                                rôle ou d'une position particulière d'une personne dans la société.
+                                Cet élément est également complété par l'attribut
+                                <att>ref</att>.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <!-- Cas d'une personne citée -->
+                                <persName ref="#pers_ID">M. Leygues</persName>
+                                <!-- Cas de plusieurs personnes citées --> MM. <persName
+                                    ref="#pers_ID">Paul Déroulède</persName>
+                                <persName ref="#pers_ID">Georges Laguerre</persName>
+                                <!-- Cas d'une personne citée avec son rôle -->
+                                <persName ref="#pers_ID">M. Reybert, <roleName ref="#pers_ID"
+                                        >rapporteur</roleName></persName>
+                                <!-- Cas d'une personne citée par son rôle -->
+                                <persName ref="#pers_ID">M. le <roleName ref="#pers_ID">ministre des
+                                        finances</roleName></persName>
+                            </egXML>
+                        </div4>
+
+                        <div4>
+                            <head>Lieux</head>
+                            <p>Chaque lieu cité dans le compte rendu doit être encodé.</p>
+                            <p>Le nom du lieu doit être contenu dans l'élément <gi>placeName</gi>,
+                                balise TEI prévue à cet effet. Cet élément est complété par
+                                l'attribut <att>ref</att> afin de donner l'identifiant unique du
+                                lieu et permettant de renvoyer vers l'index des lieux cités.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <placeName ref="#lieu_ID">Département de la Corrèze, arrondissement
+                                    de Tulle, <num>1re</num> circonscription</placeName>
+                            </egXML>
+                        </div4>
+
+                        <div4>
+                            <head>Organisations</head>
+                            <p>Chaque organisation citée dans le compte rendu doit être encodée.</p>
+                            <p>Le nom de l'organisation doit être contenu dans l'élément
+                                    <gi>orgName</gi>, balise TEI prévue à cet effet. Cet élément est
+                                complété par l'attribut <att>ref</att> afin de donner l'identifiant
+                                unique de l'institution et permettant de renvoyer vers l'index des
+                                organisations citées.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples"> la <orgName
+                                    ref="#org_ID">Chambre des députés</orgName>
+                            </egXML>
+                        </div4>
+
+                        <div4>
+                            <head>Éléments temporels et éléments quantifiables</head>
+                            <p>Les dates sont encodées à l'aide de l'élément <gi>date</gi> ayant
+                                pour attribut <att>when</att>. La valeur de l'attribut correspond à
+                                la date écrite conformément à la norme ISO 8601.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <date when="1880-11-11">11 novembre 1880</date>
+                            </egXML>
+
+                            <p>Les heures sont balisées à l'aide de l'élément <gi>time</gi> et ce
+                                dernier est complété par l'attribut <att>when</att>. La valeur de
+                                l'attribut correspond à l'heure écrite conformément à la norme ISO
+                                8601.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <time when="02:00:00">deux heures</time>
+                            </egXML>
+
+                            <p>L'élément <gi>num</gi> permet d'encoder tous les nombres, autres que
+                                les nombres liés aux dates et aux heures. Les adjectifs numéraux
+                                ordinaux peuvent être inclus dans cet élément.</p>
+
+                            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+                                <num>12,189</num>
+                                <num>1re</num>
+                            </egXML>
+                        </div4>
+                    </div3>
                 </div2>
 
                 <!-- PARTIE 7 -->
                 <div2>
                     <head>Bibliographie</head>
+                    <p>À RÉDIGER</p>
                 </div2>
 
             </div1>
