@@ -4606,7 +4606,7 @@
    210
   ],
   "checked": true,
-  "comment": "quote-beginning seg",
+  "comment": "seg",
   "id": 349,
   "ner_xml": "« Le 22 septembre, à la levée du scrutin, l'urne de la 6e section a été renversée par le président et chacun tombait sur les bulletins de vote et en opérait le dépouil- lement à sa façon, ce qui est contraire au règlement qui dit « que les bulletins doi- vent être sortis de l'urne un à un ». J'ai dû protester contre cette manière de procéder.",
   "origin": "computer",
@@ -4657,7 +4657,7 @@
    278.9287478836519
   ],
   "checked": true,
-  "comment": "seg-end quote-end",
+  "comment": "seg-end",
   "id": 351,
   "ner_xml": "cette meme section, je priais le président de veiller à ce que le fait qui s'était pro- duit le 22 septembre ne se renouvelle pas ; il me répondit qu'il n'avait d'ordre à rece- voir de personne, et au lieu de se confor- mer au règlement, il renversa l'urne par deux fois; on fut obligé d'y remettre par deux fois les bulletins de vote, et pour que le dépouillement soit fait régulièrement, nous avons dû avoir recours à la force pu- blique. »",
   "origin": "computer",

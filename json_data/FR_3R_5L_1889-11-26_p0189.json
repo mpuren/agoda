@@ -4739,7 +4739,7 @@
    212.0
   ],
   "checked": true,
-  "comment": "seg-beginning quote-beginning",
+  "comment": "seg-beginning",
   "id": 335,
   "ner_xml": "On ne se borne pas à dire que l'<ACT>aie</ACT>ul de M. <PER>Cam</PER>be s'était installé sans droit dans le domaine de Cornusson, qu'il s'en était attribué la propriété par des moyens frauduleux, ce qui était déjà très grave. Non! on ajoutait ceci pour combler la mesure : « Au sujet de votre aïeul, je me permettrai de vous poser quelques ques-",
   "origin": "computer",
@@ -4812,7 +4812,7 @@
    363.11447750396826
   ],
   "checked": true,
-  "comment": "seg quote-end",
+  "comment": "seg quote",
   "id": 338,
   "ner_xml": "« N<ACT>'</ACT>est<PER>-</PER>il pas vrai que votre <PER>grand-père</PER> était <ACT>membre du comité de salut public à Villefranche-d'Aveyron</ACT>, avec <ACT>Joseph Moli- nier, d'Arnac, qui trouvait bon de garder les calices, les encensoirs en argent, qu'il s'empressait de vendre à son profit</ACT>; avec Verdié <ACT>et</ACT> Mouly<ACT>, qui vendaient la liberté des citoyens à un prix déterminé, infligeant de nouveau la</ACT> reclusion à ces mêmes <ACT>ci- toyens, dont ils extorquaient une somme pour</ACT> les <ACT>rendre à la liberté; qui volaient, opportunistes de ce temps néfaste, pil- laient</ACT>, commettaient les atrocités les plus révolta D",
   "origin": "computer",

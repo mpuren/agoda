@@ -4957,7 +4957,7 @@
    34
   ],
   "checked": true,
-  "comment": "seg-beginning",
+  "comment": "seg-beginning quote-beginning",
   "id": 359,
   "ner_xml": "« De l'autre côté, M. <PER>Cam</PER>be, <ACT>riche proprié</ACT>-",
   "origin": "computer",

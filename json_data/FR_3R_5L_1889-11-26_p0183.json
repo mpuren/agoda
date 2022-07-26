@@ -4657,7 +4657,7 @@
    151.99999999999994
   ],
   "checked": true,
-  "comment": "seg quote incident",
+  "comment": "seg incident",
   "id": 344,
   "ner_xml": "«<PER>Ils</PER> disent encore que <PER>le</PER> Gouvernement<ACT> favorise l</ACT>'<ACT>immoralité</ACT> pour « <ACT>pousser</ACT> les <ACT>par- ticuliers à la dépense afin de faire circuler l</ACT>'<ACT>argent et de faire donner plus à l</ACT>'<ACT>impôt</ACT> ». Je vous recommande cette vue économique. (Rires sur divers bancs.",
   "origin": "computer",

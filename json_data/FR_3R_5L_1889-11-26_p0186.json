@@ -4058,13 +4058,13 @@
   "checked": true,
   "comment": "seg incident",
   "id": 316,
-  "ner_xml": "<PER>Ceci</PER> dit, j'arrive aux faits cités à la tri- bune tout à l'heure et <ACT>relatifs à l</ACT>'<ACT>ingérence du clergé</ACT>. Ces faits sont au nombre de sept. Or, la circonscription comprend soixante- dix-sept paroisses ; c'est un bien faible ré- sultat, et dans ce nombre déjà restreint de faits, deux ou trois seulement se seraient<ACT> passes en chaire, et encore dans de toutes</ACT><PER> petites paroisses</PER>. <ACT>En volcl</ACT> Texplication. Dans ces <PER>petites paroisse</PER>s, qui ne sont que<PER> des sections de commune</PER>, le curé a cru de- voir, le jour de T'élection, dire en chaire :<PER> Je chanter</PER>ai les <ACT>vê</ACT>pres immédiatement après la messe, afin de permettre aux élec-<ACT> teurs</ACT> d'aller dans l'après-midi accomplir leur devoir au chef-lieu de la commune. qui est assez éloigné. (Très bien! très bien!<LOC> a</LOC> droite. — <LOC>Rumeurs à gauche</LOC>.",
+  "ner_xml": "<PER>Ceci</PER> dit, j'arrive aux faits cités à la tri- bune tout à l'heure et <ACT>relatifs à l</ACT>'<ACT>ingérence du clergé</ACT>. Ces faits sont au nombre de sept. Or, la circonscription comprend soixante- dix-sept paroisses ; c'est un bien faible ré- sultat, et dans ce nombre déjà restreint de faits, deux ou trois seulement se seraient<ACT> passes en chaire, et encore dans de toutes</ACT><PER> petites paroisses</PER>. <ACT>En volcl</ACT> Texplication. Dans ces <PER>petites paroisse</PER>s, qui ne sont que<PER> des sections de commune</PER>, le curé a cru de- voir, le jour de T'élection, dire en chaire :<PER> Je chanter</PER>ai les <ACT>vê</ACT>pres immédiatement après la messe, afin de permettre aux élec-<ACT> teurs</ACT> d'aller dans l'après-midi accomplir leur devoir au chef-lieu de la commune. qui est assez éloigné. (Très bien! très bien!<LOC> a</LOC> droite. — <LOC>Rumeurs à gauche</LOC>.)",
   "origin": "human",
   "parent": 261,
   "persons": [
    "Ceci"
   ],
-  "text_ocr": "Ceci dit, j'arrive aux faits cités à la tri-\nbune tout à l'heure et relatifs à l'ingérence\ndu clergé. Ces faits sont au nombre de sept.\nOr, la circonscription comprend soixante-\ndix-sept paroisses ; c'est un bien faible ré-\nsultat, et dans ce nombre déjà restreint de\nfaits, deux ou trois seulement se seraient\npassés en chaire, et encore dans de toutes\npetites paroisses. En voici l'explication.\nDans ces petites paroisses, qui ne sont que\ndes sections de commune, le curé a cru de-\nvoir, le jour de l'élection, dire en chaire :\nJe chanterai les vêpres immédiatement\naprès la messe, afin de permettre aux élec-\nteurs d'aller dans l'après-midi accomplir\nleur devoir au chef-lieu de la commune,\nqui est assez éloigné. (Très bien! très bien!\na droite.\n— Rumeurs à gauche.",
+  "text_ocr": "Ceci dit, j'arrive aux faits cités à la tri-\nbune tout à l'heure et relatifs à l'ingérence\ndu clergé. Ces faits sont au nombre de sept.\nOr, la circonscription comprend soixante-\ndix-sept paroisses ; c'est un bien faible ré-\nsultat, et dans ce nombre déjà restreint de\nfaits, deux ou trois seulement se seraient\npassés en chaire, et encore dans de toutes\npetites paroisses. En voici l'explication.\nDans ces petites paroisses, qui ne sont que\ndes sections de commune, le curé a cru de-\nvoir, le jour de l'élection, dire en chaire :\nJe chanterai les vêpres immédiatement\naprès la messe, afin de permettre aux élec-\nteurs d'aller dans l'après-midi accomplir\nleur devoir au chef-lieu de la commune,\nqui est assez éloigné. (Très bien! très bien!\na droite.\n— Rumeurs à gauche.)",
   "type": "ENTRY",
   "key": [
    0,
@@ -4442,7 +4442,7 @@
    104
   ],
   "checked": true,
-  "comment": "seg-begining quote-beginning",
+  "comment": "seg-beginning",
   "id": 356,
   "ner_xml": "\" Le 17 septembre, en effet, vers trois heures du soir, j'ai accepté de M. Cat un<ACT> journal de M. Cambe</ACT> et l'ai lu avec lui, sans donner aucune appréciation, quoique",
   "origin": "computer",
@@ -4465,7 +4465,7 @@
    160
   ],
   "checked": true,
-  "comment": "seg-end quote-end incident",
+  "comment": "seg-end incident",
   "id": 357,
   "ner_xml": "<PER>je fusse provoqué par lui</PER>. Puis nous <ACT>avon causé d</ACT>'<ACT>affaires personnelles</ACT>, et je lui ai fait observer que les gens de la <ACT>paroisse</ACT> ne trouvaient pas joli qu'il vînt le dimanche exercer son métier de <ACT>châtreur de cochon</ACT>s.<PER> Rires et bruit</PER>.",
   "origin": "human",
@@ -4812,7 +4812,7 @@
    320
   ],
   "checked": true,
-  "comment": "seg quote incident",
+  "comment": "seg incident",
   "id": 371,
   "ner_xml": "« <PER>Les soussignés</PER>, <ACT>tous électeurs de la commune de Vaissac et habitant la pa- roisse de Chouastrac, protestent énergique- ment contre les mensonges et les calom- nies répandues contre M. le curé de Chouas- trac, et</ACT> affirment sur <ACT>l'honneur</ACT> que M. le<ACT> curé</ACT> ne <ACT>s'est nullement occupé des der- nières élections</ACT> législatives. Il n'<ACT>a</ACT> parlé à personne à propos des élections ; il n<ACT>'</ACT>a dit en chaire que ce peu de mots : « Dieu pro- tège la France, notre chère patrie! C<ACT>'</ACT>est sur les pièces de 5 francs. »(On rit.)",
   "origin": "computer",

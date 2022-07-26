@@ -4049,13 +4049,13 @@
   "checked": true,
   "comment": "u seg incident",
   "id": 296,
-  "ner_xml": "<PER>M. Arnault</PER>. Ce n'est pas moi qui les ai fait venir. Il n'y a pas <ACT>de capucins dans le diocèse de Montauban</ACT> , je ne sais pas d'où ils viennent ; ce sont des <ACT>capucins d</ACT>'<ACT>impor- tation</ACT>, ce ne sont pas des <ACT>capucins autoch- tones</ACT>. (On rit.",
+  "ner_xml": "<PER>M. Arnault</PER>. Ce n'est pas moi qui les ai fait venir. Il n'y a pas <ACT>de capucins dans le diocèse de Montauban</ACT> , je ne sais pas d'où ils viennent ; ce sont des <ACT>capucins d</ACT>'<ACT>impor- tation</ACT>, ce ne sont pas des <ACT>capucins autoch- tones</ACT>. (On rit.)",
   "origin": "computer",
   "parent": 261,
   "persons": [
    "M. Arnault"
   ],
-  "text_ocr": "M. Arnault. Ce n'est pas moi qui les ai\nfait venir. Il n'y a pas de capucins dans le\ndiocèse de Montauban , je ne sais pas d'où\nils viennent ; ce sont des capucins d'impor-\ntation, ce ne sont pas des capucins autoch-\ntones. (On rit.",
+  "text_ocr": "M. Arnault. Ce n'est pas moi qui les ai\nfait venir. Il n'y a pas de capucins dans le\ndiocèse de Montauban , je ne sais pas d'où\nils viennent ; ce sont des capucins d'impor-\ntation, ce ne sont pas des capucins autoch-\ntones. (On rit.)",
   "type": "ENTRY",
   "key": [
    0,
@@ -4625,11 +4625,11 @@
   "checked": true,
   "comment": "u-end seg quote-end incident",
   "id": 322,
-  "ner_xml": "« Le dimanche 8 septembre, au moment de donner la <ACT>sainte communion</ACT>, voulant ouvrir <ACT>la porte du tabernacle</ACT>, je <ACT>soulev</ACT>ai<ACT> le voile qui le couvrait</ACT>; je <ACT>trouv</ACT>ai <ACT>ladite porte à demi ouverte, la serrure forcée, et les vases sacrés avec les saintes espèces avaient</ACT> disparu... » (Bruit à gauche. — Ex- clamations a droite.",
+  "ner_xml": "« Le dimanche 8 septembre, au moment de donner la <ACT>sainte communion</ACT>, voulant ouvrir <ACT>la porte du tabernacle</ACT>, je <ACT>soulev</ACT>ai<ACT> le voile qui le couvrait</ACT>; je <ACT>trouv</ACT>ai <ACT>ladite porte à demi ouverte, la serrure forcée, et les vases sacrés avec les saintes espèces avaient</ACT> disparu... » (Bruit à gauche. — Ex- clamations a droite.)",
   "origin": "computer",
   "parent": 264,
   "persons": [],
-  "text_ocr": "« Le dimanche 8 septembre, au moment\nde donner la sainte communion, voulant\nouvrir la porte du tabernacle, je soulevai\nle voile qui le couvrait; je trouvai ladite\nporte à demi ouverte, la serrure forcée, et\nles vases sacrés avec les saintes espèces\navaient disparu... » (Bruit à gauche. — Ex-\nclamations a droite.",
+  "text_ocr": "« Le dimanche 8 septembre, au moment\nde donner la sainte communion, voulant\nouvrir la porte du tabernacle, je soulevai\nle voile qui le couvrait; je trouvai ladite\nporte à demi ouverte, la serrure forcée, et\nles vases sacrés avec les saintes espèces\navaient disparu... » (Bruit à gauche. — Ex-\nclamations a droite.)",
   "type": "ENTRY",
   "key": [
    1,
@@ -4840,7 +4840,7 @@
    1108.0701821350633
   ],
   "checked": true,
-  "comment": "seg quote-beginning incident",
+  "comment": "seg incident",
   "id": 333,
   "ner_xml": "« Le mardi 10 septembre, je vis M. <PER>Dèze</PER>s pour <ACT>prévenir une arrestation qui aurait pu être faite, et cela sur une conjecture</ACT> erro<ACT>-</ACT> née. Après avoir expliqué cette affaire, j'al- lais me retirer, lorsqu'il me dit très amica- lement : Je ne vous cache pas, monsieur le curé, que vos <ACT>paroles de</ACT> dimanche ont été<ACT> malheureuse</ACT>s et que les gens <ACT>se sont encore plus entretenu</ACT>s <ACT>de</ACT> ce <ACT>que vous avez dit que de</ACT> ce <ACT>qui est arrivé</ACT>. Plusieurs sont venus me trouver et, ne voulant voir qu'une manoeuvre électorale, m'ont pressé de vous dénoncer au procureur de la Répu- blique. Je lui répondis en le remerciant de sa bienveillante franchise et, le payant de retour, lui avouai carrément qu'après réflexion j'avais compris en effet que mes paroles pouvaient être mal interprétées... (Ah! ah! à gauche), et que, ainsi qu'il disait, il doit se trouver des gens<PER>, ou mau- vais, ou ignorant</PER>s<PER>,</PER> qui auront voulu me faire dire que je recommandais de ne pas voter pour des républicains. Je protestai contre cette interprétation, d'autant plus facilement, lui dis-je. que ni M. Cambe ni M. Arnault ne sont francs-maçons. Quant à faire de la propagande politi- que, il sait très bien que je n'en ai jamais fait. Je vote en conscience comme il me plaît, sans reconnaître à personne le droit de me faire voter pour un tel plutôt que pour un autre; mais je ne me permets pas de contester aux autres cette même liberté. Au reste, monsieur le maire, pour vous montrer ma franchise, je me propose, di- manche prochain, de revenir sur mes paro- les et de montrer que j'avais voulu parler uniquement des ennemis de la religion et nullement de personnages politiques. M. le maire me dit : Vous me ferez plaisir d'agir de la sorte ; je l'attends de vous. Tout cela se passa avec la plus grande franchise et té entre nous. ",
   "origin": "computer",
@@ -4867,7 +4867,7 @@
    182
   ],
   "checked": true,
-  "comment": "seg-beginning quote-end incident-beginning",
+  "comment": "seg-beginning quote incident-beginning",
   "id": 334,
   "ner_xml": "«Le dimanche <PER>sul</PER>vant, 15 septembre, après avoir annoncé les fêtes de la semaine, je dis à mes <PER>paroiss</PER>iens que je regrettais que certains eussent mal interprété mes pa- roles ; que j'avais voulu leur dire unique- ment de s'éloigner des ennemis de l'Eglise et en particulier des francs-maçons...»(Bruit",
   "origin": "computer",
