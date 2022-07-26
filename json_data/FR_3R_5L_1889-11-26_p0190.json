@@ -4032,7 +4032,7 @@
    54
   ],
   "checked": true,
-  "comment": "u-beginnning seg",
+  "comment": "u-beginning seg",
   "id": 311,
   "ner_xml": "<PER>M. le président</PER>. MM. les secrétaires m'in- forment quil y a lieu à pointage.",
   "origin": "computer",

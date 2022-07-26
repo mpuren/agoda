@@ -6,7 +6,7 @@
    1710,
    2352
   ],
-  "comment": "u seg incident",
+  "comment": "",
   "id": 256,
   "ner_xml": "",
   "origin": "computer",
@@ -3393,7 +3393,7 @@
    260
   ],
   "checked": true,
-  "comment": "seg incident",
+  "comment": "seg incident u-end",
   "id": 343,
   "ner_xml": "Vous <PER>refuseriez</PER> avec raison d'accepter parmi vous un <ACT>élu</ACT> qui aurait été <ACT>l'objet d</ACT>'<ACT>une condamnation de droit commun</ACT> en<ACT>-</ACT> ta<ACT>chant</ACT> l'honneur; mais vous ne pouvez hésiter à statuer favorablement lorsque vous voyez que l'honorable comte <PER>D</PER>illon a été simplement l'objet d'un jugement <ACT>d</ACT>'<ACT>or- dre politique</ACT> rendu par un tribunal poli- tique sur des incriminations purement<ACT> politi</ACT> ques. (Très bien! à droite.",
   "origin": "computer",
@@ -3444,7 +3444,7 @@
    440
   ],
   "checked": true,
-  "comment": "u-end seg",
+  "comment": "u seg",
   "id": 345,
   "ner_xml": "Je vous ai dit que je vous citerais des<ACT> exemples d'hommes respectés et honorés qui ont, eux aussi, été frappés de condam- nations semblables</ACT>. Il y en a eu beaucoup depuis Godefroy Cavaignac, Louis Blanc, Le<PER>dru-Rollin</PER>, Armand <PER>Marr</PER>ast : ce sont des<ACT> condamnés d</ACT>'<ACT>ordre politique condamnés par des Assemblées politiques pour attentat et complot politiques</ACT>. Et ces condamnés dont je réveille le souvenir sont des noms chers à la démocratie française. <PER>Ledru-Rol</PER>-<PER> lin, Marrast, Godefroy Cavaignac</PER>, ont été frappés <ACT>pour attentat ou complot par</ACT> des Assemblées politiques, au nom des pas- sions politiques de l'époque, sans que l'honneur personnel de ces condamnés po- litiques ait souffert la moindre atteinte.",
   "origin": "computer",

@@ -3500,7 +3500,7 @@
    128
   ],
   "checked": true,
-  "comment": "seg",
+  "comment": "seg u-end",
   "id": 340,
   "ner_xml": "C'est dans ces sentiments et avec cette espérance que votre 3e bureau a l'honneur de vous proposer la validation de l'élection de M. Borie, contre laquelle on n'a, du reste, relevé aucune irregularite materielle.",
   "origin": "computer",
@@ -3752,7 +3752,7 @@
    55.61142336776879
   ],
   "checked": true,
-  "comment": "u seg",
+  "comment": "",
   "id": 623,
   "ner_xml": "",
   "origin": "computer",
@@ -3774,7 +3774,7 @@
    52.05711683884465
   ],
   "checked": true,
-  "comment": "u seg",
+  "comment": "",
   "id": 624,
   "ner_xml": "",
   "origin": "computer",
