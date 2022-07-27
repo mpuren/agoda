@@ -7,9 +7,7 @@ def add_utterance(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"[^a-z]u | u$", data[i]["comment"]):
-                # expression régulière : mettre des espaces pour ne pas que ça prenne en compte la lettre u dans un
-                # mot et interdire les caractères avant le u pour que ça ne prenne pas en compte les u en fin de mot
+            if re.search(r"(?<![a-z])u | u$", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<u>', data[i]['text_ocr'], '</u>'])
             elif re.search(r"u-beginning", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<u>', data[i]['text_ocr']])
@@ -76,6 +74,7 @@ def add_quote(data):
                 #data[i]['text_ocr'] = "".join(re.sub(r'«', r'<quote>«', data[i]['text_ocr']))
                 data[i]['text_ocr'] = data[i]['text_ocr'].replace('«', '<quote>«').replace('»', '»</quote>')
             elif re.search(r"quote-beginning", data[i]["comment"]):
+                #changer sens seg quote ?
                 data[i]['text_ocr'] = data[i]['text_ocr'].replace('«', '<quote><seg>«')
             elif re.search(r"quote-end", data[i]["comment"]):
                 data[i]['text_ocr'] = data[i]['text_ocr'].replace('»', '»</seg></quote>')

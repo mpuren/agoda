@@ -2,6 +2,7 @@ import re
 
 # Ensemble des scripts à tester un à un
 
+
 def add_structure(data):
     """
     Ajout des éléments TEI "text" "body" et "back" pour chaque boxe étiquetée "body", "text", "back", "text-back"
@@ -131,15 +132,14 @@ def add_item(data):
 
 def add_title(data):
     """
-    Ajout des éléments TEI "head", "desc" et "note" pour chaque boxe étiquetée "head", "desc", "desc-office",
-    ou "note-head"
+    Ajout des éléments TEI "head", "desc" et "note" pour chaque boxe étiquetée "head", "desc" ou "note-head"
     :return:
     """
     for i in range(len(data)):
         if "comment" in data[i]:
             if re.search(r"[^-]head", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<head>', data[i]['text_ocr'], '</head>'])
-            elif re.search(r"desc[^-]", data[i]["comment"]) or re.search(r"desc-office", data[i]["comment"]):
+            elif re.search(r"desc", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<desc>', data[i]['text_ocr'], '</desc>'])
             elif re.search(r"note-head", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<note>', data[i]['text_ocr'], '</note></head>'])

@@ -1,19 +1,15 @@
-# Supprimer les sauts de ligne et recoller les mots séparés
-def nettoyage_saut_ligne(data):
-    """
-    Suppression des sauts de ligne (\n) et fusion des mots séparés par les sauts de ligne
-    :return:
-    """
-    for i in range(len(data)):
-        if "text_ocr" in data[i]:  # Si la valeur "text_ocr" existe dans le dictionnaire actuel i
-            data[i]["text_ocr"] = data[i]["text_ocr"].replace('-\n', "")
-            data[i]["text_ocr"] = data[i]["text_ocr"].replace('\n', " ")
-            # data[i]['text_ocr'] = "".join([data[i]['text_ocr'], ' '])
-            # Permet d'ajouter un espace à chaque fin de boxe, mais ne fonctionne pas dans le pipeline général
-    return data
+import re, os
 
 
+def clean_xml(path_to_xml):
+  for file_name in sorted([file for file in os.listdir(path_to_xml) if file.endswith('.xml')]):
+    with open(os.path.join(path_to_xml, file_name)) as xml_file:
+      xml = xml_file.read()
+      xml = re.sub("(?<!-)\n", " ", xml)
+      #souci si le mot divisé sur 2 lignes est réellement composé (grand-père par ex)
+      xml = re.sub("-\n", "", xml)
+      xml_file.close()
 
-# Ne fonctionne pas lorsque le mot séparé est divisé entre deux boxes
-# Ajouter un espace entre les boxes
-# Ajouter une fonction pour la gestion des caractères spéciaux ? --> unidecode
+      xml_cleaned = open(str(os.path.join(path_to_xml, file_name)), mode="w")
+      xml_cleaned.write(xml)
+  return xml
