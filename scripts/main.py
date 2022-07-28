@@ -38,9 +38,11 @@ for file_name in sorted([file for file in os.listdir(path_to_json) if file.endsw
                     inc += 1
 
         # Application de la fonction main
-        compilation(data, zwt, inc)
         date_pub, meetings, meeting_sitting, date_sitting = var_metadata(data)
         header = build_teiheader(date_pub, meetings, meeting_sitting, date_sitting)
+
+        compilation(data, zwt, inc)
+
 
         # Création fichier .xml en mode écriture
         for i in range(len(data)):
@@ -62,7 +64,9 @@ for file_name in sorted([file for file in os.listdir(path_to_json) if file.endsw
                     # ajouter espace entre boxes
                     output_xml.write(" ")
 
-        output_xml.write(end_elements)
+            if "comment" in data[i]:
+                if "text" in data[i]["comment"]:
+                    output_xml.write(end_elements)
 output_xml.close()
 
 # vérification du schéma TEI --> à gérer
@@ -76,22 +80,29 @@ clean_xml(path_to_xml)
 
 # Ajout des xi:include dans le teiCorpus
 
-# my_tree = etree.parse(path_to_xml + '/FR_3R_5L.xml')
-# my_root = my_tree.getroot()
-# namespace = 'http://www.w3.org/2001/XInclude'
-#
-#
-# for file_name in sorted([file for file in os.listdir(path_to_xml) if file.endswith('.xml')]):
-#     if len(str(file_name)) > 12:
-#         #if not
-#
-#         # Ajout des xi:include en allant chercher les noms des fichiers xml
-#         my_root.append(etree.Element(etree.QName(namespace, 'include'), nsmap={'xi':namespace},
-#                                      attrib={'href':str(file_name)}))
-#
-# # Sauvegarde
-# file_to_save = path_to_xml + '/FR_3R_5L.xml'
-# my_tree.write(file_to_save, pretty_print=True, encoding='utf-8', xml_declaration=True)
+my_tree = etree.parse(os.path.join(path_to_xml, 'FR_3R_5L.xml'))
+my_root = my_tree.getroot()
+namespace = 'http://www.w3.org/2001/XInclude'
+
+
+for file_name in sorted([file for file in os.listdir(path_to_xml) if file.endswith('.xml')]):
+    if len(str(file_name)) > 12:
+        f = open(os.path.join(path_to_xml,'FR_3R_5L.xml'),mode = "r")
+        text = f.read()
+        if re.search(file_name,text) :
+            print("ok")
+            continue
+
+        #if not
+
+        # Ajout des xi:include en allant chercher les noms des fichiers xml
+
+        my_root.append(etree.Element(etree.QName(namespace, 'include'), nsmap={'xi':namespace},
+                                     attrib={'href':str(file_name)}))
+
+# Sauvegarde
+file_to_save = os.path.join(path_to_xml, 'FR_3R_5L.xml')
+my_tree.write(file_to_save, pretty_print=True, encoding='utf-8', xml_declaration=True)
 
 # Vérification du respect du schéma relaxNG
 
@@ -105,3 +116,4 @@ clean_xml(path_to_xml)
 # relaxng.assertValid(my_tree)
 
 # ---------------------------------------------------------------------------------------------------------------------
+print(my_root)

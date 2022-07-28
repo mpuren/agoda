@@ -14,6 +14,7 @@ def var_metadata(data):
         if "comment" in data[i]:
             if re.search(r"date-pub", data[i]["comment"]):
                 date_pub = "".join(['<date>', str(" ".join(data[i]['text_ocr'].split()[3:6])), '</date>'])
+
             elif re.search(r"meeting-legislature", data[i]["comment"]) and re.search(r"meeting-session", data[i]["comment"]):
                 meetings = "".join(['<meeting n="', str(data[i]['text_ocr'].split()[0]),
                                                'L" ana="#parla.lower #parla.legislature">', str(" ".join(data[i]['text_ocr'].split()[:2])), '</meeting>',

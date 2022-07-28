@@ -12,15 +12,14 @@ def add_structure(data):
         if "comment" in data[i]:
             if re.search(r"\bbody\b", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<text><body>', data[i]['text_ocr']])
-            elif re.search(r"body1", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join('<text><body><pb n="1"')
-            elif re.search(r"text[^-]", data[i]["comment"]):
+            #elif re.search(r"body1", data[i]["comment"]):
+                #data[i]['text_ocr'] = "".join('<text><body><pb n="1"/>')
+            elif re.search(r"text(?!-)", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join('</div></body></text>')
-                #mettre  le texte avant balise ? S'assurer que l'étiquette est sur la phrase "Imp. ..." qui est à supprimer
-            elif re.search(r"[^-]back", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join(['</div></div></body><back>', data[i]['text_ocr']])
+            elif re.search(r"(?<!-)back", data[i]["comment"]):
+                data[i]['text_ocr'] = "".join([data[i]['text_ocr'], '</div></div></body><back>'])
             elif re.search(r"text-back", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join('</div></back></text>')
+                data[i]['text_ocr'] = "".join('</div></div></back></text>')
                 # pas besoin d'inclure le texte car info sur l'imprimerie pas importante, et texte pas océrisé
             else:
                 pass
@@ -40,39 +39,39 @@ def add_division(data):
         if "comment" in data[i]:
             if re.search(r"\bpart\b", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['</div><div type="part">', data[i]['text_ocr']])
-            elif re.search(r"part1[^-]", data[i]["comment"]):
+            elif re.search(r"part1(?!-)", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<div type="part">', data[i]['text_ocr']])
             elif re.search(r"agenda", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['</div><div type="agenda"><head>', data[i]['text_ocr'], '</head>'])
-            elif re.search(r"[^-]appendices", data[i]["comment"]):
+            elif re.search(r"(?<!-)appendices", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['</div><div type="appendices"><head>', data[i]['text_ocr'], '</head>'])
             elif re.search(r"part1-appendices", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<div type="appendices"><head>', data[i]['text_ocr'], '</head>'])
-            elif re.search(r"[^-]erratum", data[i]["comment"]):
+            elif re.search(r"(?<!-)erratum", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
                     ['</div><div type="erratum"><head><label>', data[i]['text_ocr'], '</label>'])
             elif re.search(r"part1-erratum", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
                     ['<div type="erratum"><head><label>', data[i]['text_ocr'], '</label>'])
-            elif re.search(r"[^-]lists", data[i]["comment"]):
+            elif re.search(r"(?<!-)lists", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
                     ['</div><div type="lists"><head><label>', data[i]['text_ocr'], '</label>'])
             elif re.search(r"part1-lists", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
                     ['<div type="lists"><head><label>', data[i]['text_ocr'], '</label>'])
-            elif re.search(r"[^-]offices", data[i]["comment"]):
+            elif re.search(r"(?<!-)offices", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['</div><div type="offices"><head>', data[i]['text_ocr'], '</head>'])
             elif re.search(r"part1-offices", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<div type="offices"><head>', data[i]['text_ocr'], '</head>'])
-            elif re.search(r"[^-]sitting", data[i]["comment"]):
+            elif re.search(r"(?<!-)sitting", data[i]["comment"]) and re.search(r"contents", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
-                    ['<div type="sitting">', data[i]['text_ocr']])
+                    ['<div type="sitting"><div type="contents"><head>', data[i]['text_ocr'], '</head><list>'])
             elif re.search(r"other-sitting", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
                     ['</div><div type="other-sitting"><head>', data[i]['text_ocr'], '</head>'])
-            elif re.search(r"contents", data[i]["comment"]):
-                data[i]['text_ocr'] = "".join(
-                    ['<div type="contents"><head>', data[i]['text_ocr'], '</head><list>'])
+            #elif re.search(r"contents", data[i]["comment"]):
+                #data[i]['text_ocr'] = "".join(
+                    #['<div type="contents"><head>', data[i]['text_ocr'], '</head><list>'])
             elif re.search(r"voting1", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
                     ['<div><div type="voting"><head><label>', data[i]['text_ocr'], '</label>'])
@@ -83,8 +82,8 @@ def add_division(data):
                 data[i]['text_ocr'] = "".join([data[i]['text_ocr'], '</div>'])
             elif re.search(r"rectification", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
-                    ['</div><div type="rectification"><head>', data[i]['text_ocr'], '</head>'])
-            elif re.search(r"[^-]petition", data[i]["comment"]):
+                    ['</div></div><div type="rectification"><head>', data[i]['text_ocr'], '</head>'])
+            elif re.search(r"(?<!-)petition", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(
                     ['</div><div type="petition"><head><label>', data[i]['text_ocr'], '</label>'])
             elif re.search(r"part1-petition", data[i]["comment"]):
@@ -122,7 +121,7 @@ def add_item(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"item[^-]", data[i]["comment"]):
+            if re.search(r"item(?!-)", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<item>', data[i]['text_ocr'], '</item>'])
             elif re.search(r"item-list", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<item>', data[i]['text_ocr'], '</item></list>'])
@@ -137,7 +136,7 @@ def add_title(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"[^-]head", data[i]["comment"]):
+            if re.search(r"(?<!-)head", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<head>', data[i]['text_ocr'], '</head>'])
             elif re.search(r"desc", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<desc>', data[i]['text_ocr'], '</desc>'])

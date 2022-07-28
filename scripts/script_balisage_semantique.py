@@ -26,7 +26,7 @@ def add_comment(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"comment[^-]| comment$", data[i]["comment"]):
+            if re.search(r"comment(?!-)", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<note type="comment">', data[i]['text_ocr'], '</note>'])
             elif re.search(r"comment-beginning", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<note type="comment">', data[i]['text_ocr']])

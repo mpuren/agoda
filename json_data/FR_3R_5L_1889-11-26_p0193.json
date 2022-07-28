@@ -5530,7 +5530,7 @@
    103.47618490750756
   ],
   "checked": true,
-  "comment": "comment seg div-end",
+  "comment": "comment seg",
   "id": 400,
   "ner_xml": "<PER>M. Georges Graux</PER><ACT>, absent au moment</ACT> du <ACT>vote qui</ACT> précède, déclare que, s'il avait été présent, il aurait voté « contre » l'annulation de l'élec-",
   "origin": "computer",

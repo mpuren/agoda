@@ -3541,7 +3541,7 @@
    26
   ],
   "checked": true,
-  "comment": "part head",
+  "comment": "",
   "id": 283,
   "key": [
    2,
@@ -3585,7 +3585,7 @@
    26
   ],
   "checked": true,
-  "comment": "meeting-session meeting-legislature",
+  "comment": "meeting-session meeting-legislature useless",
   "id": 261,
   "key": [
    0,
@@ -3607,7 +3607,7 @@
    62
   ],
   "checked": true,
-  "comment": "meeting-sitting",
+  "comment": "meeting-sitting useless",
   "id": 602,
   "key": [
    0,
@@ -3629,7 +3629,7 @@
    30
   ],
   "checked": true,
-  "comment": "date-sitting",
+  "comment": "date-sitting useless",
   "id": 262,
   "key": [
    0,
