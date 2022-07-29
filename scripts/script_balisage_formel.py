@@ -12,7 +12,7 @@ def add_seg(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"seg[^-]|seg$", data[i]["comment"]) and not re.search(r"quote-beginning|quote-end",
+            if re.search(r"\bseg(?!-)\b", data[i]["comment"]) and not re.search(r"quote-beginning|quote-end",
                                                                                 data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<seg>', data[i]['text_ocr'], '</seg>'])
             elif re.search(r"seg-beginning", data[i]["comment"]):
@@ -49,9 +49,9 @@ def add_page_number(data, zwt, inc):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"body[^1]", data[i]["comment"]):
+            if re.search(r"\bbody\b", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<pb n="', data[i]['text_ocr'].split()[-1], '"/>'])
-            elif re.search(r"page-number[^-]|page-number$", data[i]["comment"]) and not re.search(r"body",
+            elif re.search(r"\bpage-number(?!-)\b", data[i]["comment"]) and not re.search(r"body",
                                                                                                   data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<pb n="', str(zwt + inc), '"/>'])
             elif re.search(r"page-number-ref", data[i]["comment"]):

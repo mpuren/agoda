@@ -28,7 +28,7 @@ for file_name in sorted([file for file in os.listdir(path_to_json) if file.endsw
         # CHANGEMENTS DE PAGE : gestion de l'incrémentation à partir du numéro de la première page de la séance
         for i in range(len(data)):
             if "comment" in data[i]:
-                if re.search(r"body[^1]", data[i]["comment"]):
+                if re.search(r"\bbody\b", data[i]["comment"]):
                     inc = 0
                     zwt = int(data[i]['text_ocr'].split()[-1])
                 elif re.search(r"page-number", data[i]["comment"]) and not re.search(r"body", data[i]["comment"]):

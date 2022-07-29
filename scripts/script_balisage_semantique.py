@@ -11,7 +11,7 @@ def add_utterance(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"(?<![a-z])u | u$", data[i]["comment"]):
+            if re.search(r"\bu(?!-)\b", data[i]["comment"]):
                 # \bu(?!-)\b
                 data[i]['text_ocr'] = "".join(['<u>', data[i]['text_ocr'], '</u>'])
             elif re.search(r"u-beginning", data[i]["comment"]):
@@ -32,7 +32,7 @@ def add_comment(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"comment(?!-)", data[i]["comment"]):
+            if re.search(r"\bcomment(?!-)\b", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<note type="comment">', data[i]['text_ocr'], '</note>'])
             elif re.search(r"comment-beginning", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<note type="comment">', data[i]['text_ocr']])
@@ -57,7 +57,7 @@ def add_incident(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"incident[^-]| incident$", data[i]["comment"]):
+            if re.search(r"\bincident(?!-)\b", data[i]["comment"]):
                 data[i]['text_ocr'] = data[i]['text_ocr'].replace('(', '<incident><desc>(').replace(')',
                                                                                                     ')</desc></incident>')
             elif re.search(r"incident-beginning", data[i]["comment"]):
@@ -77,7 +77,7 @@ def add_quote(data):
     """
     for i in range(len(data)):
         if "comment" in data[i]:
-            if re.search(r"quote[^-]| quote$", data[i]["comment"]):
+            if re.search(r"\bquote(?!-)\b", data[i]["comment"]):
                 # data[i]['text_ocr'] = "".join(re.sub(r'«', r'<quote>«', data[i]['text_ocr']))
                 data[i]['text_ocr'] = data[i]['text_ocr'].replace('«', '<quote>«').replace('»', '»</quote>')
             elif re.search(r"quote-beginning", data[i]["comment"]):
