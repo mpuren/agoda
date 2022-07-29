@@ -1,15 +1,28 @@
-# Supprimer les sauts de ligne et recoller les mots séparés
-def nettoyage_saut_ligne(data):
-    """
-    Suppression des sauts de ligne et fusion des mots séparés par les sauts de ligne
-    :return:
-    """
-    for i in range(len(data)):
-        if "text_ocr" in data[i]:  # Si la valeur "comment" existe dans le dictionnaire actuel i
-            data[i]["text_ocr"] = data[i]["text_ocr"].replace('-\n', "")
-            data[i]["text_ocr"] = data[i]["text_ocr"].replace('\n', " ")
+import re, os
 
-    return data
 
-# Ne fonctionne pas lorsque le mot séparé est divisé entre deux boxes
-# Ajouter une fonction pour la gestion des caractères spéciaux ? --> unidecode
+def clean_xml(path_to_xml):
+  for file_name in sorted([file for file in os.listdir(path_to_xml) if file.endswith('.xml')]):
+    with open(os.path.join(path_to_xml, file_name)) as xml_file:
+      xml = xml_file.read()
+      xml = re.sub("(?<!-)\n", " ", xml)
+      #souci si le mot divisé sur 2 lignes est réellement composé (grand-père par ex)
+      xml = re.sub("-\n", "", xml)
+      xml_file.close()
+
+      xml_cleaned = open(str(os.path.join(path_to_xml, file_name)), mode="w")
+      xml_cleaned.write(xml)
+  return xml
+
+def delete(data):
+  """
+
+  :return:
+  """
+  for i in range(len(data)):
+    if "comment" in data[i]:
+      if re.search(r"useless", data[i]["comment"]):
+        data[i]['text_ocr'] = "".join("")
+      else:
+        pass
+  return data
