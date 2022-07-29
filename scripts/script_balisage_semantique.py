@@ -12,7 +12,6 @@ def add_utterance(data):
     for i in range(len(data)):
         if "comment" in data[i]:
             if re.search(r"\bu(?!-)\b", data[i]["comment"]):
-                # \bu(?!-)\b
                 data[i]['text_ocr'] = "".join(['<u>', data[i]['text_ocr'], '</u>'])
             elif re.search(r"u-beginning", data[i]["comment"]):
                 data[i]['text_ocr'] = "".join(['<u>', data[i]['text_ocr']])
