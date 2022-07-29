@@ -2,8 +2,15 @@ import re
 from datetime import date
 
 
-def var_metadata(data):
+# FONCTIONS PERMETTANT D'INCLURE LES MÉTADONNÉES (teiHeader)
 
+
+def var_metadata(data):
+    """
+    Création de variables permettant de stocker certaines parties du texte relatives aux métadonnées à l'aide des
+    étiquettes "date-pub", "meeting-legislature", "meeting-session", "meeting-sitting", "date-sitting"
+    :param data: dictionnaire contenant l'ensemble des données issues des JSON
+    """
     # Pour appeler les variables dans le return
     global date_pub
     global meetings
@@ -15,13 +22,17 @@ def var_metadata(data):
             if re.search(r"date-pub", data[i]["comment"]):
                 date_pub = "".join(['<date>', str(" ".join(data[i]['text_ocr'].split()[3:6])), '</date>'])
 
-            elif re.search(r"meeting-legislature", data[i]["comment"]) and re.search(r"meeting-session", data[i]["comment"]):
+            elif re.search(r"meeting-legislature", data[i]["comment"]) and re.search(r"meeting-session",
+                                                                                     data[i]["comment"]):
                 meetings = "".join(['<meeting n="', str(data[i]['text_ocr'].split()[0]),
-                                               'L" ana="#parla.lower #parla.legislature">', str(" ".join(data[i]['text_ocr'].split()[:2])), '</meeting>',
-                                               '<meeting n="E1" ana="#parla.lower #parla.session">', str(" ".join(data[i]['text_ocr'].split()[-4:])), '</meeting>'])
+                                    'L" ana="#parla.lower #parla.legislature">',
+                                    str(" ".join(data[i]['text_ocr'].split()[:2])), '</meeting>',
+                                    '<meeting n="E1" ana="#parla.lower #parla.session">',
+                                    str(" ".join(data[i]['text_ocr'].split()[-4:])), '</meeting>'])
             elif re.search(r"meeting-sitting", data[i]["comment"]):
                 meeting_sitting = "".join(['<meeting n="', str(data[i]['text_ocr'].split()[-2]),
-                                               '" ana="#parla.lower #parla.sitting">', str(" ".join(data[i]['text_ocr'].split()[-2:])), '</meeting>'])
+                                           '" ana="#parla.lower #parla.sitting">',
+                                           str(" ".join(data[i]['text_ocr'].split()[-2:])), '</meeting>'])
             elif re.search(r"date-sitting", data[i]["comment"]):
                 date_sitting = "".join(['<date>', str(" ".join(data[i]['text_ocr'].split()[-3:])), '</date>'])
             else:
@@ -31,6 +42,14 @@ def var_metadata(data):
 
 
 def build_teiheader(date_pub, meetings, meeting_sitting, date_sitting):
+    """
+    Création de l'ensemble du teiHeader avec l'insertion des variables définies dans "var_meta"
+    :param date_pub: variable contenant la date de publication, information issue des données contenues dans data
+    :param meetings: variable contenant la date de la législature et le type de session, informations issues des données
+    contenues dans data
+    :param meeting_sitting: variable contenant le numéro de la séance, information issue des données contenues dans data
+    :param date_sitting: variable contenant la date de la séance, information issue des données contenues dans data
+    """
     return "".join(['<teiHeader>',
                     '<fileDesc>'
                     '<titleStmt>',
@@ -153,5 +172,3 @@ def build_teiheader(date_pub, meetings, meeting_sitting, date_sitting):
                     '</settingDesc>',
                     '</profileDesc>',
                     '</teiHeader>'])
-
-
