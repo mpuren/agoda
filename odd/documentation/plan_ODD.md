@@ -15,14 +15,14 @@
 - Marie
   - Fonctionnement de la Chambre des députés : Fonctionnement des sesssions + Fonctionnement des séances + Prises de parole
 
-- Marie et/ou Pierre
+- Pierre
   - Rédaction des comptes-rendus
   
 ## 1.2 Objectifs scientifiques (Pierre) (à rédiger)
 - exploiter les données : qu'est-ce que l'on veut extraire/ manipuler/ analyser.
 - Importance de la structure et sens du texte = physique, logique, sémantique --> pris en compte dans le balisage.
 
-## 1.3 Choix de transcription (Pierre et Marie) (à rédiger)
+## 1.3 Choix de transcription (Marie) (fait)
 ### 1.3.1 Éléments transcrits
 - prises de paroles, commentaires, annexes
 - ponctuation respectée
