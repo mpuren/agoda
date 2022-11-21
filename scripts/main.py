@@ -6,7 +6,8 @@ from script_metadonnees import var_metadata, build_teiheader
 
 # Variables stockant les chemins vers les fichiers JSON et les fichiers XML
 path = os.path.dirname(__file__)
-path_to_json = os.path.join(os.path.abspath(os.path.join(path, os.pardir)), "json_data")
+#path_to_json = os.path.join(os.path.abspath(os.path.join(path, os.pardir)), "json_data")
+path_to_json = os.path.join(os.path.abspath(os.path.join(path, os.pardir)), "json_data_clean")
 path_to_xml = os.path.join(os.path.abspath(os.path.join(path, os.pardir)), "xml_data")
 
 # Variables stockant l'élément racine TEI
