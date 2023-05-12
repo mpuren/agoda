@@ -27,7 +27,7 @@ def add_structure(data):
 
 def add_division(data):
     """
-    Ajout de l'élément TEI "div" pouvant avoir un attribut @type auant pour valeur soit "part", soit "agenda",
+    Ajout de l'élément TEI "div" pouvant avoir un attribut @type ayant pour valeur soit "part", soit "agenda",
     soit "appendices", soit "erratum", soit "lists", soit "offices", soit "sitting", soit "other-sitting",
     soit "contents", soit "voting", soit "rectification", soit "petition" pour chaque boxe étiquetée "part", "part1",
     "agenda", "appendices", "part1-appendices", "erratum", "part1-erratum", "lists", "part1-lists", "offices",
