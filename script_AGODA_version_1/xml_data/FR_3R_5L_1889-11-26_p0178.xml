@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-26_p0178">
+  <teiHeader/>
+  <text>
+    <body>
+      <!--New page added from FR_3R_5L_1889-11-26_p0178.json-->
+      <pb n="178">118
+CHAMBRE DES DEPUTES — SEANCE DU 26 NOVEMBRE 1889</pb>
+      <seg>C'est aussi l'illustre phalange des défen-
+seurs au procès de 1834.</seg>
+      <seg>Souvenez-vous de ce grand procès qui se
+déroula devant la Chambre des pairs trans-
+formée en cour de justice.<seg>Voilà comment les apôtres du parti répu-
+blicain, dans les temps héroïques, à l'épo-
+que où vous luttiez non pas pour vous par-
+tager le pouvoir et les portefeuilles, mais</seg></seg>
+      <seg>Je prends mes précédents où je veux,
+dans cette histoire de France qui nous
+montre bien des iniquités, bien des oppres-
+sion du droit par la force ou par l'usurpa-
+tion des Parlements, mais aussi les protes-
+tations de bien des nobles victimes.<seg>Eh bien, voulez-vous me permettre de</seg><seg>vous rappeler ses paroles? Je ne ferai pas
+d'autre citation. Voici ce que disait Corme-
+nin du haut de cette tribune, pour protes-
+ter contre l'habitude que le gouverne-
+ment d'alors prenait de livrer des dépu-
+tés aux sénateurs, aux membres de la
+Chambre haute — comme on disait déjà,
+— c'est-à-dire à la Chambre des pairs,
+qui avait le droit de juger les dépu-
+tés, de les condamner et de les flétrir, de
+ses condamnations politiques tout au moins :</seg></seg>
+      <note type="comment">
+        <seg>M. Terrier prononce quelques paroles
+qui ne parviennent pas jusqu'au bureau.</seg>
+      </note>
+      <div type="sitting">
+        <div type="content">
+          <u/>
+          <u>
+            <seg>Mais, messieurs, j'invoque vos meilleurs
+auteurs; je ne puis pas...</seg>
+            <seg>M. Armand Després. Nous ne voulons
+pas tuer M. DilIon.</seg>
+            <seg>M. Terrier. Nous n'avons pas besoin de
+vous pour nous apprendre à respecter les
+gloires du parti républicain ! Ces hommes
+dont vous rappelez le souvenir, nous les
+estimions avant vous et nous continuerons
+à les estimer malgré l'éloge que vous en
+faites !</seg>
+            <seg>Voix au centre, ironiquement. Vous êtes
+un républicain rallié !</seg>
+            <seg>M. Cuneo d'Ornano. ...et je prends mes
+devanciers, mes modèles, où je veux dans
+cette grande histoire pleine de héros, d'o-
+rateurs...</seg>
+            <seg>Voix à gauche. Vous ne les imitez pas !</seg>
+            <seg>M. Terrier. Ah ! s'ils pouvaient encore
+vous entendre !</seg>
+            <seg>M. le président. Messieurs, il faut vous
+habituer à entendre vos adversaires en si-
+lence quand ils sont à la tribune.</seg>
+          </u>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

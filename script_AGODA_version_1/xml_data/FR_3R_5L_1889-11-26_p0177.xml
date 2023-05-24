@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-26_p0177">
+  <teiHeader/>
+  <text>
+    <body>
+      <!--New page added from FR_3R_5L_1889-11-26_p0177.json-->
+      <pb n="177">CHAMBRE DES DEPUTES — SEANCE DU 26 NOVEMBRE 1889  177</pb>
+      <note type="comment">
+        <seg>(La Chambre, consultée, n'ordonne pas le
+renvoi.)</seg>
+      </note>
+      <seg>Votre pouvoir, messieurs, étant sans
+limite, j'espère que ma parole sera sans
+entraves. Vous me permettrez tout au
+moins de ne soulever en rien ici les ques-
+tions personnelles qui n'ont pas à s'y glis-
+ser, car la personnalité de l'honorable comte
+Dillon n'est pas mise en cause. Le rappor-
+teur du 7e bureau s'occupe seulement de
+savoir si l'élu de la 1re circonscription de
+Lorient était éligible ou non.</seg>
+      <seg>Vour murmurez ? vous semblez douter ?
+Je vais alors vous retenir quelques instants
+de plus sur ce point préliminaire.</seg>
+      <seg>Est-il vrai que la condamnation qui a
+frappé l'élu de Lorient soit uniquement une
+condamnation pour complot et attentat?
+Rien de plus, rien de moins. Le complot et
+l'attentat n'ont-ils pas toujours été considé-
+rés par vos devanciers, messieurs de la
+gauche, comme des crimes purement poli-
+tiques, notamment par ceux d'entre vous,
+très honorables d'ailleurs comme hommes
+privés, qui ont subi les mêmes condamna-
+tions ?</seg>
+      <seg>Aussi bien, j'ai le droit de répéter sans
+soulever aucune objection qu'il s'agit ici,
+dans l'élection de la 1re circonscription de
+Lorient, d'un homme frappé d'une condam-
+nation purement politique par un tribunal
+purement politique, et que par conséquent
+nous ne sommes pas dans la même situa-
+tion que si nous nous trouvions en présence
+d'un élu dont l'inégibilité découlerait de
+quelque indignité ou de quelque violation
+des lois de l'honneur.</seg>
+      <seg>Ne m'interrompez pas aussi imprudem-
+ment, je vous en prie. Si l'on veut parler
+des commissions mixtes, de ces juridic-
+tions politiques des temps de guerre civile,
+je suis prêt à en tirer parti pour ma discus-
+sion; je ne redoute pas les interruptions, si
+ce n'est parce qu'elles allongeraient un dé-
+bat que je veux resserrer le plus possible.</seg>
+      <seg>Messieurs, cela dit uniquement pour
+écarter du débat toute digression, toute di-
+version qui prendrait un caractère person-
+nel et qui le passionnerait inutilement,
+car je voudrais lui maintenir son caractère
+de débat de droit public, de droit constitu-
+tionnel et parlementaire, — cela dit, je n'ai
+pas besoin de vous demander si, en fait,
+M. le comte Dillon, dont l'honorabilité ne
+saurait être même mise en cause, a été
+vraiment élu.</seg>
+      <seg>C'est ce que le rapport de l'honorable
+comte Lemercier ne met pas en doute.
+M. Dillon a obtenu, sur 14,000 votants,
+9,291 voix; plus des deux tiers, 5,000 voix
+de majorité sur ses deux concurrents. Les
+suffrages qui lui ont été accordés ont été
+parfaitement relevés comme suffrages ex-
+primés en faveur d'un candidat qui avait le
+droit de l'être et qui avait fait sa déclara-
+tion. Et les procès-verbaux que j'ai parcou-
+rus, qui sont entre les mains de l'honorable
+rapporteur du 7° bureau, ne mentionnent
+pas l'ombre d'une protestation, ni à raison
+des opérations matérielles du scrutin ni à
+raison de l'inéligibilité de l'élu. Il n'y a pas
+d'élection plus simple, plus claire, plus
+pure : pas une protestation au dossier, pas
+une protestation dans les procès-verbaux.</seg>
+      <seg>Quelle que soit votre opinion personnelle,
+messieurs, vous ne pouvez contester le
+caractère bien net, bien libre, de cette ma-
+nifestation du suffrage universel; vous ne
+pouvez refuser de voir que la volonté des
+électeurs a été bien expresse et bien pré-
+cise, puisque, en présence de deux concur-
+rents officiels, M. le comte Dillon a obtenu
+contre eux les trois quarts des suffrages
+exprimés.</seg>
+      <seg>Ainsi l'élection est bien sincère; M. le
+comte Dillon est bien élu. Il a été élu par le
+libre suffrage de ses concitoyens, dans des
+conditions absolues de calme, de paix,de sin-
+cérité, en l'absence de tout ce qu'on incri-
+mine dans les autres élections : corruption,
+ingérence du clergé, pression administra-
+tive, rien de tout cela n'est articulé; il n'y
+a pas d'élection plus claire et plus pure.<seg>Mais voilà le 7e bureau qui, par l'organe</seg></seg>
+      <div type="sitting">
+        <div type="content">
+          <u>
+            <seg>M. le président. Il est bien entendu, en
+tout cas, que les deux élections ne peuvent
+être mêlées, que chacune d'elles sera dis-
+cutée séparément.</seg>
+            <seg>M. Laguerre. Parfaitement, monsieur le
+président, et il sera statué par un double
+vote.</seg>
+          </u>
+          <u>
+            <seg>M. le président. Il s agit uniquement de
+savoir, en ce moment, si la Chambre, adop-
+tant la proposition de M. Laguerre, veut
+remettre jusqu'au jour où l'on discutera
+l'élection de Clignancourt l'examen des con-
+clusions du 7e bureau sur l'élection de
+Lorient.</seg>
+          </u>
+          <u>
+            <seg>Je consulte la Chambre sur la question
+ainsi posée.</seg>
+            <seg>M. le président. M. Cuneo d'Ornano a la
+parole.</seg>
+          </u>
+          <u>
+            <seg>M. Cuneo d'Ornano. Messieurs, comme
+membre du 7e bureau, j'ai repoussé les
+conclusions auxquelles la majorité de ce
+bureau s'est arrêtée; j'ai repoussé les con-
+clusions du rapport de l'honorable comte
+Lemercier, qui vous propose, ainsi que
+vous avez pu le voir au Journal officiel,
+d'annuler les opérations électorales qui ont
+eu lieu dans la 1re circonscription de Lo-
+rient.</seg>
+            <seg>Un membre à gauche. C'est aller un peu
+loin.</seg>
+            <seg>A gauche. Et par la loi.</seg>
+          </u>
+          <u>
+            <seg>M. Cuneo d'Ornano. Non, non. Et vous
+voyez que je ne m'attarde pas, que j'entre
+tout de suite, pour épargner vos instants,
+dans le vif de la question, protégé que je
+suis par la loi constitutionnelle du 16 juil-
+let 1875, par son article 10 que je replace
+sous vos yeux. Veuillez méditer ce texte ca-
+tégorique :</seg>
+            <seg>M. Clémenceau. Si ! Si !</seg>
+            <seg>Il n'y a rien de plus, vous voilà obligés
+d'en convenir, contre l'honorable élu de
+Lorient; et encore est-ce seulement comme
+complice que M. Dillon a été prévenu et
+condamné, condamné pour crime d'amitié.</seg>
+            <seg>Je vous ai dit que je vous citerais des
+exemples d'hommes respectés et honorés
+qui ont, eux aussi, été frappés de condam-
+nations semblables. Il y en a eu beaucoup
+depuis Godefroy Cavaignac, Louis Blanc,
+Ledru-Rollin, Armand Marrast : ce sont des
+condamnés d'ordre politique condamnés
+par des Assemblées politiques pour attentat
+et complot politiques. Et ces condamnés
+dont je réveille le souvenir sont des noms
+chers à la démocratie française. Ledru-Rol-
+lin, Marrast, Godefroy Cavaignac, ont été
+frappés pour attentat ou complot par des
+Assemblées politiques, au nom des pas-
+sions politiques de l'époque, sans que
+l'honneur personnel de ces condamnés po-
+litiques ait souffert la moindre atteinte.</seg>
+          </u>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

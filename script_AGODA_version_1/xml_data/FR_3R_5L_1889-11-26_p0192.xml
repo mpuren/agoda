@@ -1,0 +1,284 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-26_p0192">
+  <teiHeader/>
+  <text>
+    <body>
+      <!--New page added from FR_3R_5L_1889-11-26_p0192.json-->
+      <pb n="192">192 CHAMBRE DES DEPUTES — SEANCE DU 26 NOVEMBRE 1889</pb>
+      <seg>MM. Abeille. Arène (Emmanuel). Armez.
+Arribat. Audiffred. Aynard (Edouard).</seg>
+      <seg>Baile (Martial). Bargy. Barodet. Barthou.
+Bartissol. Bastid (Adrien). Baulard. Beau-
+quier. Bérard. Berger (Georges) (Seine). Ber-
+trand. Bézine. Bizarelli. Bizot. Bizouard-
+Bert. Blanc (Pierre). Boissy-d'Anglas. Bon-
+nefoy-Sibour. Bony-Cisternes. Borriglione.
+Boucher (Vosges). Boudenoot. Boudeville.
+Bouge. Boulanger-Bernet. Boullay. Bour-
+geois (Jura). Bourgeois (Léon) (Marne). Bou-
+thier de Rochefort. Bovier-Lapierre. Boysset.
+Braud. Breton. Briens. Brisson (Henri). Brousse
+(Emile). Brugnot. Brunier. Bully. Burdeau.
+Buvignier.</seg>
+      <seg>Cabart-Danneville. Calvinhac. Carquet.
+Casimir-Perier (Aube). Cavaignac (Godefroy).
+Cavalié. Cazauvieilh. Caze (Edmond). Cha-
+brié. Charles Roux. Charmes (Francis). Chas-
+saing. Chaulin-Servinière. Chautemps. Che-
+vandier. Choiseul (Horace de). Chollet. Chris-
+tophle (Albert). Clausel de Coussergues. Clau-
+zel (Ardèche). Clech. Clémenceau. Clerjounie.
+Cochery (Georges). Cordier. Corneau. Cor-
+nudet. Cosmao-Dumenez. Cousset. Coutis-
+son.</seg>
+      <seg>Dautresme. David (Alpes-Maritimes). David
+(Indre). Deandreis. Delaunay. Delcassé Del-
+lestable. Delmas. Deloncle (François). Delpech.
+Deluns-Montaud. Demarçay (baron). Deniau.
+Denizot. Deprez (André) (Pas-de-Calais). De-
+proge. Descamps (Albert). Deschanel (Paul).
+Desmons. Després (Armand) (Seine). Dethou.
+Develle (Jules). Deville. Dreyfus (Camille).
+Dron. Dubois (Arnault) (Corrèze). Dubois
+(Emile) (Nord). Dubost (Antonin). Duchas-
+seint. Duclaud. Ducoudray. Ducroz. Dujar-
+lin-Beaumetz (Aude). Dumas. Dumay. Dupuy
+Charles) (Haute-Loire). Dupuy-Dutemps (Tarn).
+Durand-Savoyat (James). Duval (César).</seg>
+      <seg>Eliez-Evrard. Euziere.</seg>
+      <seg>Fanien (Achille). Farjon. Faure (Félix)
+(Seine-Inférieure). Ferry (Albert). Ferry
+(Emile). Flourens. Folliet. Forcioli. Fou-
+geirol. François (Alfred). Franconie.
+
+
+</seg>
+      <seg>Gacon. Gaillard (Jules) (Vaucluse). Galliard
+(Oise). Garnier (Charente-Inférieure). Gasté
+(de). Gastellier. Gaussorgues (Frédéric). Ger-
+bay. Germain (Constant) (Haute -Garonne).
+Germain (Henri) (Ain). Gervais (Jules). Ger-
+ville-Réache. Gévelot. Giguet. Gillot. Goi-
+rand. Gotteron. Granet. Greffülhe (comte).
+Grisez. Guéguen. Guillaumou. Guillemaut.
+Guyot-Dessaigne.</seg>
+      <seg>Hainsselin. Haulon. Haynaut. Hémon.
+Herbet. Hiroux. Horteur. Hovelacque. Hub-
+bard (Gustave). Hurard.</seg>
+      <seg>Isambert (Gustave). Isoard.</seg>
+      <seg>Jacquemart. Jacquemin. Jacques. Jamais
+Emile). Joffrin. Jonnart. Jouffray (Isère).
+Jouffroy-d'Abbans (comte de) (Doubs). Jourdan
+(Louis). Jumel.</seg>
+      <seg>Kerjégu (J. de).</seg>
+      <seg>La Batut (de). Labrousse. Labussière. La-
+chize (Rhône). Lacretelle (Henri de). Lacroix
+(Loiret). Laffitte de Lajoannenque (de). Laf-
+fon (René) (Yonne). Lagnel. Lagrange. Lan-
+glet. Lasbaysses. Lascombes. Lasserre. Lau-
+rençon. Lavertujon (Henri). Laville. Le-
+baudy. Leborgne.Lechevallier. Lechevallier. Lecomte
+(Maxime) (Nord). Leconte (Alfred) (Indre). Le-
+dieu. Léglise. Legludic. Legras. Lemercier
+(comte). Leroy (Arthur) (Côte-d'Or). Letellier.
+Levêque. Levet (Georges). Leydet. Leygues.
+Linard. Lockroy. Lombard (Isère). Loriot.
+Loustalot.</seg>
+      <seg>Mac-Adaras. Macherez. Madier de Montjau.
+Magnien. Mahy (de). Maigne (Jules). Mande-
+ville. Maret (Henry). Marmottan. Martinon.
+Marty. Maruéjouls. Mathé (Félix) (Allier).
+Mathé (Henri) (Seine). Maujan. Maurice-Faure
+(Drôme). Méline. Mercier. Merlou. Mesu-
+reur. Mézières. Michau (Nord). Michel (Al-
+fred). Michou (Aube). Millerand. Million
+(Louis). Milochau. Mir. Montaut (Seine-et-
+Marne). Moreau (Emile). Mougin.
+</seg>
+      <seg>Nivert. Noël-Parfalt.</seg>
+      <seg>Obissier Saint-Martin. Ordinaire (Dinonys).
+Ouvré.<seg>Pajot. Papelier. Pelletan (Camille), Perier
+de Larsan (du) (Gironde). Perrier (Antoine) (Sa-
+voie). Pesson (Albert). Peytral. Philipon.
+Pichon (Seine). Pierre Alype. Pierre Legrand.</seg><seg>(Nord). Pochon. Poincaré (Raymond). Ponle-
+voy (Frogier de). Poupin. Pourquery de Bois-
+serin. Prévet. Prost (Victor). Proust (Anto-
+nin).</seg></seg>
+      <seg>Quintaa.</seg>
+      <seg>Rabier. Rambourgt. Raspail (Camille) (Var).
+Rathier. Raynal. Réaux (Marie-Emile). Rei-
+nach (Joseph). Révillon (Tony). Rey (Aristide)
+(Isère). Rey (Lot). Reybert. Ribot. Riotteau.
+Rivet (Gustave). Roche (Jules) (Savoie). Rol-
+land. Rousse. Royer (Louis-Auguste) (Aube).
+Royer (Meuse). Rozet (Albin).</seg>
+      <seg>Saint-Germain. Saint-Romme. Salis. Sar-
+rien. Say (Léon). Sibille. Siegfried. Signard.
+Simon (Fidèle). Sirot. Souhet. Sourigues.
+Surchamp.</seg>
+      <seg>Talou (Léon). Tassin. Terrier. Theulier.
+Thierry-Delanoue. Thiers (Edouard). Thomas.
+Thomson. Thorel. Trannin. Trouillot (Georges)</seg>
+      <seg>Vacherie. Vallé. Vallon (amiral). Varlet.
+Vernhes. Vernière. Viette. Viger. Vignan-
+cour. Vilar (Edouard). Ville. Villemonte.
+Viox. Víval.</seg>
+      <seg>Waddington (Richard). Werquin.</seg>
+      <seg>MM. Abrial (Léon). Adam (Achille). Aigle
+(comte de l’). Aillières (d'). Aimel (Henri).
+Amagat. Arenberg (prince d'). Argeliès. Ar-
+nault. Arnous.</seg>
+      <seg>Balsan. Bar (de). Barascud. Barbotin.
+Barrès (Maurice). Belleval (de). Benazet. Benoit
+(de). Berger (Maine-et-Loire). Bergerot. Ber-
+nis (comte de). Bezanson. Bigot. Blachère.
+Blin de Bourdon (vicomte). Boisboissel (de).
+Borie. Boucher (Finistère). Boudeau. Bour-
+geois (Paul) (Vendée). Breteuil (marquis de).
+Breuil de Saint-Germain (du). Brincard.</seg>
+      <seg>Caffarelli (comte). Carron. Castelin. Champ-
+vallier (de). Chiché. Cibiel. Cluseret. Col-
+bert-Laplace (comte de). Cornulier (marquis
+de).</seg>
+      <seg>Daynaud. Dejardin-Verkinder (Nord). Dela-
+fosse (Jules) (Calvados). Delafosse (Marie) (Ille-
+et-Vilaine). Déroulède (Paul). Descaure. Des-
+jardins (Aisne). Dompierre d'Hornoy (vice-ami-
+ral de). Du Bodan. Dugué de la Fauconnerie.
+Dumonteil.</seg>
+      <seg>Elva (Christian) (comte d). Engerand. Es-
+chasseriaux (baron). Espeuilles (comte d')
+Estourmel (marquis d). Etcheverry.</seg>
+      <seg>Fairé. Farcy (Eugène). Fauré (Gers). Fer-
+roul. Fouquet (Camille). Fourtou (de). Frep-
+pel. Frescheville (général de). Froin (Al-
+céé)</seg>
+      <seg>Gabriel. Galpin (Gaston). Garnier (Yonne).
+Gauthier (de Clagny). Gavini. Gérard (baron).
+Godelle. Goussot. Goyon (de). Granger. Gra-
+nier de Cassagnac (Paul). Guilloutet (de).</seg>
+      <seg>Haussmann. Hély d'Oissel</seg>
+      <seg>Jolibois. Jourde. Juigné (comte de). Jules
+Jaluzot.</seg>
+      <seg>Kergorlay (comte de). Kermenguy (vi-
+comte de).</seg>
+      <seg>La Bassetière (Louis de). Labat. Lacretelle
+(général). Ladoucette (baron de). Laguerre.
+Laisant. Lalou. La Martinière (de). Lamar-
+zelle (de). Lanjuinais (comte de). La Nouë
+(vicomte de). Laporte (Gaston). Largentaye
+(Rioust de). La Rochefoucauld, duc de Dou-
+deauville. La Rochejaquelin (marquis de). La-
+roche-Joubert. Laur. Le Cerf. Le Gavrian.
+Legrand (Arthur) (Manche). Le Hérissé. Léon
+(prince de). Léouzon-Leduc. Le Roux (Paul).
+Le Senne. Le Veillé. Lévis-Mirepoix (comte
+de). Lorgeril (de). Lorois (Emile) (Morbihan).
+Lur-Saluces (de).</seg>
+      <seg>Mackau (baron de). Malartre. Maréchal.
+Martin (Marius). Martineau. Mège. Mesnildot
+(du). Millevoye (Lucien). Montalembert (comte
+de). Montéty (de). Multedo (comte). Mun
+(comte Albert de).
+</seg>
+      <seg>Naquet (Alfred).</seg>
+      <seg>Olry. Ornano (Cuneo d').</seg>
+      <seg>Pasquier. Paulin-Méry. Paulmier. Pey-
+russe. Picot. Plichon (Nord). Pontbriant
+(comte de). Pontois. Porteu (Armand). Pos-
+sesse (de). Poulié. Prax-Paris. Prénat.</seg>
+      <seg>Ramel (de). Rauline. Reille (baron). Re-
+nard (Léon). Revest. Richard (Pierre). Ro-
+bert-Mitchell. Roche (Ernest) (Seine). Ro-
+ques. Rotours (baron des). Rouvre (Bourlon
+de). Roy de Loulay (Louis).</seg>
+      <seg>Sabouraud. Saint-Martin (de) (Indre). Saint-
+Martin (Seine). Saussay (du). Serph (Gus-
+man). Solages (marquis de). Soubeyran (ba-
+ron de).</seg>
+      <seg>Tailliandier. Taudière. Terrail - Mermeix.
+Thellier de Poncheville. Théron. Thivrier.
+Turigny.</seg>
+      <seg>Vacher. Vilfeu. Villeneuve (de).</seg>
+      <seg>Witt (Conrad de).</seg>
+      <seg>MM. Armand (comte). Barbe. Batiot (Aris-
+tide). Baudin. Baudry d'Asson (de). Bischoff-
+sheim. Boyer (Antide). Cazenove de Pradine
+de). Colombet (de). Constans. Couturier.
+Delahaye, Dillon. Douville-Maillefeu (comte
+de). Dufaure (Amédée). Dupuytrem.</seg>
+      <seg>Etienne.</seg>
+      <seg>Fallières. Floquet (Charles). Fould (Achille)
+Fouquier (Henry).</seg>
+      <seg>Gonidec de Traissan (comte le). Graux (Geor-
+ges). Grousset.</seg>
+      <seg>Kergariou (de).</seg>
+      <seg>La Bourdonnaye (vicomte de). La Chambre.
+Lachièze (Lot). Lacôte. La Ferronnays (mar-
+quis de). Lanessan (de). Lareinty (Jules de)
+Le Provost de Launay. Le Roy (Edouard)
+Réunion). Loreau.</seg>
+      <seg>Maillé (comte de). Meilhodon. Ménaru
+Dorian. Montfort (vicomte de). Montgolfier
+(de). Montsaulnin (de). Morillot (Léon). Mo-
+rin-Latour. Moustier (marquis de).</seg>
+      <seg>Neyrand.</seg>
+      <seg>Passy (Louis) (Eure). Piérard (baron). Pla-
+zanet (colonel de).</seg>
+      <seg>Razimbaud. Rouvier.</seg>
+      <seg>Schneider (Henri). Sentenac. Soland (de)
+Spuller.</seg>
+      <seg>Ternisien. Terves (comte de). Thévenet.
+Thirion-Montauban.</seg>
+      <seg>Villebois-Mareuil (vicomte de).</seg>
+      <seg>Yves Guyot.</seg>
+      <seg>MM. Abeille. Arène (Emmanuel). Armez.
+Audiffred.</seg>
+      <seg>Baile (Martial). Bargy. Barodet. Barthou.
+Bartissol. Batiot (Aristide). Baulard. Bérard.
+Bertrand. Bézine. Bizarelli. Bizot. Bizouard-
+Bert. Blanc (Pierre). Boissy-d'Anglas. Bon-
+nefoy-Sibour. Bony-Cisternes. Boucher (Vos-
+ges). Boudenoot. Bouge. Boulanger-Bernet.
+Boullay. Bourgeois (Jura). Bourgeois (Léon)
+(Marne). Bouthier de Rochefort. Bovier-La-
+pierre. Boysset. Braud. Breton. Briens.
+Brisson (Henri). Brousse (Emile). Brugnot.
+Brunier. Burdeau. Buvignier.</seg>
+      <div type="sitting">
+        <div type="content">
+          <u/>
+        </div>
+      </div>
+      <table>
+        <row>
+          <cell>Les nombres annoncés en séance avai
+été de:
+Nombre des votants............... 514
+Majorité absolue.................. 258
+Pour l'adoption............ 333
+Contre.................... 181</cell>
+        </row>
+      </table>
+      <table>
+        <row>
+          <cell>Nombre des votants............... 516
+Majorité absolue.................. 259
+Pour l'adoption........ 275
+Contre................ 241
+</cell>
+        </row>
+      </table>
+      <div type="erratum">
+        <head>
+          <note>Sur l'amendement de M. Leygues, tendant à l'an-
+nulation des opérations électorales de la 2e
+circonscription de Montauban (Tarn-et-Ga-
+ronne). (Résultat du pointage.)</note>
+        </head>
+      </div>
+    </body>
+  </text>
+</TEI>

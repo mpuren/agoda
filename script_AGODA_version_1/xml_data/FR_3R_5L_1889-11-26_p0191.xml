@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-26_p0191">
+  <teiHeader/>
+  <text>
+    <body>
+      <!--New page added from FR_3R_5L_1889-11-26_p0191.json-->
+      <pb n="191">CHAMBRE DES DEPUTES — SEANCE DU 26 NOVEMBRE 1889
+191</pb>
+      <seg></seg>
+      <seg>Pour le 3e grief, M. Jaluzot nous a montre
+que depuis quatre ans seulement il a en-
+voyé des secours à cinq mille familles en
+dehors du département de la Nièvre ;</seg>
+      <seg>Que dans l'arrondissement de Clamecy il
+donnait des secours dans sa commune na-
+tale toutes les fois que l'on s'adressait à
+lui ; que si, depuis quelque temps, il en a
+donné davantage, c'est qu'il lui a été adressé
+un plus grand nombre de demandes ; mais
+qu'il ne donnait jamais sans s'être fait ren-
+seigner sur les besoins réels des sollici-
+teurs. Ceux d'entre eux qui, en s'adressant
+à lui, avaient allégué qu'ils pourraient lui
+rendre des services aux élections ont été re-
+fusés.</seg>
+      <seg>Ce point est établi par la correspondance
+même dont il nous a présenté les origi-
+naux.</seg>
+      <seg>Un maire, celui de Cunay-les-Varzy, dont
+une lettre est au dossier, M. Rousseau, ami
+de M. Hérisson, parle de certaines sommes
+distribuées à des malheureux dans sa com-
+mune et semble en faire un grief à M. Ja-
+luzot. Mais il oublie de dire que c'est sur
+son initiative que la plupart de ces deman-
+des ont été formulées, comme le prouve sa
+correspondance, qui nous a été communi-
+quée.</seg>
+      <seg>M. et Mme Couture ont distribué quelques
+secours à des familles nécessiteuses de
+Clamecy, mais toujours après renseigne-
+ments pris sur la misère de ces familles, et
+jamais pour d'autres considérations.</seg>
+      <seg>En plus, un fait qui n'a pas été contesté
+par M. Hérisson, c'est qu'aucune libéralité
+n'a été faite par M. Jaluzot à qui que ce fût
+pendant la période électorale.</seg>
+      <seg>Elles ont cessé dans le mois d'août, pour
+reprendre après le 22 septembre et conti-
+nuent encore.</seg>
+      <seg>M. Couture est depuis longtemps le se-
+crétaire ordinaire de M. Jaluzot, qui l'envoie
+où il y a de graves intérêts à debattre ; sa
+présence à Clamecy n'a donc rien d'extraor-
+dinaire dans ce cas-là.</seg>
+      <seg>Quant aux banquets que M. Hérisson l'ac-
+cuse d'avoir payés, M. Jaluzot les nie abso-
+lument, sauf la réunion de Pazy, où il s'a-
+gissait d'organiser une société de secours
+mutuels pour les deux communes de Pazy
+et Chaumot, et où il n'a pu refuser le con-
+cours de sa personne et de sa bourse.</seg>
+      <seg>M. Jaluzot fait du reste observer que ces
+banquets ont eu lieu en dehors de toute pé-
+riode électorale.</seg>
+      <seg>Pour les carrières de la Manse, M. Jalu-
+zot en est bien le propriétaire, mais il a un
+locataire qui les exploite. Le locataire a de-
+mandé par affiche quarante ouvriers et non
+davantage, les a payés et employés non
+pas jusqu'aux élections, mais jusqu'à la
+mi-octobre, époque après laquelle la saison
+ne permet plus l'extraction. Ce fait est re-
+connu par tous.</seg>
+      <seg>Quant au renoncement à l'indemnité de
+député, M. Jaluzot n'est aucunement res-
+ponsable d'un fait avancé par les journaux,
+et n'est pas plus responsable de la polémi-
+que de ses journaux que M. Hérisson de
+celle des siens.</seg>
+      <seg>M. Jaluzot nous a présenté un certain nom-
+bre d'articles de ces derniers dans lesquels
+la violence et les imputations calomnieuses
+dépassent toutes les bornes, et si des jour-
+naux amis ont répondu sur un ton ana-
+logue, il n'y a là rien de bien étonnant.</seg>
+      <seg>MM. Hérisson et Jaluzot ont été entendus
+sur leur demande par votre 7e bureau. M. Hé-
+risson a renouvelé les termes de sa protes-
+tation et demandé qu'une enquête fût faite
+sur les circulaires distribuées dans l'arron-
+dissement de Clamecy. M. Jaluzot a renou-
+velé les réponses qu'il avait faites à la sous-
+commission et fourni au bureau toutes les
+explications qui lui ont été demandées.</seg>
+      <seg>La discussion s'est ensuite ouverte sur
+les conclusions de la sous-commission.</seg>
+      <seg>Une demande d'enquête formulée par
+M. Dreyfus n'a réuni que cinq voix, et le
+7e bureau à une très grande majorité a
+adopté les conclusions tendant à la valida-
+tion de rélection.</seg>
+      <seg>M. Jaluzot remplit les conditions d'âge et
+de nationalité exigées par la loi.</seg>
+      <seg>Le 1er tour de scrutin dans cette cir-
+conscription n'ayant pas donné de résultat,
+il fut procédé à un 2e tour, lequel a présenté
+les résultats suivants :</seg>
+      <seg>Le candidat proclamé, M. Paulin Méry, a
+obtenu 5,806 voix,</seg>
+      <seg>Et M. Basly, le candidat ayant obtenu le
+plus de voix après lui, a eu 5,774 voix.</seg>
+      <seg>Soit une différence de suffrages de 32
+voix entre les deux concurrents. — Un grand
+nombre de protestations se sont produites
+à l'égard de cette élection. L'on trouve
+d'abord dans le dossier celle suivante, si-
+gnée par 555 électeurs dont les signatures
+sont légalisées; elle est ainsi conçue :</seg>
+      <seg>« Le suffrage universel vient d'être impu-
+demment faussé dans la 2e circonscription
+du 13e arrondissement de Paris.</seg>
+      <seg>« Avec une audace et un cynisme révol-
+tants, la faction boulangiste, qui ne recule
+devant rien pour surprendre la bonne foi
+des électeurs, a, durant la période électo-
+rale, répandu l'insulte et la calomnie sur le
+candidat républicain acclamé dans toutes
+les réunions publiques où il pouvait répon-
+dre à ses adversaires.</seg>
+      <seg>« Le jour du vote, des actes de fraude ont
+été constatés dans différentes sections.</seg>
+      <seg>« Nous venons, en vous remettant les
+preuves des attentats commis contre la sin-
+cérité du suffrage, vous conjurer de ne pas
+sanctionner, mais de répudier de pareils
+agissements, qui sont un crime de lèse-Ré-
+publique.</seg>
+      <seg>« Nous pensons que vous, appelés par de
+loyales élections, vous ne laisserez pas sié-
+ger à vos côtés un homme coupable des
+plus basses manoeuvres, des calomnies les
+plus viles, des tricheries les plus effrontées.</seg>
+      <seg>« Après avoir fait usage de si méprisa-
+bles moyens, ce candidat n'a réuni que 32
+voix de majorité. Il est donc de toute évi-
+dence qu'avec un scrutin non falsifié, la
+majorité eût été acquise à M. Basly, qui, lui,
+est toujours resté sur le terrain des princi-
+pes républicains et de l'honnêteté politique.</seg>
+      <seg>« Nous sommes certains, messieurs les
+députés, qu'après avoir soigneusement exa-
+miné les documents ci-joints, et vous être
+assurés de leur authenticité, vous n'hésite-
+rez pas à invalider une élection qui, si elle
+était sanctionnée, serait un encouragement
+à l'improbité électorale, en même temps
+qu'elle constituerait une atteinte flagrante
+au droit des électeurs.</seg>
+      <seg>« Recevez, messieurs les députés, etc.</seg>
+      <seg>Le nommé Bourguignon, demeurant bou-
+levard de la Gare, n° 99, dont la signature
+est également légalisée, a écrit ceci:</seg>
+      <seg>« Le 22 septembre, à la levée du scrutin,
+l'urne de la 6e section a été renversée
+par le président et chacun tombait sur les
+bulletins de vote et en opérait le dépouil-
+lement à sa façon, ce qui est contraire au
+règlement qui dit « que les bulletins doi-
+vent être sortis de l'urne un à un ». J'ai dû
+protester contre cette manière de procéder.<seg>«Le 6 octobre, lors du dépouillement, à</seg><seg>cette même section, je priais le président
+de veiller à ce que le fait qui s'était pro-
+duit le 22 septembre ne se renouvelle pas ;
+il me répondit qu'il n'avait d'ordre à rece-
+voir de personne, et au lieu de se confor-
+mer au règlement, il renversa l'urne par
+deux fois; on fut obligé d'y remettre par
+deux fois les bulletins de vote, et pour que
+le dépouillement soit fait régulièrement,
+nous avons dû avoir recours à la force pu-
+blique. »</seg></seg>
+      <seg>Un autre protestataire, M. Martinet (si-
+gnature légalisée), déclare qu'étant arrivé à
+six heures pour voter, il n'a trouvé per-
+sonne au bureau pour recevoir les bulle-
+tins et que l'urne était complètement aban-
+donnée, et que chacun pouvait y mettre ce
+qui lui plaisait.</seg>
+      <seg>Le sieur Ducuing, demeurant place
+Jeanne-d'Arc, n° 41, atteste que deux faillis
+ont pris part au vote.</seg>
+      <seg>Une autre personne certifie que lors
+du dépouillement de la 6e section, il a
+été constaté une différence de 13 voix en
+moins entre le nombre des suffrages
+comptés par des citoyens présents et le
+nombre de voix attribuées aux deux con-
+currents par le président de la section.</seg>
+      <seg>L'écart des voix entre les deux concur-
+rents n'étant que de 32, il y aurait sans
+doute lieu de s'arrêter à ces protestations
+pour rechercher dans quelle mesure les
+faits signalés ont pu modifier le résultat
+proclamé, si la commission n'avait pas
+trouvé dans le dossier des irrégularités
+d'une autre nature dont l'importance, au
+point de vue légal, peut suffire pour vicier
+l'élection.</seg>
+      <seg>En effet, messieurs, le procès-verbal de
+recensement constate que parmi le nom-
+bre des bulletins annulés (147), il s'en
+trouve 76 qui n'ont pas été annexés au
+procès-verbal et pour lesquels, par consé-
+quent, tout contrôle a été impossible.</seg>
+      <seg>Or, le conseil d'Etat, à la date des 11 avril
+1861, 17 décembre 1862, 18 juillet 1866, 25
+juin 1875, 6 décembre 1878, 28 mars 1879, a
+établi comme règle de jurisprudence que
+le scrutin pouvait être annulé quand on a
+négligé d'annexer au procès-verbal les
+bulletins contestés et ceux qui ne doivent
+pas entrer en compte, sauf dans le cas où
+cette négligence n'aurait pas eu d'in-
+fluence sur le résultat.</seg>
+      <seg>La différence de voix entre les deux can-
+didats n'étant que de 32, la commission
+chargée du rapport a émis l'avis, qui a été
+entièrement partagé par votre 9° bureau,
+que cette jurisprudence du conseil d'Etat,
+devait être appliquée à l'élection de la
+2e circonscription du 13° arrondissement.</seg>
+      <div type="sitting">
+        <div type="content">
+          <u/>
+          <u>
+            <seg>Votre 7e bureau vous propose, en consé-
+quence, de valider son élection.</seg>
+          </u>
+          <u>
+            <seg>M. Delaunay, rapporteur. — Election de
+la 2e circonscription du 13e arrondissement
+de la ville de Paris.</seg>
+          </u>
+        </div>
+      </div>
+      <table>
+        <row>
+          <cell>Nombre des électeurs inscrits, 15,913.
+Nombre des votants, 11,819.
+Nombre des suffrages exprimés, 11,595.</cell>
+        </row>
+      </table>
+      <quote>« Paris, 1e 5 novembre 1889. »</quote>
+      <table>
+        <row>
+          <cell>Nombre des votants............... 506
+Majorité absolue................. 254
+Pour l'adoption........... 330
+Contre.............. 176
+
+</cell>
+        </row>
+      </table>
+      <div type="appendices">
+        <head>Annexes au procès-verbal de la séance
+du mardi 26 novembre 1889.</head>
+      </div>
+      <div type="voting">
+        <head>
+          <label>SCRUTIN</label>
+        </head>
+        <note type="result">
+          <seg>La Chambre des députés a adopté.</seg>
+        </note>
+      </div>
+      <div type="erratum">
+        <head>
+          <note>Sur les conclusions du 7e bureau tendant à l'an-
+nulation des opérations électorales de la 1re-
+circonscription de l'arrondissement de Lorient
+(Morbihan).</note>
+        </head>
+      </div>
+    </body>
+  </text>
+</TEI>
