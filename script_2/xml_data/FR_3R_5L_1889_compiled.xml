@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-26_p0177">
+  <teiHeader/>
+  <text>
+    <body>
+      <pb n="177"/>
+    </body>
+  </text>
+</TEI>
