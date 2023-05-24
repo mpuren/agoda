@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-26_p0184">
+  <teiHeader/>
+  <text>
+    <body>
+      <!--New page added from FR_3R_5L_1889-11-26_p0184.json-->
+      <pb n="184">184
+CHAMBRE DES DEPUTES — SEANCE DU 26 NOVEMBRE 1889</pb>
+      <seg>Diffamez, il en reste toujours quelque
+chose. Les paroles prononcées par M. le
+curé de Varen ont retenti non seulement
+dans sa paroisse, mais encore dans les com-
+munes voisines. Dans les campagnes, les
+moindres incidents, les moindres nouvelles,
+se propagent avec une incroyable rapidité.
+Un fait qui se produit dans un marché, dans
+une foire, à une messe, est connu le soir
+même dans vingt ou trente communes en-
+vironnantes. Comment? On n'en sait rien,
+Mais c'est ainsi.</seg>
+      <seg>J'affirme donc que les propos extrême-
+ment violents et perfides de M. le curé de
+Varen ont été de nature à enlever à M. Cambe
+un nombre très considérable de voix.
+La Chambre, j'en ai la conviction, parta-
+gera ma manière de voir.</seg>
+      <seg>Je passe à un autre ordre de faits, et c'est
+par là que je terminerai.</seg>
+      <seg>Ne pouvant attaquer l'honorable M. Cambe,
+ne pouvant le discréditer personnellement
+aux yeux des électeurs qui le connaissent
+trop bien, ses adversaires ont pensé que
+s'ils pouvaient atteindre un membre de sa
+famille, il rejaillirait un peu de boue sur le
+candidat républicain qui les gênait; alors
+on a écrit un article dans lequel on ac-
+cusait M. Cambe, grand-père du candidat,
+d'être devenu, sous la Révolution, posses-
+seur du domaine de Cornusson, propriété
+du marquis de Puylaroque, par des moyens
+absolument indélicats et de nature à enta-
+cher sa probité et son honneur.</seg>
+      <seg>Cet article a été imprimé dans le journal
+conservateur le Patriote, qui soutenait la
+candidature de M. Arnault et répandu à un
+très grand nombre d'exemplaires dans toute
+la circonscription.</seg>
+      <seg>Mais, messieurs, remarquez que M.
+Cambe n'a pu se faire rendre justice
+que le 16 novembre et que l'élection a eu
+lieu le 22 septembre; que, par conséquent,
+l'effet de l'article s'est produit tout entier
+et d'autant mieux que la défense de M. Cambe
+n'a pu se faire entendre dans le journal qui
+l'avait attaqué, puisque l'insertion de sa
+rectification lui a été refusée.</seg>
+      <seg>Si nous permettons à des manoeuvres, à
+des fraudes de ce genre de se produire
+impunément, c'en est fait de la liberté et de
+la sincérité des élections. Mais il y a autre
+chose, messieurs. Il faut savoir ce que sont
+dans notre région les luttes électorales.</seg>
+      <seg>Auparavant, messieurs, permettez-moi de
+vous déclarer et de vous montrer, avec des
+documents émanés de mon adversaire lui-
+même, que la lutte n'a pas eu le moins du
+monde, dans la 2e circonscription de Mon-
+tauban, le caractère qu'on dépeignait tout à
+l'heure, mais qu'elle s'est poursuivie dans
+les conditions que je vais établir devant
+vous en lisant quelques passages d'un des
+nombreux papiers que mon adversaire et
+ses agents ont répandus dans la circonscrip-
+tion.</seg>
+      <seg>Voyons comment mon adversaire lui-
+même présentait la situation des deux can-
+didats devant les électeurs :</seg>
+      <div type="sitting">
+        <div type="content">
+          <u/>
+          <u>
+            <seg>M. Leygues. D'après les renseignements
+qui m'ont été fournis, je ne crois pas qu'ils
+aient été rectifiés en chaire, mais dans le
+cabinet du maire. Je vais plus loin, et j'ad-
+mets que la rectification ait eu lieu en
+chaire huit jours après, comme le prétend
+M. de Lareinty. Pensez-vous que l'impres-
+sion produite par cette attaque inqualifiable
+ait été effacée? Vous savez bien ce qu'il
+faut penser des rectifications : elles ne sont
+presque jamais lues ou entendues par ceux
+pour qui elles sont faites.</seg>
+          </u>
+          <u>
+            <seg>Une diffamation des plus graves contre
+M. Cambe a été commise par le journal de
+M. Arnault. Je sais bien que M. Arnault a
+déclaré qu'il n'était pour rien dans cet arti-
+cle...</seg>
+          </u>
+          <u>
+            <seg>M. Leygues. Je ne mets pas en doute sa
+parole; mais l'article a été publié par le
+journal qui a soutenu sa candidature, par
+l'organe du parti conservateur qui, de-
+puis l'ouverture de la période électorale,
+n'a cessé de combattre nos amis et de sou-
+tenir M. Arnault et les siens.</seg>
+          </u>
+          <u>
+            <seg>Cette accusation pouvait nuire, vous n'en
+doutez pas, et elle a nui,— d'autant plus que
+M. Cambe, ou plutôt son beau-frère M. Tra-
+tat, envoya, à la date du 14 ou du 15 sep-
+tembre, — l'article aurait paru le 13, — une
+lettre rectificative au Patriote de Montau-
+ban, qui refusa de l'insérer.</seg>
+            <seg>Voix à gauche. Quel a été le jugement ?</seg>
+          </u>
+          <u>
+            <seg>Messieurs, je fais appel à votre impartia-
+lité, à votre justice, et non à vos passions
+politiques ; et je vous demande en toute
+conscience si l'ensemble des manoeuvres
+que je viens de soumettre à votre ap-
+préciation n'était pas capable, dans la
+2e circonscription de Montauban, de dépla-
+cer quatre-vingts et quelques voix; car il ne
+fallait pas en déplacer davantage pour que
+M. Arnault ne fût pas élu...</seg>
+            <seg>M. Jules de Lareinty, rapporteur. Il y a
+plus de quatre-vingts voix de différence.
+Vous faltes erreur.</seg>
+          </u>
+          <u>
+            <seg>M. Leygues. Messieurs, je vous demande
+d'invalider cette élection</seg>
+            <seg>M. Arnault. Je vais m'expliquer sur ce
+point.</seg>
+            <seg>M. Freppel. Ce n'est pas illégal.</seg>
+            <seg>M. Leygues. Je ne dis pas que ce soit
+illégal; mais la Chambre appréciera si la
+place de ce curé était au bureau de vote.</seg>
+            <seg>M. Freppel. Voilà vingt-cinq ans qu'il y
+siège!</seg>
+          </u>
+          <u>
+            <seg>M. Leygues. Le curé siégeait donc au
+bureau ; j'ajoute qu'il sortait fréquem-
+ment de la salle du vote pour arrêter les
+électeurs au passage et leur donner des
+bulletins au nom de M.Arnault.</seg>
+          </u>
+          <u>
+            <seg>M. Arnault. Messieurs, j'ai prié l'hono-
+rable M. de Lareinty, rapporteur du bureau
+chargé de statuer sur la validité des opéra-
+tions électorales dans la 2e circonscription
+de Montauban, de vouloir bien me céder la
+parole pour défendre devant vous mon
+élection.</seg>
+          </u>
+        </div>
+      </div>
+      <quote>« Là aussi on connaît M. Cambe, on
+l'aime et on l'estime; il a rendu à beaucoup
+de nombreux services, et les habitants de
+Servanac savent que M. Cambe est dans le
+canton de Saint-Antonin le seul homme
+puissant qui pût les protéger et les servir
+à l'occasion.</quote>
+      <quote>« Entre les deux candidats en présence,
+un homme raisonnable et sans parti pris ne
+saurait hésiter...»</quote>
+    </body>
+  </text>
+</TEI>
