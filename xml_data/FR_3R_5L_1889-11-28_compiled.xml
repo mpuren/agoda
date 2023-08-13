@@ -1,0 +1,2577 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model  href="agoda_schema.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="fr" xml:id="FR_3R_5L_1889-11-28_p0212">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main" xml:lang="fr">Journal officiel de la République française. Débats parlementaires</title>
+        <title type="main" xml:lang="en">Official Journal of the French Republic. Parliamentary debates</title>
+        <title type="sub" xml:lang="fr">Chambre des députés : compte rendu in-extenso</title>
+        <title type="sub" xml:lang="en">Chamber of Deputies: verbatim report</title>
+        <respStmt>
+          <persName>
+            <forename>Brunel</forename>
+            <surname>TCHEKELI</surname>
+            <ptr type="id-hal" target="Brunel TCHEKELI"/>
+            <ptr type="orcid" target="0000-0001-5452-3913"/>
+          </persName>
+          <resp xml:lang="fr">Transformation du JSON en XML-TEI et ajout automatique des balises TEI par des scripts Python</resp>
+          <resp xml:lang="en">Transformation from JSON to XML-TEI and automatic addition of TEI tags by Python scripts</resp>
+          <resp xml:lang="fr">TEI Header</resp>
+          <resp xml:lang="en">TEI Header</resp>
+        </respStmt>
+        <respStmt>
+          <persName>
+            <forename>Marie</forename>
+            <surname>PUREN</surname>
+            <ptr type="id-hal" target="Marie PUREN"/>
+            <ptr type="orcid" target="0000-0001-5452-3913"/>
+          </persName>
+          <resp xml:lang="fr">agoda_schema.rng</resp>
+          <resp xml:lang="en">agoda_schema.rng</resp>
+        </respStmt>
+        <meeting n=" 11" ana="#parla.lower&#10;#parla.sitting"> 11e séance</meeting>
+        <respStmt>
+          <persName>
+            <forename>Pierre</forename>
+            <surname>VERNUS</surname>
+            <ptr type="id-hal" target="Pierre VERNUS"/>
+            <ptr type="orcid" target="0000-0001-5452-3913"/>
+          </persName>
+          <resp xml:lang="fr">TEI Header</resp>
+          <resp xml:lang="en">TEI Header</resp>
+        </respStmt>
+        <funder>
+          <orgName xml:lang="fr">Bibliothèque nationale de France</orgName>
+          <orgName xml:lang="en">National Library of France</orgName>
+        </funder>
+        <meeting n=" 11" ana="#parla.lower&#10;#parla.sitting">COMPTE RENDU IN EXTENSO. — 11e SÉANCE</meeting>
+      </titleStmt>
+      <extent>
+        <measure quantity="1" xml:lang="fr">pages</measure>
+        <measure quantity="1" xml:lang="en">pages</measure>
+        <measure quantity="1" xml:lang="en">utterances</measure>
+        <measure quantity="1" xml:lang="en">words</measure>
+      </extent>
+      <publicationStmt>
+        <publisher>AGODA</publisher>
+        <authority>Bnf Datalab</authority>
+        <availability status="restricted" n="cc-by">
+          <licence target="https://creativecommons.org/licenses/by/4.0/"/>
+        </availability>
+        <date when="2023-07-24"/>
+      </publicationStmt>
+      <sourceDesc>
+        <biblFull>
+          <titleStmt>
+            <title>Journal officiel de la République française. Débats parlementaires.
+                            Chambre des députés : compte rendu in-extenso</title>
+          </titleStmt>
+          <publicationStmt>
+            <publisher xml:lang="fr"> </publisher>
+            <publisher xml:lang="en"> </publisher>
+            <pubPlace>
+              <location>
+                <country key="FR"/>
+                <settlement type="city">Paris</settlement>
+              </location>
+            </pubPlace>
+            <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1">Source gallica.bnf.fr / Bibliothèque nationale de France</distributor>
+            <availability>
+              <licence target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica" xml:lang="fr">
+                <p>Les contenus accessibles sur le site Gallica sont pour la plupart des reproductions numériques d'œuvres tombées dans le domaine public provenant des collections de la BnF.</p>
+                <p>Ces contenus sont considérés, en vertu du code des relations entre le public et l’administration, comme étant des informations publiques et leur réutilisation s'inscrit dans le cadre des dispositions prévues aux articles L. 321-1 à L. 327-1 de ce code.</p>
+              </licence>
+            </availability>
+          </publicationStmt>
+          <seriesStmt>
+            <title>Journal Officiel de la République française</title>
+            <biblScope>Débats parlementaires</biblScope>
+            <biblScope>Chambre des députés</biblScope>
+            <idno type="ISSN">1270-5942</idno>
+          </seriesStmt>
+        </biblFull>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p xml:lang="fr"><ref target="https://www.bnf.fr/fr/les-projets-de-recherche#bnf-agoda">AGODA </ref>est un projet qui a pour objectif de rendre disponible au format XML-TEI les textes de débats parlementaires à la Chambre des députés au cours de la Troisième République, suivant l'<ref target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_odd.xml">ODD </ref>défini pour le projet à partir des <ref target="https://github.com/clarin-eric/parla-clarin">recommandations produites par Parla-CLARIN. </ref> Dans une optique de preuve de concept, la phase 1 du projet AGODA se concentre plus particulièrement
+    sur la 5ème législature (1889-1893). Les textes encodés sont d'abord extraits des documents numérisés disponibles sur <ref target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item">Gallica,</ref> la bibliothèque numérique de la Biliothèque nationale de France, puis ils sont convertis 
+    en XML-TEI au moyen de scripts Python.</p>
+        <p xml:lang="en"><ref target="https://www.bnf.fr/fr/les-projets-de-recherche#bnf-agoda">AGODA </ref>is a project that aims to make available in XML-TEI format the texts of parliamentary debates in the
+    Chamber of Deputies during the Third Republic, following the<ref target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_odd.xml">ODD </ref> defined for the project from the <ref target="https://github.com/clarin-eric/parla-clarin"> Parla-CLARIN recommendations </ref> From a proof-of-concept perspective, phase 1 of the AGODA project focuses more specifically on the
+    5th legislature (1889-1893). The encoded texts are first extracted from the digitised documents available on <ref target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item">Gallica,</ref>  the digital library of the Biliothèque nationale de France, then they are converted into
+    XML-TEI using Python scripts.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fr">Français</language>
+      </langUsage>
+      <settingDesc>
+        <setting>
+          <name type="place">Palais Bourbon</name>
+          <name type="city"/>
+          <name type="country" key="FR"/>
+        </setting>
+      </settingDesc>
+    </profileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="sitting">
+        <pb n="195"/>
+        <!--SOMMAIRE-->
+        <div type="contents">
+          <list>
+            <item>Procès-verbal : M. Sentenac.</item>
+            <item>Dépôt, par M. le ministre de l'intérieur, de six
+projets de loi concernant les villes de Riom,
+de Grenoble et les communes de Tacoignières, de La Rabatelière, de Saint-Sulpice et
+Cameyrac, de Saint-Servais.</item>
+            <item>Dépôt, par M. le ministre des finances, de
+quatre projets de loi d'intérêt local, concernant des surtaxes aux octrois de Moutiers
+(Savoie), Mézières (Ardennes), Cleder (Finistére) et Belley (Ain).</item>
+            <item>Dépôt, par M. Siegfried et plusieurs de ses collègues, d'une proposition de loi tendant à organiser la représentation commerciale et industrielle.</item>
+            <item>Dépôt, par M. de La Martinière et plusieurs de
+ses collègues, d'une proposition de loi sur le
+remboursement des valeurs mobilières par
+voie de tirage au sort.</item>
+            <item>Dépôt, par M. Francois, au nom du 4e bureau,
+du rapport sur l'élection de la Réole (Gironde).</item>
+            <item>Dépôt, par M. le marquis de Villeneuve, au
+nom du 3e bureau, du rapport sur l'élection
+du 2e canton de l'arrondissement de Bergerac
+(Dordogne)</item>
+            <item>Dépot et lecture, par M. Moreau, d'une proposition de loi relative au timbre des récépissés
+de petite vitesse.</item>
+            <item>Scrutin pour la nomination de deux membres
+de la commission supérieure de la caisse nationale des retraites pour la vieillesse.</item>
+            <item>Présentation, par M. le ministre des finances.
+d'un projet de loi portant modification du
+régime fiscal en matière de successions et de
+donations entre vifs.</item>
+            <item>Scrutin pour la nomination de deux membres
+de la commission de surveillance des caisses
+d'amortissement et des dépôts et consignations.</item>
+            <item>Rapports d'élections, par MM. Thomas, Dubois
+(Corrèze), Linard, Lacroix (Loiret), Schneider, Le Hérissé, le marquis de Moustier, Delmas</item>
+            <item>Annonce, par M. le président, du résultat du
+scrutin pour la nomination de deux membres
+de la commission supérieure de la caisse nationale des retraites pour la vieillesse.— Proclamation de MM. Desmons et Audiffred
+comme membres de cette commission.</item>
+            <item>Annonce, par M. le président, du résultat du
+scrutin pour la nomination de deux membres de la commission de surveillance des
+caisses d'amortissement et des dépôts et consignations. — Proclamation de MM. Letellier
+et Jullien comme membres de cette commis-</item>
+            <item>Dépôt et lecture, par M. Bovier-Lapierre, d'une
+proposition de loi ayant pour objet de réprimer les atteintes portées à l'exercice des
+droits reconnus par la loi du 21 mars 1884 aux
+syndicats professionnels de patrons et d'ouvriers. — Demande d'urgence : M. le marquis
+de La Ferronnays. Adoption au scrutin.</item>
+            <item>Discussion des conclusions du rapport du 6e
+bureau sur l'élection de M. du Mesnildot dans
+l'arrondissement de Valognes (Manche) : MM.
+du Mesnildot, du Périer de Larsan, rapporteur. Adoption, au scrutin, des conclusions
+du bureau et invalidation de l'élection.</item>
+            <item>
+Discussion des conclusions du rapport du 5e bureau sur l'élection de M. Delahaye dans l'arrondissement de Chinon (Indre-et-Loire):
+MM. Delahaye, Legludic, rapporteur; Boissyd'Anglas, Godefroy Cavaignac, Chautemps,
+Pourquery de Boisserin, Jolibois, Camille Pelletan, Casimir-Perier. Renvoi au bureau.</item>
+            <item>Dépôt, par M. le ministre de l'intérieur,
+deux projets de loi d'intérêt local:</item>
+            <item>Le 1er, tendant à autoriser le département des
+Hautes-Alpes à emprunter une somme de
+113,000 fr. à la caisse des chemins vicinaux.</item>
+            <item>Le 2e, tendant à autoriser le département
+d'Ille-et-Vilaine à contracter à la caisse des
+chemins vicinaux un emprunt de 194,000 fr.
+</item>
+            <item>Dépot, par MM. Jolibois, Arthur Legrand et
+plusieurs de leurs collègues, d'une proposition de loi relative au dégrèvement de l'impôt foncier sur les propriétés non bâties dans
+les 42 départements surimposés.</item>
+            <item>Dépôt, par MM. Thellier de Poncheville et de
+La Martinière, d'une proposition de loi relative à l'indemnité de plus-value à payer aux
+fermiers sortants.</item>
+            <item>Dépot, par M. Macherez et plusieurs de ses
+collègues, d'une proposition de loi ayant pour
+objet la protection du travail national contre
+les étrangers.</item>
+            <item>Congés.</item>
+          </list>
+        </div>
+        <!--Partie_1-->
+        <div type="part" corresp="#pv">
+          <head>DÉPOT DE PROJETS DE LOI</head>
+        </div>
+        <!--Partie_2-->
+        <div type="part" corresp="#pv">
+          <head>DÉPOT DE PROPOSITIONS DE LOI</head>
+        </div>
+        <!--Partie_3-->
+        <div type="part" corresp="#pv">
+          <head>DÉPOT DE RAPPORTS D'ÉLECTIONS</head>
+        </div>
+        <!--Partie_4-->
+        <div type="part" corresp="#pv">
+          <head>DÉPOT D'UNE PROPOSITION DE LOI</head>
+        </div>
+        <!--Partie_5-->
+        <div type="part" corresp="#pv"><head>PRÉSIDENCE DE M. DE MAHY
+VICE-PRÉSIDENT</head><note xml:id="CR_1889-11-28_n1"><seg xml:id="s1">La séance est ouverte à deux heures.</seg></note><u><seg>M. Sentenac. C'est par erreur que je suis
+porté au Journal officiel comme m'étant
+«abstenu » dans le scrutin relatif à l'élection de la 1re circonscription de Lorient.</seg><seg>J'ai voté «pour» l'invalidation, c'est-àdire pour l'adoption des conclusions du bureau.</seg></u> <u><seg>M. le président. Il n'y a pas d'autre observation sur le procès-verbal ?...</seg></u> <note type="comment"><seg>M. Philipon, l'un des secrétaires, donne
+lecture du procès-verbal de la séance de
+mardi dernier.</seg></note> <u><seg>M. le président. J'ai reçu de M. le ministre de l'intérieur six projets de loi d'intérêt local:</seg><seg>Le 1er, tendant à autoriser la ville de Riom
+(Puy-de-Dôme) à emprunter 770,000 fr. et à
+s'imposer extraordinairement;</seg><seg>Le 2e, tendant à autoriser la ville de Grenoble (Isère) à emprunter une somme de
+400,000 fr.;</seg><seg>Le 3e, tendant à établir d'office sur la commune de Tacoignières (Seine-et-Oise) une
+imposition extraordinaire ;</seg><seg>Le 4e, tendant à établir d'office sur la commune de la Rabetelière (Vendée) une imposition extraordinaire ;</seg><seg>Le 5e, tendant à établir d'office une imposition extraordinaire sur la commune de
+Saint-Sulpice et Cameyrac (Gironde);</seg><seg>Le 6e, tendant à établir sur la commune
+de Saint-Servais (Finistère) une imposition
+extraordinaire.</seg><seg>J'ai reçu de M. le ministre des finances
+quatre projets de loi d'intérêt local:</seg><seg>Le 1er, portant prorogation et augmentation d'une surtaxe sur le vin et établissement d'une surtaxe sur l'alcool à l'octroi de
+Moutiers (Savoie);</seg><seg>Le 2e, portant prorogation et exhaussement d'une surtaxe perçue sur le vin à l'octroi de Mézières (Ardennes);</seg><seg>Le 3e, portant création de surtaxes sur le
+vin et sur l'alcool à l'octroi de Cléder (Finistère);</seg><seg>Le 4e, portant prorogation d'une surtaxe
+perçue sur le vin à l'octroi de Belley (Ain).</seg><seg>Les projets de loi seront imprimés, distribués et renvoyés à la commission d'intérêt local.</seg></u> <u><seg>M. le président. J'ai reçu de M. Siegfried
+et plusieurs de ses collègues une proposition de loi tendant à organiser la représentation commerciale et industrielle.</seg><seg>J'ai reçu de M. de La Martinière et plusieurs de ses collègues une proposition de
+loi sur le remboursement des valeurs mobilières par voie de tirage au sort.</seg><seg>Ces propositions seront imprimées, distribuées et renvoyées à la commission d'initiative parlementaire.</seg></u> <u><seg>M. François. J'ai l'honneur de déposer sur
+le bureau de la Chambre le rapport fait
+au nom du 4e bureau sur l'élection de M.
+Robert-Mitchell dans l'arrondissement de
+La Réole.</seg><seg>L'élection est contestée.</seg></u> <u><seg>M. le marquis de Villeneuve. J'ai l'honneur de déposer sur le bureau de la Chambre le rapport du 3e bureau sur les opérations électorales de la 2e circonscription de
+Bergerac.</seg><seg>L'élection est contestée.</seg></u> <u><seg>M. le président. Ces élections étant contestées, les rapports seront insérés au
+Journal officiel, et la discussion sera inscrite à la suite de l'ordre du jour.</seg></u> <u><seg>M. le président. M. Moreau a la parole
+pour le dépôt d'une proposition en faveur
+de laquelle il demande l'urgence.</seg></u> </div>
+        <!--Partie_6-->
+        <div type="part" corresp="#pv">
+          <head>EXCUSES. — DEMANDES DE CONGÉ</head>
+        </div>
+        <!--Partie_7-->
+        <div type="part" corresp="#pv">
+          <head>DÉPOT D'UN PROJET DE LOI</head>
+        </div>
+        <!--Partie_8-->
+        <div type="part" corresp="#pv"><head>SUITE DE LA VÉRIFICATION DES POUVOIRS</head><u><seg>M. Emile Moreau. J'ai l'honneur de déposer une proposition de loi pour laquelle
+je demande l'urgence. Elle concerne le
+timbre des récépissés de petite vitesse. En
+voici l'exposé des motifs :</seg><quote><pb n="196"/><seg>« Article unique. — Est suspendu l'effet
+du paragraphe de l'article 7 de la loi de
+finances du 18 juillet 1889, relatif au groupage et aux modifications qu'il apporte
+dans la perception du droit de timbre des
+récépissés.</seg><seg>« Art. 1er. — Quiconque sera convaincu
+d'avoir, par menaces de perte d'emploi ou
+de privation de travail, refus motivé d'embauchage, renvoi collectif d'ouvriers ou
+employés syndiqués, violences ou voies de
+fait, dons, offres ou promesses de travail,
+entravé ou troublé la liberté des associations syndicales professionnelles, ou empêché l'exercice des droits déterminés par
+la loi du 21 mars 1884, sera puni d'un emprisonnement d'un mois à trois mois et
+une amende de 100 à 2,000 fr.</seg></quote><seg>M. le président. L'ordre du jour appelle</seg><seg>Ont signé : MM. Emile Moreau, Reybert.</seg><seg>Messieurs, j'ai demandé l'urgence, et
+vous en comprenez la nécessité, puisque le
+droit doit être appliqué à partir du 1er janvier 1890. Seulement, je n'ai pas demandé
+la discussion immédiate, parce qu'il est
+absolument nécessaire de connaître l'opinion de M. le ministre du commerce, qui
+est le protecteur naturel des intérêts que
+je défends, et également l'opinion de M. le
+ministre des finances, qui a, lui, à défendre son budget de 1890.</seg></u> <u><seg>M. Yves Guyot, ministre des travaux publics. Voulez-vous me permettre de vous
+poser cette question : avez-vous prévenu
+M. le ministre du commerce et M. le ministre des finances que vous déposeriez aujourd'hui votre proposition en demandant
+l'urgence ?</seg></u> <u><seg>M. Emile Moreau. Je ne les ai pas prévenus et c'est pour cela que je demande
+que la discussion n'ait pas lieu immédiatement.</seg></u> <u><seg>M. le ministre des travaux publics. Permettez-moi de vous dire que, du moment
+que vous deviez demander l'urgence pour
+votre proposition, qui intéresse le ministre
+du commerce et le ministre des finances,
+comme vous venez de le dire, je crois que
+vous eussiez bien fait de les prévenir; ils
+auraient pu vous indiquer l'état exact de
+la question. Je vous prie, en conséquence,
+de vouloir bien ne pas insister sur la dede d'urgence.</seg></u> <u><seg>M. Emile Moreau. Je vous demande
+pardon; j'insiste d'autant plus sur l'urgence que la disposition en question sera
+exécutoire à partir du 1er janvier 1890; et s'il
+nous est démontré, en séance publique,
+qu'elle ne frappe pas de mort l'industrie
+dont je parle, nous n'insisterons pas; mais,
+jusqu'à présent, nous sommes absolument
+convaincus du contraire.</seg></u> <u><seg>M. le ministre des travaux publics. Je
+vous demande pardon d'insister; mais, quand
+on veut présenter au Parlement une proposition, il faut procéder d'une manière
+régulière, et le moins qu'on puisse faire
+est de prévenir les ministres intéressés.
+Vous déposez aujourd'hui une proposition
+qui concerne le ministre du commerce et
+le ministre des finances; je crois, je le répète, que vous eussiez bien fait de leur</seg><seg>Voulez-vous remettre le dépôt de votre
+proposition ainsi que la demande d'urgence
+à une prochaine séance?</seg></u> <u><seg>M. Emile Moreau. Parfaitement.</seg></u> <u><seg>M. Werquin. Je demande également le
+renvoi du dépôt de la proposition à lundi,
+afin d'avoir le temps de prévenir et de
+consulter MM. les ministres des travaux
+publics et des finances.</seg></u> <u><seg>M. le président. On propose de renvoyer
+à lundi le vote sur la demande d'urgence :
+l'auteur de la proposition se rallie-t-il à
+cette date ?</seg></u> <u><seg>M. Emile Moreau. Oui, monsieur le prédent.</seg></u> <u><seg>M. le président. Le vote sur la demande
+d'urgence est renvoyé à lundi.</seg></u> <u><seg>M. le président. M. Robert-Mitchell
+s'excuse de ne pouvoir assister à la séance
+de ce jour.</seg><seg>MM. Jules Maigne et Vilar s'excusent de
+ne pouvoir assister à la séance de ce jour
+et demandent des congés.</seg><seg>Les demandes seront renvoyées à la commission des congés.</seg></u> </div>
+        <!--Partie_9-->
+        <div type="part" corresp="#pv"><head>SCRUTIN POUR LA NOMINATION DE MEMBRES
+DE LA COMMISSION SUPÉRIEURE DE LA
+CAISSE NATIONALE DES RETRAITES POUR
+LA VIEILLESSE</head><u><seg>M. le président. L'ordre du jour appelle le scrutin pour la nomination de deux
+membres de la commission supérieure de
+la caisse nationale des retraites pour la
+vieillesse.</seg><seg>Avant d'ouvrir le scrutin, je vais procéder au tirage au sort des scrutateurs qui
+procéderont au dépouillement des suffrages.</seg><seg>Le sort désigne.</seg><seg>1er table: MM. Barbe, Boudenoot, Soubeyran (baron de).</seg><seg>2e table: MM. Lacroix, Mercier, Multedo
+(comte).</seg><seg>3e table: MM. Haynaut, Le Veillé, Lebaudy.</seg><seg>4e table: MM. Galpin (Gaston), Leygues,
+Pichon (Seine).</seg><seg>6e table: MM. Delpech, La Batut (de),
+Prost (Victor).</seg><seg>Scrutateurs supplémentaires :</seg><seg>MM. Balsan, Burdeau, Dubois (Corrèze),
+Revest, Sourigues, Turrel (Adolphe).</seg><seg>Le scrutin restera ouvert pendant une
+demi-heure.
+</seg></u> <note type="comment"><seg>Le procès-verbal est adopté.</seg></note> <u><seg>M. le président. La parole est à M. le
+ministre des finances.</seg></u> <u><seg>M. Maurice Rouvier, ministre des finances. J'ai l'honneur de déposer sur le bureau
+de la Chambre un projet de loi portant modification du régime fiscal en matière de
+successions et de donations entre-vifs.
+<incident><desc>(Très bien! très bien!)</desc></incident></seg></u> <u><seg>M. le président. Le projet de loi sera
+imprimé, distribué et renvoyé aux bureaux.</seg></u> </div>
+        <!--Partie_10-->
+        <div type="part" corresp="#pv"><head>SCRUTIN POUR LA NOMINATION DE DEUX
+MEMBRES DE LA COMMISSION DE SURVEILLANCE DES CAISSES D'AMORTISSEMENT ET
+DES DÉPOTS ET CONSIGNATIONS.
+</head><u><seg>Le scrutin est ouvert.</seg></u> <note type="comment"><seg>(Le scrutin, ouvert à deux heures trentecinq, est fermé à trois heures cinq. —
+MM. les scrutateurs se retirent dans une
+salle voisine pour procéder au dépouillement.)</seg></note> <u><seg>M. le président. L'ordre du jour appelle
+la suite de la vérification des pouvoirs.</seg><seg>La parole est à M. Thomas.</seg></u> <u><seg>M. Thomas, rapporteur. — Département
+de la Gironde, arrondissement de Bordeaux,
+4e circonscription.</seg><seg>Les élections du 22 septembre n'ont pas
+donné de résultat définitif.</seg><seg>Au scrutin de ballottage, le 6 octobre, le
+nombre des électeurs était de 30,27:</seg><seg>Le nombre des votants, de 23,089</seg><seg>Le nombre des suffrages exprimés, de
+22,851.</seg><seg>Ont obtenu</seg><table><row><cell>MMl. Ravnal................ 11.572 voix.
+Princeteau............. 11.254 —</cell></row></table><seg>M. Raynal, ayant obtenu 318 voix de plus
+que son concurrent, a été proclamé député.</seg><seg>Diverses protestations sont jointes au dossier. Quelques-unes ont été immédiatement
+écartées comme ne présentant aucun caractère sérieux. Ce sont, en effet, des questions
+posées par la voie de la presse et n'offrant
+pas un rapport direct avec l'élection.</seg><seg>Une protestation en apparence plus sérieuse signale la disparition de 280 bulletins annulés, et cela contrairement à la loi
+qui exige que les bulletins nuls soient annexés aux procès-verbaux.</seg><seg>Cette protestation a même été renouvelée
+dans une déposition verbale.</seg><seg>Or, l'examen du dossier permet de constater la présence de tous ces bulletins nuls.
+ll n'y a donc pas lieu de s'arrêter à ce
+grief.</seg><seg>Dans la commune de Saint-Aubin, M.
+Princeteau a obtenu 23 voix, et 32 électeurs
+déclarent avoir voté pour le candidat. Le
+secret du vote ne permet guère d'accepter
+une semblable déclaration.</seg><seg>Le préfet de la Gironde a fait afficher dans
+les communes de la circonscription le résultat du vote du 22 septembre avec la qualification des élus, mais sans le moindre
+commentaire.</seg><seg>Le maire d'Audenge a fait distribuer aux
+électeurs de la commune une circulaire
+imprimée en faveur de la candidature de
+M. Raynal. Elle reproduit les résultats du
+premier tour de scrutin contenus dans l'aftiche préfectorale.</seg><seg>Elle accuse le parti de la réaction de conduire à la guerre civile et à la guerre étrangère.</seg><seg>Peut-on attribuer à l'affiche de M. le préfet et à la circulaire du maire d'Audenge,
+le caractère officiel ? Quelques membres de
+la sous-commission le croyaient; les autres
+étaient d'un avis contraire. Le 4e bureau a
+partagé cette dernière opinion. En raison
+du peu d'importance des faits signalés par
+les autres protestations, tous ont pensé
+qu'il y avait lieu de passer outre.</seg><seg>Diverses protestations sont jointes au dossier. Quelques-unes ont été immédiatement
+écartées comme ne présentant aucun caractère sérieux. Ce sont, en effet, des questions
+posées par la voie de la presse et n'offrant
+pas un rapport direct avec l'élection.</seg><seg>Une protestation en apparence plus sérieuse signale la disparition de 280 bulletins annulés, et cela contrairement à la loi
+qui exige que les bulletins nuls soient annexés aux procès-verbaux.</seg><seg>Cette protestation a même été renouvelée
+dans une déposition verbale.</seg><seg>Or, l'examen du dossier permet de constater la présence de tous ces bulletins nuls.
+ll n'y a donc pas lieu de s'arrêter à ce
+grief.</seg><seg>Dans la commune de Saint-Aubin, M.
+Princeteau a obtenu 23 voix, et 32 électeurs
+déclarent avoir voté pour le candidat. Le
+secret du vote ne permet guère d'accepter
+une semblable déclaration.</seg><seg>Le préfet de la Gironde a fait afficher dans
+les communes de la circonscription le résultat du vote du 22 septembre avec la qualification des élus, mais sans le moindre
+commentaire.</seg><seg>Le maire d'Audenge a fait distribuer aux
+électeurs de la commune une circulaire
+imprimée en faveur de la candidature de
+M. Raynal. Elle reproduit les résultats du
+premier tour de scrutin contenus dans l'aftiche préfectorale.</seg><seg>Elle accuse le parti de la réaction de conduire à la guerre civile et à la guerre étrangère.</seg><seg>Peut-on attribuer à l'affiche de M. le préfet et à la circulaire du maire d'Audenge,
+le caractère officiel ? Quelques membres de
+la sous-commission le croyaient; les autres
+étaient d'un avis contraire. Le 4e bureau a
+partagé cette dernière opinion. En raison
+du peu d'importance des faits signalés par
+les autres protestations, tous ont pensé
+qu'il y avait lieu de passer outre.</seg><seg>En conséquence, au nom du 4e bureau,
+nous proposons à la Chambre de valider
+l'élection de M. Raynal, qui, ayant été député et ministre, remplit les conditions
+d'âge et de nationalité exigées par la loi.</seg></u> <note type="comment"><seg>(Le scrutin, ouvert à trois heures un
+quart, est clos à trois heures cinquante minutes. — MM. les scrutateurs en font le dépouillement.)</seg></note> <note type="comment"><seg>(Les conclusions du 4e bureau sont
+adoptées. — M. Raynal est admis.)</seg></note> <u><seg>5e table: MM. Dumonteil, Laville, Signard.</seg><pb n="197"/><seg>Les élections du 22 septembre ont donné
+les résultats suivants :</seg><seg>Electeurs inscrits, 3,489, dont le quart est
+de 872.</seg><table><row><cell>Nombre des votants, 2,912.
+Bulletins blancs et nuls, à déduire, 12.</cell></row></table><seg>Suffrages exprimés, 2,900, dont la majorité absolue est de 1,451.</seg><seg>M. Henry Fouquier a été proclamé député
+comme ayant réuni un nombre de voix au
+moins égal à la majorité absolue des suffrages exprimés et supérieur au quart des
+électeurs inscrits.</seg><seg>Les opérations se sont faites régulièrement.</seg><seg>Une protestation s'est produite. Elle
+émane de M. Liotard, le concurrent de
+M. Fouquier. Elle est basée sur différents
+motifs. M. Liotard conteste d'abord que la
+majorité absolue soit acquise à M. Fouquier. Suivant son calcul, il lui manquerait
+une voix.</seg><seg>Cette assertion n'est pas fondée.</seg><seg>Votre 1er bureau a procédé avec le plus
+grand soin à la vérification des procès-verbaux et il a dû reconnaître exacts les chiffres rectifiés du procès-verbal du recensement général. C'est bien 1,456 voix qu'il
+faut attribuer à M. Fouquier et 1,432 à
+M. Liotard.</seg><seg>La majorité calculée sur le chiffre des
+voix exprimées, et non, comme l'a fait
+M. Liotard, sur le nombre des votants, étant
+de 1,451, M. Fouquier, qui a 1,456 voix, a
+une majorité de 5 votes.</seg><seg>Cette majorité établie, votre 1er bureau
+s'est préoccupé de savoir si les griefs articulés par M. Liotard étaient de nature à la
+compromettre.</seg><seg>Il y en avait un surtout que le protestataire invoquait et représentait comme particulièrement grave : c'était la suppression
+opérée par le maire d'Enchastrayes, agissant de son autorité privée, de la section
+de vote de la Conchette, établie par arrêté
+préfectoral.</seg><seg>Votre per bureau s'est renseigné à ce sujet, et il a appris par une lettre de M. le
+préfet des Basses-Alpes, contenue au dossier, que cette fusion de section n'est pas
+une innovation, que la section de la Conchette, depuis douze ans, n'a constitue
+qu'une fois un bureau de vote et a habituellement voté à Enchastrayes.</seg><seg>La Conchette n'a que 9 électeurs : 6 ont
+pris part au vote, 1 s'est abstenu, 2 étaient
+absents.</seg><seg>La section n'a pas de liste électorale propre à elle et ses électeurs étaient convoqués pour le chef-lieu.</seg><seg>Ces faits ont démontré à votre bureau
+qu'il n'y avait pas eu manoeuvre et il a, à
+cette occasion, exprimé le désir que la section, si elle est inutile, soit supprimée, ou
+si elle subsiste, que le sectionnement reçoive son plein effet.</seg><seg>Quant aux autres faits allégués, de pression, d'intimidation, de corruption, faits,
+du reste, non suffisamment prouvés, votre
+1er bureau n'a pas cru qu'ils fussent de nature à vicier l'élection.</seg><seg>S'il y a eu irrégularité, il n'y a eu fraude
+nulle part. C'est pourquoi il vous propose
+la validation de l'élection de M. Henry Fouquier, qui a obtenu un nombre de voix au
+moins égal à la majorité absolue des suffrages exprimés et supérieur au quart de;
+inscrits</seg><table><row><cell>MM. Henry Fouquier........1.456 voix.
+Liotard, avoué........1.432 —
+Edauge.................4 —</cell></row></table><seg>M. Henry Fouquier a été proclamé député
+comme ayant réuni un nombre de voix au
+moins égal à la majorité absolue des suffrages exprimés et supérieur au quart des
+électeurs inscrits.</seg><seg>Les opérations se sont faites régulièrement.</seg><seg>Une protestation s'est produite. Elle
+émane de M. Liotard, le concurrent de
+M. Fouquier. Elle est basée sur différents
+motifs. M. Liotard conteste d'abord que la
+majorité absolue soit acquise à M. Fouquier. Suivant son calcul, il lui manquerait
+une voix.</seg><seg>Cette assertion n'est pas fondée.</seg><seg>Votre 1er bureau a procédé avec le plus
+grand soin à la vérification des procès-verbaux et il a dû reconnaître exacts les chiffres rectifiés du procès-verbal du recensement général. C'est bien 1,456 voix qu'il
+faut attribuer à M. Fouquier et 1,432 à
+M. Liotard.</seg><seg>La majorité calculée sur le chiffre des
+voix exprimées, et non, comme l'a fait
+M. Liotard, sur le nombre des votants, étant
+de 1,451, M. Fouquier, qui a 1,456 voix, a
+une majorité de 5 votes.</seg><seg>Cette majorité établie, votre 1er bureau
+s'est préoccupé de savoir si les griefs articulés par M. Liotard étaient de nature à la
+compromettre.</seg><seg>Il y en avait un surtout que le protestataire invoquait et représentait comme particulièrement grave : c'était la suppression
+opérée par le maire d'Enchastrayes, agissant de son autorité privée, de la section
+de vote de la Conchette, établie par arrêté
+préfectoral.</seg><seg>Votre per bureau s'est renseigné à ce sujet, et il a appris par une lettre de M. le
+préfet des Basses-Alpes, contenue au dossier, que cette fusion de section n'est pas
+une innovation, que la section de la Conchette, depuis douze ans, n'a constitue
+qu'une fois un bureau de vote et a habituellement voté à Enchastrayes.</seg><seg>La Conchette n'a que 9 électeurs : 6 ont
+pris part au vote, 1 s'est abstenu, 2 étaient
+absents.</seg><seg>La section n'a pas de liste électorale propre à elle et ses électeurs étaient convoqués pour le chef-lieu.</seg><seg>Ces faits ont démontré à votre bureau
+qu'il n'y avait pas eu manoeuvre et il a, à
+cette occasion, exprimé le désir que la section, si elle est inutile, soit supprimée, ou
+si elle subsiste, que le sectionnement reçoive son plein effet.</seg><seg>Quant aux autres faits allégués, de pression, d'intimidation, de corruption, faits,
+du reste, non suffisamment prouvés, votre
+1er bureau n'a pas cru qu'ils fussent de nature à vicier l'élection.</seg><seg>S'il y a eu irrégularité, il n'y a eu fraude
+nulle part. C'est pourquoi il vous propose
+la validation de l'élection de M. Henry Fouquier, qui a obtenu un nombre de voix au
+moins égal à la majorité absolue des suffrages exprimés et supérieur au quart de;
+inscrits</seg><seg>M. Henry Fouquier réunit les conditions
+d'âge et de nationalité exigées par la loi.</seg></u> <note type="comment"><seg>(L'opération a lieu.)</seg></note> <u><seg>M. Linard. J'ai l'honneur de déposer sur
+le bureau de la Chambre le rapport du
+11e bureau sur l'élection de la Cochinchine.</seg><seg>Cette élection est contestée.</seg></u> <u><seg>M. le président. M. Ternisien m'a fait
+connaître, en effet, qu'il avait l'intention de
+contester les conclusions du rapport du
+11e bureau.</seg><seg>Le rapport sera inséré au Journal officiel,
+à la suite du compte rendu de la séance, et
+la discussion de cette élection sera inscrite
+à l'ordre du jour.</seg></u> <u><seg>M. Lacroix, rapporteur. — Département
+de la Seine, 20e arrondissement de Paris,
+1re circonscription.</seg><seg>Les élections du 22 septembre 1889 ont
+donné les résultats suivants.</seg><seg>Electeurs inscrits, 13,056, dont le quart
+est de 3,264</seg><seg>Nombre des votants, 10,482.</seg><seg>Bulletins blancs et nuls, à déduire, 3.839.</seg><seg>Suffrages exprimés, 6,643, dont la majorité absolue est de 3,322.</seg><seg>Ont obtenu:</seg><table><row><cell>MM. Dumay....... 2.468 voix.
+Sigismond Lacroix...... 2.060 —
+Camélinat....1 .358 —
+Susini................. 592 —
+Blampain...... 132 —
+Valette........ 35 —</cell></row></table><seg>Bulletins n'entrant pas en compte, 3.829.</seg><seg>Nuls, 2.</seg><seg>Aucun candidat n'ayant réuni les conditions exigées pour être élu au 1er tour, il a
+été procédé le dimanche 6 octobre à un
+2e tour de scrutin qui a donné les résultats
+suivants :</seg><seg>Electeurs inscrits, 13,056.</seg><seg>Nombre des votants, 9,905.</seg><seg>Bulletins blancs et nuls, à déduire, 4,228.</seg><seg>Ont obtenu:</seg><seg>Votre 9e bureau, sans préjuger la question de principe, attendu que, quelle que
+soit la décision qui pourrait être prise à ce
+sujet, elle ne pouvait en rien modifier la
+majorité obtenue par M. Dumay, a décidé qu'il y avait lieu de proposer à la
+Chambre de valider son élection.</seg><seg>M. Dumay (Jean-Baptiste) a été proclamé
+député comme ayant réuni la majorité des
+suffrages exprimés.</seg><seg>Les opérations se sont faites régulièrement. Nulle protestation n'est jointe au
+dossier. M. Dumay (Jean-Baptiste), ayant
+déjà fait partie du conseil municipal de
+Paris, satisfait aux conditions d'âge et de
+nationalité exigées par la loi.</seg><seg>Nuls, 2.</seg><seg>Aucun candidat n'ayant réuni les conditions exigées pour être élu au 1er tour, il a
+été procédé le dimanche 6 octobre à un
+2e tour de scrutin qui a donné les résultats
+suivants :</seg><seg>Electeurs inscrits, 13,056.</seg><seg>Nombre des votants, 9,905.</seg><seg>Bulletins blancs et nuls, à déduire, 4,228.</seg><seg>Ont obtenu:</seg><table><row><cell>MM. Dumay (Jean-Baptiste)..... 5584 voix
+Blampain....... 72 —
+Sigismond Lacroix.... 7 —
+Susini....... 7 —
+Valette..... 1 —</cell></row></table><seg>Votre 9e bureau, sans préjuger la question de principe, attendu que, quelle que
+soit la décision qui pourrait être prise à ce
+sujet, elle ne pouvait en rien modifier la
+majorité obtenue par M. Dumay, a décidé qu'il y avait lieu de proposer à la
+Chambre de valider son élection.</seg><seg>M. Dumay (Jean-Baptiste) a été proclamé
+député comme ayant réuni la majorité des
+suffrages exprimés.</seg><seg>Les opérations se sont faites régulièrement. Nulle protestation n'est jointe au
+dossier. M. Dumay (Jean-Baptiste), ayant
+déjà fait partie du conseil municipal de
+Paris, satisfait aux conditions d'âge et de
+nationalité exigées par la loi.</seg><seg>Votre 9e bureau vous propose, en conséquence, de valider son élection.</seg></u> <note type="comment"><seg>(Les conclusions du 1er bureau sont adoptées. — M. Fouquier (Henry) est admis.)</seg></note> <u><seg>M. Henri Schneider, rapporteur. — Département de la Loire-Inférieure, arrondissement de Nantes, 2e circonscription.</seg><seg>Messieurs, votre 6e bureau a examiné la
+protestation déposée contre l'élection de M. Le Cour, dans la 2e circonscription de Nantes, nommé au 2e tour de scrutin.</seg><seg>Le 22 septembre, les chiffres étaient les suivants :</seg><seg>Electeurs inscrits, 18.378.</seg><seg>Nombre des votants, 14.098.</seg><seg>Suffrages exprimés, 13,979.</seg><seg>Sur lesquels obtenaient :</seg><table><row><cell>MM. Le Cour..... 3.648 voix.
+Van Iseghem.... 3.293 —
+Martin............... 3.308 —</cell></row></table><seg>Aucun des trois concurrents n'ayant obtenu la majorité absolue, il fallut recourir à
+un 2e tour de scrutin.</seg><seg>Le 6 octobre, les chiffres attribués respectivement à MM. Le Cour et Van Iseghem,
+restés seuls en présence, étaient de 6,957 et
+6,622 voix, soit une majorité de 335 voix en
+faveur du premier, qui fut proclamé.</seg><seg>C'est contre cette élection que s'élève une
+protestation présentée au nom :</seg><seg>Du comité de concentration républicaine de Nantes-</seg><seg>2° Du comité républicain du 3e canton de
+Nantes;</seg><seg>3° Du comité républicain du 4e canton de
+Nantes</seg><seg>De nombreuses pièces sont jointes au
+dossier, qui est assez volumineux.</seg><seg>Pour suivre les protestataires, votre bureau a examiné l'élection successivement à
+trois points de vue:</seg><seg>1° La régularité des opérations. — Aucune observation n'est présentée sur les
+opérations en elles-mêmes, au point de
+vue matériel des chiffres. Ils doivent donc
+être tenus pour bons et M. Le Cour a été à
+bon droit proclamé.</seg><seg>2° La qualité des électeurs. — Sous le
+titre : «Coalition avec les anarchistes », la
+protestation relève, contre le candidat élu,
+le fait qu'un assez grand nombre d'électeurs qui avaient voté au 1er tour pour M.
+Martin, candidat radical revisionniste, se
+sont rapprochés de lui au 2e tour. Sans entrer dans une discussion de principe à cet
+égard, et sans examiner si l'on doit demander compte aux électeurs de leurs opinions, votre bureau a été frappé de ce fait
+que les deux concurrents ayant fait, chacun de leur côté, appel à ces voix socialistes, la partie était égale entre eux, et la
+plainte des amis de l'un d'eux est assurément mal fondée. M. Le Cour, que nous
+avons interrogé, explique qu'il n'y a eu
+entre lui et ces électeurs ni compromis ni
+engagement d'aucun genre; qu'ils ont voté
+pour lui par suite de circonstances locales
+et d'un antagonisme contre une fraction de
+l'opinion républicaine remontant aux dernières élections municipales.</seg><seg>Nous devons rappeler, d'ailleurs, ici, que
+M. Le Cour porte un nom très connu des
+ouvriers du port et des chantiers de Nantes.
+Son père et lui-même, comme armateurs,
+ont eu des rapports constants avec cette population, et il a invoqué la part qu'il a prise
+tant à la Chambre des députés qu'au conseil général et à la chambre de commerce à
+la création du canal maritime et aux derniers grands travaux.</seg><seg>3° Corruption électorale. Nous pouvons
+classer sous deux chefs les faits allégués.</seg><seg>Le 6 octobre, les chiffres attribués respectivement à MM. Le Cour et Van Iseghem,
+restés seuls en présence, étaient de 6,957 et
+6,622 voix, soit une majorité de 335 voix en
+faveur du premier, qui fut proclamé.</seg><seg>C'est contre cette élection que s'élève une
+protestation présentée au nom :</seg><seg>Du comité de concentration républicaine de Nantes-</seg><seg>2° Du comité républicain du 3e canton de
+Nantes;</seg><seg>3° Du comité républicain du 4e canton de
+Nantes</seg><seg>De nombreuses pièces sont jointes au
+dossier, qui est assez volumineux.</seg><seg>Pour suivre les protestataires, votre bureau a examiné l'élection successivement à
+trois points de vue:</seg><seg>1° La régularité des opérations. — Aucune observation n'est présentée sur les
+opérations en elles-mêmes, au point de
+vue matériel des chiffres. Ils doivent donc
+être tenus pour bons et M. Le Cour a été à
+bon droit proclamé.</seg><seg>2° La qualité des électeurs. — Sous le
+titre : «Coalition avec les anarchistes », la
+protestation relève, contre le candidat élu,
+le fait qu'un assez grand nombre d'électeurs qui avaient voté au 1er tour pour M.
+Martin, candidat radical revisionniste, se
+sont rapprochés de lui au 2e tour. Sans entrer dans une discussion de principe à cet
+égard, et sans examiner si l'on doit demander compte aux électeurs de leurs opinions, votre bureau a été frappé de ce fait
+que les deux concurrents ayant fait, chacun de leur côté, appel à ces voix socialistes, la partie était égale entre eux, et la
+plainte des amis de l'un d'eux est assurément mal fondée. M. Le Cour, que nous
+avons interrogé, explique qu'il n'y a eu
+entre lui et ces électeurs ni compromis ni
+engagement d'aucun genre; qu'ils ont voté
+pour lui par suite de circonstances locales
+et d'un antagonisme contre une fraction de
+l'opinion républicaine remontant aux dernières élections municipales.</seg><seg>Nous devons rappeler, d'ailleurs, ici, que
+M. Le Cour porte un nom très connu des
+ouvriers du port et des chantiers de Nantes.
+Son père et lui-même, comme armateurs,
+ont eu des rapports constants avec cette population, et il a invoqué la part qu'il a prise
+tant à la Chambre des députés qu'au conseil général et à la chambre de commerce à
+la création du canal maritime et aux derniers grands travaux.</seg><seg>3° Corruption électorale. Nous pouvons
+classer sous deux chefs les faits allégués.</seg><seg>Offres de libations.—Un certain nombre de
+faits sont relevés, la plupart insignifiants;
+notre attention a été retenue par le fait de
+la Pigossière, propriété appartenant à M. le
+marquis de Ternay, conseiller général. A la
+suite d'une conférence faite le 15 septembre par M. Le Cour et après le départ du
+candidat, un certain nombre d'assistants se
+sont rendus au cellier, sur l'invitation de
+M. Chaucerel, négociant à Nantes et locataire de la maison de M. de Ternay, qui leur
+a offert effectivement à boire, ce qui, d'ailleurs, n'a rien que de très usuel dans un
+pays vinicole.</seg><seg>Ont obtenu :</seg><seg>Bulletins nuls ou voix perdues, 4,241.</seg><seg>Une seule observation a été présentée: il
+s'agissait de savoir si les voix comptées
+comme bulletins nuls ou voix perdues,
+s'élevant à 4,241, devaient être attribuées à
+M. Rochefort.</seg><seg>Suffrages exprimés, 5,677.</seg><pb n="198"/><seg>Un autre fait s'est produit au Croissant :
+à la suite de la conférence du 20 septembre,
+l'aubergiste s'est cru autorisé, à l'insu du
+candidat, à servir des consommations aux
+assistants et se les est fait régler ultérieurement par les organisateurs de la réunion.</seg><seg>D'autres faits de boissons sont allégués.
+Nous nous sommes reportés aux pièces, —
+il y en a deux sur chaque fait: — l'une
+émanant d'un tiers, qui affirme que des
+libations ont été offertes à telle ou telle
+occasion; l'autre, signée généralement du
+débitant lui-même, et toujours appuyée
+par la légalisation de l'autorité, niant le
+fait. Nous citerons les débitants Rousseau,
+Marais et Pineau, les prenant pour types.
+Nous citerons aussi le fait de la commune
+de Pont-Saint-Martin, où la protestation
+présente une pièce signée Pierre Guehenec,
+sans légalisation ni indication de domicile,
+alléguant que M. Le Cour avait fait publier,
+à la porte de l'église, qu'une barrique de
+«bon muscadet » était à la disposition des
+électeurs chez un nommé Godefroid, ou
+Geffroy, débitant au bourg. Cette allégation
+est formellement démentie par deux pièces:
+l'une, portant trente signatures d'électeurs, toutes légalisées; l'autre, fournie
+par la mairie elle-même, attestant qu'il
+n'existe dans la commune que six aubergistes, dont aucun ne porte ce nom.</seg><seg>Votre bureau a été d'avis d'écarter les
+faits de libations.</seg><seg>Les dons ou offres d'argent concernent le
+concierge et trois pensionnaires de l'hospice
+général de Saint-Jacques, auquel M. Le
+Cour reconnaît avoir distribué 7 fr. 50 le
+3 octobre, pendant une visite qu'il y fit,
+conformément à son habitude. Les faits relatifs à l'hospice sont établis par une lettre,
+légalisée, de M. Pichelin, avocat à Nantes ;
+par une déclaration, légalisée, de M. Thibaut Nicolière, ancien bâtonnier, membre
+du conseil municipal de Nantes, et président de la section de vote de Pirmil, où votaient les pensionnaires de l'hospice, et par
+une autre protestation, légalisée, signée par
+dix habitants voisins dudit hospice.</seg><seg>Quant à la distribution, à la porte de la
+section du quai Hoche, de pièces d'argent
+avec les bulletins Le Cour, elle n'est affirmée par aucune pièce au dossier et est démentie formellement par le témoignage des
+distributeurs de bulletins.</seg><seg>Dans l'enquête faite par les protestataires,
+on ne relève ni intervention du clergé ni
+faits de pression de la part des maires dans
+l'intérêt du candidat élu.</seg><seg>Les faits allégués doivent être écartés ou
+ramenés à des proportions insignifiantes,
+qui n'ont pu avoir aucune influence sur le
+résultat du scrutin</seg><seg>Nous avons examiné spécialement les
+faits Marchand et Martin. Le premier aurait été acheté par M. Le Cour, le second
+aurait été sollicité de se désister en faveur
+de M. Le Cour moyennant le payement de
+ses frais électoraux et d'une amende de
+10.000 fr. qu'il avait encourue.
+</seg><seg>Sur ce dernier fait, les protestataires n'apportent que les allégations de M. Guisteau,
+avocat, qui relate une conversation qu'il
+aurait eue avec M. Martin. D'autre part, M.
+Le Cour apporte la preuve que son beaupère, intermédiaire cité de la négociation,
+était absent de Nantes à l'époque où ces
+faits se seraient passés et où cette conversation aurait été tenue.</seg><seg>Quant à M. Marchand, il proteste contre
+le fait d'avoir tiré un profit pécuniaire personnel de l'influence qu'il exerçait sur les
+socialistes de Nantes; il produit un jugement condamnant pour diffamation quelqu'un qui le lui avait reproché. Ce fait de
+corruption doit donc être absolument écarté,
+l'attitude du parti socialiste de Nantes
+s'expliquant très nettement par les motifs
+que nous avons relatés plus haut.</seg><seg>Votre 6e bureau conclut à la validité de
+l'élection de M. Le Cour.</seg></u> <note type="comment"><seg>(Les conclusions du 9e bureau sont adoptées. — M. Dumay (Jean-Baptiste) est admis.)</seg></note> <u><seg>M. Le Hérissé, rapporteur. — Département de la Loire-Inférieure, arrondissement de Saint-Nazaire, 1re circonscription.</seg><seg>L'élection du 22 septembre n'ayant pas
+donné de résultat, il a été procédé, le 6 octobre, à un 2e tour de scrutin.</seg><seg>Les suffrages se sont alors répartis
+comme suit:
+</seg><seg>Electeurs inscrits, 23.322.</seg><seg>Nombre des votants. 17.003
+</seg><seg>Suffrages exprimés, 16,910.</seg><seg>Ont obtenu:</seg><table><row><cell>MM. Fidèle Simon........... 8.458 voix.
+Maillard. . . . . . . . . . . . . . 8.452 — 
+Divers et nuls.......... 93</cell></row></table><seg>Ces résultats sont ceux qui ont été proclamés à Saint-Nazaire après le travail de
+commission de recensement.</seg><seg>Le soir même du vote, les résultats transmis télégraphiquement à la préfecture
+donnaient M. Maillard comme élu avec une
+majorité de 66 voix d'abord, de 7 voix ensuite. Ces deux erreurs provenaient de ce
+que certaines sections de vote avaient indûment annulé des bulletins portant sur
+une bande gommée le nom de M. Fidèle
+Simon.</seg><seg>La commission de recensement, après
+avoir examiné ces différents bulletins annexés aux procès-verbaux, jugea qu'il y
+avait lieu d'ajouter 72 voix à M. Fidèle Simon, d'en ajouter 1 à M. Maillard et de lui
+en retrancher 1. M. Fidèle Simon fut alors
+proclamé député comme ayant obtenu sur
+son concurrent une majorité de 6 voix.</seg><seg>En présence d'un écart aussi faible entre
+les deux concurrents et aprês avoir examiné les protestations jointes au dossier,
+émanant de M. Maillard et d'électeurs de la
+circonscription, la sous-commission du
+6e bureau a cru devoir tout d'abord procéder à un nouveau pointage des suffrages
+attribués à chacun des candidats.</seg><seg>Elle a examiné avec le plus grand soin
+tous les bulletins annulés par les bureaux
+des différentes sections. Ce travail n'a plus
+laisser subsister en faveur de M. Fidèle
+Simon qu'une majorité de 4 voix.</seg><seg>Une protestation signée des citoyens qui
+ont fait partie du bureau de la commune
+de Guérande accuse l'administration préfectorale d'avoir modifié, en les grattant ou
+en les raturant, un certain nombre de bulletins annulés à l'unanimité par le bureau
+lors du dépouillement.</seg><seg>Ces bulletins ainsi modifiés auraient été
+attribués à M. Fidèle Simon par la commission de recensement.</seg><seg>Nous laisserons, si vous le voulez bien, de
+côté ce que M. Maillard appelle la pression
+administrative. M. Fidèle Simon, dans sa
+contre-protestation, y a répondu suffisamment en faisant ressortir, avec pièces à
+l'appui, combien a été puissante l'action
+exercée par le clergé et par certains propriétaires et patrons.</seg><seg>Le fait seul pour un candidat dit officiel
+d'en être réduit à avoir recours aux bandes
+gommées pour assurer la liberté et la sincérité du vote, montre bien que de part et
+d'autre chacun a fait tout le possible pour
+le triomphe de la cause dont il était le
+champion et que si ces actions contraires,
+blâmables à coup sûr, se sont produites,
+elles ont dû réciproquement s'annuler.</seg><seg>Un seul fait repréhensible peut être relevé
+contre M. Fidèle Simon : c'est l'affichage
+dans la commune de Mesquer d'un appel
+aux habitants signé d'un groupe d'électeurs
+et visé par M. Fidèle Simon.</seg><seg>Dans cet appel, on affirme que M. Fidèle
+Simon s'est engagé à faire donner un secours d'au moins 10,000 fr. pour la construction de l'église, et on accuse faussement M. Maillard d'avoir acheté des sels
+étrangers, au détriment du commerce local.</seg><seg>L'influence de cette affiche dans une
+commune qui a donné, dès le 22 septembre,
+à M. Simon une immense majorité a été à
+peu près nulle. Si au 2e tour M. Simon a
+eu à Mesquer une majorité plus considérable, c'est que le nombre des votants a été
+plus grand le 6 octobre que le 22 septembre.</seg><seg>De plus, M. Simon déclare avoir ignoré
+cette affiche, qui a été apposée à la dernière heure, sans que son visa lui ait été
+demandé.</seg><seg>Votre 6e bureau n'a donc pas jugé que
+l'apposition de ce placard ait pu fausser le
+résultat de l'élection dans la commune de
+Mesquer; il a décidé qu'il n'y avait pas
+plus lieu de s'arrêter à ce grief qu'aux précédents.</seg><seg>Il pense que la majorité numérique étant
+acquise à M. Fidèle Simon, la Chambre ne
+doit point tenir compte de toutes les protestations et contre-protestations jointes
+au dossier, estimant que dans la lutte ardente qui a eu lieu dans cette circonscription, chacun des candidats a mis en oeuvre,
+avec une entière bonne foi, tous les moyens
+d'action qu'il pouvait avoir à sa disposition.</seg><seg>Le suffrage universel s'est prononcé,
+notre devoir est de nous incliner devant
+son verdict; et, malgré le petit nombre de
+voix qui sépare les deux candidats, votre
+6e bureau m'a chargé de vous demander la
+validation des opérations électorales du 6 octobre dans la circonscription de Saint-Nazaire et l'admission de M. Fidèle Simon qui,
+ayant déjà fait partie des Assemblées législatives, remplit d'ailleurs les conditions
+d'éligibilité exigées par la loi. <incident><desc>(Très bien!
+à droite.)</desc></incident></seg></u> <u><seg>Le suffrage universel s'est prononcé,
+notre devoir est de nous incliner devant
+son verdict; et, malgré le petit nombre de
+voix qui sépare les deux candidats, votre
+6e bureau m'a chargé de vous demander la
+validation des opérations électorales du 6 octobre dans la circonscription de Saint-Nazaire et l'admission de M. Fidèle Simon qui,
+ayant déjà fait partie des Assemblées législatives, remplit d'ailleurs les conditions
+d'éligibilité exigées par la loi. <incident><desc>(Très bien!
+à droite.)</desc></incident></seg></u> <u><seg>Quelle que soit la gravité d'une telle accusation portée contre l'administration, la
+majorité de votre bureau n'a pas cru devoir la retenir. Elle a pensé que pour tous
+ceux qui ont suivi de près la dernière campagne électorale, il n'est point douteux que
+l'administration a su se mettre au-dessus
+des luttes des partis et, quelles que fussent ses préférences, conserver la neutralité la plus absolue... en ce qui concerne
+du moins l'attribution des suffrages. <incident><desc>(Rires
+ironiques à droite et sur quelques bancs à
+l'extrémité gauche de la salle. — Rumeurs
+à gauche et au centre.)</desc></incident></seg><seg>Je vous ferai observer, messieurs, que je
+suis ici l'interprète du 6e bureau et je n'ai
+pas besoin de vous dire que ce n'est pas
+mon opinion personnelle que j'expose. <incident><desc>(Nouveaux rires sur les mêmes bancs.)</desc></incident></seg><seg>Le suffrage universel s'est prononcé,
+notre devoir est de nous incliner devant
+son verdict; et, malgré le petit nombre de
+voix qui sépare les deux candidats, votre
+6e bureau m'a chargé de vous demander la
+validation des opérations électorales du 6 octobre dans la circonscription de Saint-Nazaire et l'admission de M. Fidèle Simon qui,
+ayant déjà fait partie des Assemblées législatives, remplit d'ailleurs les conditions
+d'éligibilité exigées par la loi. <incident><desc>(Très bien!
+à droite.)</desc></incident></seg></u> <note type="comment"><seg>(Les conclusions du 6e bureau sont adoptées. — M. Le Cour est admis.)</seg></note> <u><seg>M. le marquis de Moustier, rapporteur.
+— Département de la Loire-Inférieure, arrondissement de Saint-Nazaire, 2e circonscription.</seg><seg>Les élections du 22 septembre ont donné
+les résultats suivants:</seg><seg>Electeurs inscrits, 22,358, dont le quar
+est de 5,590.</seg><seg>Nombre des votants, 16.177.</seg><seg>Bulletins blancs et nuls, à déduire, 103.</seg><seg>Suffrages exprimés, 16,074, dont la majorité absolue est de 8.038.</seg><pb n="199"/><seg>Ont obtenu:</seg><seg>Ont obtenu:</seg><table><row><cell>MM. Jules de Lareinty
+Amaury Simon.........
+8.189 voix.
+7.899</cell></row></table><seg>M. Jules de Lareinty a été proclamé député comme ayant réuni un nombre de
+voix au moins égal à la majorité absolue
+des suffrages exprimés et supérieur au
+quart des électeurs inscrits.</seg><seg>Cependant, M. Amaury Simon, concurrent de M. de Lareinty, a protesté contre
+les résultats de l'élection par une lettre du
+5 novembre, et un bordereau considérable
+de pièces à l'appui a été déposé par lui
+quelques jours plus tard, sur la demande
+expresse du 6e bureau, auquel un examen
+sommaire des faits articulés dans la première lettre de protestation avait laissé
+quelques doutes sur leur gravité.</seg><seg>Après un examen attentif de ce nouveau
+dossier, la sous-commission du 6e bureau
+a acquis la conviction que quatre des faits
+articulés dans la protestation méritaient
+seuls de retenir son attention.</seg><seg>Elle a, sur ces quatre griefs, entendu contradictoirement les intéressés. Voici le résultat de l'examen auquel elle s'est livrée :</seg><seg>1er grief. — Une altercation violente s'est
+produite dans le bureau électoral de la commune d'Herbignac, chef-lieu de canton important, vers dix heures du matin, entre
+certains membres du bureau et le premier
+adjoint de cette localité. Au dire de la protestation, cette altercation aurait été publique et à un tel point violente que, le premier adjoint d'Herbignac, favorable à M.
+Amaury Simon, se serait retiré sans voter.</seg><seg>Sur ce premier fait, M. Amaury Simon
+apporte le récit de la scène, telle que l'a
+écrite, d'après des témoignages recueillis
+sur place, un agent électoral de M. A. Simon. Dans sa déposition, tout en attribuant
+une grande importance à ce fait, qui lui
+aurait causé le plus grand tort, M. Amaury
+Simon n'a apporté aucun document ni renseignement nouveau. M. de Lareinty, interrogé de son côté, dépose deux attestations, l'une du maire d'Herbignac lui-même,
+président du bureau électoral, et la seconde
+de trois membres de ce même bureau,
+constatant, d'une part, que la discussion
+n'a pas eu de gravité, puisqu'elle se passait
+vers dix heures du matin, c'est-à-dire pendant la grand'messe, et qu'il n'y avait en
+dehors des membres du bureau qu'un seul
+électeur présent, et que, d'autre part, l'explication a été très froide et très brève. Il
+s'agissait simplement, pour un des membres
+les plus influents du bureau, de protester
+contre l'abus que l'on aurait fait de son
+nom en faveur de la candidature Simon,
+fait qu'il se croyait en droit de reprocher
+au premier adjoint d'Herbignac.</seg><seg>Ramenés à ces proportions, les faits semblent échapper complètement à notre critique.</seg><seg>2e grief. — Distribution de bons à boire,
+par M. Le Tilly, fils du maire d'Asserac.
+Dans sa première protestation, M. Amaury
+Simon déclare que M. Le Tilly, fils du maire
+d'Asserac, se tenait à la porte du scrutin et
+là examinait les bulletins de ceux qui allaient voter et leur distribuait des bons
+d'une valeur de 0 fr. 20 pour aller boire
+dans les auberges du village.</seg><seg>M. de Lareinty, appelé à s'expliquer sur
+ces faits, avoue qu'il ne peut que les regretter et les réprouver, mais qu'ils se sont produits à son insu. Il montre d'ailleurs, par
+des certificats joints au dossier, que les
+agents de M. Amaury Simon ont également
+facilité, après le vote, des libations analogues qui, dans certaines communes, paraissent très malheureusement passées
+dans les usages</seg><seg>Il faut d'ailleurs remarquer que l'agent de
+M. de Lareinty déclare avoir fait cette distribution, après le vote, aux électeurs qui
+avaient déjà voté et à distance du lieu du
+scrutin. Si cette déclaration diffère de celle
+produite par M. Amaury Simon dans sa
+première déclaration, elle ne s'écarte pas,
+en réalité, de la protestation jointe par lui
+aux pièces à l'appui et que nous avons analysée plus haut. Quelle que soit donc la sévérité avec laquelle il convient de juger de
+pareils usages, qu'il serait profondément
+regrettable de voir se généraliser dans les
+moeurs électorales, il n'y a pas lieu de penser que, dans l'espèce, ce fait ait influé sur
+les résultats du scrutin.</seg><seg>3e grief. — Il résulterait d'une lettre du
+maire de Blain, jointe au dossier, que les
+mêmes faits de libations se seraient produits à Blain, où, au dire du maire, les aubergistes auraient reçu l'ordre de M. de Lareinty de servir à manger et à boire à tous
+les électeurs qui entreraient chez eux. M. de
+Lareinty dépose au dossier des protestations et des quittances constatant au contraire que, dans les auberges de Blain, les
+seules dépenses soldées par lui ont été
+celles de ses distributeurs.</seg><seg>4e grief. —Publications faites par les gardes champêtres le jour du vote. Le samedi
+21 septembre, dans la journée, M. de Lareinty reçut avis qu'une lettre extraite du
+journal le Progrès (de la Loire-Inférieure)
+était distribuée à profusion par les agents
+de M. Amaury Simon; cette lettre, se rapportant aux faits d'un procès où des intérêts privés étaient seuls en jeu, contenait
+vis-à-vis de M. de Lareinty des accusations
+absolument calomnieuses et de nature à
+nuire à son élection et même à sa réputation personnelle. Sous l'émotion que lui
+causa cette manouvre, dont M. Amaury Simon a lui-même cru devoir décliner la responsabilité en déclarant qu'elle avait été
+faite à son insu et qu'il la désapprouvait
+absolument, M. de Lareinty fit publier dans
+un certain nombre de communes, par les
+gardes champêtres, c'est-à-dire par le seul
+moyen rapide de publicité qui restât à sa
+disposition avant le scrutin, un démenti
+dans des termes vifs, où il menaçait de
+poursuites l'auteur ou les complices de ces
+calomnies.</seg><seg>M. Amaury Simon insiste vivement sur
+ce fait de la publication d'un document
+comminatoire par les gardes champêtres et
+prétend s'appuyer sur une décision du conseil d'Etat pour établir que les faits d'annonces faites au profit d'un candidat par les
+gardes champêtres sont de nature à vicier
+une élection et à la faire annuler. Dans le
+cas qui nous occupe, les gardes champêtres
+ont agi en qualité de crieurs publics, et
+l'emploi qu'en a fait M. de Lareinty paraît
+avoir été parfaitement légitime. Il résulte,
+en effet, d'attestations qu'il apporte à la
+commission que partout où il a fait usage
+de ce moyen de publicité le garde champêtre est crieur public et, comme tel,
+chargé de faire toutes les annonces, ce que
+M. Amaury Simon ne conteste pas luimême.</seg></u> <u/> <note type="comment"><seg>(Les conclusions du 6e bureau sont adoptées. — M. Fidèle Simon est admis.)</seg></note> <u><seg>M. Delmas, rapporteur. — Département
+de la Seine, arrondissement de Sceaux, 3e
+circonscription.)</seg><seg>Aucun des candidats n'ayant réuni les
+conditions exigées pour être élu au 1er tour
+de scrutin, il a été procédé, le 6 octobre, à
+un 2e tour qui a donné les résultats suivants:</seg><seg>Electeurs inscrits, 14,256.</seg><seg>Nombre des votants, 10,474.</seg><seg>Suffrages exprimés, 10,332.</seg><table><row><cell>MM. Richard (Pierre-Marie)... 5 310 voix.
+Lefèvre...... 4.963 —
+Pinta.... 31 —
+Tard..... 4 —
+Marot..... 4 —</cell></row></table><seg>M. Pierre Richard a été proclamé député
+comme ayant réuni le plus grand nombre
+de voix.</seg><seg>Toutefois, deux protestations sont jointes
+au dossier.</seg><seg>L'une, signée de 35 électeurs dont la signature n'est pas légalisée, signale que les
+affiches du candidat républicain, M. Lefèvre, auraient été recouvertes par les affiches du candidat boulangiste, M. Richard ;
+que des faits de pression auraient été exercés sur le personnel civil de la cartoucherie et du fort de Vincennes; que de l'argent
+aurait été distribué à des agents pour organiser la propagande; qu'un journal, le Patriote, aurait accusé M. Lefèvre de s'être compromis dans des sociétés véreuses; qu'une
+affiche, apposée dans la matinée du 6 octobre, signée par un sieur Lacoste au nom
+d'un prétendu groupe de travailleurs socialistes, aurait annoncé faussement le désistement d'un candidat du 1er tour en faveur
+de M. Richard; que M. Richard n'ayant obtenu que 357 voix de majorité, tous ces
+faits peuvent avoir altéré la sincérité de l'élection.</seg><seg>Une deuxième protestation émanant du
+sieur Henry, secrétaire civil à la direction
+d'artillerie de Vincennes, estime qu'il y a
+eu embauchage, pression, intimidation et
+corruption.</seg><seg>Enfin viennent à l'appui de cette protestation deux déclarations de citoyens affirmant avoir entendu ou avoir ouï dire que
+deux électeurs, dont on ne donne pas le
+nom, auraient reçu de l'argent pour voter
+pour M. Richard</seg><seg>Votre 9e bureau, après avoir examiné ces
+documents, est d'avis qu'ils ne présentent
+pas un caractère d'authenticité suffisant,
+ne constituent pas des preuves certaines et
+au surplus ne pourraient avoir eu pour
+effet de modifier le résultat de l'élection.</seg><seg>Les opérations se sont faites régulièrement.</seg><seg>Toutefois, deux protestations sont jointes
+au dossier.</seg><seg>L'une, signée de 35 électeurs dont la signature n'est pas légalisée, signale que les
+affiches du candidat républicain, M. Lefèvre, auraient été recouvertes par les affiches du candidat boulangiste, M. Richard ;
+que des faits de pression auraient été exercés sur le personnel civil de la cartoucherie et du fort de Vincennes; que de l'argent
+aurait été distribué à des agents pour organiser la propagande; qu'un journal, le Patriote, aurait accusé M. Lefèvre de s'être compromis dans des sociétés véreuses; qu'une
+affiche, apposée dans la matinée du 6 octobre, signée par un sieur Lacoste au nom
+d'un prétendu groupe de travailleurs socialistes, aurait annoncé faussement le désistement d'un candidat du 1er tour en faveur
+de M. Richard; que M. Richard n'ayant obtenu que 357 voix de majorité, tous ces
+faits peuvent avoir altéré la sincérité de l'élection.</seg><seg>Une deuxième protestation émanant du
+sieur Henry, secrétaire civil à la direction
+d'artillerie de Vincennes, estime qu'il y a
+eu embauchage, pression, intimidation et
+corruption.</seg><seg>Enfin viennent à l'appui de cette protestation deux déclarations de citoyens affirmant avoir entendu ou avoir ouï dire que
+deux électeurs, dont on ne donne pas le
+nom, auraient reçu de l'argent pour voter
+pour M. Richard</seg><seg>Votre 9e bureau, après avoir examiné ces
+documents, est d'avis qu'ils ne présentent
+pas un caractère d'authenticité suffisant,
+ne constituent pas des preuves certaines et
+au surplus ne pourraient avoir eu pour
+effet de modifier le résultat de l'élection.</seg><seg>En conséquence, M. Richard satisfaisant
+aux conditions d'âge et de nationalité exigées par la loi, votre 9e bureau vous propose de valider son élection.</seg></u> <note type="comment"><seg>(Les conclusions du 6e bureau sont mises
+aux voix et adoptées. — M. Jules de Lareinty est admis.)</seg></note> <pb n="200"/></div>
+        <!--Partie_11-->
+        <div type="part" corresp="#pv">
+          <head>DÉPÔT D'UNE PROPOSITION DE LOI</head>
+        </div>
+        <!--Partie_12-->
+        <div type="part" corresp="#pv"><head>RÉSULTAT DES SCRUTINS POUR LA NOMINATION DE MEMBRES DE LA COMMISSION DE
+LA CAISSE DES RETRAITES ET DE LA COMMISSION DE SURVEILLANCE DE LA CAISSE
+DES DÉPÔTS ET CONSIGNATIONS</head><u><seg>M. le président. Voici, messieurs, le résultat du dépouillement du scrutin pour la
+nomination de deux membres de la commission supérieure de la caisse nationale
+des retraites pour la vieillesse :</seg><table><row><cell>Nombre des votants.... 291
+Bulletin blanc ou nul......... 50
+Snffrages exprimés........... 290
+Majorité absolue.. .. . . . 146</cell></row></table><seg>Ont obtenus : </seg><seg>MM. Desmons et Audiffred, ayant obtenu
+la majorité absolue des suffrages, je les
+proclame membres de la commission supérieure de la caisse nationale des retraites
+pour la vieillesse.</seg><seg>Voici maintenant le résultat du dépouillement du scrutin pour la nomination de
+deux membres de la commission de surveillance des Caisses d'amortissement et
+des dépôts et consignations :</seg><seg>Nombre des votants 293.</seg><seg>Bulletins blancs ou nuls, 11.</seg><seg>Suffrages exprimés, 282.</seg><seg>Majorité absolue, 142.</seg><table><row><cell>MM. Desmons............. 237 suffrages.
+Audiffred............. 216 — </cell></row></table><seg>MM. Desmons et Audiffred, ayant obtenu
+la majorité absolue des suffrages, je les
+proclame membres de la commission supérieure de la caisse nationale des retraites
+pour la vieillesse.</seg><seg>Voici maintenant le résultat du dépouillement du scrutin pour la nomination de
+deux membres de la commission de surveillance des Caisses d'amortissement et
+des dépôts et consignations :</seg><seg>Nombre des votants 293.</seg><seg>Bulletins blancs ou nuls, 11.</seg><seg>Suffrages exprimés, 282.</seg><seg>Majorité absolue, 142.</seg><table><row><cell>MM. Letellier......... 230 suffrages;
+Jullien.......... 221 — </cell></row></table><seg>MM. Letellier et Jullien, ayant obtenu la
+majorité des suffrages, je les proclame
+membres de la commission de surveillance
+des Caisses d'amortissement et des dépôts
+et consignations.</seg></u> <u><seg>M. le président. La parole est à M. Bovier-Lapierre, pour le dépôt d'une proposition de loi.</seg></u> <u><seg>M. Bovier-Lapierre. J'ai l'honneur de
+déposer une proposition de loi, pour laquelle je prie la Chambre de vouloir bien
+déclarer l'urgence.</seg></u> <u><seg>M. le président. Veuillez donner lecture
+de l'exposé des motifs de votre proposition.</seg></u> <u><seg>M. Bovier-Lapierre. Messieurs, dans sa
+séance du 17 mai dernier, la Chambre, sur
+le rapport de notre collègue M. Lagrange,
+avait voté les dispositions suivantes, additionnelles à la loi du 21 mars 1884 sur les
+syndicats professionnels de patrons et d'ouvriers</seg><quote><seg>« Art. 2. — Les dispositions de l'article
+463 du code pénal pourront être appliquées
+aux pénalités édictées par l'article 1er de la
+présente loi.»</seg><seg>« Electeurs, le moment est décisif. Vons
+allez déposer votre bulletin dans l'urne; auparavant, réfléchissez.</seg></quote><seg>Nous avions demandé cette sanction pénale à la loí du 21 mars 1884, dès le début
+de la précédente législature. Notre proposition de loi avait été l'objet de l'examen des
+bureaux de la Chambre, et, lors de la discussion en séance publique, elle avait été
+l'occasion de débats approfondis.</seg><seg>La loi votée par la Chambre fut transmise au Sénat; une commission fut nommée et un amendement déposé par M. le
+sénateur Martin, un des membres de la
+commission</seg><seg>Cependant, le rapport de la commission
+ne put être déposé sur le bureau du Sénat
+avant l'expiration de nos pouvoirs. Aux
+termes de la jurisprudence actuelle de la
+seconde Chambre, nous sommes dans la
+nécessité de reprendre notre proposition de
+loi et de la soumettre à l'examen de la nouvelle législature.</seg><seg>Messieurs, il importe d'assurer l'exécution de la loi du 21 mars 1884 et l'exercice
+du droit nouveau de libre association qu'elle
+a consacré. Un oubli des rédacteurs de
+cette loi ne saurait plus longtemps servir
+de prétexte ou d'encouragement à des
+manoeuvres qui l'énervent et la paralysent.</seg><seg>La loi votée par la Chambre fut transmise au Sénat; une commission fut nommée et un amendement déposé par M. le
+sénateur Martin, un des membres de la
+commission</seg><seg>Cependant, le rapport de la commission
+ne put être déposé sur le bureau du Sénat
+avant l'expiration de nos pouvoirs. Aux
+termes de la jurisprudence actuelle de la
+seconde Chambre, nous sommes dans la
+nécessité de reprendre notre proposition de
+loi et de la soumettre à l'examen de la nouvelle législature.</seg><seg>Messieurs, il importe d'assurer l'exécution de la loi du 21 mars 1884 et l'exercice
+du droit nouveau de libre association qu'elle
+a consacré. Un oubli des rédacteurs de
+cette loi ne saurait plus longtemps servir
+de prétexte ou d'encouragement à des
+manoeuvres qui l'énervent et la paralysent.</seg><seg>Et, considérant que les débats qui ont eu
+lieu devant la Chambre précédente équivalent à l'examen nouveau auquel pourrait
+procéder la commission d'initiative, je vous
+demande, messieurs, de vouloir bien déclarer l'urgence sur ma proposition de loi.
+La déclaration d'urgence n'aura d'autre résultat que de renvoyer directement ma
+proposition aux bureaux, pour la nomination d'une commission spéciale.</seg></u> <u><seg>M. Léon Say. Cela est inadmissible !
+nous sommes 270 membres nouveaux dans
+cette Chambre, qui n'avons pas pris part
+aux discussions premières.</seg></u> <u><seg>M. le président. M. Bovier-Lapierre demande la déclaration d'urgence pour la proposition de loi dont il vient de donner lecture. Y a-t-il opposition ?</seg></u> <u><seg>M. Léon Say. Je voudrais faire cette seule
+observation : La Chambre actuelle comprend
+à peu près la moitié de membres nouveaux,
+qui, par conséquent, n'ont pas pris part
+aux délibérations auxquelles M. Bovier-Lapierre vient de faire allusion. Y a-t-il lieu
+de supprimer la garantie des deux délibérations pour toutes les propositions qui ont
+déjà été discutées par la précédente Chambre ? Je crois que ce serait imprudent; ce
+serait une mauvaise méthode de travail.
+<incident><desc>(Aux voix! aux voix!)</desc></incident></seg></u> <u><seg>Plusieurs membres à gauche. La question
+est connue !</seg></u> <u><seg>M. le président. Permettez-moi, messieurs, de faire observer, sans entrer dans
+le fond du débat, que M. Bovier-Lapierre
+demande l'urgence uniquement pour épargner à une proposition déjà votée par la
+Chambre précédente le renvoi devant la
+commission d'initiative parlementaire.</seg></u> <u><seg>M. Léon Say. La déclaration d'urgence
+aurait pour conséquence la suppression
+d'une des deux délibérations. <incident><desc>(Bruit à
+gauche.)</desc></incident></seg></u> <u><seg>M. Bovier-Lapierre. La discussion sur
+le fond est absolument réservée. Ce que je
+demande à la Chambre, pour cette proposition de loi qui a été déjà l'objet de longues
+délibérations dans la précédente législature,
+c'est de vouloir bien décider qu'elle sera
+renvoyée directement aux bureaux pour la
+nomination d'une commission qui aura à
+en examiner le fond. <incident><desc>(Très bien! très bien!
+à gauche. — Aux voix!)</desc></incident></seg></u> <u><seg>M. Léon Say. Est-ce que ce ne serait pas
+en même temps décider qu'il n'y aura
+qu'une seule délibération ? <incident><desc>(Aux voix! aux
+voix!)</desc></incident></seg></u> <u><seg>M. le président. L'urgence a en effet pour
+conséquence de supprimer une des deux
+délibérations; mais M. Bovier-Lapierre ne
+la demande que pour éviter le renvoi à la
+commission d'initiative, et la Chambre
+n'ignore pas que son règlement lui permet
+de retirer l'urgence après le dépôt du rapport.</seg><seg>En tout cas, je ne puis que poser les questions à la Chambre; c'est à elle qu'il appartient de les résoudre.</seg><seg>Je consulte donc la Chambre sur la déclaration d'urgence.</seg></u> <note type="comment"><seg>(Les conclusions du 98 bureau sont mises
+aux voix et adoptées. — M. Pierre Richard
+est admis.)</seg></note> <u><seg>M. le président. L'urgence n'est pas déclarée.</seg></u> <u><seg>Voix à gauche. L'épreuve est douteuse.
+</seg></u> <u><seg>M. le président. Le bureau déclare en
+effet qu'il y a eu doute. <incident><desc>(Exclamations à
+droite.)</desc></incident></seg><seg>Il va être procédé à une deuxième épreuve
+par assis et levé.</seg></u> <u><seg>M. Jolibois. Ce n'est pas possible! Le
+résultat a été proclamé!</seg></u> <u><seg>A droite. Le vote est acquis.</seg></u> <u><seg>M. Labrousse. Nous demandons le scrutin.</seg></u> <u><seg>M. le président. Le bureau ayant déclaré
+l'épreuve douteuse, le scrutin est de droit,
+du moment qu'il est demandé.</seg></u> <u><seg>Sur divers bancs à droite. Le vote est acquis!</seg></u> <u><seg>M. Jolibois. Dans l'intérêt de votre autorité, maintenez le vote que vous avez proclamé, monsieur le président; sans quoi il
+n'y a plus de garantie pour personne!</seg></u> <u><seg>M. le marquis de La Ferronnays. Je demande la parole, pour un rappel au règlement.</seg></u> <u><seg>M. le président. La parole est à M. de La
+Ferronnays, pour un rappel au règlement.
+<incident><desc>(Interruptions à gauche.)</desc></incident></seg></u> <u><seg>M. le marquis de La Ferronnays. Messieurs, je considérerais comme un précédent extrêmement dangereux, au commencement de cette législature, que nous ne
+fussions pas tous également soucieux de
+l'application rigoureuse et exacte du règlement qui jusqu'ici a régi nos délibérations.</seg><seg>Si ce réglement est défectueux, qu'on le
+modifie ! Mais, tant qu'il existe, il doit être
+respecté et observé. <incident><desc>(Bruit à gauche.—Très
+bien! à droite.)</desc></incident></seg></u> <u><seg>M. Leydet. Commencez par le respecter
+en ne parlant pas entre deux épreuves.</seg></u> </div>
+        <!--Partie_13-->
+        <div type="part" corresp="#pv"><head>SUITE DE LA VÉRIFICATION DES POUVOIRS</head><u><seg>M. le marquis de La Ferronnays. Je crois
+que dans le cas actuel il y a une erreur.</seg><seg>Tout à Theure, sur une demande d'urgence, M. le président a consulté la Chambre par mains levées. Après avoir examiné
+les deux côtés de la Chambre, MM. les secrétaires ont fait savoir à M. le président
+que la majorité se prononçait contre l'urgence. M. le président a alors proclamé que
+l'urgence était repoussée. C'était voter dans
+une des formes réglementaires voulues,
+acceptées par la Chambre, et du moment
+que le vote avait été proclamé, il était
+acquis.</seg><seg>J'ajoute qu'il ne pouvait pas y avoir eu
+de surprise quant au sens dans lequel chacun de nous avait voté, attendu qu'après
+les observations de M. Léon Say et les réponses qui lui avaient été adressées, tout le
+monde savait parfaitement bien quelle était
+la conséquence de la déclaration d'urgence
+et se rendait très bien compte qu'elle n'entraînait pas seulement — comme paraissait
+nous le dire notre honorable collègue M.
+Bovier-Lapierre — le renvoi immédiat à
+une commission à nommer dans les bureaux, mais encore, aux termes du règlement, la suppression d'une des deux délibérations.</seg><seg>J'insiste sur ce point parce que le respect du règlement est la sauvegarde des
+droits de tous et de la liberté de nos discussions. Le règlement stipule donc que la
+déclaration d'urgence entraîne la suppression de la 2e délibération.</seg><seg>Ont obtentu :</seg><pb n="201"/></u> <u><seg>M. Clémenceau. C'est le fond, cela.</seg></u> <u><seg>M. le marquis de La Ferronnays. Précisément.</seg><seg>Dans ces conditions, je crois que le rejet
+de l'urgence est bien et dûment prononcé;
+qu'un vote acquis et proclamé est irrévocable; que c'est là notre garantie à tous
+et qu'il n'y a pas lieu à une demande de
+scrutin public et qu'on ne doit pas donner
+suite à celle qui s'est produite. <incident><desc>(Très bien!
+très bien! à droite.)</desc></incident></seg></u> <u><seg>M. le président. Messieurs, il ne faut
+pas qu'il y ait de surprise. Il est vrai que
+le président a déclaré que l'urgence n'était
+pas votée; mais le président n'avait pas bien
+entendu ce que lui disaient ceux de MM. les
+secrétaires qui siègent à gauche du bureau.</seg><seg>Au moment ou je venais de proclamer
+que le vote était acquis, deux de MM. les
+secrétaires m'ont déclaré que, selon eux,
+l'épreuve était douteuse. <incident><desc>(Très bien! très
+bien! à gauche.)</desc></incident></seg><seg>Dans ces conditions, je n'ai fait qu'obéir
+à tous les précédents de toutes les Assemblées <incident><desc>(Très bien! très bien! sur les mêmes
+bancs)</desc></incident> en disant qu'il ne devait pas y avoir
+de surprise.</seg><seg>Le président a peut-être eu le tort de proclamer trop vite ce qu'il croyait être le résultat constaté par le bureau. Mais du moment que l'erreur a été relevée immédiatement, il n'y a pas de doute possible: l'épreuve peut et doit être recommencée.
+<incident><desc>(Très bien! très bien! à gauche et à droite.)</desc></incident></seg><seg>L'épreuve ayant été déclarée douteuse, le
+scrutin, qui a été demandé, est de droit.</seg><seg>Le scrutin est ouvert.</seg><seg>M. le président. Voici le résultat du
+dépouillement du scrutin :</seg><seg>La Chambre des députés a adopté. <incident><desc>(Applaudissements sur divers bancs à gauche.)</desc></incident></seg></u> <note type="comment"><seg>(L'épreuve a lieu par mains levées.)</seg></note> <u><seg>La Chambre des députés a adopté. <incident><desc>(Applaudissements sur divers bancs à gauche.)</desc></incident></seg></u> <u><seg>M. le président. L'ordre du jour appelle
+la discussion des conclusions du 6e bureau
+sur l'élection de M. du Mesnildot dans l'arrondissement de Valognes (Manche).</seg><seg>Messieurs, il s'agit d'une élection contestée, celle de M. du Mesnildot; le 6e bureau vous propose de ne pas valider l'élection.</seg><seg>M. du Mesnildot a la parole.</seg></u> <u><seg>M. du Mesnildot. Je demande la permission à la Chambre de répondre très
+brièvement au rapport de l'honorable M. du
+Périer de Larsan.</seg><seg>Que me reproche-t-on ? Rien en ce qui
+touche l'ingérence du clergé; aucun fait de
+corruption, mais uniquement d'avoir autorisé la distribution d'un écrit reproduisant
+un article de journal où, sur la foi d'un
+renseignement reconnu depuis inexact, on
+disait que le père de mon concurrent était
+sujet autrichien.</seg><seg>M. le rapporteur dit bien que mes agents
+ont traduit le mot par « Allemand » et même
+par « Prussien »; mais cette assertion, il la
+tient de mes ennemis les plus acharnés; il ne
+cite aucun nom d’agent ayant tenu ces propos, et j'affirme que jamais je ne les ai tenus ni encore moins autorisé personne à
+les tenir.</seg><seg>M. le rapporteur dit plus loin que, dans
+une affiche de la dernière heure, j'ai encore
+qualifié mon concurrent d'étranger, et il
+veut bien convenir que ce mot « étranger »
+était suivi de ceux « au pays ». Ce qu'il omet de dire, c'est que ces mots «étranger au pays »
+étaient mis là pour former opposition avec
+mon origine normande, à ma qualité d'enfant du pays, de l'arrondissement même.</seg><seg>Ce que lon me reproche ne constitue pas
+non plus une manoeuvre de la dernière
+heure, puisque l'écrit incriminé a paru le
+dimanche 15 dans le journal de Valognes;
+que l'abrégé en a été distribué le 16 et le 17;
+que M. de Lagorsse y a répondu assez à
+temps, vous le voyez, pour que tous les
+électeurs fussent avertis, et ils l'ont été.
+Mon concurrent s'est fait une arme de l'erreur commise : tous les électeurs de la circonscription ont su ce qui s'était passé; ils
+ont voté sous le coup de la menace de la
+poursuite en police correctionnelle intentée
+contre moi, il n'y a pas eu un instant d'équivoque; et, si j'ai eu la majorité, c'est
+qu'elle m'était bien réellement acquise.</seg><seg>Mais, messieurs, vous avez vous-mêmes
+jugé une question toute semblable dans
+votre séance du mardi 19. Sur le rapport
+fait par l'honorable M. Jacquemart au nom
+de votre 2e bureau, vous avez validé l'élection de l'honorable M. Théron, et pourtant
+le journal qui soutenait sa candidature avait,
+le 21 septembre — retenez cette date —
+accusé son concurrent d'avoir une origine
+allemande.</seg><seg>Voilà ce qu'à la dernière heure le Radical du Midi disait du concurrent de M.
+Théron, avec cette circonstance aggravante, selon moi, que l'honorable M. Wickersheimer était membre de la précédente
+Assemblée et qu'il fait partie de l'armée
+française comme capitaine de réserve.</seg><seg>Messieurs, rien dans l'article dont j'ai autorisé la distribution, rien n'approche assurément de ces insinuations malveillantes,
+pour ne pas dire plus, formulées à la dernière heure contre un officier français.</seg><seg>Vous avez validé l'élection de l'honorable
+M. Théron, malgré la protestation de son
+concurrent; j'espère que vous validerez
+aussi la mienne, en repoussant les conclusions de votre 6e bureau.</seg><seg>J'espère, messieurs, je le répète, que vous
+voudrez bien valider mon élection, comme
+vous venez d'ailleurs de valider l'élection
+de M. Fidèle Simon.</seg><seg>M. le rapporteur se fait une arme du petit nombre de voix que j'ai obtenues comme
+majorité.</seg><seg>J'ai eu 158 voix, d'après la commission de
+recensement, et j'ajoute, avec M. le rapporteur, que quand le suffrage universel a
+parlé il faut s'incliner devant sa décision.
+<incident><desc>(Très bien! très bien! à droite.)</desc></incident></seg></u> <u><seg>M. le président. La parole est à M. le
+rapporteur,</seg></u> <u><seg>M. du Périer de Larsan, rapporteur.
+Messieurs, je vous prie de vouloir bien
+m'accorder quelques minutes de bienveillante attention, pour mettre sous leur véritable jour les faits qui ont motivé la protestation de M. de Lagorsse et la décision du
+6e bureau.</seg><seg>Les opérations électorales qui ont eu lieu
+dans la circonscription de Valognes ont
+amené entre les deux concurrents un écart
+très faible de voix. M. du Mesnildot a eu 158 voix de majorité sur son concurrent,
+mais 72 voix seulement de majorité absolue.</seg><seg>Quelques jours avant l'élection, au commencement de la semaine qui a précédé le
+scrutin du 22 septembre, une circulaire dirigée contre M. de Lagorsse fut lancée par
+M. du Mesnildot...</seg></u> <u><seg>M. Riotteau. Et envoyée à chaque électeur.</seg></u> <u><seg>M. le rapporteur. ...et envoyée à chaque
+électeur, j'allais le dire.</seg><seg>La violence de cette circulaire était d'autant plus étrange que, quelques jours avant,
+M. de Lagorsse, s'adressant lui-même aux
+électeurs de la circonscription de Valognes, avait adressé, de son côté, une circulaire conçue dans les termes les plus modérés, les plus corrects et les plus courtois
+vis-à-vis la personne de son concurrent.
+De ses adversaires il n'était pas question;
+M. de Lagorsse affirmait ses opinions républicaines, mais il ne dirigeait absolument aucune attaque contre son concurrent. Au contraire, la circulaire lancée
+quatre ou cinq jours après contient les attaques les plus violentes contre les partisans du gouvernement républicain; prenant à partie M. de Lagorsse, le concurrent
+de M. du Mesnildot, elle s'exprime ainsi,
+après d'autres outrages :</seg><seg>Disons tout de suite que rien n'était plus
+faux que cette allégation. M. Mayjurou
+Sclafer de Lagorsse, le concurrent de M. du
+Mesnildot, appartient à une très ancienne
+famille établie dans le département de la
+Corrèze ou de la Dordogne, et jamais il
+n'eut, ni de près ni de loin, une origine
+allemande. La circulaire, du reste, est anonyme; elle porte, il est vrai, le nom de
+l'imprimeur, mais l'individu qui l'a libellée,
+semblable en cela aux personnes qui commettent de mauvaises actions, n'a pas eu
+le courage de la signer. Mais M. du Mesnildot en a assumé toute la responsabilité, car
+il l'a jointe à ses bulletins de vote et il a eu
+soin de la faire distribuer, dans la dernière
+semaine qui a précédé l'élection, à tous ses
+électeurs. <incident><desc>(Exclamations à gauche et au
+centre.)</desc></incident></seg></u> <u><seg>A gauche. Cela suffit! — Aux voix!
+aux voix !
+</seg></u> <u><seg>M. le rapporteur. Je n'ajouterai pas
+grand’chose. Permettez-moi cependant d'insister sur un point.</seg><seg>D'effet produit par cette circulaire fut,
+bien entendu, considérable, d'autant plus
+que les pièces qui se trouvent au dossier
+attestent que ceux qui distribuaient cette
+circulaire — je ne dis pas qu'ils eussent reçu
+des instructions à cet effet de M. du Mesnildot — la commentaient à leur gré. Les
+uns alléguaient que la famille Sclafer de Lagorsse était arrivée en France à la suite des
+armées alliées en 1812 ; d'autres allaient jusqu'à dire que M. de Lagorsse était Prussien, et nous avons au dossier des déclarations qui l'établissent formellement.</seg><seg>Emu par le bruit, par le retentissement
+d'une pareille déclaration, M. de Lagorsse
+voulut protester, et le 18 septembre, quatre
+jours avant l'élection, il fit paraître une
+circulaire où il protestait contre les faux
+bruits répandus contre lui, et dans laquelle
+il déclarait qu'il allait poursuivre M. du
+Mesnildot en police correctionnelle. Et c'est
+ce qu'il a fait.</seg><seg>La Chambre me permettra de lui rappeler
+la jurisprudence du conseil d'Etat en semblable matière. Toutes les fois que l'adversaire attaqué a pu répondre, qu'il ait répondu ou non, on ne doit pas tenir compte
+de l'attaque. Tel est ici le cas, je viens de
+le prouver.</seg><pb n="202"/><seg>M. Dubois (Corrèze), rapporteur. Dé-pas été de nature à vicier les résultats du
+scrutin du 22 septembre dans l'élection de
+la 2e circonscription de Saint-Nazaire. Il
+vous propose, en conséquence, de valider
+l'élection de M. Jules de Lareinty, qui, ayant
+déjà fait partie des Assemblées législatives,
+satisfait d'ailleurs aux conditions d'âge et
+de nationalité exigées par la loi.pas été de nature à vicier les résultats du
+scrutin du 22 septembre dans l'élection de
+la 2e circonscription de Saint-Nazaire. Il
+vous propose, en conséquence, de valider
+l'élection de M. Jules de Lareinty, qui, ayant
+déjà fait partie des Assemblées législatives,
+satisfait d'ailleurs aux conditions d'âge et
+de nationalité exigées par la loi.ni droit ni intérêt à provoquer. venant justè à la veille de l'élection, était
+de nature à exercer une certaine influence
+sur les électeurs.<incident><desc>(Très bien!
+à droite.)</desc></incident></seg></u> <u><seg>A droite. Lisez toute la circulaire !</seg></u> <u><seg>M. le rapporteur. Volontiers, puisque
+vous le désirez. La voici :</seg><quote><seg>« Est-ce F'étranger au pays, l'inconnu, le
+salarié de ladministration... »
+</seg><seg>«... le salarié de l'administration qui le
+patronne dans un but facile à deviner :
+éviter tout contrôle ?</seg></quote><seg>Autre fausseté, messieurs. Il y a déjà
+plusieurs années que M. de Lagorsse ne
+remplit plus aucune fonction salariée.</seg><quote><seg>« Vous avez à nommer, dimanche, un député. Deux candidats sollicitent vos suffrages: MM. Léon Joubert et Jules Delahaye. »</seg><seg> M. Léon Joubert n'a aucune ambition
+personnelle. M. Delahaye veut une place à
+tout prix.</seg></quote><seg>M. Amagat. Qu'y a-t-il là de répréhensible ?</seg></u> <u><seg>M. le rapporteur. Deux choses : la première, c'est de dire une fausseté : M. de Lagorsse n'est plus le « salarié de l'administration »...</seg></u> <u><seg>M. Amagat. Il l'a été.</seg></u> <u><seg>M. le rapporteur. ... la seconde, c'est de
+venir confirmer une fausseté publiée quelques jours auparavant.</seg></u> <u><seg>M. le rapporteur. Je n'ai pas prononcé
+le mot de «diffamation» ; c'est le tribunal correctionnel de Valognes qui l'a prononcé. M.
+de Lagorsse a poursuivi, en effet, son adversaire devant la police correctionnelle et,
+après l'élection, le tribunal, examinant la
+phrase contenue dans la première circufaire dont j'ai parlé, lui a trouvé le caractère diffamatoire, et il a condamné pour ce
+fait M. du Mesnildot à 100 fr. d'amende et
+intérêts.</seg><seg>J'ajoute que la cour de Caen vient de
+confirmer ce jugement.
+</seg></u> <u><seg>M. le comte de Kergariou. Ce n'est pas
+pour cette circulaire que M. du Mesnildot a
+été poursuivi.</seg></u> <u><seg>M. le rapporteur. Je vous demande pardon! J'ai le jugement entre les mains, et on
+me dit : « Ce n'est pas pour cela que M. du
+Mesnildot a été condamné. »</seg></u> <u><seg>A droite. Lisez le jugement !</seg></u> <u><seg>M. le rapporteur. Ce serait trop long.
+<incident><desc>(Exclamations à droite.)</desc></incident> Je lis toutefois ce
+passage du jugement:</seg><seg>« Attendu qu'à la lecture de cette circulaire, il ne peut être douteux un seul instant
+que son auteur l'a écrite avec des sentiments
+de malveillance et de mauvaise foi contre
+le candidat qu'il voulait combattre... » <incident><desc>(Interruptions a droite.)</desc></incident></seg></u> <u><seg>M. le président. Veuillez ne pas interrompre, messieurs.</seg></u> <u><seg>M. le rapporteur. La circulaire incriminée est celle où il est dit : « Son père était
+sujet autrichien... »<incident><desc>(Exclamations à gauche.)</desc></incident> </seg></u> <u><seg>A droite. Elle n'est pas signée de M. du
+Mesnildot !</seg></u> <u><seg>M. Frogier de Ponlevoy. Est-ce que
+M. du Mesnildot n'est pas cousin par alliance de M. de Lagorsse ?</seg></u> <u><seg>M. le rapporteur. M. du Mesnildot a été
+obligé de reconnaître, devant le tribunal
+correctionnel et devant le 6e bureau, qu'il
+assumait toute la responsabilité de la circulaire, parce que lui-même l'avait fait distribuer à tous les électeurs.</seg></u> <u/> <u><seg>Messieurs, je ne veux pas insister davantage. Votre 6e bureau a pensé qu'en présence du faible écart qu'il y a entre les voix
+obtenues par les deux concurrents il y avait
+lieu d'invalider M. du Mesnildot. J'espère
+que vous adopterez ses conclusions et que
+vous renverrez devant les électeurs, mieux
+renseignés sur la véritable nationalité de
+M. de Lagorsse, les deux concurrents qui se
+trouvaient en présence le 22 septembre dernier. <incident><desc>(Très bien! très bien! à gauche.)</desc></incident></seg></u> <u><seg>A droite. M. du Mesnildot a eu plus de
+quatre voix de majorité.</seg></u> <u><seg>A gauche. Oui, mais il y a la manœuvre en
+plus.</seg></u> <u><seg>M. le président. M. du Mesnildot a la parole.</seg></u> <u><seg>M. du Mesnildot. Messieurs, l'honorable
+M. du Périer de Larsan n'ayant fait que
+rééditer son rapport, je pourrais me dispenser de répondre. Cependant il a insisté
+sur ce qu'il appelle la manoeuvre de la dernière heure, c'est-à-dire sur la circulaire de
+la dernière heure.</seg><seg>Quoi qu'il veuille bien dire, je ne crois
+pas que la qualité d'étranger au pays donnée à M. de Lagorsse ait influé en rien sur
+l'élection. Mais il est bien certain que cette
+expression était mise dans la circulaire par
+opposition pour faire ressortir ma qualité
+d'enfant du pays,</seg><seg>On est revenu tout à l'heure sur les relations de famille. Je ne voudrais pas ennuyer la Chambre. Il est bien certain que
+mes relations avec M. de Lagorsse n'ont
+jamais existé; je suis parent, il est vrai,
+avec la famille de sa femme, mais c'est
+tout, et je n'ai pas pu savoir si l'affirmation en question était vraie ou non. Mais, je
+le répète, vous venez de valider l'élection
+de M. Fidèle Simon qui n'avait que quatre
+voix de majorité, et si vous annulez la
+mienne, c'est qu'il y aura un parti pris de
+votre part. <incident><desc>(Tres bien! très bien! à droite.)</desc></incident></seg></u> <u><seg>M. le président. Personne ne demande
+la parole ?</seg></u> <u><seg>Aux voix ! aux voix !</seg></u> <note type="comment"><seg>(Les votes sont recueillis. — MM. les secrétaires en font le dépouillement.)</seg></note> <u><seg>M. le président. Je mets aux voix les
+conclusions du bureau.</seg><seg>Votre 6 bureau vous propose d'annuler
+les opérations électorales de l'arrondissement de Valognes.</seg><seg>La 2e, de MM. le comte de Bernis, Godelle, le marquis de La Ferronnays, de Lareinty, E. Desjardin, Descaure, de Colombet,
+Blachère, de Soland, de Benoît, Cibiel, Tailliandier, le comte de Colbert-Laplace, le
+comte de l'Aigle, etc.</seg><seg>Le scrutin est ouvert.</seg><seg>M. le président. Volci le résultat du dépouillement du scrutin :</seg><table><row><cell>Nombre des votants...... 509
+Majorité absolue............ 255
+Pour l'adoption........311
+Contre.................... 198</cell></row></table><seg>La Chambre des députés a adopté les conclusions du 6e bureau.</seg><seg>En conséquence, les opérations électorales
+de l'arrondissement de Valognes sont annulées</seg><seg>En conséquence, les opérations électorales
+de l'arrondissement de Valognes sont annulées</seg><seg>Avis en sera donné à M. le ministre de
+l'intérieur.</seg></u> <u><seg>M. le président. L'ordre du jour appelle
+la discussion des conclusions du rapport du
+5e bureau sur l'élection de M. Delahaye dans
+l'arrondissement de Chinon (Indre-et-Loire).</seg><seg>Le 5e bureau vous propose d'annuler les
+opérations électorales de cet arrondissement.</seg><seg>La parole est à M. Delahaye.</seg></u> <u><seg>M. Jules Delahaye. Messieurs, votre 5e
+bureau, à la majorité de trois voix seulement, vous demande mon invalidation.</seg><seg>Tel n'a pas été son premier avis. En effet, contrairement aux conclusions de sa
+sous-commission, après avoir entendu mes
+explications, il m'avait d'abord validé. C'est
+grâce à l'absence de quelques-uns de nos
+collègues qui avaient, la veille, voté cette
+validation, que les adversaires de ma candidature ont pu, à la faveur de la discussion
+des termes du rapport, revenir sur le fond
+du débat et obtenir les nouvelles conclusions que j'aurai l'honneur de discuter devant vous.</seg><seg>Les principaux prétextes que l'on invoque pour vous demander mon invalidation
+sont d'abord une soi-disant tentative de
+corruption, puis la prétendue présence dans
+une commune d'agents étrangers armés de
+gourdins, enfin, une circulaire électorale de
+mes amis, qu'on qualifie pour les besoins de
+la cause de manoeuvre de la dernière heure
+et même de calomnie.</seg><seg>Si graves que paraissent à l'honorable M.
+Legludic les deux premiers griefs, la tentative de corruption et les terribles gourdins,
+il veut bien pourtant n'y pas insister.</seg></u> <u><seg>M. Legludic, rapporteur. Permettez! je
+n'ai pris aucun engagement.</seg></u> <u><seg>M. Jules Delahaye. Il ne prend la peine
+de nommer ni les corrupteurs, ni les corrompus, ni les assommeurs, ni les assommés, et il ne retient en somme, à l'exemple
+de votre 5e bureau, que le dernier grief,
+à savoir la circulaire électorale de mes
+amis. Pour ne pas fatiguer l'attention
+de la Chambre, je ferai comme lui, et, négligeant des protestations qui ont paru négligeables à votre 5e bureau lui-même,
+je ne m'étendrai que sur la prétendue manoeuvre de la dernière heure.</seg><seg>Je soutiens que la circulaire électorale de
+mes amis n'est pas une manoeuvre de la
+dernière heure, mais un acte de légitime
+défense, une réponse dure à une attaque
+non moins dure, réponse à laquelle mon
+concurrent M. Joubert n'a pas répliqué,
+non pas parce qu'il n'en avait pas le temps.
+mais parce qu'il n'avait rien à répliquer; car
+je soutiens en outre que l'imputation contenue dans la circulaire contre laquelle on
+affecte de se récrier, à savoir que M. Joubert n'a pas satisfait à ses obligations militaires en 1870 n'est malheureusement pas
+une calomnie, mais la vérité, rien que la
+vérité; conséquemment, que mes amis, en
+disant cela, n'ont pas dépassé les limites
+d'une polémique électorale, vive mais licite. La lutte entre M. Léon Joubert et
+moi fut, trois mois durant, d'une modération et d'une courtoisie irréprochables,
+ainsi que sont obligés de le reconnaître les
+protestataires eux-mêmes dans leurs protestations et l'honorable M. Legludic luimême, après eux, dans son rapport.</seg><seg>Riotteau. Parlez donc du jugement.</seg><quote><seg>« Electeurs,</seg></quote></u> <u><seg>A droite. Il n'y a pas la de diffamation.</seg></u> <u><seg>M. Riotteau. Avec ses bulletins de vote.</seg></u> <pb n="203"/><u><seg>Puis vient l'énumération, en regard les
+uns des autres, de tous les mérites de M.
+Léon Joubert, d'une part, et, d'autre part,
+de tous les titres d'indignité de M. Jules Delahaye.</seg><seg>Je cite seulement, messieurs, les phrases
+qui intéressent le débat et qui ont provoqué la réponse de mes amis.</seg><seg>A droite. C'est odieux.</seg></u> <u><seg>M. le rapporteur. Cette circulaire estelle visée par le candidat ?</seg></u> <u><seg>Veuillez remarquer, d'autre part, que la
+circulaire a été lancée dans les cantons les
+plus éloignés, afin qu'elle ne pût parvenir à
+ma connaissance, et seulement l'avantveille au soir de l'élection, dans l'espoir
+qu'on n'aurait pas le temps d'y répondre.
+</seg><seg>La véritable manouvre de la dernière
+heure, la voilà... <incident><desc>(C'est cela! très bien! d
+droite)</desc></incident> ... seulement elle n'a pas aussi bien
+réussi que l'on s'y attendait.</seg><seg>Messieurs, c'est cette imputation outrageante — y a-t-il rien de plus outrageant, en effet, que d'émettre un doute
+absolument injustifié sur l'honorabilité
+des ressources d'un adversaire ? — c'est
+cette calomnie, visant, non plus ma politique, mais ma personne et mon caractère.
+quoi qu'en dise l'honorable M. Legludic; c'est
+aussi cette affirmation mensongère contre
+laquelle j'avais protesté vingt fois: à savoir
+que je représentais la guerre étrangère à
+courte échéance, insinuation infiniment
+plus dangereuse, vous le savez bien, que
+toutes nos querelles personnelles; ce sont
+ces procédés qui ont provoqué la polémique
+qui nous est reprochée; c'est cela qui a
+mis le feu aux poudres.</seg></u> <u><seg>M. Legludic, rapporteur. Voulez-vous me
+permettre une observation, monsieur Delahaye? <incident><desc>(Réclamations à droite.)</desc></incident></seg></u> <u><seg>M. le président. Je ne puis vous laisser
+prendre la parole, à moins que l'orateur n'y
+consente.</seg></u> <u><seg>M. le rapporteur. Je demande à M. Delahaye la permission de lui poser une simple
+question.</seg></u> <u><seg>M. Jules Delahaye. Je vous permets
+tout, monsieur le rapporteur. <incident><desc>(On rit.)</desc></incident></seg></u> <u><seg>M. le rapporteur. Cette circulaire dont
+vous parlez a-t-elle été colportée dans l'arrondissement ?</seg></u> <u><seg>M. Jules Delahaye. Mon Dieu, monsieur,
+je ne puis vous désigner toutes les communes où elle a été colportée; mais j'imagine qu'elle a dû l'être dans un grand
+nombre, car j'en ai là tout un paquet; et
+si vraiment M. Léon Joubert ne l'a distribuée que dans deux communes, vous conviendrez qu'il est cependant difficile d'admettre que l'on fasse une circulaire pour la
+distribuer dans deux communes seulement.</seg><seg>D'ailleurs, cette circulaire ne s'adres se pas
+seulement aux deux communes désignées,
+à savoir la commune de Langeais et celle
+de Cinq-Mars : elle s'adresse, comme je
+vous l'ai dit tout à l'heure, à toutes les
+communes du département.</seg></u> <u><seg>A droite. C'est évident !</seg></u> <u><seg>M. Jules Delahaye. En présence de cette
+manoeuvre de la dernière heure, mes amis
+pensèrent, à tort ou à raison, qu'il était indispensable de répondre en bloc à tous les
+faux bruits et aux diffamations qui couraient les champs. Ils se mirent donc au
+travail dans la nuit du 20 au 21 septembre,
+et, dès le samedi matin — ils ne pouvaient
+répondre plus tôt, puisque la circulaire de
+M. Léon Joubert avait paru la veille au soir
+— dès le samedi matin ils envoyaient quatorze agents, pour la plupart ouvriers de
+mes imprimeurs, dans les principales communes de l'arrondissement, pour distribuer
+cette circulaire.</seg><seg>Je sais bien que l'honorable M. Legludic
+prétend, à la suite de quelques protestataires, que la circulaire qui m'est reprochée a été distribuée dans la nuit du 21 au
+22, par conséquent trop tard pour qu'on pût
+y répondre. A cette allégation je me contente d'opposer d'abord les contradictions
+flagrantes des protestataires eux-mêmes,
+qui, dans cinq ou six communes, constatent
+que la distribution a été faite dans ces localités le jour, et ensuite le formel démenti
+des organisateurs de la distribution, qui
+attestent que, si les agents envoyés par
+eux dans les principales communes sont
+venus de Tours, ils étaient tous rentrés le
+21 au soir chez leur patron. Par conséquent, ils n'ont pu rien distribuer dans
+la nuit du 21 au 22 septembre.</seg><seg>Enfin, la meilleure preuve que ce n'est
+pas le temps qui a manqué à M. Léon
+Joubert pour répondre à la circulaire de
+mes amis, c'est qu'il a attendu jusqu'à ce
+jour pour se justifier, — vous verrez tout
+à l'heure de quelle façon, — c'est qu'il n'a
+pas osé me poursuivre devant les tribunaux de son propre pays, où, en vérité,
+ses instincts pacifiques en 1870 sont trop
+connus. <incident><desc>(Mouvements divers.)</desc></incident></seg><seg>Mais j'ai hâte de sortir de ces détails et
+d'aborder de front la circulaire électorale
+elle-même; car je suis convaincu que ce
+qui vous importe le plus, ce n'est ni le jour
+ni la nuit ou l'on a été calomnié, mais la
+calomnie elle-même.</seg><seg>Oui ou non, l'imputation dirigée contre
+mon adversaire est-elle une méchante invention, imaginée pour égarer le suffrage
+universel? Vous allez en juger.</seg><seg>La circulaire électorale de mes amis débute, comme celle de M. Léon Joubert, qui
+la inspirée, par les mêmes mots :</seg><seg>Mon adversaire ayant évoqué le fantôme
+de la guerre étrangère, il vint naturellement à l'esprit de mes amis de comparer
+la conduite de l'un et l'autre candidat en
+1870.</seg><seg>Se cacher pour crier« Guerre à outrance! »
+ce n'est pas le meilleur moyen de se faire
+entendre.</seg><seg>Eh bien, ces naïvetés, cette maladresse,
+cette inexpérience de plume sont pourtant
+le vif du débat.</seg><seg>M. Léon Joubert s'est-il caché, c'est-àdire, suivant la juste interprétation de l'honorable M. Legludic, s'est-il soustrait, en
+1870, à ses obligations militaires? Toute la
+question est là: M. Legludic lui-même ne
+fait aucune difficulté de reconnaître ou d'insinuer dans son rapport que, si cela était démontré, le motif de mon invalidation disparaîtrait aussitôt.</seg><seg>Oui ou non, l'imputation dirigée contre
+mon adversaire est-elle une méchante invention, imaginée pour égarer le suffrage
+universel? Vous allez en juger.</seg><seg>La circulaire électorale de mes amis débute, comme celle de M. Léon Joubert, qui
+la inspirée, par les mêmes mots :</seg><seg>M. le rapporteur. Je n'ai pas à me demander si M. du Mesnildot était de bonne
+foi ou non. Le jugement s'est prononcé làdessus. Mais, en admettant que M. du Mesnildot eût été de bonne foi, il n'y a pas
+moins lieu de le trouver étrange, car M. de
+Lagorsse est venu dans le département de
+la Manche par suite d'un mariage avec une
+personne dont la famille est en relations
+avec M. du Mesnildot et même en relations
+de parenté. Par conséquent, il est bien
+étonnant que M. du Mesnildot n'eût pas
+connu la véritable nationalité de son cousin. ci je suis infiniment mieux partagé que
+M. Léon Joubert. <incident><desc>(Aux voix! aux voix!)</desc></incident><incident><desc>(Sourires à droite.)</desc></incident> Chacun son tour. Mon adversaire n'est bon à
+rien, et j'ai tous les mérites, au dire de mes
+amis, mérites singulièrement exagérés. Je
+suis, sur ce point, complètement d'accord
+avec l'honorable M. Legludic. (Bruit à gauche.)</seg></u> <u><seg>Mais il ne faut pas m'en vouloir pour
+cela. Nous avons tous passé, pendant la campagne électorale, par cet excès d'honneur
+et cet excès d'indignité. <incident><desc>(Très bien! très
+bien! à droite.)</desc></incident></seg><seg>Eh bien, il disparaîtra, car je soutiens de
+nouveau que cela est malheureusement
+vrai. Je le démontrerai à la Chambre, comme
+je l'aurais démontré devant le 5e bureau
+s'il avait bien voulu, suivant le désir exprimé par plusieurs de ses membres, désir
+relaté au procès-verbal, s'il avait bien
+voulu, dis-je, m'entendre après M. Léon
+Joubert pour contrôler ses dires.</seg></u> <u><seg>M. Godefroy Cavaignac. Vous n'avez
+pas demandé à être entendu par le 5e bureau.</seg></u> <u><seg>M. Jules Delahaye. J'ai parlé du désir
+exprimé par plusieurs membres du bureau.</seg></u> <u><seg>M. Godefroy Cavaignac. Iy a eu une
+question d'ajournement, qui a été posée et
+écartée, mais rien de plus.</seg></u> <u><seg>M. Jules Delahaye. C'est à cela que je
+fais allusion.</seg><quote><seg>Sur ce point ils s'expriment ainsi :</seg><pb n="204"/><seg>« Tours, le 2 décembre 1870.</seg></quote><quote><seg>ARRÊTÉ</seg><seg>« Tours, le 12 décembre 1870.</seg><quote><seg>Puis, vient encore ici, dans le même ordre de pensées, l'énumération comparative
+de toutes les qualités et de tous les défauts de
+chaque candidat. Naturellement, cette foissentiments généreux que vous partagez
+tous.</seg><seg>« Art. 1er. — Sont convoqués aux lieux,
+jours et heures ci-après indiqués, pour être
+examinés par le conseil de revision...»</seg><seg>« Signé : Durel,
+Préfet d'Indre-et-Loire. »</seg></quote></quote><seg>est vrai aussi que M. Léon Joubert,
+ainsi que le prouve son acte de mariage,
+s'est marié à Neuilly-sur-Seine — veuillez
+remarquer la date—le 29 janvier 1868, c'est-àdire deux jours avant la promulgation de
+cette loi. <incident><desc>(Interruptions à gauche.)</desc></incident></seg></u> <u><seg>Un membre a gauche. Quelle preuve en
+tirez-vous ?</seg></u> <u><seg>M. Jules Delahaye. Attendez, j'en ai d'autres. C'est à cette heureuse coïncidence que
+M. Léon Joubert dut de ne pas partir dès le
+début de la guerre. Mais l'exemption dont
+il bénéficiait ne fut pas de longue durée;
+car le 2 novembre 1870, le Gouvernement
+de la Défense nationale décréta la levée en
+masse, appelant sous les drapeaux les
+hommes valides de vingt et un à quarante
+ans.</seg></u> <u><seg>Un membre de la gauche. Non mariés !</seg></u> <u><seg>M. Jules Delahaye. — Permettez, j'y arrive —... et supprima toutes les exemptions,
+sauf celles résultant des infirmités ou fondées sur les services publics.</seg><seg>L'honorable M. Legludic reconnaît bien
+que, d'après le décret du 2 novembre 1870,
+M. Joubert se trouvait incorporé dans la
+garde nationale mobilisée; mais, ne pouvant mieux faire, il l'exempte une fois
+de plus et d'office, en vertu du décret réglementaire du 7 novembre 1870.</seg><seg>Ce nouveau décret, ajoute-t-il, divisa la
+levée en masse en deux bans successifs: le
+premier, comprenant la garde nationale
+mobilisée en vertu du décret du 29 septembre 1870, — dont nous n'avons pas à
+nous occuper, — et le deuxième, composé
+de tous les hommes valides de vingt à quarante ans, mariés ou veufs avec enfants.</seg><seg>Jusqu'ici, nous sommes pleinement d'accord avec M. Legludic; mais là où nous cessons de nous entendre, là où nous nous
+séparons, c'est lorsque M. le rapporteur ouvre une petite parenthèse pour trancher le
+débat, en affirmant qu'en Indre-et-Loire le
+second ban de la levée en masse n'a pas été
+convoqué.</seg></u> <u><seg>Un membre. Il a été convoqué dans la
+France entière.</seg></u> <u><seg>M. Jules Delahaye. Rassurez-vous, je
+vais vous donner les preuves qu'il a été
+convoqué en Indre-et-Loire.</seg><seg>C'est apparemment l'intéressé qui a dit
+le contraire; mais comme M. le rapporteur a
+déclaré très loyalement que s'il était à ses
+yeux constaté que M. Léon Joubert n'avait
+pas satisfait pleinement à ses obligations,
+il serait le premier à voter la validation de
+mon élection, qu'il me permette de lui
+faire observer qu'il aurait bien fait de contrôler ce dire-là comme les autres. <incident><desc>(Marques d'assentiment à droite.)</desc></incident></seg><seg>A cet effet, il lui suffisait d'ouvrir le recueil des arrêtés préfectoraux du département d'Indre-et-Loire pour l'année 1870;
+il eût trouvé là deux arrêtés, l'un du 2 décembre, convoquant tous les hommes valides de vingt et un à quarante ans, formant le second ban de la levée en masse
+et désignant particulièrement les hommes
+mariés et veufs avec enfants; l'autre, du
+12 décembre, les opérations du conseil de
+revision accomplies, donnant à tous les
+maires du département l'ordre d'envoyer
+immédiatement au camp de la Rochelle,
+lieu de leur destination, tous les nouveaux
+mobilisés.
+ de 113,000 fr. à la caisse des chemins vicinaux.</seg><seg>Je vais vous donner lecture de ces textes,
+afin qu'il n'y ait ni équivoque ni incertitude
+dans vos esprits. <incident><desc>(Mouvements divers.)</desc></incident></seg><seg>Suit une énumération qui n'intéresse pas
+le débat.</seg><seg>Messieurs, ce premier décret a été suivi
+d'un autre, en date du 12 décembre 1870,
+qui donne l'ordre de départ...</seg></u> <u><seg>M. Montaut. Parlez de vous! <incident><desc>(Réclamations à droite.)</desc></incident> Nous n'avons pas à juger M.
+Joubert. (Nouvelles réclamations sur les
+mêmes bancs.)</seg></u> <u><seg>M. le comte de Douville-Maillefeu.
+Mais pardon ! Il s'agit de savoir si ce qu'on
+a dit est exact</seg></u> <u><seg>M. le président. Messieurs, l'orateur
+conduit sa discussion comme il l'entend.</seg></u> <u><seg>M. Montaut. Mais ce n'est pas le débat!
+<incident><desc>(Si! si! à droite.)</desc></incident></seg></u> <u><seg>M. Jules Delahaye. Messieurs, je regrette profondément d'aborder ce sujet,
+mais je ne puis pourtant pas, pour justifier
+ma bonne foi, ou plutôt celle de mes amis,
+— car je n'étais pour rien dans cette circulaire, me trouvant alors en tournée électorale, — ne pas nommer M. Joubert.</seg></u> <u><seg>M. le comte de Douville-Maillefeu, Parfaitement! parlez !</seg></u> <u><seg>M. Jules Delahaye. Voici maintenant
+l'ordre de départ, qui fut envoyé à tous les
+maires du département:</seg><seg>Il ne reste plus, vous le voyez, à M. Léon
+Joubert qu'une ressource, c'est de dire que,
+s'il n'est pas parti cette fois, ce n'est pas
+qu'il n'en ait eu le plus vif désir, mais que
+son père, maire de Chinon, a peut-être oublié de lui transmettre l'arrêté du préfet
+d'Indre-et-Loire. <incident><desc>(Sourires à droite. — Rumeurs sur divers bancs à gauche.)</desc></incident></seg><seg>Messieurs, ma démonstration est faite. Je
+ne veux pas insister davantage sur ce cas
+douloureux; je ne relèverai même pas certaines affirmations manifestement contraires à la vérité, qui ont été produites devant
+le 5e bureau et qui ont entraîné son vote.
+J'attendrai que l'honorable M. Legludic, par
+sa discussion, veuille bien m'y forcer.</seg><seg>Je me résume : M. Joubert, d'après les
+textes eux-mêmes, devait le service militaire en 1870. De son propre aveu, il ne l'a
+pas fait. Mes amis, électeurs de l'arrondissement de Chinon, le lui ont reproché durement. Ils lui ont dit qu'il avait trouvé
+moyen de ne pas servir son pays en 1870.
+C'était leur droit, puisque c'était vrai, et ils
+pouvaient en user à leur guise; cependant
+ils ne lui ont adressé ce reproche qu'après
+y avoir été provoqués.</seg><seg>Ce n'est donc pas la circulaire de mes
+amis qui a pu déterminer le déplacement
+de 2,500 voix environ, qui a décidé du succès de mon élection (Nouvelles rumeurs à
+gauche), puisqu'en somme, en la publiant,
+mes amis ne faisaient que relater un fait
+connu de tous, et qu'ils n'ont relaté, je le
+répète, qu'après provocation.</seg><seg>J'attends donc avec confiance votre décision, car il y a au moins un terrain sur
+lequel nous sommes tous d'accord, et c'est
+sur ce terrain-là que je me présente devant
+vous.</seg><seg>Quelles que soient nos opinions, nous
+n'avons pas deux façons d'entendre le patriotisme en face de l'invasion étrangère.
+Tous, côte à côte, en 1870, nous l'avons
+prouvé à l'ennemi, et nous le prouverions
+encore demain, s'il le fallait. C'est ce commun souvenir, ce commun sentiment qui,
+j'en suis convaincu, inspirera votre décision. Il est manifeste que ce n'est pas un
+parti qui a été attaqué, mais un homme,
+rien qu'un homme.</seg><seg>Votre vote ne sera pas seulement un acte
+de justice; il signifiera, soyez-en sûrs,
+pour les électeurs qui nous entendent,
+qu'en face de l'ennemi, autour du drapeau,
+il n'y a plus, il ne peut plus y avoir ni
+partis ni adversaires... <incident><desc>(Très bien! très bien!
+à droite et sur quelques bancs à l'extrémité
+gauche de la salle)</desc></incident>, qu'il n'y a plus que des
+Français, et que pour tous, ces jours-là,
+République et Patrie, c'est la même chose.
+(Applaudissements à droite et sur quelques
+bancs à l'extrémité gauche de la salle.
+Aux voix!)</seg></u> <u><seg>M. Léon Joubert n'a donc pas été aussi
+calomnié qu'il le prétend. Il a seulement
+reçu dans la bataille, comme nous tous
+d'ailleurs, un coup droit en riposte. Voilà
+tout. <incident><desc>(Très bien! très bien! à droite.)</desc></incident></seg><seg>Votre vote ne sera pas seulement un acte
+de justice; il signifiera, soyez-en sûrs,
+pour les électeurs qui nous entendent,
+qu'en face de l'ennemi, autour du drapeau,
+il n'y a plus, il ne peut plus y avoir ni
+partis ni adversaires... <incident><desc>(Très bien! très bien!
+à droite et sur quelques bancs à l'extrémité
+gauche de la salle)</desc></incident>, qu'il n'y a plus que des
+Français, et que pour tous, ces jours-là,
+République et Patrie, c'est la même chose.
+(Applaudissements à droite et sur quelques
+bancs à l'extrémité gauche de la salle.
+Aux voix!)</seg></u> <u><seg>Votre vote ne sera pas seulement un acte
+de justice; il signifiera, soyez-en sûrs,
+pour les électeurs qui nous entendent,
+qu'en face de l'ennemi, autour du drapeau,
+il n'y a plus, il ne peut plus y avoir ni
+partis ni adversaires... <incident><desc>(Très bien! très bien!
+à droite et sur quelques bancs à l'extrémité
+gauche de la salle)</desc></incident>, qu'il n'y a plus que des
+Français, et que pour tous, ces jours-là,
+République et Patrie, c'est la même chose.
+(Applaudissements à droite et sur quelques
+bancs à l'extrémité gauche de la salle.
+Aux voix!)</seg></u> <u><seg>M. le président. La parole est à
+rapporteur.</seg></u> <u><seg>Puisqu'on vient ici, pour obtenir mon invalidation, puisqu'on s'est résigné à venir
+plaider devant vous les circonstances atténuantes, à invoquer les lois, les décrets, les
+raisons et les prétextes qui permettaient,
+dit-on, à un homme jeune et vigoureux,
+riche, fils du maire de sa ville, de ne pas
+partager les fatigues et les dangers communs, je suis bien obligé, quoiqu'il m'en
+coûte profondément... <incident><desc>(Bruit à gauche. —
+Parlez! parlez! à droite)</desc></incident>, de suivre mon
+adversaire sur ce terrain et de démontrer
+que les lois et les décrets, que les textes
+comme les sentiments de patriotisme lui
+imposaient le service militaire.
+</seg><seg>J'étais exempt du service dans la garde
+nationale mobile en raison de mon mariage,
+a dit M. Léon Joubert devant le 5e bureau;
+qui s'est contenté de cette explication, reproduite dans le rapport de M. Legludic. Il
+est vrai que la loi du 1er février 1868, qui a
+institué la garde mobile, n'y avait pas compris les hommes mariés avant la promulgation de cette loi.</seg><pb n="205"/><seg>M. Legludic, rapporteur. Messieurs, en
+venant à cette tribune combattre l'élection
+d'un de nos honorables collègues, j'accomplis une tâche pénible. J'ajouterai que l'habileté avec laquelle M. Delahaye vient dedéfendre son élection serait de nature à
+doubler mes regrets; mais nous n'avons pas
+à nous laisser déterminer ici par des considérations de sentiment; nous sommes ici
+pour maintenir la liberté, la sincérité et la
+dignité du suffrage universel. <incident><desc>(Très bien!
+très bien! à gauche et au centre.)</desc></incident></seg></u> <u><seg>Si vous croyez que le suffrage universel,
+en la circonstance, n'a pas été troublé, gêné
+dans son expression, votre devoir évidemment est de valider l'élection qui vous est
+soumise. Si, au contraire, après l'explication
+que je vais avoir l'honneur de vous fournir,
+vous estimez comme moi que la liberté et
+la sincérité du suffrage universel ont subi
+une grave atteinte, que sa dignité a singulièrement été abaissée, alors, messieurs,
+vous invaliderez sans nul doute l'élection
+de l'arrondissement de Chinon.</seg><seg>Vous connaissez déjà le résultat de cette
+élection par le rapport qui vous a été présenté: M. Delahaye a obtenu 11.424 voix,
+M. Joubert, son concurrent, 11.071 voix...</seg></u> <u><seg>M. Rousse. Alors, ce n'est plus un écart
+de 2,500 voix !</seg></u> <u><seg>M. Jules Delahaye. J'ai parlé des voix
+« déplacées » .</seg></u> <u><seg>M. le président. Messieurs, n'interrompez pas M. le rapporteur.</seg></u> <u><seg>M. le rapporteur. M. Delahaye n'a donc
+obtenu que 353 voix de plus que la majorité
+relative sur son concurrent, et que 173 voix
+de plus que la majorité absolue; en d'autres termes, un déplacement de 87 voix suffisait pour empêcher l'élection de M. Delahaye.</seg></u> <u><seg>M. Malartre. Il faut savoir si la manœuvre est juste, et non pas si elle a eu pour
+résultat de déplacer des voix.</seg></u> <u><seg>M. le président. Veuillez ne pas interrompre, monsieur Malartre.</seg><seg>Continuez, monsieur le rapporteur.</seg></u> <u><seg>M. le rapporteur. Il n'y a rien à dire,
+messieurs, de la régularité des opérations
+électorales. Personne ne la conteste, ni d'un
+côté ni de l'autre. Mais depuis les élections,
+dès le lendemain, dès le soir même, les protestations arrivent de tous côtés, nombreuses, couvertes de plus d'un millier de
+signatures des hommes les plus considérés
+de l'arrondissement. <incident><desc>(Exclamations ironiques à droite.)</desc></incident></seg><seg>Ces protestations portent sur deux ordres
+de faits: les tentatives de corruption, la
+présence d'agents étrangers munis de gourdins, dans certaines réunions publiques
+<incident><desc>(Ah ! ah ! à gauche)</desc></incident>, et les fausses nouvelles.</seg><seg>Je ral dit a mon honorable contradicteur,
+je n'insisterai pas sur ces faits plus qu'ils
+ne le méritent, afin de ne pas abuser de la
+bienveillance de la Chambre. Mais la Chambre voudra bien retenir que ces accusations
+d'emploi d'agents étrangers, de fausses nouvelles, de tentatives de corruption sont
+cependant affirmées par 150 électeurs de
+différentes communes.</seg><seg>J'arrive tout de suite à l'affiche de la dernière heure, contre laquelle protestent plus
+de 900 électeurs de plus d'une vingtaine de
+communes, c'est-à-dire de plus du quart de
+l'arrondissement de Chinon.</seg><seg>L'honorable M. Delahaye, avec raison, a
+pris de cette affiche ce qui pouvait venir en
+aide à sa cause; moi, je vais en faire la
+lecture entière, et je vous prie, messieurs,
+de vouloir bien y prêter toute votre attention :</seg><seg>Apres avoir parlé de l'incapacité de M.
+Joubert, « de ce propriétaire, le plus ladre
+de l'arrondissement, congédiant tous ses
+domestiques, tondant sur un œuf, sans pitié pour la misère de tout son personnel et
+des petits » ; après avoir dit que M. Joubert
+n'avait « ni savoir ni talent », qu'il n'avait
+pas pu « obtenir la signature, au bas d'une
+affiche, des maires et conseillers républicains de l'arrondissement », on ajoute :</seg><seg>Et voici ce qu'on disait de l'honorable
+M. Jules Delahaye:</seg><seg>J'arrive tout de suite à l'affiche de la dernière heure, contre laquelle protestent plus
+de 900 électeurs de plus d'une vingtaine de
+communes, c'est-à-dire de plus du quart de
+l'arrondissement de Chinon.</seg><seg>L'honorable M. Delahaye, avec raison, a
+pris de cette affiche ce qui pouvait venir en
+aide à sa cause; moi, je vais en faire la
+lecture entière, et je vous prie, messieurs,
+de vouloir bien y prêter toute votre attention :</seg><seg>Apres avoir parlé de l'incapacité de M.
+Joubert, « de ce propriétaire, le plus ladre
+de l'arrondissement, congédiant tous ses
+domestiques, tondant sur un œuf, sans pitié pour la misère de tout son personnel et
+des petits » ; après avoir dit que M. Joubert
+n'avait « ni savoir ni talent », qu'il n'avait
+pas pu « obtenir la signature, au bas d'une
+affiche, des maires et conseillers républicains de l'arrondissement », on ajoute :</seg><quote><seg>« M. Joubert, pendant que tout le monde
+se faisait tuer en 1870, se cachait dans une
+cave et réussissait à ne pas servir son
+pays. »
+</seg><seg>« M. Jules Delahaye défendra nos intérêts
+par la plume et la parole; il l'a déjà montré.</seg></quote><seg>Et voici ce qu'on disait de l'honorable
+M. Jules Delahaye:</seg><quote><seg>« Nous avons le plus grand intérêt à nous
+attacher cet homme de valeur ...M. Jules
+Delahaye s'est engagé volontairement,
+etc... » </seg><seg>« Electeurs, on attribue à M. Jules Delahaye un article contre le général Boulanger dont il n'est pas l'auteur. C'est une calomnie infâme. Vous ferez justice de ce
+nouveau mensonge.</seg></quote><seg>Mais ce n'est là que le lever du rideau.
+Il fallait faire venir sur la scène le général
+Boulanger. <incident><desc>(Ah! ah!)</desc></incident></seg><quote><seg>« La preuve que le général Boulanger désire le succès de M. Delahaye, c'est la lettre
+suivante, que le général lui a adressée :</seg><seg>« Père de famille, patriotes, choisissez !</seg></quote><seg>M. le comte de Douville-Maillefeu. Nous
+la connaissons. C'est toujours la même !</seg></u> <u><seg>M. le rapporteur. Et, par une habileté
+typographique, on a mis au bas, d'abord
+en petits caractères : « Ont voté contre la
+condamnation du général Boulanger tous
+les généraux et les amiraux qui sont l'honneur de notre armée »; — puis, en gros caractères, les noms de ces généraux : «Maréchal Canrobert, général de Ladmirault, général Robert, amiral Véron, etc. », de façon
+à faire croire que ces personnages considérables recommandaient la candidature de
+M. Delahaye.</seg></u> <u><seg>M. Jules Delahaye. Veuillez remarquer
+que le même procédé typographique était
+employé dans la circulaire de mon adversaire.</seg></u> <u><seg>M. le rapporteur. Je vais vous répondre
+sur ce point tout à l'heure.</seg><seg>L'affiche se terminait ainsi : </seg><quote><seg>Je n'ai pas besoin, messieurs, d'insister
+sur la gravité de cette affiche, qui porte
+atteinte à l'honorabilité et au caractère de
+M. Joubert.</seg><seg>« Electeurs,</seg></quote><seg>M. Delahaye en récuse la paternité; je
+l'en félicite. Elle n'est pas digne de son
+habileté. Mais, qu'il me permette de le lui
+dire, quoi qu'il fasse, quoi qu'il dise, il doit
+en supporter tout le poids. En effet, mon
+collègue, cette affiche, dont vous vous défendez d'être l'auteur, elle a été visée par
+vous.</seg></u> <u><seg>M. Jules Delahaye. Pour la dispense du
+timbre! <incident><desc>(Exclamations à gauche.)</desc></incident></seg></u> <u><seg>M. le rapporteur. Elle a paru dans votre
+journal.</seg></u> <u><seg>M. Jules Delahaye. Qui constate mon absence.</seg></u> <u><seg>M. le rapporteur. ...à la date du 21 septembre, c'est-à-dire le samedi soir; par conséquent, vous avez la responsabilité de cette
+affiche colportée à la dernière heure et des
+injures qui y sont contenues.</seg></u> <u><seg>M. Bigot. Mais si elle ne dit que la vérité ?</seg></u> <u><seg>M. le rapporteur. C'est à cette affiche
+de la dernière heure qu'ont répondu toutes
+les protestations qui sont au dossier et qui
+portent un millier de signatures.</seg><seg>Je ne veux pas fatiguer la Chambre de la
+lecture de ces protestations. Qu'elle me permette seulement de les énumérer pour lui
+faire comprendre l'émotion produite par ce
+placard dans l'arrondissement de Chinon.</seg></u> <u><seg>M. Amagat. L'émotion de la défaite.</seg></u> <u><seg>M. le rapporteur. 10 électeurs de la
+commune de Champigny, 70 électeurs d'Avoine affirment, — retenez bien ceci, messieurs, parce que nous y reviendrons, —
+que le placard a été distribué la veille et la
+nuit et affiché le matin de l'élection, à un
+moment où il était impossible à M. Joubert
+de répondre.</seg></u> <u><seg>M. Amagat. Parce qu'il n'avait rien à répondre !</seg></u> <u><seg>Ce sont encore des électeurs de la commune de Savigny; ce sont 46 conseillers
+généraux, conseillers d'arrondissement et
+maires de l'arrondissement de Chinon qui
+viennent affirmer l'influence qu'a eue sui
+le résultat de l'élection ce placard de la
+dernière heure, et qui ajoutent: « Le nom
+de M. Joubert est synonyme d'honneur et
+de loyauté.»</seg><seg>Ce sont 300 habitants de l'arrondissement
+de Chinon, dont 200 de Chinon et le reste
+de Beaumont, Savigny, Avoine, Huismes,
+etc., qui protestent et font remarquer que
+ce placard n'a été distribué qu'à la dernière
+heure.</seg><seg>Mon honorable collègue, vous déclariez
+que vous n'étiez pas l'auteur de ce placard,
+et je n'en doute pas; mais permettez-moi
+de vous dire qu'après avoir refusé même
+en quelque sorte d'en être le parrain, vous
+êtes entré dans de tels détails, et à la souscommission, et dans le bureau, et ici même, sur les faits consignés dans ce placard... <incident><desc>(Interruptions.)</desc></incident></seg></u> <u><seg>M. le comte de Douville -Maillefeu.
+Il y était bien forcé, puisqu'on l'attaquait !</seg></u> <u><seg>M. le comte de Maillé. Vous venez de
+valider M. Fidèle Simon qui n'avait que
+4 voix de plus que son concurrent !</seg><quote><seg>« Londres 18 septembre 1889.</seg><quote><seg>« JULES DELAHAYE.»</seg></quote></quote></u> <u><seg>M. le rapporteur. Il s'agit de rechercher, messieurs, si les tentatives de corruption ou si les manoeuvres de la dernière
+heure ont été de nature à déplacer ces 80
+et quelques voix et à les reporter sur M. Delahaye qui, sans elles, n'aurait pas été élu.</seg></u> <pb n="206"/><u><seg>M. le rapporteur. ... que si vous n'aviez pas affirmé au début que vous y étiezabsolument étranger, nous aurions pu
+croire que vous en étiez le principal collaborateur. <incident><desc>(Très bien! très bien ! à gauche.
+Bruit.)</desc></incident></seg></u> <u><seg>En effet, vous nous avez fait remarquer
+que cette affiche n'était pas inventée de
+toutes pièces. Tout à l'heure, vous en récusiez la paternité, et après vous en avez
+pris la défense.</seg></u> <u><seg>M. Jules Delahaye. Certainement, et je
+la prends encore</seg></u> <u><seg>M. le rapporteur. Vous ajoutez: Il est
+certain que M. Joubert n'a pas fait son service...</seg></u> <u><seg>M. le comte de Douville-Maillefeu. Eh
+bien, alors, aux voix! <incident><desc>(Exclamations.)</desc></incident> Mais
+naturellement ! la question est jugée! (Approbation sur divers bancs.)</seg></u> <u><seg>M. le rapporteur. Vous avez parlé, mon
+cher collègue, de la légende de la cave.
+vous nous avez lu, au sein du bureau, une
+lettre d'un de vos amis qui donne sur cette
+légende des détails fort intéressants. Il
+paraîtrait, d'après cette lettre, que la famille
+Joubert, pendant la guerre de 1870, aurait
+fait creuser, dans le parc du château, une
+vaste cave fermée par une large pierre...
+<incident><desc>(Exclamations à droite.)</desc></incident></seg></u> <u><seg>M. le comte de Douville-Maillefeu. Aux
+voix ! aux voix !</seg></u> <u><seg>M. Jules Delahaye. Cela n'est pas dans
+la lettre.</seg></u> <u><seg>M. le rapporteur. — Je vous demande
+pardon; je la tiens à votre disposition! —
+...par une large pierre, et qui n'était pas
+seulement destinée à recevoir les objets
+précieux, mais à loger, au moment de l'invasion prussienne, la famille de M. Joubert.</seg><seg>C'est sur ce point que je voulais appeler
+l'attention de la Chambre : je dis que dans
+un pays si fier, si chevaleresque, si patriote,
+il n'est pas d'injure plus grave que de dire
+d'un homme qu'il est un peureux et un lâche.</seg></u> <u><seg>Sur plusieurs bancs à droite et à l'extrémité
+gauche de la salle. Mais si c'est vrai ?</seg></u> <u><seg>M. le rapporteur. Il n'est pas d'injure
+plus cruelle qu'on puisse faire à un homme
+qui sollicite la confiance des électeurs, que
+de venir l'accuser de lâcheté. <incident><desc>(Bruit.)</desc></incident></seg><seg>J'arrive maintenant au fait allégué. Rien
+n'est moins exact; M. Joubert a rempli toutes ses obligations. <incident><desc>(Mouvements divers.)</desc></incident></seg><seg>D'abord la discussion s'était établie sur
+le point de savoir si l'honorable M. Joubert
+ne devait pas faire partie de la garde nationale mobile. C'est la première question
+qui avait été soulevée; mais comme, depuis, à la suite des recherches que vous
+avez faites, mon cher collègue, vous avez
+reconnu qu'il ne pouvait y être compris,
+vous avez demandé s'il avait été incorporé
+dans la garde nationale mobilisée...</seg></u> <u><seg>M. Gaston Galpin. A-t-il fait son devoir,
+oui ou non ? <incident><desc>(Bruit.)</desc></incident></seg></u> <u><seg>M. le rapporteur. Il ne faisait pas partie
+de la garde nationale mobile, aux termes de
+article 14 de la loi du 1er février 1868.
+</seg><seg>Il ne faisait pas partie de la garde nationale mobilisée; il faisait partie du second
+ban, c'est moi-même qui l'ai consigné dans
+mon procès-verbal; mais quand vous venez
+nous lire des arrêtés préfectoraux faisant
+l'appel de ce second ban de la garde nationale mobilisée, — permettez-moi de vous
+dire que cela s'est passé dans tous nos départements — que l'invasion allemande n'a
+pas permis d'appeler ce second ban... <incident><desc>(Vives protestations à droite et sur quelques
+bancs à l'extrémité gauche de la salle.)</desc></incident></seg></u> <u><seg>M. le comte de Kergariou. C'est une erreur ! nous sommes tous partis.</seg></u> <u><seg>M. de Soland. Comment pouvez-vous
+dire cela devant M. de Maillé, qui a si vaillamment commandé un bataillon de mobilisés de Maine-et-Loire ?</seg></u> <u><seg>M. Pierre Richard. Comment, alors
+que tant de soldats français s'évadaient
+d'Allemagne pour venir reprendre du service, pouvez-vous soutenir à la tribune une
+thèse pareille ? <incident><desc>(Applaudissements sur quelques bancs à l'extrémité gauche de la salle
+et à droite.)</desc></incident></seg></u> <u><seg>M. le comte de Douville-Maillefeu.
+Assez! aux voix!
+</seg></u> <u><seg>M. le rapporteur. Je pense que personne
+de ce côté <incident><desc>(l'orateur désigne l'extrémité gauche de la salle)</desc></incident> ne peut réclamer le monopole du patriotisme. A cette époque, nous
+avons tous payé de notre personne. (Interruptions à droite.)</seg></u> <u><seg>M. Dugué de la Fauconnerie. En différente monnaie!</seg></u> <u><seg>M. le président. Veuillez ne pas interrompre.</seg></u> <u><seg>M. le rapporteur. Mais ce que je veux
+établir, c'est que l'honorable M. Joubert
+n'était nullement obligé à cette époque de
+partir avec la garde nationale et qu'il ne
+pouvait être appelé qu'avec le second ban
+de la garde nationale mobilisée.</seg></u> <u><seg>M. le baron Reille. Et nous, est-ce que
+nous y étions obligés? Et cependant nous
+sommes partis.</seg></u> <u><seg>M. le rapporteur. Je savais bien les observations que vous me feriez, et j'étais
+prêt à y répondre.</seg><seg>Vous me dites: « On pouvait ne pas être
+obligé de partir, mais on devait partir! »
+<incident><desc>(Oui! oui! à droite.)</desc></incident></seg><seg>Messieurs, permettez-moi de vous dire
+que la question n'est pas là (Si! si! à droite),
+la question est de savoir si dans cette affiche de la dernière heure il y a un fait
+inexact qni entache l'honorabilité et le caractère d'un homme.</seg><seg>Ce fait inexact a été mis en avant : c'est
+une calomnie.</seg><seg>Il s'agit de savoir s'il y a en outre une
+manoeuvre déloyale. Eh bien, cette manoeuvre déloyale existe : car, monsieur Delahaye, vous avez répandu ce placard au
+moment où il était absolument impossible
+à M. Joubert d'y répondre. <incident><desc>(Mouvements divers. — Aux voix ! aux voix !)</desc></incident></seg></u> <u><seg>Il s'agit de savoir s'il y a en outre une
+manoeuvre déloyale. Eh bien, cette manoeuvre déloyale existe : car, monsieur Delahaye, vous avez répandu ce placard au
+moment où il était absolument impossible
+à M. Joubert d'y répondre. <incident><desc>(Mouvements divers. — Aux voix ! aux voix !)</desc></incident></seg></u> <u><seg>M. le comte de Douville-Maillefeu.
+Mais puisque c'est la vérité !</seg></u> <u><seg>M. Leygues. Est-il parti ou n'est-il pas
+parti ? Voilà ce que je voudrais savoir.
+<incident><desc>(Très bien! très bien!)</desc></incident></seg></u> <u><seg>Nous ne demandons que cela!</seg></u> <u><seg>M. le rapporteur. Je n'ai jamais dit que
+M. Joubert fut parti. <incident><desc>(Vives exclamations sur
+un grand nombre de bancs.)</desc></incident></seg></u> <u><seg>M. le comte de Douville-Maillefeu. Alors,
+aux voix! Descendez de la tribune! Cela
+suffit!</seg></u> <u><seg>M. le rapporteur. Permettez-moi, messieurs, d'aller jusqu'au bout, et permettezmoi de vous dire... <incident><desc>(Aux voix! aux voix!
+Bruit.)</desc></incident></seg></u> <u><seg>M. le président. Personne ne peut demander à aller aux voix quand un orateur
+est à la tribune.</seg><seg>M. Dugué de la Fauconnerie. Vous la
+lui maintenez contre le sentiment de la
+chambre.</seg></u> <u><seg>M. Jules Delahaye. C'est inexact!</seg></u> <u><seg>M. le rapporteur. ... et malgré cela, M.
+Joubert a voulu constituer lui-même dansson arrondissement une compagnie franche... <incident><desc>(Rires à droite.)</desc></incident></seg></u> <u><seg>M. Dugué de la Fauconnerie. Qui ! il
+voulait bien envoyer les autres se battre !</seg></u> <u><seg>M. le rapporteur. ... pour y faire aussi
+son devoir lorsque l'heure serait venue.</seg><seg>Je dis, mon cher collègue, que vous devez reconnaître que vos amis ont abaissé
+ainsi la dignité du suffrage universel et
+porté atteinte à sa sincérité... <incident><desc>(Réclamations)</desc></incident>, car c'est ainsi qu'apparaît la manoeuvre déloyale de la dernière heure et sur
+laquelle je tiens à appeler votre attention.</seg><seg>Comme je l'ai démontré, ce placard a été
+colporté la nuit et le matin même du jour
+de l'élection. Il ne répondait pas à la circulaire dont parlait tout à l'heure l'honorable
+M. Delahaye.
+</seg><seg>Ce n'est pas à cette circulaire, mon cher
+collègue, que vous avez répondu, permettez-moi de vous le dire, et je suis obligé
+alors de donner quelques courtes explications à la Chambre.</seg><seg>L'honorable M. Delahaye occupe dans le
+département d'Indre-et-Loire la situation
+de rédacteur d'un journal qui est, si je ne
+me trompe, un journal ultraroyaliste et
+ultraclérical. <incident><desc>(Exclamations sur divers
+bancs.)</desc></incident></seg></u> <u><seg>Il est très vrai que vous avez pu vous
+inspirer de cette circulaire dans la forme
+pour faire votre placard de la dernière
+heure; mais vous ne pouvez attribuer cette
+circulaire ni à M. Joubert ni à ses amis,
+parce qu'elle n'est pas contresignée de lui,
+parce qu'elle n'a pas été composée dans
+l'imprimerie où il a fait faire ses professions
+de foi, ses bulletins et, par conséquent, on
+ne saurait lui en attribuer la responsabilité.
+<incident><desc>(Aux voix! aux voix!)</desc></incident></seg><seg>L'honorable M. Delahaye occupe dans le
+département d'Indre-et-Loire la situation
+de rédacteur d'un journal qui est, si je ne
+me trompe, un journal ultraroyaliste et
+ultraclérical. <incident><desc>(Exclamations sur divers
+bancs.)</desc></incident></seg></u> <u><seg>L'honorable M. Delahaye occupe dans le
+département d'Indre-et-Loire la situation
+de rédacteur d'un journal qui est, si je ne
+me trompe, un journal ultraroyaliste et
+ultraclérical. <incident><desc>(Exclamations sur divers
+bancs.)</desc></incident></seg></u> <u><seg>M. le comte de Douville-Maillefeu.
+Qu'est-ce que cela nous fait ?</seg></u> <u><seg>M. le rapporteur. L'honorable M. Delahaye avait fait paraître dans ce journal,
+pendant des mois, en 1887... <incident><desc>(Assez! assez!
+à droite. — Bruit.)</desc></incident></seg><seg>Je ne puis pas continuer à parler au milieu du bruit.</seg></u> <u><seg>M. le président. Messieurs, l'orateur attendra le silence.</seg></u> <u><seg>M. le rapporteur. Je dis que Thonorable
+M. Delahaye a fait dans son journal, publié
+en 1887, des articles acerbes contre le général Boulanger. Le parti républicain a
+usé alors de son droit de légitime défense
+et a cru pouvoir dans ses placards rappeler l'ancienne polémique de M. Delahaye.
+<incident><desc>(Bruit. — Aux voix! aux voix!)</desc></incident></seg></u> <u><seg>Veuillez continuer, monsieur le rapporteur.</seg></u> <u><seg><incident><desc>M. le rapporteur. Messieurs, l'impossibilité où je me trouve de continuer mon
+discours m'oblige à n'ajouter que quelques
+mots.</desc></incident></seg></u> <u><seg>A gauche. Aux voix! aux voix!</seg></u> <u><seg>M. le rapporteur. Vous devrez vous rappeler que vous êtes en présence d'une affiche calomnieuse publiée à la dernière
+heure, et vous adopterez les conclusions
+de votre bureau, qui vous propose d'invalider cette élection. <incident><desc>(Aux voix! aux voix!)</desc></incident></seg></u> <u><seg>M. le président. Personne ne demande
+plus la parole ?</seg><seg>Je vais mettre aux voix les conclusions
+du bureau. <incident><desc>(Bruit. — Agitation.)</desc></incident></seg></u> <u><seg>M. Boissy-d'Anglas. Je demande la parole.</seg></u> <u><seg>M. le président. La parole est à M. Boissyd'Anglas.</seg></u> <u><seg>Messieurs, cette cave n'a jamais existé !</seg><seg>Je maintiens la parole à M. le rapporteur.</seg></u> <u><seg>M. le rapporteur. Permettez-moi de
+vous dire, messieurs, que la passion politique vous rend injustes, car, au moment de
+la guerre de 1870, vous, mon cher collègue,
+qui êtes de ce département, vous et vos
+amis vous connaissiez à cette époque les
+inquiétudes, les angoisses et les douleurs
+d'un homme qui était penché sur le chevet d'une femme qui mourait quelques
+jours après...</seg></u> <u><seg>M. le président. Messieurs, je vous répète que personne n'a le droit de demander
+qu'on aille aux voix lorsqu'un orateur est à
+la tribune.</seg></u> <pb n="207"/><u><seg>M. Boissy-d'Anglas. Messieurs, je déclare
+qu'après ce qui vient d'être dit, et à raison
+de l'obscurité qui persiste dans cette discussion, il m'est absolument impossible —si vous continuez à interrompre, je vous
+rappellerai à l'ordre.et je sais que je ne suis pas le seul — de me
+prononcer sur la question qui vous est soumise. <incident><desc>(Très bien! très bien! à gauche.)</desc></incident> Le
+seul point qu'il s'agit de connaître, le seul
+point que nos collègues qui siègent à droite
+paraissent vouloir mettre en avant, c'est de
+savoir si, oui ou non, M. Joubert a fait son
+devoir au moment de la guerre.</seg></u> <u><seg>Sur divers bancs. C'est cela !</seg></u> <u><seg>Un membre à gauche. S'il a pu le faire.</seg></u> <u><seg>M. Boissy-d'Anglas. Je sais que nous
+ne devrions pas nous occuper de ce côté
+de la question; que nous devrions rechercher seulement si l'élection a été viciée ou
+non; mais il n'en est pas moins vrai que
+la question a été portée sur ce terrain et que
+l'honneur de l'homme est en jeu.</seg><seg>Eh bien, je demande — et je répète que
+je me fais ici l'interprète de nombreux collègues <incident><desc>(Très bien! très bien! à gauche)</desc></incident>, — je
+demande, pour l'honneur de notre ancien
+collègue, que le dossier soit renvoyé au
+bureau qui éclairera d'une façon complète
+le point encore obscur que j'ai signalé.
+(Applaudissements sur divers banes à gauche
+et au centre.)</seg></u> <u><seg>A droite. Nous ne sommes pas un jury
+d'honneur !</seg></u> <u><seg>M. Godefroy Cavaignac. Je demande la
+parole.</seg></u> <u><seg>M. Godefroy Cavaignac. Messieurs, il
+n'échappe pas à la Chambre que tout le débat de l'élection de Chinon roule sur l'écart
+qui existe entre l'affirmation contenue dans
+la circulaire de M. Delahaye et la réalité des
+faits.</seg><seg>C'est là le secret des décisions contradictoires qui ont été prises par le bureau que
+J'ai l'honneur de présider.</seg><seg>Le premier jour, en présence de l'affirmation de la circulaire de M. Delahaye,
+M. Joubert n'ayant pas demandé à être entendu par notre bureau, celui-ci prit une
+première résolution et, considérant qu'il y
+avait dans la circulaire une diffamation,
+mais qu'il n'était pas établi jusqu'à nouvel
+ordre qu'il y eût une calomnie, décida
+de valider l'élection de M. Delahaye.</seg><seg>Le second jour, M. Joubert fut entendu, et
+le bureau se livra, par l'entremise du rapporteur M. Legludic, à l'instruction que demandait tout à l'heure M. Boissy-d'Anglas.
+Le bureau crut constater que M. Joubert
+avait rempli toutes ses obligations légales...
+<incident><desc>(Très bien! très bien! au centre.)</desc></incident></seg></u> <u><seg>Un membre à gauche. Il faut le prouver !</seg></u> <u><seg>M. le président. Veuillez ne pas interrompre.</seg></u> <u><seg>M. Godefroy Cavaignac. ... puisqu'il
+était établi que M. Joubert était légalement
+dispensé de faire partie de la mobile et
+puisqu'il était établi que les décrets de 1870
+ne l'incorporaient pas dans la garde nationale mobilisée.</seg><seg>Aujourd nui, à la tribune, M. Delahaye a
+apporté un document nouveau, qui avait
+échappé à l'attention du rapporteur, parce
+que c'est un document préfectoral et non
+ministériel.</seg><seg>Ce document appelait les hommes de la
+catégorie dont M. Joubert faisait partie à
+entrer dans la garde nationale mobilisée.
+Il n'a point été établi par l'honorable rapporteur que M. Joubert fût dispensé de répondre à cet appel préfectoral. Dans ces conditions, je déclare, quant à moi, qu'il m'est
+impossible d'invalider l'élection de M. Delahaye. <incident><desc>(Applaudissements répétés à droite et
+sur divers bancs à gauche et au centre. —
+Mouvement prolongé.)</desc></incident></seg></u> <u><seg>M. le président. La parole est à M. Chautemps.</seg></u> <u><seg>M. Chautemps. Messieurs, l'honorable
+M. Legludic vient de me déclarer qu'en 1871
+M. Joubert avait lui-même pris l'initiative,dans son arrondissement de la constitution
+d'un corps franc.</seg></u> <u><seg>Voix à droite. Il n'y en a pas eu !</seg></u> <u><seg>M. Chautemps... et qu'il s'y était engagé
+comme simple soldat. Dans ces conditions,
+je ne crois pas que l'accusation grave portée contre lui puisse être maintenue. Je demanderai à M. Legludic d'affirmer ici à cette
+tribune la vérité du fait qu'il m'a dit tout à
+l'heure. <incident><desc>(Très bien! très bien! sur divers
+bancs. — Interruptions.)</desc></incident></seg></u> <u><seg>M. Pourquery de Boisserin. Je demande
+la parole. <incident><desc>(La clôture! la clôture! —Parlez!
+parlez!)</desc></incident></seg></u> <u><seg>M. le président. La parole est à M. Pourquery de Boisserin.</seg></u> <u><seg>M. Pourquery de Boisserin. Messieurs,
+je crois qu'il appartient à l'impartialité de
+la Chambre de ne pas se prononcer à l'heure
+qu'il est sans avoir encore entendu M. Joubert dans le 5e bureau. <incident><desc>(Exclamations à
+droite.)</desc></incident></seg><seg>La situation est bien nette. Nous ayons
+entendu dans le bureau, une première fois,
+M. Delahaye. Sur ses explications, la balance a penché en sa faveur. Nous avons
+ensuite entendu M. Joubert. Sur les explications de ce dernier, donnant un démenti
+formel... <incident><desc>(Exclamations à droite)</desc></incident>, le bureau
+a invalidé. (Interruptions sur les mêmes
+bancs.)</seg><seg>Nous sommes peut-être du même avis,
+messieurs; il est donc inutile de m'interrompre.</seg><seg>La question a été très nettement posée
+par M. Godefroy Cavaignac : nous sommes
+en présence d'une pièce nouvelle...</seg></u> <u><seg>Sur divers bancs. C'est cela !</seg></u> <u><seg>M. Pourquery de Boisserin. ...produite
+par M. Delahaye et à laquelle il ne pouvait
+être répondu, étant donné qu'on n'en avait
+pas eu connaissance auparavant.</seg><seg>Vous allez prononcer, ainsi que le disait
+avec raison M. Boissy-d'Anglas, sur l'honneur d'un homme qui a siégé au Parlement
+français. <incident><desc>(C'est cela! — Très bien! sur divers bancs.)</desc></incident></seg><seg>Eh bien, je demande à tous mes collègues,
+aussi bien de la droite que de la gauche,
+s'il est possible de juger, sans l'avoir entendu, l'homme contre lequel une telle accusation est portée.</seg><seg>S'il vous est démontré qu'il n'a pas fait
+son devoir, il ne se trouvera pas un seul représentant du peuple pour valider son élection; et s'il est établi qu'il a fait son devoir, si vous vous prononcez sans l'avoir entendu, vous risquez, dans un moment
+d'imprudence, d'emportement parlementaire, permettez-moi cette expression, de
+flétrir à jamais un homme qui ne l'aurait
+pas mérité! <incident><desc>(Applaudissements à gauche. —
+Interruptions à droite. — Bruit.)</desc></incident></seg></u> <u><seg>S'il vous est démontré qu'il n'a pas fait
+son devoir, il ne se trouvera pas un seul représentant du peuple pour valider son élection; et s'il est établi qu'il a fait son devoir, si vous vous prononcez sans l'avoir entendu, vous risquez, dans un moment
+d'imprudence, d'emportement parlementaire, permettez-moi cette expression, de
+flétrir à jamais un homme qui ne l'aurait
+pas mérité! <incident><desc>(Applaudissements à gauche. —
+Interruptions à droite. — Bruit.)</desc></incident></seg></u> <u><seg>M. le président. Permettez au président
+de poser la question.</seg></u> <u><seg>M. le rapporteur. Je demande le renvoi
+au bureau.</seg></u> <u><seg>M. le président. Laissez-moi le dire à la
+Chambre.</seg></u> <u><seg>M. Boissy-d'Anglas a demandé le renvoi
+au bureau. C'est une motion préjudicielle
+qui a la priorité. Je vais la mettre aux voix.
+<incident><desc>(Interruptions.)</desc></incident></seg></u> <u><seg>M. le comte de Douville-Maillefeu. Du
+moment que le rapporteur demande le renvoi au bureau, il est de droit.</seg></u> <u><seg>M. le rapporteur. Je demande la parole.</seg></u> <u><seg>M. le président. Monsieur le rapporteur
+a la parole. <incident><desc>(Interruptions à droite.)</desc></incident></seg></u> <u><seg>M. le rapporteur M. Boissy-d'Anglas a
+demandé le renvoi au bureau. M. Delahaye
+a lu, en effet, à la tribune une pièce qui n'avait pas été présentée au 5e bureau. Dans ces
+conditions, il n'est pas possible que vous
+frappiez l'honorabilité et le caractère d'un
+homme avant d'être exactement renseignés.Comme rapporteur, j'ai appuyé la demande
+de renvoi. Ce renvoi est de droit. <incident><desc>(Dénégations à droite.)</desc></incident></seg></u> <u><seg>M. Le Hérissé. Mais non, le renvoi n'est
+pas de droit dans l'espèce actuelle!</seg></u> <u><seg>M. le président. Le renvoi n'est plus demandé seulement par M. Boissy-d'Anglas, il
+l'est aussi par M. le rapporteur, au nom du
+bureau.</seg></u> <u><seg>M. Jolibois. Le renvoi au bureau n'est
+pas de droit.</seg></u> <u><seg>M. le président. Le renvoi est de droit
+quand un rapporteur le demande en cas
+d'amendement à un projet de loi.</seg></u> <u><seg>M. Jolibois. Je demande la parole pour
+un rappel au règlement.</seg></u> <u><seg>M. le président. La parole est à M. Jolibois pour un rappel au règlement.</seg></u> <u><seg>M. Jolibois. Messieurs, je ne veux dire
+qu'un mot. Je n'entends faire qu'un simple
+rappel au règlement, et je crois que vous
+voudrez bien m'entendre, car, je le répète,
+je serai excessivement bref.</seg><seg>Il est certain que, dans les questions d'affaires qui sont traitées par une commission,
+quand le rapporteur demande le renvoi, le
+renvoi est de droit. Mais ici il n'y a pas de
+commission. Il y a un bureau, ce qui est
+tout différent.</seg></u> <u><seg>M. Poincaré. Il y a une sous-commission, cela revient au même!
+</seg></u> <u><seg>Un membre a gauche. Puisqu'il y a une
+sous-commissioneprise dans le sein du bureau, c'est que le bureau tient lieu de commission.</seg></u> <u><seg>M. le président. Messieurs, le règlement dit qu'en matière de projet de loi, le
+renvoi d'un amendement à la commission
+est de droit, lorsque le rapporteur le demande.</seg><seg>En matière de vérifications de pouvoirs, le
+cas d'une demande de renvoi du dossier au
+bureau n'est pas prévu; par conséquent, je
+serai obligé d'appeler la Chambre à trancher la question, si l'on insiste.</seg></u> <u><seg>M. Bovier-Lapierre. Nous demandons le
+renvoi à la sous-commission. <incident><desc>(Bruit.)</desc></incident></seg></u> <u><seg>M. le président. Messieurs, du moment
+qu'il n'y a pas d'opposition, je suis obligé
+de mettre aux voix le renvoi aux bureaux.</seg></u> <u><seg>M. Camille Pelletan. Je demande la
+parole.</seg></u> <u><seg>M. le président. La parole est à M. Pe
+letan.</seg></u> <u><seg>M. Camille Pelletan. Je demande à dire
+un mot.</seg><seg>M. Jolibois se fonde sur cette donnée que
+le texte du règlement n'a pas prévu le
+cas d'un renvoi au bureau. Je fais remarquer simplement que les bureaux, en
+matière d'élections, font fonctions de commissions. Voilà l'argument de procédure.</seg><seg>Et quant à l'argument de fond, — je
+m'adresse ici à tous mes collègues, de
+quelque côté de la Chambre qu'ils siègent,
+avec cette conviction que, quand il s'agit
+de questions d'humanité et d'équité, nous
+ne trouverons de sourds dans aucun parti
+— je demande s'il peut être admissible
+que le renvoi pour un examen nouveau
+soit de droit quand il s'agit d'un point de
+législation plus ou moins subtil, et qu'il
+ne soit pas de droit, contrairement à tout
+sentiment de justice et d'humanité, quand
+il s'agit de pièces introduites contre l'honneur d'un homme et auxquelles cet homme
+n'a pu répondre. <incident><desc>(Applaudissements sur divers bancs à gauche.)</desc></incident></seg></u> <u><seg>M. le président. Je rappelle que, le renvoi étant demandé par le rapporteur...</seg></u> <u><seg>M. Jules Delahaye. Je demande moimême le renvoi de la question devant le
+5e bureau. <incident><desc>(Très bien! très bien! à droite et
+sur divers bancs.)</desc></incident></seg></u> <u><seg>M. le président. Tout le monde étant
+d'accord, le renvoi au bureau est prononcé.</seg></u> <u><seg>M. le président. Vous avez la parole.</seg></u> <pb n="208"/></div>
+        <!--Partie_14-->
+        <div type="part" corresp="#pv">
+          <head>RÈGLEMENT DE L'ORDRE DU JOUR</head>
+        </div>
+        <!--Partie_15-->
+        <div type="part" corresp="#pv">
+          <head>DEPÔT DE PROJETS DE LOI</head>
+        </div>
+        <!--Partie_16-->
+        <div type="part" corresp="#pv">
+          <head>DÉPÔT DE PROPOSITIONS DE LOI</head>
+        </div>
+        <!--Partie_17-->
+        <div type="part" corresp="#pv"><head>CONGÉS</head><u><seg>M. le président. Nous allons régler l'ordre du jour de la séance de samedi.</seg></u> <u><seg>M. Pourquery de Boisserin. Je demande
+la parole sur l'ordre du jour.</seg></u> <u><seg>M. Pourquery de Boisserin. Je demande
+à la Chambre de vouloir bien inscrire en
+tête de la séance de jeudi de la semaine
+prochaine la discussion du rapport sur
+l'élection de M. Peyrusse dans l'arrondissement d'Auch. Voilà plusieurs jours qu'elle
+est inscrite à l'ordre du jour. Je demande
+qu'elle soit fixée à un jour déterminé, aussi
+bien dans l'intérêt de M. Peyrusse que
+dans le mien. <incident><desc>(Exclamations en sens divers.)</desc></incident></seg><seg>C'est une considération personnelle qui
+me fait faire cette demande. Il me sera très
+difficile d'être ici samedi. <incident><desc>(Nouvelles exclamations.)</desc></incident></seg></u> <u><seg>M. Casimir-Perier, rapporteur. Messieurs, j'ai l'honneur d'être le rapporteur
+de l'élection de M. Peyrusse dans la circonscription d'Auch. Interrogé par mon
+collègue sur la date où la discussion pourrait être fixée, je lui ai répondu que je ne
+croyais pas pouvoir, sans accord avec l'intéressé, remettre le débat.</seg><seg>Quant à moi, je suis aux ordres de la
+Chambre.</seg></u> <u><seg>Voix diverses. A samedi! — A jeudi!</seg></u> <u><seg>M. Pourquery de Boisserin. Samedi je
+ne pourrai pas.</seg></u> <u><seg>Plusieurs membres au centre. Ce soir, si
+vous le voulez. <incident><desc>(Non! non!)</desc></incident></seg></u> <u><seg>M. Poorquery de Boisserin. Eh bien, ce
+sera le jour que vous voudrez.</seg></u> <u><seg>M. le président. On propose jeudi et samedi.</seg><seg>Je dois mettre d'abord aux voix le jour le
+plus éloigné, qui est jeudi.</seg></u> <note type="comment"><seg>(Les votes sont recueillis. — MM. les secrétaires en font le dépouillement.)</seg></note> <u><seg>M. le président. La discussion reste donc
+en tête de l'ordre du jour.</seg><seg>Scrutin pour la nomination d'un membre de la commission de contrôle de la circulation monétaire ;</seg><seg>Suite de vérification des puvoirs :</seg><seg>Discussion des conclusions du rapport du
+4e bureau sur l'élection de M. Peyrusse;</seg><seg>Discussion des conclusions du rapport du
+6e bureau sur l'élection de M. Lachièze;</seg><seg>Discussion des conclusions du rapport du
+11e bureau sur l'élection de M. Dupuytrem;</seg><seg>Discussion des conclusions du rapport
+du 7e bureau sur l'élection de M. de Montalembert;</seg><seg>Discussion des conclusions du rapport
+du 2e bureau sur l'élection de M. de Montsaulnin;</seg><seg>Discussion des conclusions du rapport
+du 6e bureau sur l'élection de M. Fairé;</seg><seg>Discussion des conclusions du rapport
+du 9e bureau sur l'élection de M. Paulin
+Méry;</seg><seg>Discussion des conclusions du rapport
+du 4e bureau sur l'élection de M. RobertMitchell;</seg><seg>Discussion des conclusions du rapport
+du 3e bureau sur l'élection de M. ThirionMontauban;</seg><seg>Discussion des conclusions du rapport
+du 11e bureau sur l'élection de M. Ternisien.</seg><seg>Il n'y a pas d'observation ?</seg><seg>L'ordre du jour est ainsi réglé.</seg></u> <u><seg>Les projets de loi seront imprimés, distribués et renvoyés à la commission d'intérêt local.</seg></u> <u><seg>M. le président. J'ai reçu de MM. Jolibois, Arthur Legrand et plusieurs de leurs
+collègues une proposition de loi relative au
+dégrèvement de l'impôt foncier sur les propriétés non bâties dans les quarante-deux
+départements surimposés.</seg><seg>J'ai reçu de MM. Thellier de Poncheville
+et de La Martinière une proposition de loi
+relative à l'indemnité de plus-value à payer
+aux fermiers sortants.</seg><seg>J'ai reçu de M. Macherez et plusieurs de
+ses collègues une proposition de loi ayant
+pour objet la protection du travail national
+contre les étrangers.</seg><seg>Les propositions de loi seront imprimées,
+distribuées et renvoyées à la commission
+d'initiative parlementaire.</seg></u> <u><seg>M. le président. La commission des congés est d'avis d'accorder:</seg><seg>A M. Jules Maigne, un congé de quelques
+jours;</seg><seg>A M. Vilar (Edouard), un congé de quinze
+jours.</seg><seg>Il n'y a pas d'opposition?...</seg><seg>Les congés sont accordés.</seg></u> <note type="comment"><seg>(La Chambre, consultée, se prononce
+contre l'ajournement à jeudi.)</seg></note> <signed><seg>Le Chef du service sténographigue
+de la Chambre des députés,
+ÉMILE GROSSELIN.</seg></signed></div>
+        <!--div_part1-->
+        <div type="part"><u><seg>M. Linard, rapporteur. — Les opérations
+électorales dans la circonscription unique
+formée par la Cochinchine française ont
+donné lieu à deux tours de scrutin.</seg><seg>Quatre candidats avaient fait la déclaration prescrite par l'article 2 de la loi du
+17 juillet 1889 : MM. Le Myre de Vilers, Ternisien, Carabelli et Laurans.</seg><seg>Le 1er tour de scrutin, qui eut lieu le
+22 septembre, donna les résultats suivants :</seg><seg>Electeurs inscrits, 1,822.</seg><seg>Votants, 887.</seg><seg>Bulletins n'entrant pas en compte dans le
+calcul de la majorité, 24.</seg><seg>Bulletins nuls, mais entrant en compte
+dans ce calcul, 4.</seg><seg>Ont obtenu :</seg><table><row><cell>MM. Le Myre de Vilers...... 332 voix 
+Ternisien................. 263 —
+Laurans .................. 134 —
+Carabelll ................. 130 —</cell></row></table><seg>Aucun des candidats n'ayant obtenu la
+majorité absolue, qui était de 423 voix, il y
+eut lieu de procéder à un second tour de
+scrutin.</seg><seg>Ici, il importe de faire remarquer qu'à
+propos de ce 1er tour de scrutin un des
+candidats, M. Laurans, adressa à la commission de recensement, qui ne l'accepta pas,
+une réclamation basée sur ce fait, que M.
+Le Myre de Vilers n'avait pas effectué le dépôt de sa déclaration de candidature dans
+la forme prévue par la loi du 17 juillet
+1889.</seg><seg>Bulletin trouvé en sus des émargements, 1.</seg><seg>Bulletins n'entrant pas en compte dans le
+calcul de la majorité, 10.</seg><seg>Bulletins nuls, mais entrant en compte
+dans ce calcul, 3.</seg><seg>Ont obtenu :</seg><seg>Deux protestations jointes au dossier ont
+été examinées par votre 11e bureau avec le
+plus grand soin.</seg><seg>L'une de ces protestations, en date du
+9 octobre, est de M. Ternisien et est adressée à la commission de recensement général des votes de Cochinchine. Elle vise la
+loi du 17 juillet 1889 et prétend que la déclaration de candidature de M. Le Myre de
+Vilers, n'ayant pas été faite conformément
+à cette loi, les bulletins déposés au nom de
+ce candidat ne doivent pas entrer en compte
+dans le résultat du dépouillement.</seg><seg>Cette protestation prétend aussi que
+bulletins portant le nom de M. Le Myre de
+Vilers sont transparents et que beaucoup
+d'entre eux portent des marques extérieures.</seg><seg>La loi du 17 juillet 1889 a-t-elle été transgressée par M. Le Myre de Vilers ? Comment
+cette loi pouvait-elle être exécutée pour les
+colonies ? Telles sont les deux questions
+que s'est posées le 11e bureau.</seg><seg>Le décret de convocation des électeurs
+pour le 22 septembre n'a été publié que le
+28 août; c'est donc le 28 août seulement
+que les candidats furent officiellement informés du jour des élections. Il ne devait
+par conséquent s'écouler que vingt-cinq
+jours entre le décret de convocation et le
+jour des élections.</seg><seg>Il résulte de là que M. Le Myre de Vilers
+qui était en France, ne pouvait faire parvenir en temps utile sa déclaration de candidature à M. le gouverneur de la Cochinchine, même en employant la voie postale
+anglaise.</seg><seg>Votre 11e bureau est convaincu que le
+sous-secrétaire d'Etat était parfaitement
+fondé à recevoir cette déclaration et à en
+donner récépissé, car il est le chef direct de
+M. le gouverneur de Cochinchine et le représentant autorisé des intérêts politiques de
+nos colonies.</seg><seg>Le 2e tour de scrutin eut lieu le 6 octobre
+et donna les résultats suivants :</seg><seg>Electeurs inscrits, 1,822.</seg><seg>Ici, il importe de faire remarquer qu'à
+propos de ce 1er tour de scrutin un des
+candidats, M. Laurans, adressa à la commission de recensement, qui ne l'accepta pas,
+une réclamation basée sur ce fait, que M.
+Le Myre de Vilers n'avait pas effectué le dépôt de sa déclaration de candidature dans
+la forme prévue par la loi du 17 juillet
+1889.</seg><seg>Bulletin trouvé en sus des émargements, 1.</seg><seg>Bulletins n'entrant pas en compte dans le
+calcul de la majorité, 10.</seg><seg>Bulletins nuls, mais entrant en compte
+dans ce calcul, 3.</seg><seg>Ont obtenu :</seg><table><row><cell>MM. Le Myre de Vilers...... 487 voix.
+Ternisien...... 426  —
+Carabelli...... 1 —
+</cell></row></table><seg>Deux protestations jointes au dossier ont
+été examinées par votre 11e bureau avec le
+plus grand soin.</seg><seg>L'une de ces protestations, en date du
+9 octobre, est de M. Ternisien et est adressée à la commission de recensement général des votes de Cochinchine. Elle vise la
+loi du 17 juillet 1889 et prétend que la déclaration de candidature de M. Le Myre de
+Vilers, n'ayant pas été faite conformément
+à cette loi, les bulletins déposés au nom de
+ce candidat ne doivent pas entrer en compte
+dans le résultat du dépouillement.</seg><seg>Cette protestation prétend aussi que
+bulletins portant le nom de M. Le Myre de
+Vilers sont transparents et que beaucoup
+d'entre eux portent des marques extérieures.</seg><seg>La loi du 17 juillet 1889 a-t-elle été transgressée par M. Le Myre de Vilers ? Comment
+cette loi pouvait-elle être exécutée pour les
+colonies ? Telles sont les deux questions
+que s'est posées le 11e bureau.</seg><seg>Le décret de convocation des électeurs
+pour le 22 septembre n'a été publié que le
+28 août; c'est donc le 28 août seulement
+que les candidats furent officiellement informés du jour des élections. Il ne devait
+par conséquent s'écouler que vingt-cinq
+jours entre le décret de convocation et le
+jour des élections.</seg><seg>Il résulte de là que M. Le Myre de Vilers
+qui était en France, ne pouvait faire parvenir en temps utile sa déclaration de candidature à M. le gouverneur de la Cochinchine, même en employant la voie postale
+anglaise.</seg><seg>Votre 11e bureau est convaincu que le
+sous-secrétaire d'Etat était parfaitement
+fondé à recevoir cette déclaration et à en
+donner récépissé, car il est le chef direct de
+M. le gouverneur de Cochinchine et le représentant autorisé des intérêts politiques de
+nos colonies.</seg><seg>M. le président. J'ai reçu de M. le ministre de l'intérieur deux projets de loi :</seg><seg>Le 2e tour de scrutin eut lieu le 6 octobre
+et donna les résultats suivants :</seg><seg>Electeurs inscrits, 1,822.</seg><seg>Votants, 926.</seg><seg>Il faut remarquer aussi que l'intention du
+législateur a été d'interdire les candidatures multiples par la loi du 17 juillet 1889
+et non de rendre cette loi inapplicable à
+certaines colonies. D'ailleurs, une loi doit
+toujours être entendue dans son esprit 
+plus large.</seg><seg>M. le sous-secrétaire d'Etat aux colonies
+a reçu, le 7 septembre, la déclaration de
+candidature de M. Le Myre de Vilers, pour
+l'élection en Cochinchine du 22 septembre
+et lui en a remis récépissé. Il a immédiatement télégraphié cette déclaration et la remise du récépissé à M. le gouverneur de
+Cochinchine.</seg><seg>M. le président. Vous avez la parole.</seg></u> <pb n="209"/><u><seg>Le 11e bureau estime que les opérations
+électorales qui, dans la circonscription
+unique de la Cochinchine française, ont
+donné la majorité à M. Le Myre de Vilers,
+ont été parfaitement régulières, et que c'est
+à tort que la commission de recensement
+a proclamé M. Ternisien élu. Par ces motifs, votre 11e bureau vous propose l'annulation de la décision de la commission de
+recensement de la circonscription de Cochinchine et vous demande de déclarer
+que M. Le Myre de Vilers, ayant rempli les
+conditions exigées par la loi du 17 juillet
+1889, ayant obtenu au 2e tour de scrutin
+du 6 octobre le plus grand nombre de suffrages, et remplissant aussi les conditions
+d'âge et de nationalité exigées par la loi,
+est proclamé député de la Cochinchine.</seg></u> <u><seg>M. A. François, rapporteur. — Département de la Gironde, arrondissement de la
+Réole.</seg><seg>Les élections du 22 septembre 1889
+ont donné les résultats suivants : </seg><seg>Electeurs inscrits, 16,133, dont le quart
+est de 4,033.</seg><seg>Nombre des votants, 14,117.</seg><seg>Bulletins blancs et nuls, à déduire, 175.</seg><seg>Suffrages exprimés, 13,938, dont la majorité absolue est de 6,970.</seg><table><row><cell>MM. Robert-Mitchell.. . . . . . . . 7.299 voix.
+Laroze.. . . . . 6.627</cell></row></table><seg>M. Robert-Mitchell a été proclamé député
+comme ayant réuni un nombre de voix au
+moins égal à la majorité absolue des suffrages exprimés et supérieur au quart des
+électeurs.</seg><seg>Les procès-verbaux ne constatent aucune
+irrégularité matérielle.</seg><seg>M. Robert-Mitchell a déja fait partie des
+Assemblées législatives et satisfait aux conditions d'âge et de nationalité exigées par
+la loi.</seg><seg>L'élection de la Réole a donné lieu à deux
+protestations. La première, portant la date
+du 27 septembre 1889; la seconde, qui n'est
+que la reproduction de la première, portant
+la date du 15 novembre dernier, signées de
+huit électeurs de la Réole, accompagnées
+de pièces au nombre de trente, ont été
+adressées à M. le président de la Chambre
+des députés.</seg><seg>Ces deux protestations contre l'élection de
+M. Robert-Mitchell se basent sur des faits de
+corruption et de violence, des faits de fausse
+nouvelle et de déclaration mensongère, enfin sur l'intervention du clergé.</seg><seg>M. Robert-Mitchell, ayant été appelé devant la sous-commission, a été invité à
+s'expliquer sur les faits qui lui étaient reprochés.</seg><seg>M. Robert-Mitchell a fourni des explications et a produit, de son côté, de nombreuses pièces qui détruisent les faits articulés
+contre lui.</seg><seg>Le premier grief énoncé dans la protestation est relatif à la prétendue fausse nouvelle « qu'en vertu d'une loi de finances
+récente les impôts seraient augmentés de
+8 p. 100 à partir du 1er janvier 1890. »</seg><seg>Iest vrai que dans sa profession de foi
+M. Robert-Mitchell dit textuellement: « Il
+résulte de la loi de finances qu'à partir du
+1er janvier prochain le principal des contributions directes sera augmenté de 8 centimes p. 100; mais le lendemain son concurrent M. Laroze démentait catégoriquement par voie d'affiches cette allégation, et,
+d'un autre côté, M. Robert-Mitchell s'empressait de publier le discours de M. Léon Say
+au Sénat. Ce discours paraît avoir été envoyé à tous les électeurs. Si donc quelques électeurs ont pu se méprendre sur le
+véritable sens de la profession de foi de
+M. Robert-Mitchell, leur erreur, en tout
+cas, n'a duré que quelques heures, et, il faut
+le reconnaître, M. Robert-Mitchell a pris
+soin lui-même de bien établir par ces publications la portée exacte de son allégation.</seg><seg>En ce qui concerne les violences de langage que les protestataires attribuent à M.
+Robert-Mitchell et aux journaux qui ont
+soutenu sa candidature, il est malheureusement trop vrai que dans des réunions
+publiques et dans les journaux de l'opposition les actes du Gouvernement ont été
+pris à partie d'une façon plus que regrettable, les personnes des ministres et des
+représentants du Gouvernement n'ont pas
+été épargnées et ont été l'objet d'outrages
+inqualifiables.</seg><seg>M. Robert-Mitchell nie énergiquement les
+propos dont il est accusé et décline la responsabilité des articles de journaux qui
+soutenaient sa candidature.</seg><seg>Au surplus, ces faits relevant de l'autorité
+judiciaire, votre commission a pensé que,
+le pays étant maintenant habitué à ces
+écarts de langage et de violence, elle ne devait pas s'y arrêter.</seg><seg>Votre commission a pu d'ailleurs se convaincre, par les pièces qui lui ont été produites, que dans les réunions publiques et
+dans les journaux qui soutenaient la candidature de M. Laroze, M. Robert-Mitchell
+avait été insulté grossièrement, diffamé et
+calomnié.</seg><seg>En ce qui concerne les dons d'argent et
+les promesses d'emploi, interrogé sur ces
+faits, M. Robert-Mitchell nie énergiquement les distributions d'argent et les promesses d'emploi; il affirme ensuite que
+sa fortune personnelle est très modeste, et
+il déclare n'avoir jamais reçu d'argent de
+Londres; que c'est là une allégation dénuée
+de preuve.</seg><seg>Les pièces produites par les protestataires
+à l'appui de cette allégation paraissent établir que des électeurs, en très petit nombre, auraient reçu de certaines personnes,
+dont les noms sont au dossier, des offres
+d'argent qu'ils auraient d'ailleurs repoussées avec indignation.</seg><seg>Votre commission n'a pas cru devoir s'y
+arrêter.</seg><seg>Enfin, on articule que le clergé serait intervenu en faveur de M. Robert-Mitchell et
+aurait pris part à la campagne électorale.
+C'est encore là une simple et vague allégation qu'aucune pièce du dossier ne justifie.</seg><seg>Il est essentiel de faire remarquer que M.
+Laroze, concurrent de M. Robert-Mitchell,
+n'a signé aucune protestation contre les
+élections de la Réole, et que c'est à la dernière heure, le 23 novembre dernier, que
+M. Laroze a annoncé par télégramme qu'il
+entendait protester.</seg><seg>Les procès-verbaux ne constatent aucune
+irrégularité matérielle.</seg><seg>M. Robert-Mitchell a déja fait partie des
+Assemblées législatives et satisfait aux conditions d'âge et de nationalité exigées par
+la loi.</seg><seg>L'élection de la Réole a donné lieu à deux
+protestations. La première, portant la date
+du 27 septembre 1889; la seconde, qui n'est
+que la reproduction de la première, portant
+la date du 15 novembre dernier, signées de
+huit électeurs de la Réole, accompagnées
+de pièces au nombre de trente, ont été
+adressées à M. le président de la Chambre
+des députés.</seg><seg>Ces deux protestations contre l'élection de
+M. Robert-Mitchell se basent sur des faits de
+corruption et de violence, des faits de fausse
+nouvelle et de déclaration mensongère, enfin sur l'intervention du clergé.</seg><seg>M. Robert-Mitchell, ayant été appelé devant la sous-commission, a été invité à
+s'expliquer sur les faits qui lui étaient reprochés.</seg><seg>M. Robert-Mitchell a fourni des explications et a produit, de son côté, de nombreuses pièces qui détruisent les faits articulés
+contre lui.</seg><seg>Le premier grief énoncé dans la protestation est relatif à la prétendue fausse nouvelle « qu'en vertu d'une loi de finances
+récente les impôts seraient augmentés de
+8 p. 100 à partir du 1er janvier 1890. »</seg><seg>Iest vrai que dans sa profession de foi
+M. Robert-Mitchell dit textuellement: « Il
+résulte de la loi de finances qu'à partir du
+1er janvier prochain le principal des contributions directes sera augmenté de 8 centimes p. 100; mais le lendemain son concurrent M. Laroze démentait catégoriquement par voie d'affiches cette allégation, et,
+d'un autre côté, M. Robert-Mitchell s'empressait de publier le discours de M. Léon Say
+au Sénat. Ce discours paraît avoir été envoyé à tous les électeurs. Si donc quelques électeurs ont pu se méprendre sur le
+véritable sens de la profession de foi de
+M. Robert-Mitchell, leur erreur, en tout
+cas, n'a duré que quelques heures, et, il faut
+le reconnaître, M. Robert-Mitchell a pris
+soin lui-même de bien établir par ces publications la portée exacte de son allégation.</seg><seg>En ce qui concerne les violences de langage que les protestataires attribuent à M.
+Robert-Mitchell et aux journaux qui ont
+soutenu sa candidature, il est malheureusement trop vrai que dans des réunions
+publiques et dans les journaux de l'opposition les actes du Gouvernement ont été
+pris à partie d'une façon plus que regrettable, les personnes des ministres et des
+représentants du Gouvernement n'ont pas
+été épargnées et ont été l'objet d'outrages
+inqualifiables.</seg><seg>M. Robert-Mitchell nie énergiquement les
+propos dont il est accusé et décline la responsabilité des articles de journaux qui
+soutenaient sa candidature.</seg><seg>Au surplus, ces faits relevant de l'autorité
+judiciaire, votre commission a pensé que,
+le pays étant maintenant habitué à ces
+écarts de langage et de violence, elle ne devait pas s'y arrêter.</seg><seg>Votre commission a pu d'ailleurs se convaincre, par les pièces qui lui ont été produites, que dans les réunions publiques et
+dans les journaux qui soutenaient la candidature de M. Laroze, M. Robert-Mitchell
+avait été insulté grossièrement, diffamé et
+calomnié.</seg><seg>En ce qui concerne les dons d'argent et
+les promesses d'emploi, interrogé sur ces
+faits, M. Robert-Mitchell nie énergiquement les distributions d'argent et les promesses d'emploi; il affirme ensuite que
+sa fortune personnelle est très modeste, et
+il déclare n'avoir jamais reçu d'argent de
+Londres; que c'est là une allégation dénuée
+de preuve.</seg><seg>Les pièces produites par les protestataires
+à l'appui de cette allégation paraissent établir que des électeurs, en très petit nombre, auraient reçu de certaines personnes,
+dont les noms sont au dossier, des offres
+d'argent qu'ils auraient d'ailleurs repoussées avec indignation.</seg><seg>Les termes mêmes de ces attestations,
+qui se trouvent également au dossier, démontrent que les tentatives de corruption,
+si elles étaient réelles, ne seraient que des
+manoeuvres isolées, individuelles, sans plan
+d'ensemble, ne pouvant changer en rien le
+résultat des élections. Ce sont là des allégations générales qui ne reposent sur aucune preuve et n'ont aucune valeur.</seg><seg>Votre commission n'a pas cru devoir s'y
+arrêter.</seg><seg>Enfin, on articule que le clergé serait intervenu en faveur de M. Robert-Mitchell et
+aurait pris part à la campagne électorale.
+C'est encore là une simple et vague allégation qu'aucune pièce du dossier ne justifie.</seg><seg>Votre commission n'a pas cru devoir s'y
+arrêter.</seg><seg>Il est essentiel de faire remarquer que M.
+Laroze, concurrent de M. Robert-Mitchell,
+n'a signé aucune protestation contre les
+élections de la Réole, et que c'est à la dernière heure, le 23 novembre dernier, que
+M. Laroze a annoncé par télégramme qu'il
+entendait protester.</seg><seg>L'écart entre les deux concurrents étant
+de 700 voix environ, votre 4e bureau, chargé
+de l'examen du dossier, n'a pas pensé que
+les faits signalés par les protestataires et
+détruits par une contre-protestation signée
+de dix électeurs, dont les signatures sont
+légalisées, et portant la date du 19 novembre dernier, fussent de nature à vicier
+l'élection de l'arrondissement de la Réole,
+et c'est dans ces sentiments qu'il vous propose la validation de l'élection de M. RobertMitchell, contre laquelle on n'a, du reste,
+relevé aucune irrégularité matérielle.</seg></u> <note type="voterslist"><desc>ONT VOTÉ POUR:</desc><desc>ONT VOTE CONTRE:</desc><desc>N'ONT PAS PRIS PART AU VOTE :</desc><seg>A Cause-de-Clérans, la déclaration est plus
+précise; mais elle mentionne un fait isolé
+et n'est appuyée que par une seule signature.</seg><seg>Les témoignages sont plus nombreux en
+ce qui concerne les libations.</seg><seg>Il est difficile d'admettre que le candidat,
+retenu dans sa chambre par la maladie, ait
+ouvert les crédits considérables qui sont
+mentionnés dans quelques déclarations;
+mais il paraît probable que quelques-uns
+de ses amis ont payé à boire le jour de
+l'élection. Votre 3e bureau a estimé que ces
+libations, qui n'ont pas eu un caractère
+général, n'avaient pu exercer une influence
+appréciable sur le résultat de l'élection.</seg><seg>Les chiffres obtenus par M. Thirion-Montauban en 1889, dans les six cantons de sa
+circonscription, sont en effet sensiblement
+les mêmes que ceux qu'il avait obtenus en
+1877, en 1881 et en 1885, et il s'est trouvé
+en minorité dans la commune où ces libations ont eu lieu.</seg><seg>Votre 3e bureau n'a pas cru devoir s'arrêter à une irrégularité commise dans la
+commune de Prégourieux, où deux absents
+auraient été émargés.</seg><seg>Même en admettant le fait comme prouvé
+et en retranchant ces deux suffrages, la
+majorité n'en reste pas moins acquise à
+M. Thirion-Montauban.</seg><desc>ABSENTS PAR CONGÉ:</desc></note></div>
+        <!--Partie_appendices_1-->
+        <div type="appendices">
+          <head>Annexes au proces-verbal de la séance
+du jeudi 28 novembre 1889.</head>
+          <note>Sur l'urgence de la proposition de M. BovierLapierre, relative aux syndicats professionnels.</note>
+          <note type="result">La Chambre des députés a adopté.</note>
+        </div>
+        <!--Partie-1_voting-->
+        <div type="voting1">
+          <head>
+            <label>SCRUTIN</label>
+          </head>
+          <pb n="211"/>
+        </div>
+        <!--Voting-->
+        <div type="voting"><head><label>SCRUTIN</label></head><note type="result">La Chambre des députés a adopté.</note><note type="voterslist"><desc>ONT VOTÉ POUR:</desc><desc>ONT VOTE CONTRE :</desc><desc>N'ONT PAS PRIS PART AU VOTE :</desc><seg>Ornano (Cuneo d').</seg><seg>Taudière. Ternisien. Thévenet.</seg><desc>ABSENTS PAR CONGÉ  :</desc><seg>M. de Lanessan, porté comme s'étant abstenu
+dans le vote du 26 novembre relatif à l'annulation des opérations électorales de la 1re circonscription de Lorient, déclare avoir voté
+a « pour » l'annulation.</seg></note><note type="numbersannounced"><seg>Les nombres annoncés en séance avaient
+eté de :<seg>Mais, après vérification, ces nombres ont été
+rectifiés conformément à la liste de scrutin
+ci-dessus.</seg><seg>Yves Guyot.</seg><seg>(Jacques). Robert-Mitchell. Turrel (Adolphe)
+Vilar (Edouard).</seg></seg></note><pb n="212"/><note type="numbersannounced"><seg>Les nombres annoncés en séance avaient
+été de:</seg></note><u><seg>M. le marquis de Villeneuve, rapporteur. — Département de la Dordogne, arrondissemeut de Bergerac, 2° circonscription.</seg><seg>Les résultats du 22 septembre ont donné
+les résultats suivants:</seg><seg>Electeurs inscrits, 15,472, dont le quart
+est de 3,868.</seg><seg>Nombre des votants, 13,250.</seg><seg>Bulletins blancs et nuls, à déduire, 66.</seg><seg>Suffrages exprimés, 13,184, dont la majorité absolue est de 6,593.</seg><table><row><cell>MM. Thirion-Montauban..... 6.708 voix.
+docteur Clament.. . . . . 6.460</cell></row></table><seg>M. Thirion-Montauban a été proclamé
+député comme ayant réuni un nombre de
+voix au moins égal à la majorité absolue
+des suffrages exprimés et supérieur au
+quart des électeurs inscrits.</seg><seg>Votre 3e bureau a eu à examiner de nombreuses protestations contre l'élection de
+M. Thirion-Montauban.</seg><seg>Trois griefs principaux étaient relevés par
+les protestataires : l'ingérence du clergé.
+la corruption par des dons en argent et des
+libations dans les cafés.</seg><seg>Votre 3° bureau a estimé que l'ingérence
+active du clergé n'était pas suffisamment
+prouvée. Une seule déclaration, en effet.
+mentionne un discours qui aurait été prononcé en chaire par le desservant de SaintRemy, et dans lequel il aurait dit qu'il y
+avait de bons et de mauvais candidats et
+qu'il fallait voter pour les bons.</seg><seg>Mais l'affirmation des protestataires est
+formellement contredite à ce sujet par des
+documents que M. Thirion-Montauban a
+produits devant la 7e sous-commission.</seg><seg>Deux autres protestations relataient des
+faits sans importance.</seg><seg>Votre 3e bureau a eu à examiner de nombreuses protestations contre l'élection de
+M. Thirion-Montauban.</seg><seg>Trois griefs principaux étaient relevés par
+les protestataires : l'ingérence du clergé.
+la corruption par des dons en argent et des
+libations dans les cafés.</seg><seg>Votre 3° bureau a estimé que l'ingérence
+active du clergé n'était pas suffisamment
+prouvée. Une seule déclaration, en effet.
+mentionne un discours qui aurait été prononcé en chaire par le desservant de SaintRemy, et dans lequel il aurait dit qu'il y
+avait de bons et de mauvais candidats et
+qu'il fallait voter pour les bons.</seg><seg>Mais l'affirmation des protestataires est
+formellement contredite à ce sujet par des
+documents que M. Thirion-Montauban a
+produits devant la 7e sous-commission.</seg><seg>Deux autres protestations relataient des
+faits sans importance.</seg><seg>Le second grief, celui de la corruption
+par des dons en argent, n'a pas paru devoir
+être retenu. Les déclarations des protestataires manquent, en effet, de précision. Le
+maire de Lalinde parle d'une somme de
+500 fr. qui aurait, dit-on, été payée à un individu ; mais il ne nomme pas l'électeur en
+question et ne fait que constater un bruit
+populaire.</seg><seg>M. Thirion-Montauban, ayant déja fait partie des Assemblées législatives, satisfait
+aux conditions d'âge et de nationalité exigées par la loi.</seg><pb n="210"/><seg>MM. Abeille (Valentin). Aréne (Emmanuel).
+Armez. Arribat. Audiffred. Aynard (Edouard).</seg><seg>Baile (Martial). Bargy. Barodet. Barthou.
+Bartissol. Bastid (Adrien). Batiot (Aristide).
+Baudin. Baulard. Beauquier. Bérard. Berger
+(Georges) (Seine). Bertrand. Bézine. Bizarelli.
+Bizot. Bizouard-Bert. Blanc (Pierre). Boissyd'Anglas. Bonnefoy-Sibour. Bony-Cisternes.
+Borriglione. Boucher (Vosges). Boudenoot.
+Boudeville. Bouge. Boulanger-Bernet. Boullay. Bourgeois (Jura). Bourgeois (Léon) (Marne). Bouthier de Rochefort. Bovier-Lapierre.
+Boysset. Braud. Breton. Briens. Brisson
+(Henri). Brousse (Emile). Brugnot. Brunier.
+Bully. Burdeau. Buvignier.</seg><seg>Cabart-Danneville. Calvinhac. Carquet. Casimir-Perier (Aube). Cavaignac (Godefroy).
+Cavalié. Cazauvieilh. Caze (Edmond). Chabrié.
+Charles Roux. Charmes (Francis). ChaulinServinière. Chautemps. Chevandier. Choiseul (Horace de). Chollet. Clausel de Coussergues. Clauzel (Ardèche). Clech. Clémenceau. Clerjounie. Cochery (Georges). Cordier. Corneau. Cornudet. Cosmao-Dumenez.
+Cousset.</seg><seg>Dautresme. David (Alpes-Maritimes). David
+(Indre). Deandreis. Delaunay. Delcassé.
+Dellestable. Delmas. Deloncle (François). Delpech. Deniau. Denizot. Deprez (André) (Pasde-Calais). Deproge. Descamps (Albert). Deschanel (Paul). Desmons. Després (Armand)
+(Seine). Dethou. Develle (Jules). Deville.
+Douville-Maillefeu (comte de). Dreyfus (Camille). Dron. Dubois (Arnault) (Corrèze). Dubois (Emile) (Nord). Dubost (Antonin). Duchasseint. Duclaud. Ducoudray. Ducroz. Dujardin-Beaumetz (Aude). Dumas. Dumay.
+Dupuy (Charles) (Haute-Loire). Dupuy-Dutemps
+(Tarn). Durand-Savoyat (James). Duval (César).</seg><seg>Eliez-Evrard. Euziére.</seg><seg>Fanien (Achille). Farjon. Ferry (Albert).
+Ferry (Emile). Folliet. Forcioli. Fougeirol.
+François (Alfred). Franconie.</seg><seg>Hainsselin. Haulon. Haynaut. Hémon. Herbet. Hiroux. Horteur. Hovelacque. Hubbard
+(Gustave). Hurard.</seg><seg>Isambert (Gustave). Isoard.</seg><seg>Jacquemart. Jacquemin. Jacques. Jamais
+(Emile). Joffrin. Jonnart. Jouffray (Isére).
+Jourdan (Louis). Jumel.</seg><seg>Kerjégu (J. de).</seg><seg>La Batut (de). Labrousse. Labussière. Lacôte. Lacretelle (Henri de). Lacroix (Loiret).
+Laffitte de Lajoannenque (de). Laffon (René)
+(Yonne). Lagnel. Lagrange. Lanessan (de).
+Langlet. Lasbaysses. Lascombes. Lasserre.
+Laurençon. Laville. Leborgne. Lecomte
+(Maxime) (Nord). Leconte (Alfred) (Indre). Ledieu. Léglise. Legludic. Legras. Lemercier
+(comte). Leroy (Arthur) (Côte-d'Or). Letellier.
+Levêque. Levet (Georges). Leydet. Leygues.
+Linard. Lockroy. Lombard (Isère). Loriot.
+Loustalot.</seg><seg>Madier de Montjau. Magnien. Mandeville.
+Maret (Henry). Marmottan. Martinon. Marty.
+Maruéjouls. Mathé (Félix) (Allier). Mathé
+(Henri) (Seine). Maujan. Maurice-Faure (Drôme).
+Méline. Merlou. Mesureur. Mézières. Michau (Nord). Michel (Alfred). Michou (Aube).
+Millerand. Million (Louis). Milochau. Mir.
+Montaut (Seine-et-Marne). Moreau (Emile).
+Mougin.</seg><seg>Nivert. Noël-Parfait.</seg><seg>Obissier Saint-Martin. Ordinaire (Dionys).
+Ouvré.
+</seg><seg>Pajot. Papelier. Pelletan (Camille). Périer
+de Larsan (du) (Gironde). Perrier (Antoine)
+(Savoie). Peytral. Philipon. Pichon (Seine).
+Pierre Legrand (Nord). Pochon. Poincaré
+(Raymond). Ponlevoy (Frogier de). Poupin.
+Pourquery de Boisserin. Prévet. Prost (Victor). Proust (Antonin).</seg><seg>Quintaa.</seg><seg>Rabier. Rambourgt. Raspail (Camille) (Var).
+Rathier. Raynal. Réaux (Marie-Emile). Reinach (Joseph). Révillon (Tony). Rey (Aristide) (Isère). Rey (Lot). Reybert. Ribot.
+Riotteau. Rivet (Gustave). Rolland. Rousse.
+Royer (Louis-Auguste) (Aube). Royer (Meuse).
+Rozet (Albin).</seg><seg>Saint-Germain. Saint-Romme. Salis. Sarrien. Say (Léon). Sentenac. Sibille. Siegfried. Signard. Sirot. Souhet. Sourigues.
+Surchamp.</seg><seg>Talou (Léon). Tassin. Terrier. Theulier.
+Thierry-Delanoue. Thiers (Edouard). Thivrier.
+Thomas. Thomson. Thorel. Trannin. Trouillot
+(Georges).</seg><seg>Vacher. Valle. Vallon (amiral). Varlet.
+Vernhes. Vernière. Viette. Viger. Vignancour. Ville. Villemonte. Viox. Vival.</seg><seg>Waddington (Richard). Werquin.</seg><seg>MM. Abrial (Léon). Adam (Achille). Aigle
+(comte de l'). Aillières (d'). Aimel (Henri).
+Amagat. Arenberg (prince d'). Armand (comte).
+Arnous.</seg><seg>Balsan. Bar (de). Barascud. Barbotin. Barrès (Maurice). Baudry-d'Asson (de). Belleval.
+Benazet. Benoit (de). Berger (Maine-et-Loire).
+Bergerot. Bernis (comte de). Bezanson. Bigot.
+Blachère. Blin de Bourdon (vicomte). Boisboissel (de). Borie. Boucher (Finistère). Boudeau. Bourgeois (Paul) (Vendée). Breteuil
+(marquis de). Breuil de Saint-Germain (du).
+Brincard.</seg><seg>Caffarelli (comte). Carron. Castelin. Cazenove de Pradine (de). Champvallier (de). Chiché. Cibiel. Colbert-Laplace (comte de). Colombet (de). Cornulier (marquis de).</seg><seg>Daynaud. Dejardin-Verkinder (Nord). Delafosse (Jules) (Calvados). Delafosse (Marie) (Illeet-Vilaine). Delahaye. Déroulède (Paul). Deseaure. Desjardins (Ernest) (Aisne). Dompierre
+d'Hornoy (vice-amiral de). Du Bodan. Dufaure
+(Amédée). Dumonteil. Dupuytrem.</seg><seg>Elva (Christian) (comte d'). Engerand. Eschasseriaux (baron). Espeuilles (comte d').
+Estourmel (marquis d'). Etcheverry.</seg><seg>Fairé. Farcy (Eugène). Féraud. Fouquet
+(Camille). Fourtou (de). Freppel. Frescheville (général de). Froin (Alcée).</seg><seg>Gabriel. Galpin (Gaston). Garnier (Yonne).
+Gasté (de). Gauthier (de Clagny). Gavini. Gérard (baron). Godelle. Gonidec de Traissan
+(comte Le). Goussot. Goyon (de). Granger,
+Granier de Cassagnac (Paul). Grousset. Guilloutet (de).</seg><seg>Haussmann. Hély-d'Oissel.</seg><seg>Jolibois. Jourde. Juigné (comte de).</seg><seg>Kergariou (de). Kergorlay (comte de). Kermenguy (vicomte de).</seg><seg>La Bassetière (Louis de). Labat. La Bourdonnaye (vicomte de). La Chambre. Lacretelle (général). Ladoucette (baron de). La Ferronnays (marquis de). Laguerre. Laisant.
+Lalou. La Martinière (de). Lamarzelle (de).
+Lanjuinais (comte de). La Nouë (vicomte de).
+Laporte (Gaston). Lareinty (Jules de). Largentaye (Rioust de). La Rochefoucauld, duc de
+Doudeauville. La Rochejaquelein (marquis de).
+Laroche-Joubert. Laur. Le Cerf. Le Cour.
+Le Gavrian. Legrand (Arthur) (Manche). Le
+Hérissé. Léon (prince de). Léouzon-Leduc.
+Le Provost de Launay. Le Roux (Paul). Le
+Senne. Lévis-Mirepoix (comte de). Loreau.
+Lorgeril (de). Lorois (Emile) (Morbihan). LurSaluces (de).</seg><seg>Mackau (baron de). Maillé (comte de). Malartre. Maréchal. Martin (Marius). Martineau.
+Mège. Meilhodon. Millevoye (Lucien). Montalembert (comte de). Montéty (de). Montfort
+(vicomte de). Montgolfier (de). Morin-Latour.
+Multedo (comte). Mun (comte Albert de).</seg><seg>Naquet (Alfred).</seg><seg>Olry.</seg><seg>Pasquier. Passy (Louis) (Eure). PaulinMéry. Paulmier. Peyrusse. Picot. Piérard
+(baron). Plazanet (colonel de). Plichon (Nord).
+Pontbriand (comte de). Pontois. Porteu (Armand). Possesse (de). Poulié. Prax-Paris.
+Prénat.</seg><seg>Ramel (de). Rauline. Reille (baron). Renard (Léon). Revest. Richard (Pierre). Roche
+(Ernest) (Seine). Roques. Rotours (baron des).
+Roy de Loulay (Louis).</seg><seg>Sabouraud. Saint-Martin (de) (Indre). SaintMartin (Seine). Saussay (du). Schneider (Henri).
+Serph (Gusman). Solages (marquis de). Soland
+(de). Soubeyran (baron de).</seg><seg>Tailliandier. Terrail-Mermeix. Terves (comte
+de). Thellier de Poncheville. Thirion-Montauban. Turigny.</seg><seg>Villebois-Mareuil (vicomte de). Villeneuve
+(marquis de).
+</seg><seg>Witt (Conrad de).</seg><seg>MM. Argeliès.</seg><seg>Barbe. Bischoffsheim. Boyer (Antide).</seg><seg>Chassaing. Christophle (Albert). Cluseret.
+Constans. Coutisson. Couturier.
+</seg><seg>Deluns-Montaud. Demarçay (baron). Dugué
+de la Fauconnerie.
+</seg><seg>Etienne.</seg><seg>Falliéres. Faure (Félix) (Seine-Inférieure).
+Fauré (Gers). Ferroul. Floquet (Charles).
+Flourens. Fould (Achille). Fouquier (Henry).
+</seg><seg>Germain (Henri) (Ain). Gervais (Jules). Gévelot. Granet. Greffülhe (comte).</seg><seg>Jouffroy-d'Abbans (comte de) (Doubs). Jules
+Jaluzot.</seg><seg>Lachièze (Lot). Lachize (Rhône). Lavertujon
+(Henri). Lebaudy. Lechevallier. Le Roy
+(Edouard) (La Réunion). Le Veillé.</seg><seg>Mac-Adaras. Macherez. Mahy (de). Ménard-Dorian. Mercier. Mesnildot (du). Montsaulnin (de). Morillot (Léon). Moustier (marquis de).</seg></u><note type="comment"><seg>(La séance est levée à six heures trentecinq minutes.)</seg><seg>M. Georges Graux, porté, dans le scrutin du
+26 novembre, comme ayant voté « contre »
+l'annulation de l'élection de M. Dillon dans la
+1re circonscription de Lorient, déclare avoir voté
+« pour » l'annulation.</seg><seg>Mais, après vérification, ces nombres ont été
+rectifiés conformément à la liste de scrutin cidessus.</seg></note> </div>
+      </div>
+    </body>
+    <back/>
+  </text>
+</TEI>
