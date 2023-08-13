@@ -1,0 +1,1335 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ns0:TEI xmlns:ns0="http://www.tei-c.org/ns/1.0" xml:lang="fr"><teiHeader><fileDesc><titleStmt><title type="main" xml:lang="fr" />
+                <title type="main" xml:lang="en" />
+                <title type="sub" xml:lang="fr" />
+                <title type="sub" xml:lang="en" />
+                <meeting n="5°L" ana="#parla.lower #parla.legislature" />
+                <meeting n="E1" ana="#parla.lower #parla.session" />
+                <meeting n="10°" ana="#parla.lower #parla.sitting" />
+                <respStmt><persName><forename /><surname /><ptr type="id-hal" target="fanny-lebreton" /></persName>
+                    <resp xml:lang="fr" />
+                    <resp xml:lang="en" />
+                </respStmt>
+                <respStmt><persName><forename /><surname /><ptr type="id-hal" target="marie-puren" /><ptr type="orcid" target="0000-0001-5452-3913" /></persName>
+                    <resp xml:lang="fr" />
+                    <resp xml:lang="en" />
+                </respStmt>
+                <funder><orgName xml:lang="fr" /><orgName xml:lang="en" /></funder>
+            </titleStmt>
+            <publicationStmt><publisher />
+                <authority />
+                <availability status="restricted" n="cc-by"><licence target="https://creativecommons.org/licenses/by/4.0/" />
+                </availability>
+                <date when="2022-07-29" />
+            </publicationStmt>
+            <sourceDesc><biblFull><titleStmt><title />
+                    </titleStmt>
+                    <publicationStmt><publisher xml:lang="fr" />
+                        <publisher xml:lang="en" />
+                        <pubPlace><location><country key="FR" />
+                                <settlement type="city" />
+                            </location></pubPlace>
+                        <date />
+                        <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k477552f/f1" />
+                        <availability><licence xml:lang="fr" target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"><p /><p /></licence>
+                        </availability>
+                    </publicationStmt>
+                    <seriesStmt><title />
+                        <biblScope unit="series" />
+                        <biblScope unit="volume" />
+                        <idno type="ISSN" />
+                    </seriesStmt>
+                </biblFull>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc><projectDesc><p xml:lang="fr"><ref target="https://www.bnf.fr/fr/les-projets-de-recherche#bnf-agoda" /> est un projet qui a pour objectif de rendre disponible au
+                    format XML-TEI les textes de débats parlementaires à la Chambre des députés au
+                    cours de la TroisièmeRépublique, suivant l'<ref target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_documentation.xml" /> défini pour le projet à partir des <ref target="https://github.com/clarin-eric/parla-clarin" />. Dans une optique de preuve de concept, la
+                    phase 1 du projet AGODA se concentre plus particulièrement sur la 5ème
+                    législature (1889-1893). Les textes encodés sont d'abord extraits des documents
+                    numérisés disponibles sur <ref target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item" />, la bibliothèque numérique de la Biliothèque nationale de
+                    France, puis ils sont convertis en XML-TEI au moyen de scripts Python.</p>
+                <p xml:lang="en"><ref target="https://github.com/mpuren/agoda/blob/ODD/documentation/agoda_documentation.xml" /> defined for the project from the <ref target="https://github.com/clarin-eric/parla-clarin" />. From a proof-of-concept perspective, phase 1 of the
+                    AGODA project focuses more specifically on the 5th legislature (1889-1893). The
+                    encoded texts are first extracted from the digitised documents available on <ref target="https://gallica.bnf.fr/ark:/12148/cb328020951/date.item" />, the digital library of the Biliothèque nationale de France,
+                    then they are converted into XML-TEI using Python scripts.</p>
+            </projectDesc>
+        </encodingDesc>
+        <profileDesc><langUsage><language ident="fr" />
+            </langUsage>
+            <settingDesc><setting><name type="place" />
+                    <name type="city" />
+                    <name type="country" key="FR" />
+                    <date />
+                </setting>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text><body><pb n="175" />
+            <div type="sitting"><div type="contents"><head />
+                    <list><item />
+                        <item />
+                        <item />
+                        <item />
+                        <item />
+                        <item />
+                        <item />
+                        <item />
+                        <item />
+                    </list>
+                </div>
+                <div type="part"><head />
+                    <note type="opening"><seg /></note>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><quote /></seg>
+                        <seg><incident><desc />
+                            </incident> Nous ne sommes, nous, qu'une minorité...</seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><quote /> (Exclamations ironiques au centre et à
+                        gauche.)</seg></u>
+                    <u><seg /></u>
+                    <u><seg><quote /> Et la preuve que ce sont bien là les
+                            paroles que j'ai prononcées, c'est qu'elles sont ainsi rapportées dans
+                            le compte rendu analytique et ainsi rapportées dans la plupart des
+                            journaux du matin, et que le compte rendu sténographique seul donne une
+                            autre version.</seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <note type="comment"><seg /></note>
+                </div>
+                <div type="part"><head />
+                    <u><seg />
+                        <seg />
+                        <seg /></u>
+                </div>
+                <div type="part"><head />
+                    <u><seg />
+                        <quote><seg><seg />
+                                <seg />
+                                <seg />
+                                <seg /> “ Le ministre des finances, « Signé :
+                                ROUVIER. »</seg></quote>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                </div>
+                <div type="part"><head />
+                    <u><seg />
+                        <seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <table><row><cell />
+                            </row>
+                        </table>
+                        <seg />
+                        <table><row><cell />
+                            </row>
+                        </table>
+                        <seg><pb n="176" /> exprimés et
+                            supérieur au quart des électeurs inscrits.</seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <note type="comment" />
+                    <u><seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <pb n="177" />
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg /></u>
+                    <note type="comment"><seg /></note>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident> La Chambre, aux termes des lois constitutionnelles, a le
+                            pouvoir absolu de statuer en cette matière...</seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident> Vous n'êtes arrêtés ni gênés par aucune considération
+                            d'aucun ordre, sauf celles qui vous paraîtront dictées par votre
+                            raison.</seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><quote /> Or, si ce dernier
+                            membre de phrase, relatif à la <quote />, a figuré dans toutes les constitutions antérieures, en
+                            revanche l'article 10, lorsqu'il parle de <quote /> des membres de cette Assemblée, et vous en constitue seuls
+                            juges, uniques, souverains, l'article 10 introduit dans notre droit
+                            constitutionnel une disposition qui ne figurait pas dans les
+                            constitutions précédentes.</seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><quote />
+                            <incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg><pb n="178" /> de M. le comte
+                            Lemercier, répond : <quote /></seg>
+                        <seg><quote />... <incident><desc />
+                            </incident>... non seulement cette protestation que vous pourriez
+                            peut-être dédaigner, mais que l'histoire enregistre, et ici je prie
+                            surtout les républicains de m'écouter, mais encore les paroles de vos
+                            aînés, messieurs, de ceux dont la renommée vous a soutenus, de ceux qui
+                            vous ont précédés dans les luttes pour la République, de ceux dont le
+                            dévouement patriotique a tant contribué à vous permettre, à vous, les
+                            petits-neveux, de faire accepter par le pays l'idéal républicain au nom
+                            duquel parlaient si éloquemment les hommes dont je vais faire repasser
+                            sous vos yeux, en réveillant vos souvenirs, les protestations
+                            éloquentes.</seg>
+                        <seg><quote />
+                            <incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><quote />
+                        <incident><desc />
+                        </incident>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><quote />
+                            <incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <note type="comment"><seg /></note>
+                    <u><seg><incident><desc />
+                            </incident> Vous en entendrez bien d'autres! <incident><desc />
+                            </incident></seg></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident>, qui a été un défenseur de l'idée démocratique, qui a lutté
+                            pour elle avec son talent, par ses discours, par ses pamphlets, par ses
+                            brochures.</seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident> « comme moi, par exemple, qui ai attaqué l'hérédité de la
+                            pairie, ses dotations, son existence; devant des hommes qui, par une
+                            monstrueuse copulation, sont à la fois dénonciateurs, accusateurs,
+                            instructeurs, jurés, juges et parties... » <incident><desc />
+                            </incident>; « ... devant des hommes qui vous tiendraient bientôt,
+                            malgré vous, sous le joug de vos précédents et qui étoufferaient sous la
+                            menace toujours pendante de leur accusation les remontrances et
+                            l'énergie d'une oppositlon généreuse !</seg>
+                        <seg><quote />
+                            <incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident> Cependant, est-il vrai, est-il évident, oui ou non, que si
+                            vous continuez dans cette voie, vous vous mettez sous le joug de la
+                            Chambre haute ? Vous lui donnez le droit de substituer la mort civile à
+                            la mort sanglante et d'établir une sorte de guillotine sèche remplaçant
+                            la guillotine d'autrefois... Et, quand vous frappez un citoyen, non pas
+                            de décapitation matérielle, mais de décapitation morale, quand vous le
+                            privez de ses droits de citoyen, d'homme et de Français, ne faitesvous
+                            pas plus, en vérité, que de lui trancher la tête, comme faisait le
+                            tribunal politique de la Terreur ? <incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg><incident><desc />
+                            </incident>; il me <pb n="179" /> semble que je parle avec une absolue
+                            convenance.</seg>
+                        <seg><incident><desc />
+                            </incident>; mais permettez-moi de parler comme je puis, dans la
+                            modestie de mon rôle et de mes moyens. <incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident> C'est une autorité plus récente.</seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><quote /></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident> — avait frappé notre honorable collègue d'inéligibilité pour
+                            une durée de cinq ans, je crois, et qui n'était pas arrivée à
+                            expiration. Et c'est alors que Gambetta vint dire : C'est vrai, M. de
+                            Douville-Maillefeu n'est pas éligible ; mais je vous demande de ne pas
+                            vous arrêter à cette considération. L'Assemblée suivit ce conseil, et
+                            fit bien.</seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><quote />.</seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <pb n="180" />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident> En ce moment, il s'agit uniquement de l'annulation des
+                            opérations électorales dans la 1re circonscription de l'arrondissement
+                            de Lorient. <incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg><pb n="181" /> a obtenu une
+                            majorité énorme, plus du double des suffrages recueillis par tous ses
+                            adversaires réunis.</seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg><quote />, je réponds, moi : Non! laissez passer la
+                            justice du peuple! <incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident> Il y a vingt-six ans que j'ai quitté les bancs
+                            parlementaires après y avoir siégé douze ans, et, pendant ces douze ans,
+                            j'ai toujours été accoutumé à appeler la Chambre « Corps légistatif ».
+                            Vous m'excuserez d'avoir fait un lapsus. <incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg><incident><desc />
+                            </incident> Mais, enfin, je suis législateur par la volonté du suffrage
+                            universel; cela n'a heureusement aucune espèce de rapport. <incident><desc />
+                            </incident></seg>
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><pb n="182" /> mencé,
+                            je ne pouvais pas être rayé des listes électorales.</seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg />
+                        <seg /></u>
+                    <note type="comment"><seg /></note>
+                    <u><seg />
+                        <table><row><cell />
+                            </row>
+                        </table>
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><pb n="183" />
+                            les finances, de ruiner le pays, de faire la guerre à la religion,
+                            d'opprimer les consciences. Avec les agents de M. Arnault ils ont dit
+                            que le Gouvernement poussait la jeunesse à l'immoralité, qu'il nous
+                            menait tout droit à la guerre avec l'Allemagne. Enfin, ils ont fait
+                            courir le bruit que le principal de l'impôt foncier serait augmenté de 8
+                            centimes à partir du 1er janvier prochain...</seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg><quote />. Il ajoute
+                                <quote />.</seg>
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident>, curé de Faillagol, lit en chaire, à ses paroissiens, non
+                            pas le mandement de l'évêque ni la lettre pastorale, mais devinez quoi?
+                            le journal l'Autorité!.... <incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><quote><seg /></quote>. Ils ajoutent que les écoles laïques sont des
+                            écoles de vice et qu'il n'y a jamais eu plus de jeunes assassins que
+                            depuis que nous sommes en République.</seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><quote />
+                            <incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><quote><seg><pb n="184" /> bles. Je
+                                    sais qu'en parlant ainsi on supprimera mon traitement. Mais cela
+                                    m'est égal. J'irai mendier de porte en porte, je trouverai des
+                                    âmes charitables pour me secourir »</seg></quote>.</seg></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident> qui font la part de la passion politique, des écarts de
+                            plume et de langage auxquels on peut se laisser entraîner pendant la
+                            lutte, se sont montrés, cette fois, très sévères. Ils ont estimé qu'une
+                            atteinte réelle avait été portée à l'honorabilité de M. Cambe et le
+                            Patriote a été condamné, à la date du 16 novembre, à 200 fr. d'amende, à
+                            1,000 fr. de dommages et intérêts et à l'insertion du jugement dans
+                            trois journaux. <incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident> La Chambre voudra bien m'accorder l'attention qu'elle a
+                            prêtée à mon honorable contradicteur <incident><desc />
+                            </incident>; elle me permettra, par conséquent, de suivre la discussion
+                            qu'il a lui-même adoptée, et de revenir sur chaque fait spécial, avec
+                            les preuves à l'appui, pour établir qu'il est, comme je viens de le
+                            dire, absolument controuvé.</seg>
+                        <seg />
+                        <seg />
+                        <quote><seg /></quote>
+                        <seg><incident><desc />
+                            </incident> — «... qui ne cherche dans son élection que son propre
+                            intérêt et la satisfaction de son ambition; un homme qu'ils ne voient
+                            qu'aux jours de lutte électorale, qu'ils ne savent où trouver quand ils
+                            ont besoin de lui et qui, du reste, ne pourrait rien pour eux.</seg>
+                        <seg><quote><seg><pb n="185" />
+                                    taire de votre pays, agriculteur instruit,
+                            etc.»</seg></quote></seg>
+                        <seg />
+                        <quote><seg><seg /> « Nous n'insistons pas, et dimanche vous
+                                voterez tous pour M. Cambe. Votre intérêt et votre bon sens vous le
+                                commandent. »</seg></quote>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><quote />
+                        </seg>
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><quote /></seg>
+                        <seg><incident><desc />
+                            </incident> J'ai ici l'attestation légalisée par le maire, l'adjoint et
+                            les conseillers municipaux de la commune de Vaissac.</seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident> On y a eu du moins recours dans une large mesure, et lès
+                            journaux qui soutenaient ma candidature n'ont jamais cessé d'expliquer
+                            de cette manière la question des 8 centimes.</seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <quote><seg /></quote>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg><quote />
+                            <incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><pb n="186" /> l'évêché lui-même. <incident><desc />
+                            </incident></seg>
+                        <seg><quote /> Et voyez jusqu'ou l'évêché de Montauban a
+                            poussé ce que j'appellerai la discrétion : <quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident> Les signatures doivent être, autant que possible, légalisées
+                            par le maire, son adjoint ou le juge de paix...»</seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <quote><seg /></quote> M. Camille Pelletan. Hl
+                        est seul de son espèce dans le clergé, alors! (Rumeurs d I</u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <quote><seg /></quote>
+                        <seg />
+                        <seg><pb n="187" /> gol. De quoi
+                            l'a-t-on accusé? D'avoir lu en chaire l'Autorité. Mais à quel moment?
+                            n'est pas dit que ce soit au moment et à propos des élections. La
+                            protestation déclare que le curé lit quelquefois l'Autorité.</seg>
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident> de la lettre dans laquelle M. le curé de Varen fournit les
+                            explications dont vous avez le résumé dans le rapport.</seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><quote><seg /></quote>
+                        <incident><desc />
+                        </incident></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg><quote><seg><incident><desc />
+                                    </incident>, je montrai aux assistants le danger de se mêler aux
+                                    ennemis de la religion, de les écouter, de lire leurs écrits,
+                                    parce que peu à peu on se laissait aller d'abord à
+                                    l'indifférence, ensuite à l'irréligion, à l'impiété, à la haine
+                                    de la religion et de tout ce qui la touche. J'ajoutai que dans
+                                    un pays chrétien, catholique, il ne fallait pas avoir du sang
+                                    chrétien dans les veines pour soutenir ces gens-là. Je sais
+                                    qu'on peut me réduire à la mendicité, m'enlever mon pain, mais
+                                    rien ne m'empéchera de remplir mon devoir. Si je n'ai pas de
+                                    pain, j'irai vous en demander : je trouverai bien quelqu'un qui
+                                    me fera la charité. Dans quinze jours, les hommes vont faire un
+                                    acte important de citoyen; s'ils sont chrétiens, catholiques,
+                                    ils ne voteront pas pour les francs-maçons ni pour ceux qui les
+                                    soutiennent.»</seg></quote></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg><quote /></seg>
+                        <seg><incident><desc />
+                            </incident>, et que maintenant il ne l'était pas, et j'ajoutai qu'il ne
+                            fallait pas avoir du sang chrétien pour favoriser les ennemis de la
+                            religlon.</seg>
+                        <seg><incident><desc />
+                            </incident>, et que, ainsi qu'il disait, il doit se trouver des gens, ou
+                            mauvais, ou ignorants, qui auront voulu me faire dire que je
+                            recommandais de ne pas voter pour des républicains. Je protestai contre
+                            cette interprétation, d'autant plus facilement, lui dis-je. que ni M.
+                            Cambe ni M. Arnault ne sont francs-maçons. Quant à faire de la
+                            propagande politique, il sait très bien que je n'en ai jamais fait. Je
+                            vote en conscience comme il me plaît, sans reconnaître à personne le
+                            droit de me faire voter pour un tel plutôt que pour un autre; mais je ne
+                            me permets pas de contester aux autres cette même liberté. Au reste,
+                            monsieur le maire, pour vous montrer ma franchise, je me propose,
+                            dimanche prochain, de revenir sur mes paroles et de montrer que j'avais
+                            voulu parler uniquement des ennemis de la religion et nullement de
+                            personnages politiques. M. le maire me dit : Vous me ferez plaisir
+                            d'agir de la sorte ; je l'attends de vous. Tout cela se passa avec la
+                            plus grande franchise et amabilité entre nous.</seg>
+                        <seg><quote />
+                            <incident><desc><ref target="#188" /> à gauche)</desc>
+                            </incident> — Il n'y en a pas dans l'espèce, mes chers collègues
+                                —<quote />
+                            <incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident> Oui, il a succédé à son père comme notaire et comme maire,
+                            et il a été élu conseiller d'arrondissement aux électionls du 28 juillet
+                            dernier.</seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident>, de l'instituteur, secrétaire de la mairie, qui est là et
+                            qui ne bouge pas et qui, je n'ai pas besoin de le dire, ne m'est pas
+                            favorable; et, s'il n'y a pas de conseiller municipal, il m'arrive de
+                            prendre le curé comme membre du bureau, au contentement de tout le
+                            monde. <incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <quote><seg /></quote> (Suivent 71 signatures légalisées.) <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><quote /></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><pb n="189" /> brûlé 19 bulletins qui portaient le nom de M.
+                            Cambe rayé et sur lesquels le mien avait été mis à la place ; on a
+                            compté ces bulletins comme blancs, et on ne les a pas annexés au
+                            procès-verbal. On a violé la loi, et ni la commission de recensement ni
+                            la Chambre n'ont pu me restituer ces voix : les bulletins étaient
+                            brûlés.</seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <quote><seg><seg />
+                                <seg />
+                                <seg />
+                                <seg />
+                                <seg />
+                                <seg />
+                                <seg />
+                                <seg /> « Vu : H. Cambe. « Le comité.
+                                »</seg></quote>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg><incident><desc />
+                            </incident></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg><quote /></seg>
+                        <seg />
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><quote /></seg>
+                        <seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg /></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg><seg />
+                            <pb n="190" /> ger et qui provient d'un journal qui n'est pas le mien,
+                            d'un journal qui m'a combattu, mes amis et moi, en 1885, car mon journal
+                            à moi est le Courrier de Tarn-et-Garonne.</seg>
+                        <seg><incident><desc />
+                            </incident></seg>
+                        <seg><incident><desc />
+                            </incident></seg></u>
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <note type="comment"><seg /></note>
+                    <u><seg />
+                        <seg />
+                        <seg /></u>
+                    <note type="comment"><seg /></note>
+                    <u><seg />
+                        <table><row><cell />
+                            </row>
+                        </table>
+                        <seg />
+                        <seg /> Je pense que
+                        la Chambre n'entend pas continuer son ordre du jour?... <incident><desc />
+                        </incident></u>
+                </div>
+                <div type="part"><head />
+                    <u><seg />
+                        <seg /></u>
+                </div>
+                <div type="part"><head />
+                    <u><seg />
+                        <seg /></u>
+                </div>
+                <div type="part"><head />
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                </div>
+                <div type="agenda"><head />
+                    <u><seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg />
+                        <seg /></u>
+                    <note type="closing"><seg /></note>
+                    <signed><seg /></signed>
+                </div>
+            </div>
+        </body>
+        <back><div type="part"><u><seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <table><row><cell />
+                        </row>
+                    </table>
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <pb n="191" />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg /></u>
+                <u><seg />
+                    <seg />
+                    <table><row><cell />
+                        </row>
+                    </table>
+                    <seg />
+                    <seg />
+                    <seg />
+                    <quote><seg><seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg /> « Paris, 1e 5 novembre
+                            1889. »</seg></quote>
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg />
+                    <seg /></u>
+            </div>
+            <div type="appendices"><head />
+                <div><div type="voting"><head><label />
+                            <note /></head>
+                        <table><row><cell />
+                            </row>
+                        </table>
+                        <note type="result" />
+                        <pb n="192" />
+                        <note type="voterslist"><desc />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <desc />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <desc />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <desc />
+                            <seg /></note>
+                        <note type="numbersannounced"><seg />
+                            <table><row><cell />
+                                </row>
+                            </table>
+                            <seg /></note>
+                    </div>
+                    <div type="voting"><head><label />
+                            <note /></head>
+                        <table><row><cell />
+                            </row>
+                        </table>
+                        <note type="result" />
+                        <note type="voterslist"><desc />
+                            <seg />
+                            <seg />
+                            <pb n="193" />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <desc />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <desc />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <seg />
+                            <desc />
+                            <seg /></note>
+                        <note type="comment"><seg /></note>
+                    </div>
+                </div>
+                <div type="rectification"><head />
+                    <note type="comment"><seg /></note>
+                    <note type="comment"><seg /></note>
+                    <note type="comment"><seg /></note>
+                    <note type="comment"><seg />
+                        <seg />
+                        <seg />
+                        <seg /></note>
+                    <note type="comment"><seg /></note>
+                </div>
+            </div>
+        </back>
+    </text>
+</ns0:TEI>
